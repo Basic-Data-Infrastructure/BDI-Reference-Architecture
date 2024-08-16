@@ -18,7 +18,7 @@ Implementing the core principles can be done in stages: the BDI Framework define
 
 The description of the BDI Reference Architecture starts by following the taxonomy of the BDI Stack by describing the building blocks.
 
-\[ daarna…..Kits, Security, meer intergrale zaken?]
+
 
 ## 1. The 7 Core Principles
 
@@ -241,7 +241,7 @@ The BDI framework is in this sense more like other standards (like Oauth): adher
 
 There may be local initiatives to enforce certification or specific adherences, data licenses or other specifics.
 
-* There is no shared register of all onboarded parties
+* There is no overarching shared register of all onboarded parties
 
 Registers are local, or even individual: a platform or company may start with it own register of trusted parties. If the need for interoperability grows, there are methods to create a common register for a group, in a BDI Association
 
