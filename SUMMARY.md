@@ -2,6 +2,12 @@
 
 * [Reference Architecture](README.md)
   * [INTRODUCTION](reference-architecture/introduction.md)
+  * [Trust KIT](readme/trust-kit.md)
+  * [Logistics event KIT](readme/logistics-event-kit.md)
+  * [Semantics KIT](readme/semantics-kit.md)
+  * [Federation KIT](readme/federation-kit.md)
+  * [Data set KIT](readme/data-set-kit.md)
+  * [Verifiable Credentials KIT​](readme/verifiable-credentials-kit.md)
   * [GOVERNANCE](reference-architecture/governance/README.md)
     * [Overview](reference-architecture/governance/overview.md)
     * [Edge agreements](reference-architecture/governance/edge-agreements.md)
