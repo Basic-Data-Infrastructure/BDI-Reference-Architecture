@@ -1,27 +1,23 @@
 # Policy agreements
 
-## Summary&#x20;
+## Summary
 
+## Purpose of the building block
 
+## Concepts
 
-## Purpose of the building block&#x20;
-
-
-
-## Concepts&#x20;
-
-The following concepts (from the BDI Glossary) are particularly relevant in this building block:&#x20;
+The following concepts (from the BDI Glossary) are particularly relevant in this building block:
 
 <table><thead><tr><th width="262">Concept</th><th>Meaning</th></tr></thead><tbody><tr><td>Authorization Register</td><td><ul><li>Holds authorization policies for one or more data owners on access to data</li><li>Also known as AR-DM, Authorization Register Data Management</li></ul></td></tr><tr><td>Data Owner</td><td><ul><li>Has control over data and access to data,</li><li>Controls decisions on Data Sovereignty and Trust Sovereignty</li><li>Controls authorisation policies, representation rules, professional qualification verification of staff and contractors</li><li>Controls subscription to the Event Pub/Sub Service and publishing of events to subscribers</li><li>Controls discovery and endpoints</li><li>Controls roles assumed by entity</li></ul></td></tr><tr><td>Data Consumer</td><td><ul><li>Requests access to data and/or Representation Register and/or Professional Qualification Register of the data owner</li><li>Controls discovery and endpoints</li><li>Requests subscription to data owner’s Event Pub/Sub Service, receives and evaluates events</li></ul></td></tr><tr><td>Data Service Provider</td><td><ul><li>A service provider that acts under the supervision and on behalf of the data owner</li></ul></td></tr></tbody></table>
 
 ## Risks
 
-* Not providing enough guidance to parties on how to deal with authorisation policies, could lead to a decreased data sovereignty for Data Owners.&#x20;
+* Not providing enough guidance to parties on how to deal with authorisation policies, could lead to a decreased data sovereignty for Data Owners.
 * By not specifying the authorisation framework, single point solutions (such as platforms) will independently cater to data sovereignty requirements. This will harm interoperability and create a dependency for Data Owners on those single point solutions.
 
-## Interlinkages with other building blocks&#x20;
+## Interlinkages with other building blocks
 
-This building block is closely tied to [authentication.md](../technology/authentication.md "mention"). An authorisation which defines:
+This building block is closely tied to [authentication.md](authentication.md "mention"). An authorisation which defines:
 
 1. Which party
 2. Is allowed to access which data attributes
@@ -49,7 +45,7 @@ Interactions 2, 3 and 4 will usually take place right after each other, while in
 
 <figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption><p>BDI abstract authorisation interaction</p></figcaption></figure>
 
-## Core design decisions&#x20;
+## Core design decisions
 
 The following challenges are recognised in this concept:
 
@@ -70,16 +66,16 @@ BDI specifies the following to support an interoperable authorisation model for 
 {% hint style="warning" %}
 BDI does not specify how parties can manage authorisations at Authorization Registers, nor does it specify how Authorization Registers store these authorizations.
 
-In practice one party could fulfil multiple roles. A common existing combination would be the role of Authorization Register and Data Service Provider combined.&#x20;
+In practice one party could fulfil multiple roles. A common existing combination would be the role of Authorization Register and Data Service Provider combined.
 {% endhint %}
 
-## Future topics&#x20;
+## Future topics
 
 The following specifications are expected:
 
 * BDI Role Model
 * BDI Type and Attribute Model
 
-## Further reading&#x20;
+## Further reading
 
-This building block has been drafted using the following sources, that provide opportunity for further reading:&#x20;
+This building block has been drafted using the following sources, that provide opportunity for further reading:
