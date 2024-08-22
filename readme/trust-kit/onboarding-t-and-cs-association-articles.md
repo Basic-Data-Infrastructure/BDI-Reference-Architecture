@@ -1,116 +1,91 @@
-# Onboarding Terms and Conditions Association Articles
+# Onboarding Terms and Conditions
 
-## Summary
+### Summary
 
+### Purpose of the building block
 
+This building block guides organizations to establish a form of governance for their data exchange activities in accordance with the BDI framework. This building block provides reasons and options to establish this governance.
 
-## Purpose of the building block
+### Concepts
 
-This building block's purpose is to guide organisations on what to do when they want to start sharing data according to the BDI on a governance level. Things need to be considered to ensure that sharing data is done securely according to laws and regulations and in a way in which other BDI participants agree. These governance aspects form the basis for BDI participants to join and form the first layer of conformity. Participants that will share data according to the BDI framework must either join an association
+The BDI framework emphasizes perimeterless trust, allowing each data owner to determine whom they trust. Trust registers and identity mechanisms are local and adaptable, offering flexibility in interoperability and endpoint discovery.&#x20;
 
-## Concepts
+There is no overarching Authority to enforce the certification of interfaces, manage onboarding processes, or ensure adherence to data licenses. Compliance within the BDI framework is entirely voluntary, motivated by the practical benefits and business value it offers. The framework supports varying global and local adaptations in identity verification and trust levels.&#x20;
 
-### Association Governance
+Registers of trusted entities are typically local or individual. For example, a platform or company may maintain its own register of trusted partners. If the need for interoperability within a group grows, a common register can be established, often through a BDI Association. (Association Register).&#x20;
 
-Adopted from DSSC; [Organisational Form and Governance Authority - Blueprint v1.0 - Data Spaces Support Centre (dssc.eu)](https://dssc.eu/space/BVE/357074549/Organisational+Form+and+Governance+Authority)
+The BDI framework provides a federated mechanism for previously unknown entities to identify themselves to a data-owning party. This allows the data owner to verify the entity’s claims and decide whether sufficient trust exists to proceed with the interaction.&#x20;
 
-Every data-sharing initiative needs bodies to create, maintain, and enforce its governance framework and manage the data space’s day-to-day operations. In the case of the BDI, this is called an association. It effectively runs the association daily.
+Although it is possible to start without any governance structure, it is recommended but not required to develop a formal governance structure per group of entities that share common agreements, terms and conditions, policies, data licenses, semantics of events, trust scores and so on.&#x20;
 
-The legal and natural persons that established a data space can determine the competencies of the governance authority within the limits of the law (e.g. rules on competencies of the executive, rules on the representation of the data space in dealings with third parties, rules on the creation of working groups and committees).
+A “Group of groups” as an overarching governance structure may also be beneficial, as an option.&#x20;
 
-### Onboarding
+### BDI Association&#x20;
 
-New members of an association need to be vetted to ensure the integrity of its members and the used systems. The following aspects must be taken into consideration:
+A BDI Association is a local entity formed by a group of participants within the framework. The specific legal structure of an Association can vary—it might be a foundation, cooperative, or any other form. The Association serves as the operational anchor for both federated trust/authentication and local onboarding within the BDI Framework.&#x20;
 
-* vetting the organization
-* checking roles the organization wants to be able to fulfil
-* verifying credentials, certificates (trust chain)
-* making sure legal contracts are signed by functionaries with a mandate (trust chain)
-* verifying if the IT applications they use are compliant and secure (conformity tests)
+Members of a BDI Association can engage in multiple sectors and data exchanges, participating in dynamic virtual networks composed of members from different Associations. These networks operate on zero-trust principles, treating members from other Associations as untrusted by default until trust is established.&#x20;
 
-Other members rely on the association administration entity to fulfil this role correctly. The result of onboarding is an entry in the Association Register.
+The local nature of BDI Associations is important because trust and reputation are often tied to proximity and frequency of interaction. Additionally, legal systems tend to be national or trade-bloc dependent, making localized Associations more effective in managing trust and reputation within these frameworks.&#x20;
 
-All changes to the registrations stored in the Association Register must follow the process outlined in this section: this process reduces the possibility of attack vectors directed to the staff of the Association Administration (social engineering, blackmail etc.)
+The association is most likely (but not by definition) local because :&#x20;
+
+* Trust and reputation are quite sensitive to close proximity and a high frequency of interaction. The economic gravity-effect shows that geographical proximity has a causal relationship with the level of trade.&#x20;
+* Legal systems are national and/or trade-bloc dependent&#x20;
+  * UK Law and NL/EU law as an example&#x20;
+
+The BDI Framework assumes that many associations are formed and changed, split or merged in a natural manner, as their members see fit.&#x20;
+
+The BDI framework defines how federated trust, federated reputation and federated authentication are created spanning multiple associations.&#x20;
+
+### Efficient trust management&#x20;
+
+The local BDI Association can be the foundation of effective and efficient trust management in a perimeterless, zero-trust environment. Zero-trust principles mean that BDI Associations do not trust anyone outside their own members and use all four pillars of trust to assess interactions with others outside of their community.&#x20;
+
+The strong social control pillar is supported by a reputation scheme:&#x20;
+
+* Members of the same association are considered trusted insiders.&#x20;
+* Members of other associations are considered untrusted outsiders at the outset, but that position can change when: &#x20;
+  * a shared reputation scheme builds experience with outsiders;&#x20;
+  * outsiders that commit themselves to specific legally enforceable rules set by the association become preferred partners&#x20;
+  * other (sister-)Associations can have a trust score, starting with verification of public key ownership of the sister Association&#x20;
+
+### Onboarding&#x20;
+
+It is recommended that an onboarding mechanism is introduced for new members, if the Association desires to raise the standards for its members.&#x20;
+
+The following aspects can be taken into consideration:&#x20;
+
+* vetting the member
+* checking roles the member wants to fulfil&#x20;
+* verifying credentials and certificates (trust chain)&#x20;
+* verifying that legal contracts are signed by functionaries with a mandate &#x20;
+* verifying the compliance and security of the IT applications they use (conformity tests)&#x20;
+
+The result of onboarding is an entry in the local Association Register.&#x20;
+
+### &#x20;Coherent Security&#x20;
+
+The registrations stored in the Association Register need to be secured against tampering. The process outlined in this section reduces the possibility of attack vectors directed to the staff of the Association Administration (social engineering, blackmail etc.), the most common attack vector in these cases.
 
 The following steps apply to new registrations, updates to registrations and depreciation.
-| Step                    | Action |
-|---|---|
-| Prepare                 | <p>A complete set of attributes is prepared; for updates, this includes all data in the registration (including any attributes that haven't changed).</p><p>During preparation attributes can be added, removed and modified freely. Ideally, there is a way to validate the dataset during preparation but it must be possible to work with intermediate/incomplete data until submitting for verification</p>|  
-| Verify                  | <p> Verification is an automated process.</p><p>Once, submitted for verification it is kept immutable; it must not be possible to change datasets during or after verification. If changes have to be made they will be fully re-submittedS and follow the full prepare / verify/commit process.</p><p>Once the verification stage is completed, it can be queued for commit.</p> |
-| Commit & Sign           | <p>Once verified, the Association Functionary who will also do any non-automated checks, for instance checking the (digital) signature on any signed documents provided.</p><p>The Association Functionary cannot change the submission. The only possible actions are "reject" or "commit" or “deprecate” an already committed.</p><p>It is a requirement that non-repudiation of the action taken by the Association Functionary is supported.</p><p>Only a commit will add/update / modify the registration in the Association Register. If changes are not committed, they do not affect the Register.</p>|
 
-### Terms and Conditions
+<table data-header-hidden><thead><tr><th width="153">Step</th><th>Action</th></tr></thead><tbody><tr><td><strong>Step</strong></td><td><strong>Action</strong></td></tr><tr><td>Prepare </td><td><p>A complete set of attributes is prepared; for updates, this includes all data in the registration (including any attributes that haven't changed). </p><p>During preparation attributes can be added, removed and modified freely. Ideally, there is a way to validate the dataset during preparation, but it must be possible to work with intermediate/incomplete data until submitting for verification </p></td></tr><tr><td>Verify </td><td><p>Verification is an automated process. </p><p>Once submitted for verification the dataset is kept immutable; it must not be possible to change datasets during or after verification. If changes have to be made they will be fully re-submitted and follow the full prepare/verify/commit process. </p><p>Once the verification stage is completed, it can be queued for commit. </p></td></tr><tr><td>Commit &#x26; Sign </td><td><p>Once verified, the Association Functionary will also do any non-automated checks, for instance checking the (digital) signature on any signed documents provided. </p><p>The Association Functionary cannot change the submission. The only possible actions are "reject" or "commit" or “deprecate” an already committed submission. </p><p>It is a requirement that non-repudiation of the action taken by the Association Functionary is supported. </p><p>Only a commit will add, update or modify the registration in the Association Register. If changes are not committed, they do not affect the Register. </p></td></tr></tbody></table>
 
-“adopted from DSSC; [Contractual framework - Blueprint v1.0 - Data Spaces Support Centre (dssc.eu)](https://dssc.eu/space/BVE/357074870/Contractual+framework) ”
+Shared terms and conditions, data access policies, and data licenses are essential for enhancing interoperability within the BDI Framework.&#x20;
 
-Terms and Conditions define and specify a limited number of predefined and standardised contractual clauses and/or licenses that data providers should use (use case/data product level). It could specify the terms and conditions by which all data space participants entering into a data transaction would need to abide by, providing common governance to data transactions and ensuring respect for the applicable legislation (regulatory compliance).
+* _Terms and Conditions_: These define standardized contractual clauses, such as Edge Agreements, which are localized terms that improve operational efficiency.&#x20;
+* _Policies_: Data access is authorized by the Data Owner based on the role of the requesting party. Standardizing these policies within a sector can reduce the management burden.&#x20;
+* _Data Licenses_: These define the rights and responsibilities of parties accessing data. For example, an e-commerce transporter may be prohibited from retaining or reusing receiver data. Data licenses can be legally enforceable if included in the onboarding process.&#x20;
 
-In other words, the T\&Cs allow to introduce common elements (e.g., standardised clauses) and legal effects to the organisational and business decisions applicable. It may limit the freedom of action that a participant has about data transaction agreement, however reducing transaction costs and complexity, and increasing legal interoperability. Furthermore, BDI allows for changes in the T\&Cs as long as they still adhere to the included rules and regulations.
+### Implementation Considerations &#x20;
 
-### Regulatory compliance
+The implementation of the BDI Framework should consider existing sector-specific terms, conditions, and practices. Many trade and standardization organizations are transitioning from paper-based practices to digital ones. It is recommended to build upon the existing body of knowledge and trade practices, per sector.&#x20;
 
-“adopted from DSSC; [Regulatory Compliance - Blueprint v1.0 - Data Spaces Support Centre (dssc.eu)](https://dssc.eu/space/BVE/357074696/Regulatory+Compliance)”
+### Interlinkages with other building blocks&#x20;
 
-Regulatory compliance encompasses a range of activities designed to ensure that the relevant regulatory frameworks are adhered to, and is an ongoing practice throughout the lifecycle of the data space. These activities include embedding various elements and functions of the data space within the regulatory landscape, guiding the Data Space Governance Authority and participants on the relevance of EU values and different regulations, addressing roles and responsibilities among participants, creating internal policies for regulatory compliance, and continuously monitoring compliance throughout the life cycle of a data space.
+* Terms and Conditions &#x20;
+* Policies&#x20;
+* Edge Agreements&#x20;
+* Data Licenses
 
-## Implementation Considerations
-
-**Membership, onboarding and offboarding procedures**
-- Define clear criteria for admission and continued participation.
-- Develop efficient onboarding processes, including establishing general terms and conditions and reviewing participant compliance.
-- Plan for efficient offboarding processes to manage the exit of participants while safeguarding data and maintaining the integrity of the data space.
-
-**Participant categories and roles**
-- Identify and categorise participants according to their role in a data space.
-- Define specific roles for participants, such as data providers, data recipients, and data rights holders.
-- Establish clear application rules for different participant categories.
-
-Reference: [https://framework.ishare.eu/is/operational-processes](https://framework.ishare.eu/is/operational-processes)
-
-**Mechanisms for inclusive data governance**
-
-The aim of inclusive data governance is to promote consultation between participants in decision-making and encourage active engagement and contributions from all stakeholders in the governance of the BDI-association. While the realisation of this objective may vary between different BDI-associations, the overarching intention within the common European data spaces is to challenge traditional hierarchical models and take a more inclusive and collaborative approach to governance.
-
-By fostering inclusivity, participants can benefit from different perspectives, ensure fairness and build a sense of collective ownership of governance rules, ultimately promoting trust and effective operation.
-
-Achieving this inclusivity requires the involvement of various stakeholders in decision-making, including representatives from the private and public sectors. This inclusiveness may already be reflected in the composition of the governance authority, but if it's not, the governance authority should provide opportunities for stakeholders to review or contribute to the governance framework.
-
-Encourage transparency and engagement to build a sense of collective ownership and commitment among participants.
-
-**Data sovereignty and security measures** 
-
-Address data sovereignty concerns to ensure participants maintain control over their data and services.
-
-Specify security measures to protect data within the data space, considering factors like critical infrastructure and adherence to standards. 
-
-## Interlinkages with other building blocks
-
-- Association Register
-- Data Licenses
-- Certified roles
-
-## Elements and their key functions
-
-## Core design decisions
-
-**Membership, onboarding and offboarding procedures**
-- Define clear criteria for admission and continued participation.
-- Develop efficient onboarding processes, including establishing general terms and conditions and reviewing participant compliance.
-- Plan for efficient offboarding processes to manage the exit of participants while safeguarding data and maintaining the integrity of the data space.
-
-**Data sovereignty and security measures**
-- Address data sovereignty concerns to ensure participants maintain control over their data and services.
-- Specify security measures to protect data within the data space, considering factors like critical infrastructure and adherence to standards. 
-
-## Future topics
-
-Different forms of association
-
-## 
-
-## Further reading
-
-1. https://dssc.eu/space/BVE/357074696/Regulatory+Compliance[^1]
-2. [https://framework.ishare.eu/is/operational-processes](https://framework.ishare.eu/is/operational-processes)
-
-[^1]: 

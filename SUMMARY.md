@@ -8,7 +8,7 @@
     * [Authorisation (Oauth 2.0), AR-DM + XACML policies](readme/trust-kit/authorisation-oauth-2.0-ar-dm-+-xacml-policies.md)
     * [Edge agreements](readme/trust-kit/edge-agreements.md)
     * [Policy agreements](readme/trust-kit/policy-agreements.md)
-    * [Onboarding T\&C's Association articles](readme/trust-kit/onboarding-t-and-cs-association-articles.md)
+    * [Onboarding Terms and Conditions](readme/trust-kit/onboarding-t-and-cs-association-articles.md)
     * [Association Register](readme/trust-kit/association-register.md)
     * [Discovery](readme/trust-kit/discovery.md)
     * [Zero Trust Check](readme/trust-kit/zero-trust-check.md)
