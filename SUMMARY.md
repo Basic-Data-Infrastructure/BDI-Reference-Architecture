@@ -29,4 +29,3 @@
     * [Provenance & Traceability](reference-architecture/verifiable-credentials-kit/provenance-and-traceability.md)
   * [GLOSSARY](reference-architecture/glossary/README.md)
     * [BDI Terms](reference-architecture/glossary/bdi-terms.md)
-* [Glossary](glossary.md)
