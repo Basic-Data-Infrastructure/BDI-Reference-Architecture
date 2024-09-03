@@ -1,7 +1,5 @@
 # Data Licenses
 
-## Summary
-
 Data licenses describe the terms and conditions for using data. BDI recognises a layered licensing structure. Licenses are used in authorisations for data transactions and are defined in this building block of the BDI framework.
 
 ## Purpose of the building block
@@ -55,6 +53,10 @@ Licenses are defined on three layers:
 ### BDI layer licenses
 
 There are currently no specific BDI licenses defined.
+
+### Combined list of available licenses
+
+<table data-view="cards"><thead><tr><th></th><th data-hidden></th><th data-hidden></th></tr></thead><tbody><tr><td><p>0000</p><p>No limitations</p></td><td></td><td></td></tr><tr><td><p>0001</p><p>Re-sharing with Adhering Parties only</p></td><td></td><td></td></tr><tr><td><p>0002</p><p>Internal use only</p></td><td></td><td></td></tr><tr><td><p>0003</p><p>Non-commercial use only: licensee may not use the data to generate revenue</p></td><td></td><td></td></tr><tr><td><p>0004</p><p>Licensee may enrich received data with own data before re-sharing</p></td><td></td><td></td></tr><tr><td><p>0005</p><p>Licensee may enrich received data with data of others before re-sharing</p></td><td></td><td></td></tr><tr><td><p>0006</p><p>Licensee may enrich received data with own data before re-sharing on a non-commercial basis</p></td><td></td><td></td></tr><tr><td><p>0007</p><p>Licensee may enrich received data with data of others before re-sharing on a non-commercial basis</p></td><td></td><td></td></tr><tr><td><p>9999</p><p>As determined between Parties</p></td><td></td><td></td></tr></tbody></table>
 
 ## Future topics
 
