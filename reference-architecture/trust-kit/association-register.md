@@ -9,8 +9,6 @@ The building block Association Register has the basic function of registering:
 * the roles these entities can have
 * the trust level of each entity
 
-
-
 The Association Register is an operational building block that is called during the zero-trust authentication and authorization process.
 
 The richness of the building block is governed by the subsidiarity principle: in its most simple and limited form an Association Register is maintained by and for a Data Service Provider, in its most rich form it is maintained by a BDI Association that federates with other BDI Associations.
@@ -50,11 +48,11 @@ _Member -_ Legal entity as member of the BDI Association of its choice
 
 _Federation of Associations -_ A series of collaborating BDI associations
 
-_Outsider -_ Member of a different BDI Association than the root .  Note: this a relative perspective, from the position of a Member of a given instance (BDI Association). Members of the same instance are “insiders”, anybody else is an Outsider and vice versa.
+_Outsider -_ Member of a different BDI Association than the root (root as in "home" of the member) .  Note: this a relative perspective, from the position of a Member of a given instance (BDI Association). Members of the same instance are “insiders”, anybody else is an Outsider and vice versa.
 
 _Preferred Business Partners -_ Outsiders who have agreed to specific terms and conditions of a local BDI Association that maintains its own Business Partner Reputation Model
 
-_Root Association -_ The association a member is part of
+_Root Association -_ The association a member is part of, also known as "Home Association".
 
 _Visitor -_ Outsider with a better reputation score than a defined minimum.
 
@@ -88,6 +86,10 @@ In its most simple form a data service provider has its own private Association 
 A shared Association Register adds the benefit of cost reduction, and trust/reputation sharing.
 
 A federated Association Register allows in principle an unlimited universe of parties that can check each other credentials as Member of their particular BDI Association, vice versa.
+
+**Extra function in existing trade body (Govervance)**
+
+The benefits of shared services, shared standards, shared Terms and Conditions and increasing the negotiation power by coordinating as a group are known in the "analog" world. A large number of trade associations already exist, specific to a sector/region. These trade associations are natural hosts for Association Register functions. The assumption is that in most cases existing trade associations will upgrade their service offerings to include support for the BDI, instead of creating a new legal entity specifically for support of the BDI.
 
 ### Elements and their key functions
 
