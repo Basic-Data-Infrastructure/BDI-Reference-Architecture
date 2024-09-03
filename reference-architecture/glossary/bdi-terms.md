@@ -347,6 +347,18 @@ A semantic description of a standard with focus on making the meaning of the use
 
 <details>
 
+<summary>Operational Data Store</summary>
+
+An Operational Data Store (ODS) is designed to integrate data integrate from multiple sources for additional operations on the data, for reporting, controls and operational decision support.
+
+In the BDI the ODS is intended to hold Logistics Event information, representing state, access (delegations) to source data for reliant parties etc. during the live transaction and distribute the relevant parts of this truth to the operationally involved or further eligible parties.
+
+It enables controlled system-to-system automation of processes triggered by event-based notifications.
+
+</details>
+
+<details>
+
 <summary>Operations and Supply Chain Data Spaces</summary>
 
 Operations and Supply Chain Data Spaces (ODS) are logical constructs — networks of parties, both businesses and authorities, created to generate value from the production and distribution of goods and services. Parties may participate in multiple ODS concurrently, with participation frequency and duration varying based on business characteristics.
