@@ -1,81 +1,64 @@
 # Policy agreements
 
-## Summary
+### Summary
 
-## Purpose of the building block
+### Purpose of the building block
 
-## Concepts
+Policies in the BDI are common agreements about authorization of access to data elements. Standardization of:&#x20;
 
-The following concepts (from the BDI Glossary) are particularly relevant in this building block:
+* Roles &#x20;
+* Access policies for a given role to data elements&#x20;
+* “need to know” limitations&#x20;
+* &#x20;Rights and obligations on how the data may be used&#x20;
 
-<table><thead><tr><th width="262">Concept</th><th>Meaning</th></tr></thead><tbody><tr><td>Authorization Register</td><td><ul><li>Holds authorization policies for one or more data owners on access to data</li><li>Also known as AR-DM, Authorization Register Data Management</li></ul></td></tr><tr><td>Data Owner</td><td><ul><li>Has control over data and access to data,</li><li>Controls decisions on Data Sovereignty and Trust Sovereignty</li><li>Controls authorisation policies, representation rules, professional qualification verification of staff and contractors</li><li>Controls subscription to the Event Pub/Sub Service and publishing of events to subscribers</li><li>Controls discovery and endpoints</li><li>Controls roles assumed by entity</li></ul></td></tr><tr><td>Data Consumer</td><td><ul><li>Requests access to data and/or Representation Register and/or Professional Qualification Register of the data owner</li><li>Controls discovery and endpoints</li><li>Requests subscription to data owner’s Event Pub/Sub Service, receives and evaluates events</li></ul></td></tr><tr><td>Data Service Provider</td><td><ul><li>A service provider that acts under the supervision and on behalf of the data owner</li></ul></td></tr></tbody></table>
+reduces friction costs, management costs, delays and (legal) uncertainty.&#x20;
 
-## Risks
+### Concepts
 
-* Not providing enough guidance to parties on how to deal with authorisation policies, could lead to a decreased data sovereignty for Data Owners.
-* By not specifying the authorisation framework, single point solutions (such as platforms) will independently cater to data sovereignty requirements. This will harm interoperability and create a dependency for Data Owners on those single point solutions.
+#### Roles&#x20;
 
-## Interlinkages with other building blocks
+Roles define operational responsibilities within supply chains, helping to create standardized policies, particularly Data Access Policies. &#x20;
 
-This building block is closely tied to [authentication.md](authentication.md "mention"). An authorisation which defines:
+Each specific sector (type of cargo, modality) has common roles that are well understood and recognized. The same applies to data elements that a role needs to have access to, in order to be able to perform a task.&#x20;
 
-1. Which party
-2. Is allowed to access which data attributes
-3. (Optionally) at which Data Service Provider
-4. (Optionally) with which terms and conditions for using the data (licenses)
+Defining these common roles (like truck driver, customs agents, inspection agent, forwarder, terminal planner, etc. etc.) reduces the cost of interactions between entities. An undefined role needs custom definitions for the combination role-data access policy: a labour-intensive action. &#x20;
 
-## Elements and their key functions
+Managing access rights is simplified by standardization.&#x20;
 
-The following diagram presents how roles within a BDI context participate in the process of authorisation. The prerequisite here is that the Data Owner has an existing business relationship with:
+#### Data Access policies&#x20;
 
-* The Authorization Register: to manage authorisations on his behalf
-* The Service Consumer: to consumer data (or a service) on his behalf
-* The Data Service Provider: to provide a data service on his behalf
+Data access policies define who or what role can access specific data elements and under what conditions. &#x20;
 
-There is no existing bilateral relationship required between the other parties involved. The contractual context for all transactions is the membership of a BDI Association.
+Common roles are linked to common data access policies.&#x20;
 
-On an abstract level the interaction is as follows:
+A data access policy can be linked to a person: this is a specific authorization.&#x20;
 
-1. The Data Owner manages Authorizations in the Authorization Register
-2. A Service Consumer requests authorisation evidence at the Authorization Register
-3. The Service Consumer requests data and presents the evidence at the Data Service Provide
-4. The Data Service Provider evaluates the data request and the provided evidence and if they match, the requested data is returned
+#### Data Licenses&#x20;
 
-Interactions 2, 3 and 4 will usually take place right after each other, while interaction 1 can take place at any moment (prior to interaction 2, 3 and 4).
+Data licenses define the rights and responsibilities of a party that gains access to data. &#x20;
 
-<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption><p>BDI abstract authorisation interaction</p></figcaption></figure>
+These licenses address questions, such as whether the data can be retained, reused, or shared with third parties. For example, in the e-commerce sector, a data license might stipulate that a transporter delivering packages cannot store, reuse, or resell the recipient’s personal information, including their name, address, email, phone number, or the type of goods delivered. Data licenses, including regulate the permissible actions and behaviours related to the use of the accessed data, ensuring that control over the data is maintained even after it has left the trust boundaries of the data owner.&#x20;
 
-## Core design decisions
+Common global data licenses may be re-used, or local specific data licenses may be developed that are specific for a sector or geography.&#x20;
 
-The following challenges are recognised in this concept:
+### Interlinkages with other building blocks&#x20;
 
-1. If a Data Owner manages authorisations at multiple Authorization Registers, authorisations could become incomparable, when each Authorization Register defines it's own way for storing authorisations, thereby limiting the Data Owner to achieve maximum data sovereignty.
-2. The Authorization Register, Service Consumer and Data Service Provider should sufficiently align in a common language, otherwise the parties won't be able to request, create and consume authorisation evidence.
-3. As a policy language, XACML is suited to these tasks but requires rigorous standardization and good tools for evaluation and maintenance to be effective and practical in real-world applications. Development of these standard roles is parts of the BDI Framework deployment.
-4. As a policy mechanism in data trading, ODRL allows for machine-readable policies for data usage, supporting automation of contract negotiation. In the BDI framework, this is related to data licenses. In operational data spaces, the policies for data usage (data licenses) are in most cases not used for contract negotiation but for standardizing terms and conditions, such as ‘privacy protected’ or ‘commercially confidential’.
+* Digital Identity&#x20;
+* Authorization&#x20;
+* Authentication&#x20;
+* Onboarding, Terms and conditions&#x20;
 
-{% hint style="success" %}
-BDI specifies the following to support an interoperable authorisation model for BDI Associations, countering the challenges mentioned above.
+### Core design decisions&#x20;
 
-1. BDI recommends to use a role based authorisation model.
-2. BDI will define a BDI Role Model to support interoperability between role based access control models as implemented by Authorization Registers.
-3. BDI will specify the evidence API and structure of authorisation evidence (technical specifications). This will be part of the BDI development documentation.
-4. BDI will define a type and attribute model to support collaboration between parties involved.
-{% endhint %}
+When starting an association, it is advisable to establish a set of policies beforehand. These policies should be developed across three layers, all of which need to be considered:&#x20;
 
-{% hint style="warning" %}
-BDI does not specify how parties can manage authorisations at Authorization Registers, nor does it specify how Authorization Registers store these authorizations.
+* _Association-Specific_: These agreements are tailored to meet the unique needs of the association, which may vary by sector, geographical location, or specific theme. &#x20;
+* _Common_: Utilize a standardized set of edge agreements available in the BDI repository. For instance, the set of data licenses which are described by iShare. &#x20;
+* _Global_: Seek to align these policies with those used in other sectors and standards whenever possible, promoting convergence and consistency.
 
-In practice one party could fulfil multiple roles. A common existing combination would be the role of Authorization Register and Data Service Provider combined.
-{% endhint %}
+### Further reading&#x20;
 
-## Future topics
+* [https://dev.ishare.eu/reference/delegation-mask/policy-sets](https://dev.ishare.eu/reference/delegation-mask/policy-sets)&#x20;
+* [https://framework.ishare.eu/detailed-descriptions/functional/licenses](https://framework.ishare.eu/detailed-descriptions/functional/licenses) &#x20;
 
-The following specifications are expected:
-
-* BDI Role Model
-* BDI Type and Attribute Model
-
-## Further reading
-
-This building block has been drafted using the following sources, that provide opportunity for further reading:
+\
