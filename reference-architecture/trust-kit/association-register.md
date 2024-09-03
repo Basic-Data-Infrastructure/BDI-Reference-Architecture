@@ -101,7 +101,7 @@ An Association Register can have the following functions
 * Members can use the Association Register to assess the trust level of another Member and to retrieve information about Members (in for instance what roles they fulfill).
 * Members can use the Association Register to asses the trust level and reputation of Visitors and Preferred Business Partners
 * Members can add to the Reputation score of registered entities.
-* Members can use the Association Register to asses the reputation of a previously unknown Outsider.: the Association Register queries the Association Register of the Outsider.
+* Members can use the Association Register to asses the reputation of a previously unknown Outsider: the Association Register queries the Association Register of the Outsider.
 
 ### Core design decisions
 
@@ -109,9 +109,10 @@ The following design decisions form the basis for this building block:
 
 * An Association Register can operate standalone, without federation.
 * An Association Register can be shared between parties in a BDI Association, or shared by multiple BDI Associations (database or shared ledger).
-* An Association Register can be federated with other Association Registers, without being connected or known beforehand. The discovery mechanism is DNS based.
-  * This requires that an Outsider identifies the URL of its root Association
+* An Association Register can be federated with other Association Registers, without being connected or known beforehand: there is no global register of Association Registers. The discovery mechanism is DNS based.
+  * This requires that an Outsider, Visitor or Partner identifies the URL of its root Association.
 * An entity can choose to be Member of multiple Associations.
+  * An example is an e-commerce retailer: one side of the company is dealing with shipping purchased goods by maritime transport (containers) to its local warehouses, the other side of the company is deeply involved in e-commerce retail and distribution. The large difference in semantics, terms and conditions, roles, and parties (including authorities) involved is visible in the different trade organizations (maritime container transport versus e-commerce retail). The difference may lead to the choice to be Member of two different Associations.
 
 ### Future topics
 
