@@ -59,9 +59,13 @@ In the physical economy legal entities are represented by both IT-systems/proces
 
 Coordination of operational activities is time-sensitive and drives a large part of data exchanges between entities, even if these entities have no direct contractual relationship. Data exchanges therefore cross organizational boundaries, between multiple entities, each with its own security policy and protective measures such as firewalls.
 
-Data exchanges are triggered by _events_ in the physical economy, related to the project or order at hand.  Events may be relating to planning agreements and updates, payments, compliance, physical activities and the like.
+Data exchanges are triggered by _events_ in the physical economy.  Events may be relating to planning agreements and updates, payments, compliance, physical activities and the like.
 
-The “owner” of an event may generate a _notification_ which is a digital message containing meta data about the event. This notification is distributed to a selective group of entities. The distribution pattern of notifications of events is set-up and coordinated (choreography) by the principal that originates the common task at hand.
+Whenever an event occurs, a _notification_ about this event can be generated. A notification is a digital message containing meta data about the event. This notification is distributed to a selective group of entities using a publication/subscription  based technology.
+
+Notifications are published on a _channel_ and parties may choose to receive notifications on a channel (subscription). The set of channels and the rules on allowed subscriptions (defining who is able to subscribe on a channel) must be defined before hand.
+
+Note that data associated with an event is not included in the notification. Authorised parties can retrieve data at the source.
 
 ### Principle 3: Zero Trust
 
