@@ -83,11 +83,31 @@ In fact most building blocks will have some form of link with this building bloc
 
 In its most simple form a data service provider has its own private Association Register to recognize data consumers. The limitations of such an implementation are obvious, yet it may be a stage to reach the next level.
 
+
+
+<figure><img src="../../.gitbook/assets/Private  or common AR.png" alt=""><figcaption><p>Association Register Private, or common to Association</p></figcaption></figure>
+
+
+
 A shared Association Register adds the benefit of cost reduction, and trust/reputation sharing.
+
+An Autorization Register may be shared as well.
+
+
+
+<figure><img src="../../.gitbook/assets/Shared AR.png" alt=""><figcaption></figcaption></figure>
+
+
 
 A federated Association Register allows in principle an unlimited universe of parties that can check each other credentials as Member of their particular BDI Association, vice versa.
 
-**Extra function in existing trade body (Govervance)**
+The principles of by discovery through a standard \_bdi subdomain to facilitate federation are depicted below.&#x20;
+
+<figure><img src="../../.gitbook/assets/Federation.png" alt=""><figcaption></figcaption></figure>
+
+
+
+**Extra function in existing trade body (Governance)**
 
 The benefits of shared services, shared standards, shared Terms and Conditions and increasing the negotiation power by coordinating as a group are known in the "analog" world. A large number of trade associations already exist, specific to a sector/region. These trade associations are natural hosts for Association Register functions. The assumption is that in most cases existing trade associations will upgrade their service offerings to include support for the BDI, instead of creating a new legal entity specifically for support of the BDI.
 

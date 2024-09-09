@@ -28,8 +28,19 @@ The purpose of using DNS in the BDI discovery building block is to provide a sta
 #### Concepts
 
 1. _DNS Overview_: DNS is a hierarchical and decentralized naming system that translates domain names into IP addresses, enabling users to access websites and other resources on the internet. DNS is organized into zones, each managed by an organization that controls its own part of the DNS namespace.&#x20;
-2. _Service Discovery_: In the context of BDI, service discovery involves using DNS to locate the endpoints of data providers. This is achieved by creating specific DNS records that describe the services offered by a provider and where they can be accessed.&#x20;
-3. _DNS Records_: Different types of DNS records serve various purposes. For service discovery in BDI, TXT and SRV records are particularly important. TXT records can store arbitrary text and are used to describe the services offered, while SRV records specify the hostname, port, and protocol for accessing a service.&#x20;
+2. _DNS Subdomain:_ a standardized subdomain ( "\_bd1.\[ url] ") improves discoverability, educes the risk of interference with  existing DNS records for the domain name already in possession of an organization.
+3. _Service Discovery_: In the context of BDI, service discovery involves using DNS to locate the endpoints of data providers. This is achieved by creating specific DNS records that describe the services offered by a provider and where they can be accessed.&#x20;
+4. _DNS Records_: Different types of DNS records serve various purposes. For service discovery in BDI, TXT and SRV records are particularly important. TXT records can store arbitrary text and are used to describe the services offered, while SRV records specify the hostname, port, and protocol for accessing a service.&#x20;
+
+
+
+
+
+<figure><img src="../../.gitbook/assets/Federation.png" alt=""><figcaption></figcaption></figure>
+
+
+
+
 
 #### Implementation Considerations&#x20;
 
@@ -39,6 +50,8 @@ When implementing DNS for service discovery in BDI, several factors need to be c
 2. _Security_: To secure the discovery process, DNSSEC (DNS Security Extensions) should be implemented. DNSSEC adds a layer of security to DNS by enabling the authentication of DNS data, preventing tampering, and ensuring the integrity of the information provided in DNS records.&#x20;
 3. _Scalability_: DNS is inherently scalable, making it suitable for large, federated networks like BDI. However, organizations must ensure that their DNS infrastructure can handle the expected load, particularly as the network grows.&#x20;
 4. _Standardization_: To ensure interoperability within the BDI network, it is crucial to follow standardized naming conventions and DNS record formats. This includes using well-known subdomains and consistent formatting for TXT and SRV records.&#x20;
+
+The proposal is to&#x20;
 
 #### Elements and Their Key Functions&#x20;
 
