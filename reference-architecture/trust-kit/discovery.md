@@ -24,18 +24,17 @@ iSHARE and thereby BDI provide a framework for the discovery of:
 
 ### Option 2: Discovery using DNS
 
-The Domain Name System (DNS) is a foundational protocol in internet infrastructure, serving as a directory that translates human-readable domain names into IP addresses. In the context of federative data sharing networks like the BDI, DNS plays a crucial role in enabling data consumers and providers to discover each other's endpoints. By utilizing DNS for service discovery, organizations can publish and find endpoints, thereby facilitating data exchange within the network. This building block outlines the purpose, concepts, implementation considerations, key elements, and recommended standards for using DNS in the BDI discovery building block.&#x20;
+The Domain Name System (DNS) is a foundational protocol in internet infrastructure, serving as a directory that translates human-readable domain names into IP addresses. In the context of federative data sharing networks like the BDI, DNS plays a crucial role in enabling data consumers and providers to discover each other's service endpoints. By utilizing DNS for service endpoint discovery, organizations can publish and find endpoints, thereby facilitating data exchange within the network. This building block outlines the purpose, concepts, implementation considerations, key elements, and recommended standards for using DNS in the BDI discovery building block.&#x20;
 
-The purpose of using DNS in the BDI discovery building block is to provide a standardized method for publishing and discovering endpoints. This allows data consumers to easily find the endpoints of data providers without the need of a common shared register, assess their trust level, and establish connections for data exchange. The use of DNS ensures that the discovery process is both scalable and compatible with existing internet infrastructure. Discovery based upon DNS allows for  a perimeter-less federation of BDI users and Associations.
+The purpose of using DNS in the BDI discovery building block is to provide a standardized method for publishing and discovering service endpoints. This allows data consumers to easily find the endpoints of data providers without the need of a common shared register, assess their trust level, and establish connections for data exchange. The use of DNS ensures that the discovery process is both scalable and compatible with existing internet infrastructure. Discovery based upon DNS allows for  a perimeter-less federation of BDI users and Associations.
 
 #### Concepts
 
 1. _DNS Overview_: DNS is a hierarchical and decentralized naming system that translates domain names into IP addresses, enabling users to access websites and other resources on the internet. DNS is organized into zones, each managed by an organization that controls its own part of the DNS namespace.&#x20;
 2. _DNS Subdomain:_ a standardized subdomain ( "\_bd1.\[ url] ") improves discoverability, educes the risk of interference with  existing DNS records for the domain name already in possession of an organization.
-3. _Service Discovery_: In the context of BDI, service discovery involves using DNS to locate the endpoints of data providers. This is achieved by creating specific DNS records that describe the services offered by a provider and where they can be accessed.&#x20;
+3. _Service Discovery_: In the context of BDI, service discovery involves using DNS to locate the endpoints of parties involved. This is achieved by creating specific DNS records in a subdomain "\_bdi" that describe the services and where they can be accessed.&#x20;
 4. _DNS Records_: Different types of DNS records serve various purposes. For service discovery in BDI, TXT and SRV records are particularly important. TXT records can store arbitrary text and are used to describe the services offered, while SRV records specify the hostname, port, and protocol for accessing a service.&#x20;
-
-
+5. _Federation:_ The URL of the Association of a party (the "Home" of a party) can be used to discover the service endpoints of their Association. These services can be used to verify onboarding and membership of that previously unknown party. The DNS namespace is used as a shared register, suitable for perimeterless global interactions.
 
 
 
