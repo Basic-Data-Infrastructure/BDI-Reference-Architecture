@@ -36,13 +36,7 @@ The purpose of using DNS in the BDI discovery building block is to provide a sta
 4. _DNS Records_: Different types of DNS records serve various purposes. For service discovery in BDI, TXT and SRV records are particularly important. TXT records can store arbitrary text and are used to describe the services offered, while SRV records specify the hostname, port, and protocol for accessing a service.&#x20;
 5. _Federation:_ The URL of the Association of a party (the "Home" of a party) can be used to discover the service endpoints of their Association. These services can be used to verify onboarding and membership of that previously unknown party. The DNS namespace is used as a shared register, suitable for perimeterless global interactions.
 
-
-
-<figure><img src="../../.gitbook/assets/Federation.png" alt=""><figcaption></figcaption></figure>
-
-
-
-
+<figure><img src="../../.gitbook/assets/20240911 Federation Discovery.png" alt=""><figcaption></figcaption></figure>
 
 #### Implementation Considerations&#x20;
 

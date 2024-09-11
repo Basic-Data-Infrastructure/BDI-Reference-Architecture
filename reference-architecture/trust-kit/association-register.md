@@ -83,9 +83,7 @@ In fact most building blocks will have some form of link with this building bloc
 
 In its most simple form a data service provider has its own private Association Register to recognize data consumers. The limitations of such an implementation are obvious, yet it may be a stage to reach the next level.
 
-
-
-<figure><img src="../../.gitbook/assets/Private  or common AR.png" alt=""><figcaption><p>Association Register Private, or common to Association</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/20240911 Private  or common AR.png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -93,9 +91,7 @@ A shared Association Register adds the benefit of cost reduction, and trust/repu
 
 An Autorization Register may be shared as well.
 
-
-
-<figure><img src="../../.gitbook/assets/Shared AR.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/20240911 Shared AR.png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -103,9 +99,7 @@ A federated Association Register allows in principle an unlimited universe of pa
 
 The principles of by discovery through a standard \_bdi subdomain to facilitate federation are depicted below.&#x20;
 
-<figure><img src="../../.gitbook/assets/Federation.png" alt=""><figcaption></figcaption></figure>
-
-
+<figure><img src="../../.gitbook/assets/20240911 Federation Discovery.png" alt=""><figcaption></figcaption></figure>
 
 **Extra function in existing trade body (Governance)**
 
