@@ -14,7 +14,7 @@
     * [Discovery](reference-architecture/trust-kit/discovery.md)
     * [Zero Trust Check](reference-architecture/trust-kit/zero-trust-check.md)
   * [Logistics event KIT](reference-architecture/logistics-event-kit/README.md)
-    * [Event Pub/Sub Service](reference-architecture/logistics-event-kit/event-pub-sub-service.md)
+    * [Notification pub/sub service](reference-architecture/logistics-event-kit/event-pub-sub-service.md)
     * [Event Choreography](reference-architecture/logistics-event-kit/event-choreography.md)
   * [Semantics KIT](reference-architecture/semantics-kit/README.md)
     * [Overview](reference-architecture/semantics-kit/overview.md)
