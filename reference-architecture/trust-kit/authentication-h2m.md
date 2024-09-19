@@ -22,11 +22,15 @@ Requesting access in H2M interactions can have multiple meanings:
 
 In the context of the BDI, the human is a representative of a legal entity  (organization): the legal entity assumes accountability and liability for the actions of the representative, limited to the mandate of the representative. A human can have multiple roles for multiple legal entities simultaneously.
 
+Authentication is especially important in Boundary Manegement.
+
 The complexity of H2M authentication is increased by privacy regulations: authenticating a human reveals his/hers identity.
 
 ### Purpose of the building block&#x20;
 
-Ensure that BDI users (H2M) are recognized,  identified  as a person and in a specific role on behalf of a legal entity: to prevent misuse, fraud, theft of data, services and physical goods. Ensure that privacy leaks as a result of authentication are limited.
+Ensure that BDI users (H2M) are recognized,  identified  as a person and in a specific role on behalf of a legal entity: to prevent misuse, fraud, theft of data, services and physical goods. Enable smooth,  efficient and secure Boundary Management.
+
+Ensure that privacy leaks as a result of authentication are limited.
 
 ### Concepts&#x20;
 
@@ -43,6 +47,8 @@ This building block interlinks with:
 ·         Discovery
 
 ·         Federation
+
+
 
 ### Core design decisions&#x20;
 
