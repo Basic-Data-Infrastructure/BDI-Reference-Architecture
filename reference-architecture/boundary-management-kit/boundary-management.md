@@ -8,12 +8,23 @@ Three different kinds of assets and their associated boundaries are distinguishe
 
 * Digital assets, such as IT systems and data
 * Physical assets, such as distribution centers and production facilities
-* Legal assets, such as responsibilities and ownership of cargo
+* Legal (ownership, liability and accountability) assets, such as responsibilities for and ownership of cargo
 
 The nature and implementation of the protecting boundaries is different for each kind of assets and each one requires specific measures to allow third parties to cross them in order to cooperate in a logistic process.
 
 There are two reasons to allow others to cross a boundary
 
 * To allow them to use an asset
-* To transfer the asset to another party
+* To transfer an asset between parties
+
+Boundary Management is about managing a boundary.
+
+Boundary Management relates to:
+
+* Identity
+* Authentication
+* Authorisation
+* Federation
+
+
 
