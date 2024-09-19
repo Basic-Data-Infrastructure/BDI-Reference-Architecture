@@ -8,7 +8,7 @@ Three different kinds of assets and their associated boundaries are distinguishe
 
 * Digital assets, such as IT systems and data
 * Physical assets, such as distribution centers and production facilities
-* Legal assets, such as responsibilities and ownership
+* Legal assets, such as responsibilities and ownership of cargo
 
 The nature and implementation of the protecting boundaries is different for each kind of assets and each one requires specific measures to allow third parties to cross them in order to cooperate in a logistic process.
 
