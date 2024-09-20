@@ -2,7 +2,7 @@
 
 
 
-Usually, many parties are involved in a logistic process. Each of these parties maintains a set of valuable assets that he needs to protect. In abstract terms, this protection is realized by drawing a boundary around the assets. Other parties can not cross the boundary and hence the value is protected. However, it is often required that parties do cross the boundary to facilitate cooperation.
+Usually, many parties are involved in a logistic process. Each of these parties maintains a set of valuable assets that they needs to protect. In abstract terms, this protection is realized by creating an perimeter, a boundary around the assets that is controlled by the party. Other parties can not cross the boundary without permission of the owner, hence the value is protected. However it is often required that parties do cross the boundary to facilitate cooperation.
 
 Three different kinds of assets and their associated boundaries are distinguished:
 
@@ -12,17 +12,17 @@ Three different kinds of assets and their associated boundaries are distinguishe
 
 The nature and implementation of the protecting boundaries is different for each kind of assets and each one requires specific measures to allow third parties to cross them in order to cooperate in a logistic process.
 
-There are two reasons to allow others to cross a boundary
+There are two reasons to allow others (representatives as in humand and IT-processes) to cross a boundary:
 
 * To allow them to use an asset
 * To transfer an asset between parties
 
-Boundary Management is about managing a boundary.
+Boundary Management is about managing boundaries in practice.
 
 Boundary Management relates to:
 
-* Identity
-* Authentication
+* Identity (M2M and H2M)
+* Authentication (M2M and H2M)
 * Authorisation
 * Federation
 
