@@ -31,7 +31,7 @@
     * [Provenance & Traceability](reference-architecture/verifiable-credentials-kit/provenance-and-traceability.md)
   * [Boundary Management KIT](reference-architecture/boundary-management-kit/README.md)
     * [Boundary Management](reference-architecture/boundary-management-kit/boundary-management.md)
-    * [Digital Boundaries](reference-architecture/boundary-management-kit/digital-boundaries.md)
+    * [Digital Asset Boundaries](reference-architecture/boundary-management-kit/digital-asset-boundaries.md)
     * [Physical Boundaries](reference-architecture/boundary-management-kit/physical-boundaries.md)
     * [Legal Boundaries](reference-architecture/boundary-management-kit/legal-boundaries.md)
   * [GLOSSARY](reference-architecture/glossary/README.md)
