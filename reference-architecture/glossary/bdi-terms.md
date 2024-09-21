@@ -118,7 +118,7 @@ Register within BDI Association, holding the Reputation scores of Business Partn
 
 <summary>Business Partners</summary>
 
-Members of other BDI Associations than the root BDI Association.
+Member of a different BDI Association than the root. Note: this a relative perspective, from the position of a Member of a given instance (BDI Association).
 
 </details>
 
@@ -377,7 +377,7 @@ Operations and Supply Chain Management (OSCM) represents the science and experti
 
 <summary>Outsider</summary>
 
-Member of a different BDI Association than the root. Note: this a relative perspective, from the position of a Member of a given instance (BDI Association). Members of your instance are “insiders”, anybody else is an Outsider and vice versa.
+Anyone who is not a Member of a BDI Association.
 
 </details>
 
@@ -411,7 +411,7 @@ A basis set of policies which are agreed to when onboarding into an association
 
 <summary>Preferred Business Partners</summary>
 
-Outsiders who have agreed to specific terms and conditions of the local BDI Association that maintains its own Business Partner Reputation Model
+Business Partners who have agreed to specific terms and conditions of the local BDI Association that maintains its own Business Partner Reputation Model
 
 </details>
 
@@ -483,7 +483,7 @@ Access granted to data and services based on the Logistic Role a member or its r
 
 <summary>Root Association</summary>
 
-
+The association to which a BDI participant belongs.
 
 </details>
 
