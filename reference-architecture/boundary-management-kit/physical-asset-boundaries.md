@@ -44,7 +44,7 @@ Because JWTs are in the end just ASCII strings, they can be used as the value of
 
 A draft JWT specification [https://datatracker.ietf.org/doc/draft-ietf-oauth-selective-disclosure-jwt/](https://datatracker.ietf.org/doc/draft-ietf-oauth-selective-disclosure-jwt/) defines how to implement selective disclosure of information. Selective disclosure would be a excellent feature in business environments.
 
-**JWT claims**
+**JWT types of claims**
 
 There are two types of JWT claims:
 
@@ -60,6 +60,31 @@ The use of nested JWTs supports the future use of VC’s and VP’s.
 
 The JWT structure makes it therefore possible to include claims of Professional Qualifications.
 
+**Using JWT's as carrier of Representation claims**
+
+The most simple approach is that the Pinricpal issues the JWT. The payload of the JWT is:
+
+* identity information of the human (ID #, name, digital identity etc.)
+* idenity information of the Principal
+* order information (order reference, type of activity, location, data)
+* additional information (time limits, specific instructions, link to issuer)
+
+The issuer of the JWT (Principal) can add a link to the payload. The link allows for a real-time confirmation that the claims in the JWT are still valid.
+
+When the Principal commissions a subcontractor, the identity of the human is replaced by the identity of the subcontractor. The subcontractor creates a new JWT, with the payload:
+
+* the JWT as sent by the Principal
+* identity information of the human (ID #, name, digital identity etc.)
+* idenity information of the Subcontratcor)
+* order information (subcontractor order reference, type of activity, location, data)
+* additional information (time limits, specific instructions, link to issuer)
+
 **Application in practice**
 
-An embedded JWT claim can be created recursively by each layer of the (subcontracting) chain, starting with a Principal. The human requesting access can carry the JWT  (for instance in a Wallet), or a link to an online API that can transfer the JWT. The security guards can use a service to evaluate the JWT and its claims.
+An embedded JWT claim can be created recursively by each layer of the (subcontracting) chain, starting with a Principal. This show the Representation chain.
+
+The human requesting access can carry the JWT  (for instance in a Wallet), or carry a link to an online API that can transfer the JWT to an evaluation service/application. The security guards use the service or application to evaluate the JWT, verify the signing of its claims and show the content to the guard. The guard can authenticate the human and verify the representation chain.
+
+**Further reading**
+
+[https://bdinetwork.org/wp-content/uploads/2024/05/2024-BDI-Embedded-JWT-as-Representation-Evidence.pdf](https://bdinetwork.org/wp-content/uploads/2024/05/2024-BDI-Embedded-JWT-as-Representation-Evidence.pdf)
