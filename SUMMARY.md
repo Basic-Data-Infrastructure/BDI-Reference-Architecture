@@ -3,7 +3,7 @@
 * [Reference Architecture](README.md)
   * [INTRODUCTION](reference-architecture/introduction.md)
   * [Trust KIT](reference-architecture/trust-kit/README.md)
-    * [Digital Identity](reference-architecture/trust-kit/digital-identity.md)
+    * [Digital Identity M2M](reference-architecture/trust-kit/digital-identity.md)
     * [Authentication M2M](reference-architecture/trust-kit/authentication.md)
     * [Authentication H2M](reference-architecture/trust-kit/authentication-h2m.md)
     * [Authorisation (Oauth 2.0), AR-DM + XACML policies](reference-architecture/trust-kit/authorisation-oauth-2.0-ar-dm-+-xacml-policies.md)
