@@ -13,6 +13,7 @@
     * [Association Register](reference-architecture/trust-kit/association-register.md)
     * [Discovery](reference-architecture/trust-kit/discovery.md)
     * [Zero Trust Check](reference-architecture/trust-kit/zero-trust-check.md)
+    * [Digital Identity H2M](reference-architecture/trust-kit/digital-identity-h2m.md)
   * [Logistics event KIT](reference-architecture/logistics-event-kit/README.md)
     * [Notification pub/sub service](reference-architecture/logistics-event-kit/event-pub-sub-service.md)
     * [Event Choreography](reference-architecture/logistics-event-kit/event-choreography.md)
