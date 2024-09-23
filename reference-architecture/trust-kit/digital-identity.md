@@ -73,7 +73,11 @@ A digital identity has to be linked with the legal identifier of the legal entit
 
 the IT-process that uses the digital identity in interactions with other IT processes.
 
-The EORI-identifier is the standard defined by the EC for European entities.
+The EORI-identifier is the standard defined by the EC Customs for European entities. EORI stands for “Economic Operators Registration and Identification”. Not all European entities are required to register an EORI. Therefore, only a subset have registered an EORI. See [https://taxation-customs.ec.europa.eu/customs-4/customs-procedures-import-and-export-0/customs-procedures/economic-operators-registration-and-identification-number-eori\_en](https://taxation-customs.ec.europa.eu/customs-4/customs-procedures-import-and-export-0/customs-procedures/economic-operators-registration-and-identification-number-eori\_en)
+
+Europe also introduced an EUID which is based on the local European Business Registries. This EUID will be used for the eIDAS 2 European Wallet. [https://e-justice.europa.eu/489/EN/business\_registers\_\_search\_for\_a\_company\_in\_the\_eu](https://e-justice.europa.eu/489/EN/business\_registers\_\_search\_for\_a\_company\_in\_the\_eu)
+
+VAT-numbers can also be used to identify organizations. European VAT-numbers can validated on a central site. [https://ec.europa.eu/taxation\_customs/vies/#/vat-validation-result](https://ec.europa.eu/taxation\_customs/vies/#/vat-validation-result)
 
 Other identifier standards that are in use worldwide are:
 
