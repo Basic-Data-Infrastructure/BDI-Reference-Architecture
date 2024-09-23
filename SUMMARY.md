@@ -35,5 +35,6 @@
     * [Digital Asset Boundaries](reference-architecture/boundary-management-kit/digital-boundaries.md)
     * [Physical Asset Boundaries](reference-architecture/boundary-management-kit/physical-asset-boundaries.md)
     * [Legal Asset Boundaries](reference-architecture/boundary-management-kit/legal-asset-boundaries.md)
+  * [Security](reference-architecture/security.md)
   * [GLOSSARY](reference-architecture/glossary/README.md)
     * [BDI Terms](reference-architecture/glossary/bdi-terms.md)
