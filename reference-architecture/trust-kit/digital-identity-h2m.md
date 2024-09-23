@@ -42,31 +42,45 @@ The core concept is that identity is dynamically related to (potentially multipl
 
 **Identity**
 
-Identity is a legal concept defined by a nation state and assigned to a human by that nation state. Digital identities are related to that core identity by Identity Providers.
+Identity is a legal concept defined by a nation state and assigned to a human by that nation state. Nation States issue Passports and ID-cards to humans which they can use to "prove" their identity. Driving licenses are also used in some states (e.g. the Netherlands) to "prove" their identity.
 
-A very common but relatively weak method is an email-address (optionally combined with a password and/or 2FA): the organization issuing the email-address acts as Identity Provider. The mobile phone number is another very common method: the Mobile Operator issuing SIM-cards acts as Identity Provider.
+Digital identities are related to that core identity by Identity Providers which are used in B2B processes.  &#x20;
 
-Identity Providers can choose to increase the level of proof that the nation-state identity and the digital identity they assign are uniquely connected: for instance live verification of identity papers and signatures (such as eIDAS E-herkenning) , or adding biometric identification parameters (such as Secure Logistics) on a smart card.
+Identity Providers can choose to increase the assurance level of an identity; for instance by live verification of an identity paper. This can be done face-to-face or remote. Typically, this is executed once at the initiation of a new identity.
 
-The push for electronic Wallets provides a new means to store and show a digital identity that can be authenticated.
+**Authentication**
 
-Authentication of  the digital identity delivers proof of the nation-state identity. The chosen Identity Provider and level or proof should match the business requirements.
+Identity Providers can also provide additional assurance at the (continuous) use of the identity; e.g. when a managed boundary must be crossed. The human user can be authenticated by a username, password and an additional 2FA / MFA. More advanced devices can also use biometric identification parameters.
+
+Biometric identification can also be used for accessing a physical location; e.g. using the Secure Logistics smart card to access a Terminal.
+
+**Identifiers**
+
+Identity Providers typically use an internal numbering scheme for identifying users which are enriched with more public identifiers like email addresses and telephone numbers. State issued identifiers (like the Dutch BSN) are often not allowed to be used outside the Government.&#x20;
+
+In B2B processes, business email addresses are preferred. These should be using an organizational domain name (e.g. @myorganization.com) and a personal prefix (e.g. piet.jansen@ or s.jones@). The use of shared email accounts must be avoided. Also the use of general domains (e.g. @gmail.com) should be avoided. Typically, the user must demonstrate during the setup of the account that she has access to the business email address. This provides additional trust that the user has a business relation with the organization which owns the domain name.
+
+(Mobile) telephone numbers can also be used to identify / verify the user. During the setup the user demonstrates that she has access to the number. At a later moment, the user can demonstrate again that she still has access to this number.
+
+The push for electronic Wallets provides a new means to store and show a digital identity that can be authenticated.&#x20;
 
 **Representation**
 
-Once the identity has been authenticated, the next question is what legal entity is represented by the human in  this specific instance/moment, in the context of a specific order/contract.
+B2B Identity Providers identifies a human user in the context of an organization. Additionally, the role / mandate of the user can be defined at the Identity Provider so this can be used in all connected services. An alternative is that the service itself has local authorizations which must be managed by an administrator of the organization.
 
-A human may have multiple roles for multiple legal entities, at the same time. A human may be sent by a subcontractor of a main contractor: the representation chain has to be verified.
+Users could represent more than one organization. Identity Providers differ how the deal with this situation. They could assign different identities for each of the represented organizations (e.g. applying different business email addresses or issuing separate secure cards per organization). Al alternative is that the human user can select the organization she represents in a specific use case.
 
-Once the representation has been established, the mandate can be verified.
+**Professional Qualifications**
 
 In many cases the human needs to have adequate professional qualifications for the task at hand: professional drivers license, safety training, dangerous goods handling, etc.
 
-Verifiable credentials of Professional Qualifications and verifiable presentations of the specific qualification are a new method for digital verification.
+The B2B Identity Provider could also store and share professional qualifications of the user. In a wallet this is typically stored as a verifiable credential.
 
 **Risks**
 
 An insufficient framework for digital identity, might lead to a lower level of trust among parties and will harm the overall trust in BDI.
+
+Non compliance to applicable privacy laws (e.g. GDPR, AVG) can hamper the implementation of services, the adoption of services, cause reputation risks or fines.
 
 **Interlinkages with other building blocks**
 
