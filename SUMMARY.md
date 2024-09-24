@@ -29,7 +29,6 @@
   * [Data set KIT](reference-architecture/data-set-kit/README.md)
     * [Data Licenses](reference-architecture/data-set-kit/data-licenses.md)
   * [Boundary Management](reference-architecture/boundary-management-kit/README.md)
-    * [Boundary Management](reference-architecture/boundary-management-kit/boundary-management.md)
     * [Digital Asset Boundaries](reference-architecture/boundary-management-kit/digital-boundaries.md)
     * [Physical Asset Boundaries](reference-architecture/boundary-management-kit/physical-asset-boundaries.md)
     * [Legal Asset Boundaries](reference-architecture/boundary-management-kit/legal-asset-boundaries.md)
