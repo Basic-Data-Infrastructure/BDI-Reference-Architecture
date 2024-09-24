@@ -1,2 +1,0 @@
-# Boundary Management KIT
-
