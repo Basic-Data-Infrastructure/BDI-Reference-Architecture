@@ -25,11 +25,15 @@ BDI defines these Common Roles :
 
 ## Implementation Considerations
 
-
+Th basic mechanisms are built upon the assumptions of the existence of these roles.
 
 ## Interlinkages with other building blocks
 
-
+* Digital Identity
+* Authentication
+* Authorisation
+* Association Register
+* Zero Trust Check
 
 ## Elements and their key functions
 
@@ -37,9 +41,17 @@ BDI defines these Common Roles :
 
 ## Core design decisions
 
+The iSHARE Trust Framework provides a comprehensive description of what iSHARE calls Certified Roles. The Common Roles of the BDI are derived from these descriptions, such as:
 
+* [The role of an Authorisation Registry](https://framework.ishare.eu/is/framework-and-roles)
+* [The role of Identity Provider](https://framework.ishare.eu/is/functional-requirements-per-role#Functionalrequirementsperrole-IdentityProvider)
 
 ## Future topics
 
 ## Further reading
 
+[https://framework.ishare.eu/is/framework-and-roles](https://framework.ishare.eu/is/framework-and-roles)
+
+[https://dssc.eu/space/BVE/357075333/Data+Sovereignty+and+Trust](https://dssc.eu/space/BVE/357075333/Data+Sovereignty+and+Trust)
+
+[https://framework.ishare.eu/is/functional-requirements-per-role](https://framework.ishare.eu/is/functional-requirements-per-role)
