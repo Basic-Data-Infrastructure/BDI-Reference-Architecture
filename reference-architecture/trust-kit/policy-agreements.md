@@ -15,7 +15,7 @@ reduces friction costs, management costs, delays and (legal) uncertainty.&#x20;
 
 ### Concepts
 
-#### Common roles&#x20;
+#### Common Roles&#x20;
 
 Common roles define operational responsibilities within supply chains, helping to create standardized policies, particularly Data Access Policies. &#x20;
 

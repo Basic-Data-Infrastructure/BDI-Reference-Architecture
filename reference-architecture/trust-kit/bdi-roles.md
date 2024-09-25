@@ -1,10 +1,10 @@
-# Common Roles
+# BDI Roles
 
 Some roles are generic to the BDI building blocks.
 
-**Generic Common Roles**
+**Generic BDI Roles**
 
-BDI defines these Common Roles :
+BDI defines these BDI Roles :
 
 * Identity Provider and/or Identity Broker
 * Association Administrator

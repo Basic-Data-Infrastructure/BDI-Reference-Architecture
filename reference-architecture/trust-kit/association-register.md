@@ -38,7 +38,7 @@ An Association Register is considered a technological solution to facilitate the
 
 The following concepts (from the BDI Glossary) are particularly relevant in this building block:
 
-_Association -_ Legal entity that serves as trust anchor for both federated trust/authentication and local onboarding. A BDI Association is the “root Association” for its Members.
+_Association -_ Legal entity that serves as trust anchor for both federated trust/authentication and local onboarding. A BDI Association is the “home Association” for its Members.
 
 _Association Administrator -_ Functionary responsible for operating the services of a BDI Association.
 
@@ -48,11 +48,11 @@ _Member -_ Legal entity as member of the BDI Association of its choice
 
 _Federation of Associations -_ A series of collaborating BDI associations
 
-_Outsider -_ Member of a different BDI Association than the root (root as in "home" of the member) .  Note: this a relative perspective, from the position of a Member of a given instance (BDI Association). Members of the same instance are “insiders”, anybody else is an Outsider and vice versa.
+_Outsider -_ Member of a different BDI Association than the "home"  .  Note: this a relative perspective, from the position of a Member of a given instance (BDI Association). Members of the same instance are “insiders”, anybody else is an Outsider and vice versa.
 
 _Preferred Business Partners -_ Outsiders who have agreed to specific terms and conditions of a local BDI Association that maintains its own Business Partner Reputation Model
 
-_Root Association -_ The association a member is part of, also known as "Home Association".
+_Home Association -_ The association a member is part of.
 
 _Visitor -_ Outsider with a better reputation score than a defined minimum.
 
