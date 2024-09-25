@@ -29,7 +29,7 @@ The following concepts (from the BDI Glossary), all regarding legal entities, ar
 
 &#x20;
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 _How a Business Partner from another BDI Association can become a preferred Business partner of a BDI Association._
 

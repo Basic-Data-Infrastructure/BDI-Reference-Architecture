@@ -29,7 +29,7 @@ This building block has links to:
 * [Broken link](broken-reference "mention")
 * [association-register.md](association-register.md "mention")
 * [data-licenses.md](../data-set-kit/data-licenses.md "mention")
-* [authentication.md](authentication.md "mention")
+* [authentication.md](authentication/authentication.md "mention")
 
 Information from these building blocks is used in this building block to make a decision on Authorization.
 
@@ -71,7 +71,7 @@ The four inputs for decision making are supported by the BDI trust input element
 
 #### Information gathering
 
-This input element uses input from the building block [authentication.md](authentication.md "mention"). This building block provides insight into what association and (optionally) what parent associations a participant is a member of.
+This input element uses input from the building block [authentication.md](authentication/authentication.md "mention"). This building block provides insight into what association and (optionally) what parent associations a participant is a member of.
 
 #### Information processing
 
@@ -84,7 +84,7 @@ To facilitate easier processing of the acquired information, a party can:
 
 #### Information gathering
 
-This input element uses input from the building block [authentication.md](authentication.md "mention"). This building block provides insight into the level of assurance of the party.
+This input element uses input from the building block [authentication.md](authentication/authentication.md "mention"). This building block provides insight into the level of assurance of the party.
 
 #### Information processing
 
