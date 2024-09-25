@@ -14,20 +14,18 @@ Members that want to interact with “in-group” members are classified as eith
 
 The Business Partner Reputation Model proposes a system where “in-group” members score members outside the association. Thus a reputation system is created that can help other members of the same association the better determine the trust of the relevant party.
 
-“visitors” can finally become members if they are allowed to by the association administer. &#x20;
+“Visitors” can finally become members if they are allowed to by the association administer.
 
 The association is the core neutral organization that supports the members of the “in-group” in dealing efficiently with trust-assessment in a perimeterless network. Trust Sovereignty means that the association does not make trust decisions for members, unless specifically tasked to do so. In principle, the Data Owner makes this decision (delegated or not to the data service provider).
 
-### Implementation Considerations&#x20;
-
-
+### Implementation Considerations
 
 ### Interlinkages with other building blocks
 
 * Authentication: Authentication out of group members
 * Digital Identity: An additional layer to verify trust worthiness of digital identity
 * Zero Trust Check: An additional layer to verify trust worthiness of digital identity
-* Certified Roles:
+* BDI Roles:
 * Federation of Associations: especially implemented when dealing cross associations
 * Verifiable Credentials: this is future work;
 
@@ -54,5 +52,3 @@ This building block is still highly conceptual and gives a first consideration o
 ### Further reading
 
 https://bdinetwork.org/wp-content/uploads/2024/01/2024-BDI-Reputation-System.pdf
-
-&#x20;

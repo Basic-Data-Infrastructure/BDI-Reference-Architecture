@@ -31,7 +31,7 @@ The following concepts (from the BDI Glossary), all regarding legal entities, ar
 
 <figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
-_How a Business Partner from another BDI Association can become a preferred Business part of a BDI Association._
+_How a Business Partner from another BDI Association can become a preferred Business partner of a BDI Association._
 
 **Risks**
 

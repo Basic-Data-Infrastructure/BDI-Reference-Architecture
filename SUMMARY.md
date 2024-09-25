@@ -25,7 +25,7 @@
     * [Business Partner Reputation Model](reference-architecture/federation-kit/business-partner-reputation-model.md)
     * [Representation Register](reference-architecture/federation-kit/representation-register.md)
     * [Professional Qualification Register](reference-architecture/federation-kit/professional-qualification-register.md)
-    * [Association Defined Roles](reference-architecture/federation-kit/certified-roles.md)
+    * [Common Roles](reference-architecture/federation-kit/certified-roles.md)
   * [Data set KIT](reference-architecture/data-set-kit/README.md)
     * [Data Licenses](reference-architecture/data-set-kit/data-licenses.md)
   * [Boundary Management](reference-architecture/boundary-management-kit/README.md)

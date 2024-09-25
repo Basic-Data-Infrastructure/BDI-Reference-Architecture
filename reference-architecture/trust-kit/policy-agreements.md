@@ -6,7 +6,7 @@
 
 Policies in the BDI are common agreements about authorization of access to data elements. Standardization of:&#x20;
 
-* Roles &#x20;
+* Common roles &#x20;
 * Access policies for a given role to data elements&#x20;
 * “need to know” limitations&#x20;
 * &#x20;Rights and obligations on how the data may be used&#x20;
@@ -15,9 +15,9 @@ reduces friction costs, management costs, delays and (legal) uncertainty.&#x20;
 
 ### Concepts
 
-#### Roles&#x20;
+#### Common roles&#x20;
 
-Roles define operational responsibilities within supply chains, helping to create standardized policies, particularly Data Access Policies. &#x20;
+Common roles define operational responsibilities within supply chains, helping to create standardized policies, particularly Data Access Policies. &#x20;
 
 Each specific sector (type of cargo, modality) has common roles that are well understood and recognized. The same applies to data elements that a role needs to have access to, in order to be able to perform a task.&#x20;
 
