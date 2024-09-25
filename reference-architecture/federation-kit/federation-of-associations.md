@@ -1,12 +1,20 @@
 ---
-description: 'Steven: dit building block is nog gebaseerd op " BDI is iSHARE +" . Klopt niet'
+description: >-
+  This building block was prepared for
+  https://topsectorlogistiek.atlassian.net/browse/BDI-99.
 ---
 
 # Federation of Associations
 
 ## Summary
 
-This building block encompasses key points for effective interoperability and federation amongst associations. The BDI framework sets internal rules and policies applicable to all association members. Beyond this the associations independently define a standard for trust and reliability amongst its members through a well defined onboarding process and assessment. It then issues credentials for the same. These credentials can also be used by other associations or communities for trust assurance. This is Federation of Associations.
+
+
+\[ **@ Steven: dit onderdeel is niet meer compatibel met de ander beschrijvingen over federatie van associations. Vraag rework ]**
+
+
+
+<mark style="color:yellow;">This building block encompasses key points for effective interoperability and federation amongst associations. The BDI framework sets internal rules and policies applicable to all association members. Beyond this the associations independently define a standard for trust and reliability amongst its members through a well defined onboarding process and assessment. It then issues credentials for the same. These credentials can also be used by other associations or communities for trust assurance. This is Federation of Associations.</mark>
 
 ## Purpose of the building block
 
@@ -18,15 +26,15 @@ This block is vital in trust implementation within the Association and widening 
 | -------------------- | ------------------------------------------------------------------------------------------------------------ |
 | Association          | Legal entity that serves as operational anchor for both federated trust/authentication and local onboarding. |
 | Association Admin    | Functionary responsible for operating the services of a BDI Association                                      |
-| Association Register | Register of onboarded Members                                                                                |
+| Association Register | <mark style="color:yellow;">Register of onboarded Members</mark>                                             |
 
 ## Implementation Considerations
 
-There are two layers of Federation :
+T<mark style="color:yellow;">here are two layers of Federation :</mark>
 
-iSHARE base layer - all participants in the iSHARE network are onboarded with the same base criteria and hence fulfill base trust level.
+<mark style="color:yellow;">iSHARE base layer - all participants in the iSHARE network are onboarded with the same base criteria and hence fulfill base trust level.</mark>
 
-BDI Framework level - all participants in the BDI associations are onboarded with base iSHARE onboarding/ admission process and other criteria defined by the BDI framework.
+<mark style="color:yellow;">BDI Framework level - all participants in the BDI associations are onboarded with base iSHARE onboarding/ admission process and other criteria defined by the BDI framework.</mark>
 
 Beyond these two layers, associations are free to define additional criteria for joining for their members.
 
@@ -69,7 +77,7 @@ Association Admin
 * Federation is key to expanding the scope and functional significance of local associations.
 * Associations don’t function in silos and zero trust approach requires federation of key trust elements or credentials.
 * As most organizations will be active in multiple sectors, the question of supporting interoperability between different sectors is a key challenge. Federation is finding common ground for trust among associations.
-* Associations need pre-defined rules or agreements to verify the claims an entity makes about itself, by links to the registers of Conformity Assessment Bodies that are responsible for certifying a claim. Claims may be anything, such as: Identity; ISO certification of the organization; Credentials of a certain training level of a person; etc.
+* <mark style="color:yellow;">Associations need pre-defined rules or agreements to verify the claims an entity makes about itself, by links to the registers of Conformity Assessment Bodies that are responsible for certifying a claim. Claims may be anything, such as: Identity; ISO certification of the organization; Credentials of a certain training level of a person; etc.</mark>
 * Federated data space frameworks provide a federated trust framework: this is the basis to check claims (identities and other claims) automatically, and provide access to data at the source when authorized.
 
 ## Future topics
