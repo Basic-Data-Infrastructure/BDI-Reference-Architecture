@@ -26,7 +26,7 @@ The following concepts (from the BDI Glossary) are particularly relevant in this
 This building block has links to:
 
 * [representation-register.md](../federation-kit/representation-register.md "mention")
-* [zero-trust-check.md](zero-trust-check.md "mention")
+* [Broken link](broken-reference "mention")
 * [association-register.md](association-register.md "mention")
 * [data-licenses.md](../data-set-kit/data-licenses.md "mention")
 * [authentication.md](authentication.md "mention")

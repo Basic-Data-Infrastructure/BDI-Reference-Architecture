@@ -14,7 +14,6 @@
     * [Onboarding Terms and Conditions](reference-architecture/trust-kit/onboarding-t-and-cs-association-articles.md)
     * [Association Register](reference-architecture/trust-kit/association-register.md)
     * [Discovery](reference-architecture/trust-kit/discovery.md)
-    * [Zero Trust Check](reference-architecture/trust-kit/zero-trust-check.md)
   * [Logistics event KIT](reference-architecture/logistics-event-kit/README.md)
     * [Notification pub/sub service](reference-architecture/logistics-event-kit/event-pub-sub-service.md)
     * [Event Choreography](reference-architecture/logistics-event-kit/event-choreography.md)
