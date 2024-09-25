@@ -73,17 +73,17 @@ A digital identity has to be linked with the legal identifier of the legal entit
 
 the IT-process that uses the digital identity in interactions with other IT processes.
 
-The EORI-identifier is the standard defined by the EC Customs for European entities. EORI stands for “Economic Operators Registration and Identification”. Not all European entities are required to register an EORI. Therefore, only a subset have registered an EORI. See [https://taxation-customs.ec.europa.eu/customs-4/customs-procedures-import-and-export-0/customs-procedures/economic-operators-registration-and-identification-number-eori\_en](https://taxation-customs.ec.europa.eu/customs-4/customs-procedures-import-and-export-0/customs-procedures/economic-operators-registration-and-identification-number-eori\_en)
+The EORI-identifier is the standard defined by the EC Customs for European entities. EORI stands for “Economic Operators Registration and Identification”. Not all European entities are required to register an EORI. Therefore, only a subset have registered an EORI.&#x20;
 
-Europe also introduced an EUID which is based on the local European Business Registries. This EUID will be used for the eIDAS 2 European Wallet. [https://e-justice.europa.eu/489/EN/business\_registers\_\_search\_for\_a\_company\_in\_the\_eu](https://e-justice.europa.eu/489/EN/business\_registers\_\_search\_for\_a\_company\_in\_the\_eu)
+Europe also introduced an EUID which is based on the local European Business Registries. This EUID will be used for the eIDAS 2 European Wallet.&#x20;
 
-VAT-numbers can also be used to identify organizations. European VAT-numbers can validated on a central site. [https://ec.europa.eu/taxation\_customs/vies/#/vat-validation-result](https://ec.europa.eu/taxation\_customs/vies/#/vat-validation-result)
+VAT-numbers can also be used to identify organizations. European VAT-numbers can validated on a central site.&#x20;
 
 Other identifier standards that are in use worldwide are:
 
-\-          LEI ( [https://www.gleif.org/en/about-lei/introducing-the-legal-entity-identifier-lei](https://www.gleif.org/en/about-lei/introducing-the-legal-entity-identifier-lei))
+\-          LEI
 
-\-          DUNS (Dunn and Bradstreet Unique Number System [D-U-N-S Number Navigation Home – Dun & Bradstreet (dnb.com)](https://www.dnb.com/duns.html)
+\-          DUNS (Dunn and Bradstreet Unique Number System&#x20;
 
 In practice it may be necessary for a party or an association to create a cross-reference register that relates an internal (unique) identifier with multiple external identifiers of a legal entity. One legal entity may have an EORI, LEI and DUNS identifier, or more.
 
@@ -93,20 +93,18 @@ In Europe the eIDAS regulation is a solid foundation for the identity ecosystem.
 
 Selfsigned certificates for digital identities are a low-barrier entry level solution, with serious limitations on trust, federation and scaling.
 
-* ​F**uture topics**
-
 **Further reading**
 
-&#x20;
-
-* ​[DSSC Blueprint building block “Identity and Attestation Management](https://dssc.eu/space/BVE/357075352/Identity+and+Attestation+Management)​
+* ​[DSSC Blueprint building block “Identity and Attestation Management](https://dssc.eu/space/BVE/357075352/Identity+and+Attestation+Management)
+* [https://taxation-customs.ec.europa.eu/customs-4/customs-procedures-import-and-export-0/customs-procedures/economic-operators-registration-and-identification-number-eori\_en](https://taxation-customs.ec.europa.eu/customs-4/customs-procedures-import-and-export-0/customs-procedures/economic-operators-registration-and-identification-number-eori\_en)
+* ​[https://e-justice.europa.eu/489/EN/business\_registers\_\_search\_for\_a\_company\_in\_the\_eu](https://e-justice.europa.eu/489/EN/business\_registers\_\_search\_for\_a\_company\_in\_the\_eu)
+* [https://ec.europa.eu/taxation\_customs/vies/#/vat-validation-result](https://ec.europa.eu/taxation\_customs/vies/#/vat-validation-result)
+* [D-U-N-S Number Navigation Home – Dun & Bradstreet (dnb.com)](https://www.dnb.com/duns.html)
+* [https://www.gleif.org/en/about-lei/introducing-the-legal-entity-identifier-lei](https://www.gleif.org/en/about-lei/introducing-the-legal-entity-identifier-lei)
 * ​[https://www.w3.org/TR/vc-data-model-2.0/](https://www.w3.org/TR/vc-data-model-2.0/)​
 * ​[iSHARE Framework documentation](https://framework.ishare.eu/), specifically on the topic of identities
-*
-  * [Identification by EORI](https://framework.ishare.eu/is/identification-by-eori)​
-  * ​[The role of Identity Provider](https://framework.ishare.eu/is/functional-requirements-per-role#Functionalrequirementsperrole-IdentityProvider)​
-  * ​[The acknowledgment of eIDAS](https://framework.ishare.eu/is/regulation-on-electronic-identification-and-trust-)​
-
-·         ​​[The specifications for the Identity Provider role](https://dev.ishare.eu/identity-provider/authorize.html)​
-
+* [Identification by EORI](https://framework.ishare.eu/is/identification-by-eori)​
+* ​[The role of Identity Provider](https://framework.ishare.eu/is/functional-requirements-per-role#Functionalrequirementsperrole-IdentityProvider)​
+* ​[The acknowledgment of eIDAS](https://framework.ishare.eu/is/regulation-on-electronic-identification-and-trust-)
+* [The specifications for the Identity Provider role](https://dev.ishare.eu/identity-provider/authorize.html)​
 * ​[iSHARE Developer Portal documentation](https://dev.ishare.eu/)​
