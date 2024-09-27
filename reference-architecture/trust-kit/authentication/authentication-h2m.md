@@ -34,7 +34,7 @@ The building block ensures that the digital identity of the human involved in (d
 
 The Identity Provider chosen by the parties/Association provides authentication. A local cache of trusted identities may be operated by an Association as a register.
 
-Representation evidence may be stored in a register by an Association, or transmitted between parties in a nested Jason Web Token.
+Representation evidence may be stored in a register by an Association, or transmitted between parties in a nested Jason Web Token or a Verifiable Presentation of Credentials.
 
 ### Risks&#x20;
 
