@@ -28,6 +28,7 @@
   * [Federation KIT](reference-architecture/federation-kit/README.md)
     * [Federation of Associations](reference-architecture/federation-kit/federation-of-associations.md)
     * [Business Partner Reputation Model](reference-architecture/federation-kit/business-partner-reputation-model.md)
+    * [Interoperability](reference-architecture/federation-kit/interoperability.md)
   * [Data set KIT](reference-architecture/data-set-kit/README.md)
     * [Data Licenses](reference-architecture/data-set-kit/data-licenses.md)
   * [Verifiable Credentials KIT​](reference-architecture/verifiable-credentials-kit/README.md)
