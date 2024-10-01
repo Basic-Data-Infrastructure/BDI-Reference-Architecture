@@ -55,13 +55,13 @@ The related building blocks are:
 
 \-          Zero Trust Check
 
-The most important related Kits are
+The most important related Kits and concepts are
 
 \-          Trust Kit
 
 \-          Federation Kit
 
-\-          Boundary Management Kit
+\-          Boundary Management
 
 &#x20;**Core design decisions**
 

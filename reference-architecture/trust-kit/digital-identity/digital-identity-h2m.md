@@ -104,13 +104,13 @@ The related building blocks are:
 
 \-          Professional Qualification Register
 
-The most important related Kits are
+The most important related Kits and concepts are
 
 \-          Trust Kit
 
 \-          Federation Kit
 
-\-          Boundary Management Kit
+\-          Boundary Management
 
 &#x20;
 

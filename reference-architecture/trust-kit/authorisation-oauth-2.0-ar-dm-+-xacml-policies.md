@@ -25,7 +25,7 @@ The following concepts (from the BDI Glossary) are particularly relevant in this
 
 This building block has links to:
 
-* [representation-register.md](../federation-kit/representation-register.md "mention")
+* [representation-register.md](../representation-kit/representation-register.md "mention")
 * [Broken link](broken-reference "mention")
 * [association-register.md](association-register.md "mention")
 * [data-licenses.md](../data-set-kit/data-licenses.md "mention")
@@ -119,14 +119,14 @@ In terms of the technical specifications for Authorisations, the BDI Framework b
 * [Licenses](https://framework.ishare.eu/is/licenses) specify the legal boundaries for the usage of data by a Data Consumer
 * The [structure of delegation](https://framework.ishare.eu/is/structure-of-delegation-evidence) evidence is defined in the framework and the technical requirements for APIs providing delegation evidence on the [iSHARE Developer Portal](https://dev.ishare.eu/).
 
-All mentioned iSHARE requirements must be considered as BDI requirements.
+
 
 Functionally authorisations can:
 
 * Be provided by the Data Consumer when requesting to consume a service at a Data Service Provider.
 * Be requested by the Data Service Provider when a Data Consumer requests to consumer a service.
 
-iSHARE and therefore BDI do not define in what way an Authorisation Registry needs to store policies regarding delegations.
+BDI dooes not define in what way an Authorisation Registry needs to store policies regarding delegations.
 
 ### Guidance for trust decision making
 

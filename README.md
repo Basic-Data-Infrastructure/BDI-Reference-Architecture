@@ -10,4 +10,6 @@ Resilience, efficiency, dealing with scarce resources and transparency require m
 
 The Basic Data Infrastructure Framework (BDI) is an infrastructure framework for controlled data sharing, supporting automated advanced information logistics between entities acting in the physical economy.
 
+The BDI is a principles-based framework (as opposed to rule-based). Adoption is voluntary, there is no minimum or compliance treshold, the transition towards adoption of principles, components and Kits is a business decision.
+
 &#x20;
