@@ -4,7 +4,7 @@ Usually, many parties are involved in a logistic process. Each of these parties 
 
 Three different kinds of assets and their associated boundaries are distinguished:
 
-* Digital assets, such as IT systems and data
+* Digital assets, such as IT systems (applications, processes) and data
 * Physical assets, such as distribution centers and production facilities
 * Legal (ownership, liability and accountability) assets, such as responsibilities for and ownership of cargo
 
