@@ -52,12 +52,3 @@ This building block interlinks with:
 
 
 
-### Core design decisions&#x20;
-
-#### Certificate based authentication
-
-### Future topics
-
-&#x20;
-
-### Further reading
