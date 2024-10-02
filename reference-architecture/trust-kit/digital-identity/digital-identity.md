@@ -1,6 +1,6 @@
 # Digital Identity M2M
 
-**Summary**
+### Summary
 
 This building block supports trust among participants by defining how digital identities play a role in BDI in machine-to-machine (M2M) interactions.
 
@@ -8,13 +8,15 @@ Digital identifiers for natural persons are described in Digital Identity (H2M).
 
 In it's implementation, BDI aligns with iSHARE's implementation of digital identities, preferring PKI certificates issued by a reputable identity provider as digital identity of parties like Service Providers. In Europe the eIDAS regulation is a solid foundation for the identity ecosystem.
 
-**Purpose of the building block**
+### Purpose of the building block
 
+{% hint style="success" %}
 The purpose of this building block is to support the framework for trust among parties, by ensuring that parties can provide and receive a verified digital identity.  An authenticated digital identity is the prerequisite for determining trust and subsequent authorization.
 
 The building block ensures that interactions within BDI (onboarding, offboarding, data exchange, service consumption, etc.) will take place between identified and authenticated  parties.
+{% endhint %}
 
-**Concepts**
+### Concepts
 
 The following concepts (from the BDI Glossary), all regarding legal entities, are particularly relevant in this building block:
 
@@ -29,49 +31,37 @@ The following concepts (from the BDI Glossary), all regarding legal entities, ar
 
 &#x20;
 
-<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption><p>How a Business Partner from another BDI Association can become a preferred Business partner of a BDI Association.</p></figcaption></figure>
 
-_How a Business Partner from another BDI Association can become a preferred Business partner of a BDI Association._
-
-**Risks**
+### Risks
 
 An insufficient framework for digital identity, might lead to a lower level of trust among parties and will harm the overall trust in BDI.
 
-**Interlinkages with other building blocks**
+### Interlinkages with other building blocks
 
 This building block describes the BDI principles for digital identity for M2M interactions.
 
 The related building blocks are:
 
-\-          Digital Identity H2M
-
-\-          Authentication M2M
-
-\-          Authentication H2M
-
-\-          Authorization
-
-\-          Association register
-
-\-          Zero Trust Check
+* Digital Identity H2M
+* Authentication M2M
+* Authentication H2M
+* Authorization
+* Association registe
+* Zero Trust Check
 
 The most important related Kits and concepts are
 
-\-          Trust Kit
+* Trust Kit
+* Federation Kit
+* Boundary Management
 
-\-          Federation Kit
-
-\-          Boundary Management
-
-&#x20;**Core design decisions**
+### &#x20;Core design decisions
 
 A digital identity has to be linked with the legal identifier of the legal entity that :
 
-\-          controls
-
-\-          takes responsibility and accountability for
-
-the IT-process that uses the digital identity in interactions with other IT processes.
+* controls
+* takes responsibility and accountability for the IT-process that uses the digital identity in interactions with other IT processes.
 
 The EORI-identifier is the standard defined by the EC Customs for European entities. EORI stands for “Economic Operators Registration and Identification”. Not all European entities are required to register an EORI. Therefore, only a subset have registered an EORI.&#x20;
 
@@ -81,9 +71,8 @@ VAT-numbers can also be used to identify organizations. European VAT-numbers can
 
 Other identifier standards that are in use worldwide are:
 
-\-          LEI
-
-\-          DUNS (Dunn and Bradstreet Unique Number System&#x20;
+* LEI
+* DUNS (Dunn and Bradstreet Unique Number System)
 
 In practice it may be necessary for a party or an association to create a cross-reference register that relates an internal (unique) identifier with multiple external identifiers of a legal entity. One legal entity may have an EORI, LEI and DUNS identifier, or more.
 
@@ -93,7 +82,7 @@ In Europe the eIDAS regulation is a solid foundation for the identity ecosystem.
 
 Selfsigned certificates for digital identities are a low-barrier entry level solution, with serious limitations on trust, federation and scaling.
 
-**Further reading**
+### Further reading
 
 * ​[DSSC Blueprint building block “Identity and Attestation Management](https://dssc.eu/space/BVE/357075352/Identity+and+Attestation+Management)
 * [https://taxation-customs.ec.europa.eu/customs-4/customs-procedures-import-and-export-0/customs-procedures/economic-operators-registration-and-identification-number-eori\_en](https://taxation-customs.ec.europa.eu/customs-4/customs-procedures-import-and-export-0/customs-procedures/economic-operators-registration-and-identification-number-eori\_en)
