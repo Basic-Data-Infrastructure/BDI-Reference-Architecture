@@ -24,51 +24,44 @@ Incorrect authentication could result in data breaches and / or the unavailabili
 
 This building block interlinks with:
 
-·         Digital Identity & Identifiers
+* Digital Identity & Identifiers
+* Authorizations
+* Discovery
+* Federation
 
-·         Authorizations
+### Core design decisions&#x20;
 
-·         Discovery
-
-·         Federation
-
-Core design decisions&#x20;
-
-OAuth2.
+#### OAuth2.
 
 The BDI uses the OAuth2 protocol. OAuth2 supports two types of client credentials for authentication:
 
-·         Shared secrets
-
-·         Private keys (certificates).
+* Shared secrets
+* Private keys (certificates).
 
 The use of private keys is preferred within the BDI.
 
-A BDI association could decide to issue certificates itself as an association, or as a group of associations. The consequence is that the Association is its own Trust Anchor, making federation with other Associations harder or less thrustworthy.
+A BDI association could decide to issue certificates itself as an association, or as a group of associations. The consequence is that the Association is its own Trust Anchor, making federation with other Associations harder or less trustworthy.
 
-eIDAS.
+#### eIDAS.
 
 The European eIDAS regulation is a trust framework which (also) governs the issuance of certificates within Europe. Certificates can be used for:
 
-·         Mutual TLS - Qualified Web Application Certificate (QWAC)
-
-·         Digital Sealing of the message - Qualified Seal (QSEAL)
+* Mutual TLS - Qualified Web Application Certificate (QWAC)
+* Digital Sealing of the message - Qualified Seal (QSEAL)
 
 QWAC and QSEAL are different types of eIDAS certificates.The sealing provides the legal binding of the exchanged data.
 
 The use of  eIDAS digital certificates as private keys is recommended. The recommendation is to use eIDAS QWACs as well.
 
-Non-European trust anchors.
+#### Non-European trust anchors.
 
 The eIDAS regulation and infrastructure is EU-specific. Outside of Europe other trust anchors could be used (to be investigated).
 
 #### Drawbacks of certificates
 
-·         Certificates are quite expensive
-
-·         Certificates need frequently to be rotated&#x20;
-
-·         The procurement, setup, testing and acceptance of certificates is not trivial
+* Certificates are quite expensive
+* Certificates need frequently to be rotated&#x20;
+* The procurement, setup, testing and acceptance of certificates is not trivial
 
 #### Note on the use of certificates within iSHARE
 
@@ -78,26 +71,18 @@ iSHARE uses one type of certificate (QSEAL) for both signing and sealing. iSHARE
 
 Guidance on (to be done):
 
-·         Mapping certificates to identifiers (within the association)
-
-·         Mapping to a well known identifier within the Data Service Provider
-
-·         Note on Mutual Authentication; also relevant for the Data Consumer
+* Mapping certificates to identifiers (within the association)
+* Mapping to a well known identifier within the Data Service Provider
+* Note on Mutual Authentication; also relevant for the Data Consumer
 
 ### Future topics
 
-1\.      Non-EU trust anchors (outside of eIDAS).
-
-2\.      The use of association issued certificates instead of eIDAS certificates
-
-3\.      Alignment with DSSC. The DSSC Blueprint v1.0 is referring to “Identity and Attestation Management” which is based of verifiable credentials, DID’s and OpenID for verifiable credentials. These has been defined out of scope for the current release of DIL / BDI.
-
-4\.      Alignment with IDSA. To be defined.
-
-5\.      The use of (other) PKI schemes
-
-6\.      The use of Decentral Identifiers
-
+1. Non-EU trust anchors (outside of eIDAS).
+2. &#x20;The use of association issued certificates instead of eIDAS certificates
+3. Alignment with DSSC. The DSSC Blueprint v1.0 is referring to “Identity and Attestation Management” which is based of verifiable credentials, DID’s and OpenID for verifiable credentials. These has been defined out of scope for the current release of DIL / BDI.
+4. Alignment with IDSA. To be defined.
+5. The use of (other) PKI schemes.
+6. The use of Decentral Identifiers.
 7. Federated Authentication through [OAuth 2.0 Attestation-Based Client Authentication](https://datatracker.ietf.org/doc/draft-ietf-oauth-attestation-based-client-auth/03/)
 
 In the BDI network, a [reputation system](../federation-kit/business-partner-reputation-model.md) within a BDI Association is integral for assessing the trustworthiness of visitors or outsiders: members of another BDI Association. While the BDI facilitates digital communication among a network of BDI Associations, establishing trust within a BDI Association through mutual agreements is relatively straightforward. However, evaluating the trustworthiness of participants in other BDI Associations can pose a challenge.
