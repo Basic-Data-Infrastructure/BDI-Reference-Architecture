@@ -107,3 +107,9 @@ This process ensures the temporary network is securely dismantled, preserving th
 ### Audit trail
 
 Event driven coordination requires a means to “go back in time”, inspect earlier events and have an audit trail.  One obvious reason is when a subcontractor is changed: the new subcontractor has to be able to quickly come up to speed on the history of events. The second is to have a common reference for either compliance or settling of disputes.
+
+### Further relevant documents
+
+
+
+{% file src="../../.gitbook/assets/2023-BDI-Event-Distributie-PoC.pdf" %}
