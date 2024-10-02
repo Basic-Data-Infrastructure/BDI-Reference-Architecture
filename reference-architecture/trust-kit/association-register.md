@@ -136,6 +136,8 @@ The federation of Association Registers might also be based on the proposals of 
 
 The identification of Outsiders and its Root Association needs to be detailed.
 
+Implications on trust when a member is a member of multiple associations.
+
 ### Further reading
 
 This building block has been derived but modified from the following sources, that provide opportunity for further reading:
