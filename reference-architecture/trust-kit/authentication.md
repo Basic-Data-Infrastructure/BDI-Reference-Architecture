@@ -10,7 +10,9 @@ In this page  we will focus on M2M use cases where data is requested by a Data C
 
 ### Purpose of the building block&#x20;
 
+{% hint style="info" %}
 Ensure that BDI users (M2M) are recognized and identified to prevent misuse of services and data. The automatic authentication of a BDI user in a federated perimeter-less architecture (see DNS-based Discovery as option) relies on a (delegated) Trust Anchor for Identity.
+{% endhint %}
 
 ### Concepts&#x20;
 
