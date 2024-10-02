@@ -73,3 +73,9 @@ The choices made for this building block are based on the following research:
 * LEO: THE LOGISTICS EVENT ONTOLOGY. A generic “minilanguage” for sharing information across domains, BDI Architecture Board
 * Selection of a base model for LEO, BDI Architecture Board
 * Semantic model development, BDI Architecture Board
+
+### Further supporting documents
+
+
+
+{% file src="../../.gitbook/assets/20240101_DIL_BDI-Developing-Semantics-for-Supply-Chain-Transport-Logistics.pdf" %}
