@@ -10,25 +10,22 @@ The complexity of H2M authentication is increased by privacy regulations: authen
 
 ### Purpose of the building block&#x20;
 
+{% hint style="info" %}
 Ensure that BDI users (H2M) are recognized,  identified  as a person and in a specific role on behalf of a legal entity: to prevent misuse, fraud, theft of data, services and physical goods. Enable smooth,  efficient and secure Boundary Management.
 
 Ensure that privacy leaks as a result of authentication are limited.
+{% endhint %}
 
 ### Concepts&#x20;
 
 The use cases relate to Boundary Management:
 
-\-          A human, acting as representative for a legal entity desiring access to data or an application owned/controlled by another legal entity
-
-&#x20;             o  For example: login to an application
-
-\-          A human, acting as representative for a legal entity desiring access to a location owned/controlled by another legal entity
-
-&#x20;             o   For example: entering a protected zone
-
-\-          A human, acting as representative for a legal entity involved in transferring as asset (cargo) and/or liabilities for the asset between the two legal entities
-
-&#x20;             o   For example: picking up cargo by a transporter
+* A human, acting as representative for a legal entity desiring access to data or an application owned/controlled by another legal entity
+  * For example: login to an application
+* A human, acting as representative for a legal entity desiring access to a location owned/controlled by another legal entity
+  * For example: entering a protected zone
+* A human, acting as representative for a legal entity involved in transferring as asset (cargo) and/or liabilities for the asset between the two legal entities
+  * For example: picking up cargo by a transporter
 
 The building block ensures that the digital identity of the human involved in (digital) interactions can be  authenticated: authentication precedes verification of Representation. In the context of the BDI, the human is a representative of a legal entity  (organization): the legal entity assumes accountability and liability for the actions of the representative, limited to the mandate of the representative. A human can have multiple roles for multiple legal entities simultaneously.
 
@@ -36,19 +33,14 @@ The Identity Provider chosen by the parties/Association provides authentication.
 
 Representation evidence may be stored in a register by an Association, or transmitted between parties in a nested Jason Web Token or a Verifiable Presentation of Credentials.
 
-### Risks&#x20;
-
 ### Interlinkages with other building blocks&#x20;
 
 This building block interlinks with:
 
-·         Digital Identity & Identifiers
-
-·         Authorizations
-
-·         Discovery
-
-·         Federation
+* Digital Identity & Identifiers
+* Authorizations
+* Discovery
+* Federation
 
 
 
