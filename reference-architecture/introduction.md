@@ -118,7 +118,7 @@ Standardization and generalization is a means to improve efficiency and reduce c
 
 Subsidiarity is a principle of organization that states that issues should be dealt with at the most immediate or local level that is consistent with their resolution.
 
-The governance recommendations of the BDI Framework follow the subsidiarity principle: common agreements between entities need to fit the structure of the market, legal frameworks and local habits and should not be defined at higher overarching levels.
+The governance recommendations of the BDI Framework follow the subsidiarity principle rooted in associations: common agreements between entities need to fit the structure of the market, legal frameworks and local habits and should not be defined at higher overarching levels.
 
 ### Principle 7: Coherent security
 
