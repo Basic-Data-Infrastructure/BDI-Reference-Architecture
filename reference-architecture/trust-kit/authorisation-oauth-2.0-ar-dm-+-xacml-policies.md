@@ -5,39 +5,40 @@ description: >-
   version that includes ideas on zero-trust processing.
 ---
 
-# Authorisation (Oauth 2.0), AR-DM + XACML policies
+# Authorization (Oauth 2.0), AR-DM + XACML policies
 
-## Summary
+### Summary
 
-## Purpose of the building block
+### Purpose of the building block
 
+{% hint style="info" %}
 This building block describes how parties can use the BDI to assess the other party involved in a (data) transaction and, based on the assessment, decide whether or not to go through with the transaction.
+{% endhint %}
 
-## Concepts
+### Concepts
 
 The following concepts (from the BDI Glossary) are particularly relevant in this building block:
 
-<table><thead><tr><th width="207">Concept</th><th>Meaning</th></tr></thead><tbody><tr><td>Data Owner</td><td><ul><li>Has control over data and access to data,</li><li>Controls decisions on Data Sovereignty and Trust Sovereignty</li><li>Controls authorisation policies, representation rules, professional qualification verification of staff and contactors</li><li>Controls subscription to the Event Pub/Sub Service, and publishing of events to subscribers</li><li>Controls discovery and endpoints</li><li>Controls roles assumed by entity</li></ul></td></tr><tr><td>Data Consumer</td><td><ul><li>Requests access to data and/or Representation Register and/or Professional Qualification Register of the Data Owner</li><li>Controls discovery and endpoints</li><li>Requests subscription to Event Pub/Sub Service of the Data Owner, receives and evaluates events</li></ul></td></tr><tr><td>Data Service Provider</td><td><ul><li>A Service Provider that acts under supervision and on behalf of the Data Owner</li></ul></td></tr></tbody></table>
+<table><thead><tr><th width="207">Concept</th><th>Meaning</th></tr></thead><tbody><tr><td>Data Owner</td><td><ul><li>Has control over data and access to data,</li><li>Controls decisions on Data Sovereignty and Trust Sovereignty</li><li>Controls authorisation policies, representation rules, professional qualification verification of staff and contractors</li><li>Controls subscription to the Event Pub/Sub Service, and publishing of events to subscribers</li><li>Controls discovery and endpoints</li><li>Controls roles assumed by entity</li></ul></td></tr><tr><td>Data Consumer</td><td><ul><li>Requests access to data and/or Representation Register and/or Professional Qualification Register of the Data Owner</li><li>Controls discovery and endpoints</li><li>Requests subscription to Event Pub/Sub Service of the Data Owner, receives and evaluates events</li></ul></td></tr><tr><td>Data Service Provider</td><td><ul><li>A Service Provider that acts under supervision and on behalf of the Data Owner</li></ul></td></tr></tbody></table>
 
-## Risks
+### Risks
 
-## Interlinkages with other building blocks
+### Interlinkages with other building blocks
 
 This building block has links to:
 
-* [representation-register.md](../federation-kit/representation-register.md "mention")
-* [Broken link](broken-reference "mention")
-* [association-register.md](association-register.md "mention")
-* [data-licenses.md](../data-set-kit/data-licenses.md "mention")
-* [authentication.md](authentication.md "mention")
+* Representatiopn Register
+* Asociation Register
+* Data Licenses
+* Authentication M2M
 
 Information from these building blocks is used in this building block to make a decision on Authorization.
 
-## Elements and their key functions
+### Elements and their key functions
 
 While entering into a transaction, each participant involved in the transaction will decide if that party trusts the other party.
 
-<figure><img src="../../.gitbook/assets/Trust assessment when entering into a transaction.png" alt="" width="518"><figcaption><p>Example of trust assessment when entering into a transaction (in this case by Party B)</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Trust assessment when entering into a transaction.png" alt="" width="518"><figcaption><p>Example of trust assessment when entering into a transaction (in this case at Party B)</p></figcaption></figure>
 
 To make a decision on trust, the party will use relevant and available information. The BDI provides a framework for four input elements for this decision:
 
@@ -46,7 +47,7 @@ To make a decision on trust, the party will use relevant and available informati
 3. [Trust based on the reputation of the Member](authorisation-oauth-2.0-ar-dm-+-xacml-policies.md#id-2.-trust-based-on-reputations) as provided by the Reputation Model.
 4. [Trust based on (granular) Authorizations](authorisation-oauth-2.0-ar-dm-+-xacml-policies.md#id-3.-trust-based-on-authorisations) provided by a Data Owner.
 
-### Trust in case of a Data Service Provider acting on behalf of a Data Owner
+#### Trust in case of a Data Service Provider acting on behalf of a Data Owner
 
 A specific situation occurs when a Data Service Provider acts on behalf of a Data Owner. The Data Service Provider is assumed to have a business relationship with a Data Owner in which the rules for sharing data on behalf of the Data Owner are established. Beside the input elements that can be provided using the BDI Framework, a Data Service Provider and Data Owner can agree on other inputs used to make a trust decision.
 
@@ -58,12 +59,12 @@ Consider the situation where a Data Service Provider is being requested for data
 * Is the Data Consumer member of my Association, a parent Association or the root BDI Network? \[BDI input element 1]
 * What is the reputation of the Data Consumer? \[BDI input element 3]
 * Can the Data Consumer provide Authorizations given to him by a Data Owner? \[BDI input element 4]
-* Is the Data Consumer a legal entity based in the EU? \[specific criterium, which can optionally be encapsulated in the (granular) Authorization \[BDI input element 4] as a condition
+* Is the Data Consumer a legal entity based in the EU? \[specific criterion, which can optionally be encapsulated in the (granular) Authorization \[BDI input element 4] as a condition
 
 Based on both this information and the nature of the data that the Data Service Provider is requested for (for instance the confidentiality or privacy aspects), the Data Service Provider can make a business decision to provide or not provide the data.
 {% endhint %}
 
-## Core design decisions
+### Core design decisions
 
 The four inputs for decision making are supported by the BDI trust input elements as follows.
 
@@ -106,29 +107,27 @@ Assuming that information on the reputation of a party is available, a party can
 * Choose to follow Association business logic.
 * (If allowed by the Association) choose to follow it's own logic.
 
-### 4. Trust based on (granular) Authorisations
+### 4. Trust based on (granular) authorizations
 
-Authorisations provide a way for a Data Owner to specify in great detail which Data Consumer is allowed to consume data on its behalf at a Data Service Provider. From a data sovereignty perspective, Authorisations provide the highest level of 'trust' and best basis to enter into a transaction up, when transactions are happening between Service Consumers and Data Service Providers.
+Authorizations provide a way for a Data Owner to specify in great detail which Data Consumer is allowed to consume data on its behalf at a Data Service Provider. From a data sovereignty perspective, Authorisations provide the highest level of 'trust' and best basis to enter into a transaction up, when transactions are happening between Service Consumers and Data Service Providers.
 
 #### Information gathering
 
-In terms of the technical specifications for Authorisations, the BDI Framework builds on the iSHARE Trust Framework. The iSHARE Trust Framework uses the term “delegations” for the concept that in BDI is called Authorisations.
+In terms of the technical specifications for Authorizations, the BDI Framework builds on the iSHARE Trust Framework. The iSHARE Trust Framework uses the term “delegations” for the concept that in BDI is called Authorizations.
 
-* The framework defines [the role of an Authorisation Registry](https://framework.ishare.eu/is/framework-and-roles)
+* The framework defines [the role of an Authorization Registry](https://framework.ishare.eu/is/framework-and-roles)
 * Entitled Parties are enabled in exercising data sovereignty by providing delegations (as described in the [generic use cases](https://framework.ishare.eu/is/use-cases)) to parties to use their data
 * [Licenses](https://framework.ishare.eu/is/licenses) specify the legal boundaries for the usage of data by a Data Consumer
 * The [structure of delegation](https://framework.ishare.eu/is/structure-of-delegation-evidence) evidence is defined in the framework and the technical requirements for APIs providing delegation evidence on the [iSHARE Developer Portal](https://dev.ishare.eu/).
 
-
-
-Functionally authorisations can:
+Functionally authorizations can:
 
 * Be provided by the Data Consumer when requesting to consume a service at a Data Service Provider.
 * Be requested by the Data Service Provider when a Data Consumer requests to consumer a service.
 
-BDI dooes not define in what way an Authorisation Registry needs to store policies regarding delegations.
+BDI does not define in what way an Authorization Registry needs to store policies regarding delegations.
 
-### Guidance for trust decision making
+#### Guidance for trust decision making
 
 It could be helpful to create a trust decision matrix, to improve manageability of decision rules. The approach would be:
 
