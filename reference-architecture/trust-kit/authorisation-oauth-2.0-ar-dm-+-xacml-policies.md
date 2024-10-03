@@ -113,7 +113,7 @@ Authorizations provide a way for a Data Owner to specify in great detail which D
 
 #### Information gathering
 
-In terms of the technical specifications for Authorizations, the BDI Framework is inspired on on the iSHARE Trust Framework. The iSHARE Trust Framework uses the term “delegations” for the concept that in BDI is called Authorizations.
+In terms of the technical specifications for Authorizations, the BDI Framework is inspired  on the iSHARE Trust Framework. The iSHARE Trust Framework uses the term “delegations” for the concept that in BDI is called Authorizations.
 
 * The framework defines [the role of an Authorization Registry](https://framework.ishare.eu/is/framework-and-roles)
 * Entitled Parties are enabled in exercising data sovereignty by providing delegations (as described in the [generic use cases](https://framework.ishare.eu/is/use-cases)) to parties to use their data
