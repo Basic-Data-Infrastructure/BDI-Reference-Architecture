@@ -9,7 +9,7 @@
     * [Authentication](reference-architecture/trust-kit/authentication/README.md)
       * [Authentication M2M](reference-architecture/trust-kit/authentication.md)
       * [Authentication H2M](reference-architecture/trust-kit/authentication-h2m.md)
-    * [Authorization (Oauth 2.0), AR-DM + XACML policies](reference-architecture/trust-kit/authorisation-oauth-2.0-ar-dm-+-xacml-policies.md)
+    * [Authorization](reference-architecture/trust-kit/authorisation-oauth-2.0-ar-dm-+-xacml-policies.md)
     * [BDI Roles](reference-architecture/trust-kit/common-roles.md)
     * [Edge agreements](reference-architecture/trust-kit/edge-agreements.md)
     * [Policy agreements](reference-architecture/trust-kit/policy-agreements.md)

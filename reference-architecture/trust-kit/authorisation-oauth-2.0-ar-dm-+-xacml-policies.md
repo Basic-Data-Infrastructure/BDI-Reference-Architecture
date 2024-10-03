@@ -5,7 +5,7 @@ description: >-
   version that includes ideas on zero-trust processing.
 ---
 
-# Authorization (Oauth 2.0), AR-DM + XACML policies
+# Authorization
 
 ### Summary
 
@@ -27,8 +27,8 @@ The following concepts (from the BDI Glossary) are particularly relevant in this
 
 This building block has links to:
 
-* Representatiopn Register
-* Asociation Register
+* Representation Register
+* Association Register
 * Data Licenses
 * Authentication M2M
 
@@ -109,11 +109,11 @@ Assuming that information on the reputation of a party is available, a party can
 
 ### 4. Trust based on (granular) authorizations
 
-Authorizations provide a way for a Data Owner to specify in great detail which Data Consumer is allowed to consume data on its behalf at a Data Service Provider. From a data sovereignty perspective, Authorisations provide the highest level of 'trust' and best basis to enter into a transaction up, when transactions are happening between Service Consumers and Data Service Providers.
+Authorizations provide a way for a Data Owner to specify in great detail which Data Consumer is allowed to consume data on its behalf at a Data Service Provider. From a data sovereignty perspective, Authorizations provide the highest level of 'trust' and best basis to enter into a transaction up, when transactions are happening between Service Consumers and Data Service Providers.
 
 #### Information gathering
 
-In terms of the technical specifications for Authorizations, the BDI Framework builds on the iSHARE Trust Framework. The iSHARE Trust Framework uses the term “delegations” for the concept that in BDI is called Authorizations.
+In terms of the technical specifications for Authorizations, the BDI Framework is inspired on on the iSHARE Trust Framework. The iSHARE Trust Framework uses the term “delegations” for the concept that in BDI is called Authorizations.
 
 * The framework defines [the role of an Authorization Registry](https://framework.ishare.eu/is/framework-and-roles)
 * Entitled Parties are enabled in exercising data sovereignty by providing delegations (as described in the [generic use cases](https://framework.ishare.eu/is/use-cases)) to parties to use their data
