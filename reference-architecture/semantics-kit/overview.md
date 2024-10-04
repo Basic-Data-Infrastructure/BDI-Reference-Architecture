@@ -46,7 +46,7 @@ According to EPCIS (ISO/IEC 19987) an Event contains at least the following 5 as
 
 • How: It may also include the 'How' aspect. In what state (how) are or was the cargo being transported at the time of the event?
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption><p>A FEDeRATED example event and attached data</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>A FEDeRATED example event and attached data</p></figcaption></figure>
 
 The example figure above, brings together the ideas of Event-Driven as also used in FEDeRATED and the EPCIS standard (which is almost 20 years old and used in practice in transport, logistics and supply chain). The Event is central in the figure, it is linked to a location (Where), to a logistics service (Why) and to a (physical) object (What).
 
