@@ -29,9 +29,7 @@ The following concepts (from the BDI Glossary), all regarding legal entities, ar
 | Outsider                    | Anyone who is not a member of a BDI Association                                                                                                         |
 | Visitor                     | Outsider with a better reputation score than a set minimum                                                                                              |
 
-&#x20;
-
-<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption><p>How a Business Partner from another BDI Association can become a preferred Business partner of a BDI Association.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/)ther association.png" alt=""><figcaption><p>How a Business Partner from another BDI Association can become a preferred Business partner of a BDI Association.</p></figcaption></figure>
 
 ### Risks
 
