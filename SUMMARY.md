@@ -1,7 +1,10 @@
 # Table of contents
 
 * [Reference Architecture](README.md)
-  * [INTRODUCTION](reference-architecture/introduction.md)
+  * [INTRODUCTION](reference-architecture/introduction/README.md)
+    * [Core Principles](reference-architecture/introduction/core-principles.md)
+    * [Stack and KITs](reference-architecture/introduction/stack-and-kits.md)
+    * [BDI Technical Roles](reference-architecture/introduction/bdi-technical-roles.md)
   * [Trust KIT](reference-architecture/trust-kit/README.md)
     * [Digital Identity](reference-architecture/trust-kit/digital-identity/README.md)
       * [Digital Identity M2M](reference-architecture/trust-kit/digital-identity/digital-identity.md)
@@ -10,7 +13,6 @@
       * [Authentication M2M](reference-architecture/trust-kit/authentication.md)
       * [Authentication H2M](reference-architecture/trust-kit/authentication-h2m.md)
     * [Authorization](reference-architecture/trust-kit/authorisation-oauth-2.0-ar-dm-+-xacml-policies.md)
-    * [BDI Roles](reference-architecture/trust-kit/common-roles.md)
     * [Edge agreements](reference-architecture/trust-kit/edge-agreements.md)
     * [Policy agreements](reference-architecture/trust-kit/policy-agreements.md)
     * [Onboarding Terms and Conditions](reference-architecture/trust-kit/onboarding-t-and-cs-association-articles.md)
@@ -24,7 +26,7 @@
   * [Representation KIT](reference-architecture/representation-kit/README.md)
     * [Representation Register](reference-architecture/federation-kit/representation-register.md)
     * [Professional Qualification Register](reference-architecture/federation-kit/professional-qualification-register.md)
-    * [Common Roles](reference-architecture/federation-kit/certified-roles.md)
+    * [BDI Association Roles](reference-architecture/federation-kit/certified-roles.md)
   * [Federation KIT](reference-architecture/federation-kit/README.md)
     * [Federation of Associations](reference-architecture/federation-kit/federation-of-associations.md)
     * [Business Partner Reputation Model](reference-architecture/federation-kit/business-partner-reputation-model.md)

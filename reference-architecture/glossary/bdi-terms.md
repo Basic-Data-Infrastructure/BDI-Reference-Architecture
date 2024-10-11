@@ -144,11 +144,9 @@ The best-known example of credentials is a password, but other forms include ele
 
 <summary>Data Consumer, Data User</summary>
 
-Requests access to data and/or Representation Register and/or Professional Qualification Register of the Data Owner
-
-Controls discovery and endpoints
-
-Requests subscription to Event Pub/Sub Service of the Data Owner, receives and evaluates events.
+* Requests access to data and/or Representation Register and/or Professional Qualification Register of the Data Owner
+* Controls discovery and endpoints
+* Requests subscription to Event Pub/Sub Service of the Data Owner, receives and evaluates events.
 
 </details>
 
@@ -182,17 +180,14 @@ The semantic model used to describe the data to be exchanged
 
 <summary>Data Owner</summary>
 
-· Has control over data and access to data,
+The data Owner is a legal entity who:
 
-· Controls decisions on Data Sovereignty and Trust Sovereignty
-
-· Controls authorization policies, representation rules, professional qualification verification of staff and contractors
-
-· Controls subscription to the Event Pub/Sub Service, and publishing of events to subscribers
-
-· Controls discovery and endpoints
-
-· Controls roles assumed by entity
+* Has control over data and access to data
+* Controls decisions on Data Sovereignty and Trust Sovereignty
+* Controls authorization policies, representation rules, professional qualification verification of staff and contractors
+* Controls subscription to the Event Pub/Sub Service, and publishing of events to subscribers
+* Controls discovery and endpoints
+* Controls roles assumed by entity
 
 </details>
 
