@@ -63,11 +63,7 @@ The eIDAS regulation and infrastructure is EU-specific. Outside of Europe other 
 
 * Certificates are quite expensive
 * Certificates need frequently to be rotated&#x20;
-* The procurement, setup, testing and acceptance of certificates is not trivial
-
-#### Note on the use of certificates within iSHARE
-
-iSHARE uses one type of certificate (QSEAL) for both signing and sealing. iSHARE does not support native OAuth2 but uses an iSHARE specific extension.
+* The procurement, setup, testing and acceptance of certificates is not trivial.
 
 #### Certificate based authentication
 
