@@ -19,7 +19,7 @@
     * [Association Register](reference-architecture/trust-kit/association-register.md)
     * [Discovery](reference-architecture/trust-kit/discovery.md)
     * [Demos](reference-architecture/trust-kit/demos/README.md)
-      * [Trusted Issuance of Goods](reference-architecture/trust-kit/demos/trusted-issuance-of-goods.md)
+      * [Trusted Goods Release & Delegation](reference-architecture/trust-kit/demos/trusted-goods-release-and-delegation.md)
   * [Logistics Event KIT](reference-architecture/logistics-event-kit/README.md)
     * [Event Choreography](reference-architecture/logistics-event-kit/event-choreography.md)
     * [Notification pub/sub service](reference-architecture/logistics-event-kit/event-pub-sub-service.md)
