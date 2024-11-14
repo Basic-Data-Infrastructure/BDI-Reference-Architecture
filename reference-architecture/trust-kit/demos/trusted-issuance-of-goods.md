@@ -24,6 +24,6 @@ Documented lessons learned and areas for improvement are available (attached to 
 
 {% file src="../../../.gitbook/assets/bevindingen-fase-1.pdf" %}
 
-{% file src="../../../.gitbook/assets/20241002_DIL-VGU-bevindingen-fase-3 (1).pdf" %}
+{% file src="../../../.gitbook/assets/20241002_DIL-VGU-bevindingen-fase-3 (1) (1).pdf" %}
 
 {% file src="../../../.gitbook/assets/20240822_DIL_BDI Use case VGU swimlane (1).svg" %}
