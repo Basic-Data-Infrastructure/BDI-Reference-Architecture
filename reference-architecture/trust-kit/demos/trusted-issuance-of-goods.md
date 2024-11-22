@@ -12,6 +12,8 @@ The demo illustrated a trusted goods release scenario, focusing on a high-value,
 * Demonstrating the secure handoff of shipments by incorporating "need-to-know" data-sharing practices.
 * Establishing an efficient digital verification process to authenticate authorized personnel and vehicles for pickups.
 
+GitBook article[https://github.com/Basic-Data-Infrastructure/demo-vertrouwde-goederenafgifte/tree/fase-1](https://github.com/Basic-Data-Infrastructure/demo-vertrouwde-goederenafgifte/tree/fase-1)
+
 **Demo Phase 2**
 
 The "Delegation Demo" (Demo 2) built upon the original "Trusted Goods Release" process by introducing a delegation mechanism. This extension demonstrated how the trusted goods release protocol can be further refined with subcontractor involvement, showing enhanced control and flexibility within the logistics process. This demo utilized iSHARE and BDI frameworks to incorporate delegated authority in a seamless and secure manner.
@@ -20,10 +22,14 @@ In Demo 2, the focus was on implementing a delegation framework, expanding on th
 
 Documented lessons learned and areas for improvement are available (attached to this article), as well as illustration of proposed process flow.
 
+GitBook article
 
+[https://github.com/Basic-Data-Infrastructure/demo-vertrouwde-goederenafgifte/tree/fase-2](https://github.com/Basic-Data-Infrastructure/demo-vertrouwde-goederenafgifte/tree/fase-2)
+
+{% file src="broken-reference" %}
 
 {% file src="../../../.gitbook/assets/bevindingen-fase-1.pdf" %}
 
-{% file src="../../../.gitbook/assets/20241002_DIL-VGU-bevindingen-fase-3 (1) (1).pdf" %}
+{% file src="../../../.gitbook/assets/20241030_DIL-VGU-bevindingen-fase-3-trust-kit.pdf" %}
 
 {% file src="../../../.gitbook/assets/20240822_DIL_BDI Use case VGU swimlane (1).svg" %}
