@@ -12,7 +12,7 @@ The demo illustrated a trusted goods release scenario, focusing on a high-value,
 * Demonstrating the secure handoff of shipments by incorporating "need-to-know" data-sharing practices.
 * Establishing an efficient digital verification process to authenticate authorized personnel and vehicles for pickups.
 
-GitBook article[https://github.com/Basic-Data-Infrastructure/demo-vertrouwde-goederenafgifte/tree/fase-1](https://github.com/Basic-Data-Infrastructure/demo-vertrouwde-goederenafgifte/tree/fase-1)
+Documentation in GitHub [https://github.com/Basic-Data-Infrastructure/demo-vertrouwde-goederenafgifte/tree/fase-1](https://github.com/Basic-Data-Infrastructure/demo-vertrouwde-goederenafgifte/tree/fase-1)
 
 **Demo Phase 2**
 
@@ -22,7 +22,7 @@ In Demo 2, the focus was on implementing a delegation framework, expanding on th
 
 Documented lessons learned and areas for improvement are available (attached to this article), as well as illustration of proposed process flow.
 
-GitBook article
+Documentation in GitHub&#x20;
 
 [https://github.com/Basic-Data-Infrastructure/demo-vertrouwde-goederenafgifte/tree/fase-2](https://github.com/Basic-Data-Infrastructure/demo-vertrouwde-goederenafgifte/tree/fase-2)
 
