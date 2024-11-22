@@ -23,4 +23,6 @@ The Event Demo demonstrated the feasibility of using real-time event notificatio
 
 You can find the document with lessons learnt attached to this article (in Dutch).
 
+Documentation in GitHub [https://github.com/Basic-Data-Infrastructure/demo-vertrouwde-goederenafgifte/tree/fase-3](https://github.com/Basic-Data-Infrastructure/demo-vertrouwde-goederenafgifte/tree/fase-3)
+
 {% file src="../../.gitbook/assets/20241002_DIL-VGU-bevindingen-fase-3.pdf" %}
