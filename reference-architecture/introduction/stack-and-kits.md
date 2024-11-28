@@ -4,7 +4,9 @@
 
 To assist the creation of applications according to the architectural principles, BDI defines many _building blocks_, where each building block provides tools and guidelines to implement parts of the required functionality. The building blocks are shown in the BDI stack:
 
-<figure><img src="../../.gitbook/assets/20241001 BDI Stack.png" alt=""><figcaption><p>Overview of BDI building blocks</p></figcaption></figure>
+
+
+<figure><img src="../../.gitbook/assets/20241022 BDI building blocks stack_.jpg" alt=""><figcaption><p>BDI Building Blocks</p></figcaption></figure>
 
 Implementation of the principles by means of parts of the stack is aided by the definition of _KITs_.
 
