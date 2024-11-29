@@ -12,7 +12,7 @@ The building block aims to define BDI's technical roles, including Identity Prov
 BDI defines these technical roles :
 
 * Identity Provider
-* Identity Broke
+* Identity Broker
 * Association Administrator
 * Data Owner
 * Data Service Provider&#x20;
