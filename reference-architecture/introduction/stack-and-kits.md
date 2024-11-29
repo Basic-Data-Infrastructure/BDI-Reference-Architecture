@@ -6,7 +6,7 @@ To assist the creation of applications according to the architectural principles
 
 
 
-<figure><img src="../../.gitbook/assets/20241022 BDI building blocks stack_.jpg" alt=""><figcaption><p>BDI Building Blocks</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/20241022 BDI building blocks stack_2.jpg" alt=""><figcaption><p>Building blocks of BDI</p></figcaption></figure>
 
 Implementation of the principles by means of parts of the stack is aided by the definition of _KITs_.
 
