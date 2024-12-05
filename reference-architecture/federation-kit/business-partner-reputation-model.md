@@ -49,6 +49,8 @@ This building block is still highly conceptual and gives a first consideration o
 * Can organizations complain / request withdrawal of ratings & rating comments (e.g. based on false motives like competition libel
 * Options for blacklist
 
-### Further reading
+### Documents
 
-https://bdinetwork.org/wp-content/uploads/2024/01/2024-BDI-Reputation-System.pdf
+
+
+{% file src="../../.gitbook/assets/2024-BDI-Reputation-System.pdf" %}
