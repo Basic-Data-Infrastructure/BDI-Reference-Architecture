@@ -63,7 +63,10 @@ Association Admin
 * Credentials for Federation
 * Interoperability of Associations
 
+## Documents
+
+{% file src="../../.gitbook/assets/20230315-Transparency-in-Global-Supply-Chains.pdf" %}
+
 ## Further reading
 
-* [https://bdinetwork.org/wp-content/uploads/2024/01/20230315-Transparency-in-Global-Supply-Chains.pdf](https://bdinetwork.org/wp-content/uploads/2024/01/20230315-Transparency-in-Global-Supply-Chains.pdf)
 * [https://framework.ishare.eu](https://framework.ishare.eu)
