@@ -50,9 +50,20 @@ The third party does not need to be Member of an Association, lowering the barri
 
 
 
+**Documents**
+
+
+
+{% file src="../../.gitbook/assets/20241128_BDI-JSON-Web-Token-as-generic-proof.pdf" %}
+
+{% file src="../../.gitbook/assets/2024-BDI-Embedded-JWT-as-Representation-Evidence.pdf" %}
+
+
+
 **Further Reading**
 
 * Verifiable Credentials
 * E-Herkenning
-* [https://bdinetwork.org/wp-content/uploads/2024/05/2024-BDI-Embedded-JWT-as-Representation-Evidence.pdf](https://bdinetwork.org/wp-content/uploads/2024/05/2024-BDI-Embedded-JWT-as-Representation-Evidence.pdf)
+
+
 
