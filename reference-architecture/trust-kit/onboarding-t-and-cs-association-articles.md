@@ -1,12 +1,28 @@
+---
+layout:
+  title:
+    visible: true
+  description:
+    visible: false
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+---
+
 # Onboarding Terms and Conditions
 
-### Summary
+### 1. Summary
 
-### Purpose of the building block
+### 2. Purpose of the building block
 
+{% hint style="info" %}
 This building block guides organizations to establish a form of governance for their data exchange activities in accordance with the BDI framework. This building block provides reasons and options to establish this governance.
+{% endhint %}
 
-### Concepts
+### 3. Concepts
 
 The BDI framework emphasizes perimeterless trust, allowing each data owner to determine whom they trust. Trust registers and identity mechanisms are local and adaptable, offering flexibility in interoperability and endpoint discovery.&#x20;
 
@@ -20,7 +36,7 @@ Although it is possible to start without any governance structure, it is recomme
 
 A “Group of groups” as an overarching governance structure may also be beneficial, as an option.&#x20;
 
-### BDI Association&#x20;
+#### 3.1. BDI Association&#x20;
 
 A BDI Association is a local entity formed by a group of participants within the framework. The specific legal structure of an Association can vary—it might be a foundation, cooperative, or any other form. The Association serves as the operational anchor for both federated trust/authentication and local onboarding within the BDI Framework.&#x20;
 
@@ -38,7 +54,7 @@ The BDI Framework assumes that many associations are formed and changed, split o
 
 The BDI framework defines how federated trust, federated reputation and federated authentication are created spanning multiple associations.&#x20;
 
-### Efficient trust management&#x20;
+#### 3.2. Efficient trust management&#x20;
 
 The local BDI Association can be the foundation of effective and efficient trust management in a perimeterless, zero-trust environment. Zero-trust principles mean that BDI Associations do not trust anyone outside their own members and use all four pillars of trust to assess interactions with others outside of their community.&#x20;
 
@@ -50,7 +66,7 @@ The strong social control pillar is supported by a reputation scheme:&#x20;
   * outsiders that commit themselves to specific legally enforceable rules set by the association become preferred partners&#x20;
   * other (sister-)Associations can have a trust score, starting with verification of public key ownership of the sister Association&#x20;
 
-### Onboarding&#x20;
+#### 3.3 Onboarding&#x20;
 
 It is recommended that an onboarding mechanism is introduced for new members, if the Association desires to raise the standards for its members.&#x20;
 
@@ -64,7 +80,7 @@ The following aspects can be taken into consideration:&#x20;
 
 The result of onboarding is an entry in the local Association Register.&#x20;
 
-### &#x20;Coherent Security&#x20;
+#### &#x20;3.4. Coherent Security&#x20;
 
 The registrations stored in the Association Register need to be secured against tampering. The process outlined in this section reduces the possibility of attack vectors directed to the staff of the Association Administration (social engineering, blackmail etc.), the most common attack vector in these cases.
 
@@ -78,11 +94,11 @@ Shared terms and conditions, data access policies, and data licenses are essenti
 * _Policies_: Data access is authorized by the Data Owner based on the role of the requesting party. Standardizing these policies within a sector can reduce the management burden.&#x20;
 * _Data Licenses_: These define the rights and responsibilities of parties accessing data. For example, an e-commerce transporter may be prohibited from retaining or reusing receiver data. Data licenses can be legally enforceable if included in the onboarding process.&#x20;
 
-### Implementation Considerations &#x20;
+### 5. Core design  decisions
 
 The implementation of the BDI Framework should consider existing sector-specific terms, conditions, and practices. Many trade and standardization organizations are transitioning from paper-based practices to digital ones. It is recommended to build upon the existing body of knowledge and trade practices, per sector.&#x20;
 
-### Interlinkages with other building blocks&#x20;
+### 6. Interlinkages with other building blocks&#x20;
 
 * Terms and Conditions &#x20;
 * Policies&#x20;

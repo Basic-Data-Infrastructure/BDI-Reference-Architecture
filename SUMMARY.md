@@ -11,6 +11,7 @@
       * [Digital Identity H2M](reference-architecture/trust-kit/digital-identity/digital-identity-h2m.md)
     * [Authentication](reference-architecture/trust-kit/authentication/README.md)
       * [Authentication M2M](reference-architecture/trust-kit/authentication.md)
+      * [Page](reference-architecture/trust-kit/authentication/page.md)
       * [Authentication H2M](reference-architecture/trust-kit/authentication-h2m.md)
     * [Authorization](reference-architecture/trust-kit/authorisation-oauth-2.0-ar-dm-+-xacml-policies.md)
     * [Edge agreements](reference-architecture/trust-kit/edge-agreements.md)

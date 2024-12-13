@@ -1,6 +1,20 @@
+---
+layout:
+  title:
+    visible: true
+  description:
+    visible: false
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+---
+
 # Association Register
 
-### Summary
+### 1. Summary
 
 The building block Association Register has the basic function of registering:
 
@@ -20,8 +34,9 @@ Optional functions that are expected when a BDI Association administers their ow
 * perform federated verification checks of unknown legal identities that are Member of another BDI Association
 * registering preferred business partners in a federated environment
 
-### Purpose of the building block
+### 2. Purpose of the building block
 
+{% hint style="info" %}
 The purpose of the Association Register is to automate and facilitate trust assessments of entities in the sequence of Authentication – Trust Assessment – Authorization as performed by a Zero Trust endpoint.
 
 A shared Association Register reduces costs and combines experiences in shared dynamic reputation scores.
@@ -33,8 +48,9 @@ A federated Association Register automates the basic trust checks of entities th
 A federated Association Register automates the registering of preferred Business Partners: members of other BDI Associations that have a special status.
 
 An Association Register is considered a technological solution to facilitate the role of the Association Administrator.
+{% endhint %}
 
-### Concepts
+### 3. Concepts
 
 The following concepts (from the BDI Glossary) are particularly relevant in this building block:
 
@@ -56,7 +72,7 @@ _Home Association -_ The association a member is part of.
 
 _Visitor -_ Outsider with a better reputation score than a defined minimum.
 
-### Risks
+### 4. Risks
 
 An Association Register is a core part of automated trust assessment. This requires both:
 
@@ -71,7 +87,7 @@ The human attack vector is considered to be the most risky: onboarding should th
 
 Modification of information should only be possible by deleting or deprecating information, followed by a new onboarding process.
 
-### Interlinkages with other building blocks
+### 5. Interlinkages with other building blocks
 
 This building block provides the technical implementation supporting the building block “Onboarding Terms and Conditions”, in which the operational processes and requirements regarding the onboarding of a BDI Association are described.
 
@@ -105,7 +121,7 @@ The principles of by discovery through a standard \_bdi subdomain to facilitate 
 
 The benefits of shared services, shared standards, shared Terms and Conditions and increasing the negotiation power by coordinating as a group are known in the "analog" world. A large number of trade associations already exist, specific to a sector/region. These trade associations are natural hosts for Association Register functions. The assumption is that in most cases existing trade associations will upgrade their service offerings to include support for the BDI, instead of creating a new legal entity specifically for support of the BDI.
 
-### Elements and their key functions
+### 6. Elements and their key functions
 
 An Association Register can have the following functions
 
@@ -117,7 +133,7 @@ An Association Register can have the following functions
 * Members can add to the Reputation score of registered entities.
 * Members can use the Association Register to asses the reputation of a previously unknown Outsider: the Association Register queries the Association Register of the Outsider.
 
-### Core design decisions
+### 7. Core design decisions
 
 The following design decisions form the basis for this building block:
 
@@ -128,7 +144,7 @@ The following design decisions form the basis for this building block:
 * An entity can choose to be Member of multiple Associations.
   * An example is an e-commerce retailer: one side of the company is dealing with shipping purchased goods by maritime transport (containers) to its local warehouses, the other side of the company is deeply involved in e-commerce retail and distribution. The large difference in semantics, terms and conditions, roles, and parties (including authorities) involved is visible in the different trade organizations (maritime container transport versus e-commerce retail). The difference may lead to the choice to be Member of two different Associations.
 
-### Future topics
+### 8. Future topics
 
 To be discovered is how the Association Register can technically support the building block “Business Partner Reputation model”.
 
@@ -138,7 +154,7 @@ The identification of Outsiders and its Root Association needs to be detailed.
 
 Implications on trust when a member is a member of multiple associations.
 
-### Further reading
+### 9. Further reading
 
 This building block has been derived but modified from the following sources, that provide opportunity for further reading:
 

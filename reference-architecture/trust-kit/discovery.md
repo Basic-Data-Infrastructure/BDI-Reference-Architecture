@@ -1,6 +1,20 @@
+---
+layout:
+  title:
+    visible: true
+  description:
+    visible: false
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+---
+
 # Discovery
 
-### Summary
+### 1. Summary
 
 This building block defines how BDI supports organizations (Data Providers and Data Consumers) in discovering other organizations, services and endpoints by:
 
@@ -10,11 +24,13 @@ This building block defines how BDI supports organizations (Data Providers and D
 
 &#x20;          Defining a standard for discovery using the DNS Protocol.
 
-### Purpose
+### 2. Purpose of this building block
 
+{% hint style="info" %}
 In the BDI, the discovery process is recommended for enabling connections between data providers and consumers. Unlike traditional data marketplaces, where the primary focus is on matching providers with potential consumers to establish new data-sharing relationships, BDI focuses on optimizing existing data exchanges. These exchanges often support operational logistics in the supply chain, where different parties are already connected but require more efficient methods for data exchange.&#x20;
+{% endhint %}
 
-### Option 1: Discovery using the iSHARE specifications
+#### Option 1: Discovery using the iSHARE specifications
 
 iSHARE and thereby BDI provide a framework for the discovery of:
 
@@ -22,13 +38,13 @@ iSHARE and thereby BDI provide a framework for the discovery of:
 2. **Participants of a data space**. Participants of an association (in iSHARE: data space) are (if they choose to) discoverable through the [/parties endpoint](https://dev.ishare.eu/satellite/parties.html) of any Association Register (in iSHARE: iSHARE Satellite).
 3. **Data spaces**. Associations (data spaces) are (if they choose to) discoverable through the [/dataspaces endpoint](https://dev.ishare.eu/satellite/dataspaces.html) of any Association Register (in iSHARE: iSHARE Satellite).
 
-### Option 2: Discovery using DNS
+#### Option 2: Discovery using DNS
 
 The Domain Name System (DNS) is a foundational protocol in internet infrastructure, serving as a directory that translates human-readable domain names into IP addresses. In the context of federative data sharing networks like the BDI, DNS plays a crucial role in enabling data consumers and providers to discover each other's service endpoints. By utilizing DNS for service endpoint discovery, organizations can publish and find endpoints, thereby facilitating data exchange within the network. This building block outlines the purpose, concepts, implementation considerations, key elements, and recommended standards for using DNS in the BDI discovery building block.&#x20;
 
 The purpose of using DNS in the BDI discovery building block is to provide a standardized method for publishing and discovering service endpoints. This allows data consumers to easily find the endpoints of data providers without the need of a common shared register, assess their trust level, and establish connections for data exchange. The use of DNS ensures that the discovery process is both scalable and compatible with existing internet infrastructure. Discovery based upon DNS allows for  a perimeter-less federation of BDI users and Associations.
 
-#### Concepts
+### 3. Concepts
 
 1. _DNS Overview_: DNS is a hierarchical and decentralized naming system that translates domain names into IP addresses, enabling users to access websites and other resources on the internet. DNS is organized into zones, each managed by an organization that controls its own part of the DNS namespace.&#x20;
 2. _DNS Subdomain:_ a standardized subdomain ( "\_bd1.\[ url] ") improves discoverability, educes the risk of interference with  existing DNS records for the domain name already in possession of an organization.
@@ -38,7 +54,7 @@ The purpose of using DNS in the BDI discovery building block is to provide a sta
 
 <figure><img src="../../.gitbook/assets/20240911 Federation Discovery.png" alt=""><figcaption></figcaption></figure>
 
-#### Implementation Considerations&#x20;
+### 4. Implementation Considerations&#x20;
 
 When implementing DNS for service discovery in BDI, several factors need to be considered:&#x20;
 
@@ -47,9 +63,7 @@ When implementing DNS for service discovery in BDI, several factors need to be c
 3. _Scalability_: DNS is inherently scalable, making it suitable for large, federated networks like BDI. However, organizations must ensure that their DNS infrastructure can handle the expected load, particularly as the network grows.&#x20;
 4. _Standardization_: To ensure interoperability within the BDI network, it is crucial to follow standardized naming conventions and DNS record formats. This includes using well-known subdomains { "\_bdi.\[url]"}  and consistent formatting for TXT and SRV records.&#x20;
 
-
-
-#### Elements and Their Key Functions&#x20;
+### 5. Elements and Their Key Functions&#x20;
 
 1. _Well-Known Subdomain_: A predictable subdomain, such as \_bdi.acme-corp.com, serves as a central point for service discovery. This subdomain is used to organize DNS records related to BDI services, making it easy for data consumers to find relevant endpoints.&#x20;
 2. _SRV Records_: SRV records are used to locate the actual endpoints where services are hosted. These records specify the hostname or IP address, port number, protocol, and other parameters necessary to connect to the service.
@@ -60,3 +74,5 @@ When implementing DNS for service discovery in BDI, several factors need to be c
 &#x20;
 
 {% file src="../../.gitbook/assets/2024_DIL_BDI-DNS-Service-Discovery-Proposal.pdf" %}
+
+{% file src="../../.gitbook/assets/20240920_BDI_DNS as a service discovery mechanism.pdf" %}

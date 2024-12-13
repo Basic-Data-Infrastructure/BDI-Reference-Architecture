@@ -1,11 +1,28 @@
+---
+layout:
+  title:
+    visible: true
+  description:
+    visible: false
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+---
+
 # Edge agreements
 
-### Summary
+### 1. Summary
 
 Edges are the boundaries of an association. Edge Agreements define how members of the association can interact with non-members of the association
 
-### Purpose of the building block
+### 2. Purpose of the building block
 
+
+
+{% hint style="info" %}
 One can identify three types of “edges” or boundaries:
 
 1. The boundaries that arise from specific agreements in groups that all use the BDI framework but have specific agreements per group
@@ -17,6 +34,7 @@ One can identify three types of “edges” or boundaries:
    * This boundary has both technological (IT) and legal (liabilities) aspects that interact with each other: the shipper, receiver and transporter execute two commercial transactions at the same time. The shipper executes the delivery of the goods sold to the receiver by means of a transport order which is another commercial transaction between the transporter and the shipper.
 
 Edge agreements are standards for interactions on a boundary. This standard may be local to a group (or Association), or more global over multiple groups. The BDI has a listing available of a set of potential agreements that can be used in such a process. In these agreements it is also indicated which are obligatory and which are not.
+{% endhint %}
 
 ### Example for digital shipment data
 
@@ -103,3 +121,7 @@ When starting an association, it is advisable to establish a set of "edge agreem
 
 * [https://digitalshipmentdata.org/](https://digitalshipmentdata.org/)
 * [https://www.evofenedex.nl/kennis/internationaal-ondernemen/incoterms/de-11-incoterms-2020](https://www.evofenedex.nl/kennis/internationaal-ondernemen/incoterms/de-11-incoterms-2020)
+
+
+
+{% file src="../../.gitbook/assets/Waybill complete.pdf" %}

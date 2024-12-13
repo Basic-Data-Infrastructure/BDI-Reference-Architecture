@@ -1,6 +1,20 @@
+---
+layout:
+  title:
+    visible: true
+  description:
+    visible: false
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+---
+
 # Digital Identity M2M
 
-### Summary
+### 1. Summary
 
 This building block supports trust among participants by defining how digital identities play a role in BDI in machine-to-machine (M2M) interactions.
 
@@ -8,7 +22,7 @@ Digital identifiers for natural persons are described in Digital Identity (H2M).
 
 In it's implementation, BDI aligns with iSHARE's implementation of digital identities, preferring PKI certificates issued by a reputable identity provider as digital identity of parties like Service Providers. In Europe the eIDAS regulation is a solid foundation for the identity ecosystem.
 
-### Purpose of the building block
+### 2. Purpose of the building block
 
 {% hint style="success" %}
 The purpose of this building block is to support the framework for trust among parties, by ensuring that parties can provide and receive a verified digital identity.  An authenticated digital identity is the prerequisite for determining trust and subsequent authorization.
@@ -16,7 +30,7 @@ The purpose of this building block is to support the framework for trust among p
 The building block ensures that interactions within BDI (onboarding, offboarding, data exchange, service consumption, etc.) will take place between identified and authenticated  parties.
 {% endhint %}
 
-### Concepts
+### 3. Concepts
 
 The following concepts (from the BDI Glossary), all regarding legal entities, are particularly relevant in this building block:
 
@@ -31,11 +45,11 @@ The following concepts (from the BDI Glossary), all regarding legal entities, ar
 
 <figure><img src="../../../.gitbook/assets/)ther association.png" alt=""><figcaption><p>How a Business Partner from another BDI Association can become a preferred Business partner of a BDI Association.</p></figcaption></figure>
 
-### Risks
+### 4. Risks
 
 An insufficient framework for digital identity, might lead to a lower level of trust among parties and will harm the overall trust in BDI.
 
-### Interlinkages with other building blocks
+### 5. Interlinkages with other building blocks
 
 This building block describes the BDI principles for digital identity for M2M interactions.
 
@@ -54,7 +68,7 @@ The most important related Kits and concepts are
 * Federation Kit
 * Boundary Management
 
-### &#x20;Core design decisions
+### 6. Core design decisions
 
 A digital identity has to be linked with the legal identifier of the legal entity that :
 
@@ -78,14 +92,14 @@ The BDI prefers PKI certificates issued by a reputable identity provider as digi
 
 In Europe the eIDAS regulation is a solid foundation for the identity ecosystem.
 
-Selfsigned certificates for digital identities are a low-barrier entry level solution, with serious limitations on trust, federation and scaling.
+Selfsigned certificates for digital identities are a low-barrier entry level solution, with serious limitations on trust, federation and scaling
 
-### Further reading
+### 7. Further reading
 
 * ​[DSSC Blueprint building block “Identity and Attestation Management](https://dssc.eu/space/BVE/357075352/Identity+and+Attestation+Management)
-* [https://taxation-customs.ec.europa.eu/customs-4/customs-procedures-import-and-export-0/customs-procedures/economic-operators-registration-and-identification-number-eori\_en](https://taxation-customs.ec.europa.eu/customs-4/customs-procedures-import-and-export-0/customs-procedures/economic-operators-registration-and-identification-number-eori\_en)
-* ​[https://e-justice.europa.eu/489/EN/business\_registers\_\_search\_for\_a\_company\_in\_the\_eu](https://e-justice.europa.eu/489/EN/business\_registers\_\_search\_for\_a\_company\_in\_the\_eu)
-* [https://ec.europa.eu/taxation\_customs/vies/#/vat-validation-result](https://ec.europa.eu/taxation\_customs/vies/#/vat-validation-result)
+* [https://taxation-customs.ec.europa.eu/customs-4/customs-procedures-import-and-export-0/customs-procedures/economic-operators-registration-and-identification-number-eori\_en](https://taxation-customs.ec.europa.eu/customs-4/customs-procedures-import-and-export-0/customs-procedures/economic-operators-registration-and-identification-number-eori_en)
+* ​[https://e-justice.europa.eu/489/EN/business\_registers\_\_search\_for\_a\_company\_in\_the\_eu](https://e-justice.europa.eu/489/EN/business_registers__search_for_a_company_in_the_eu)
+* [https://ec.europa.eu/taxation\_customs/vies/#/vat-validation-result](https://ec.europa.eu/taxation_customs/vies/#/vat-validation-result)
 * [D-U-N-S Number Navigation Home – Dun & Bradstreet (dnb.com)](https://www.dnb.com/duns.html)
 * [https://www.gleif.org/en/about-lei/introducing-the-legal-entity-identifier-lei](https://www.gleif.org/en/about-lei/introducing-the-legal-entity-identifier-lei)
 * ​[https://www.w3.org/TR/vc-data-model-2.0/](https://www.w3.org/TR/vc-data-model-2.0/)​

@@ -1,6 +1,6 @@
 # Authentication H2M
 
-### Summary&#x20;
+### 1. Summary&#x20;
 
 Authentication is the process of proving that the user (human or IT process) with a digital identity is the rightful owner of that identity (definition from IDpro).
 
@@ -8,7 +8,7 @@ Authentication is required in both H2M (Human to Machine) and M2M (Machine to Ma
 
 The complexity of H2M authentication is increased by privacy regulations: authenticating a human reveals his/hers identity.
 
-### Purpose of the building block&#x20;
+### 2. Purpose of the building block&#x20;
 
 {% hint style="info" %}
 Ensure that BDI users (H2M) are recognized,  identified  as a person and in a specific role on behalf of a legal entity: to prevent misuse, fraud, theft of data, services and physical goods. Enable smooth,  efficient and secure Boundary Management.
@@ -16,7 +16,7 @@ Ensure that BDI users (H2M) are recognized,  identified  as a person and in a sp
 Ensure that privacy leaks as a result of authentication are limited.
 {% endhint %}
 
-### Concepts&#x20;
+### 3. Concepts&#x20;
 
 The use cases relate to Boundary Management:
 
@@ -33,9 +33,9 @@ The Identity Provider chosen by the parties/Association provides authentication.
 
 Representation evidence may be stored in a register by an Association, or transmitted between parties in a nested Jason Web Token or a Verifiable Presentation of Credentials.
 
-### Core design decisions&#x20;
+### 4. Core design decisions&#x20;
 
-#### OAuth2 & OpenID Connect
+#### 4.1. OAuth2 & OpenID Connect
 
 The BDI uses the OAuth2 protocol and OpenID Connect protocol for H2M interactions. Identities are managed by an Identity Provider (also called an OpenID Provider).&#x20;
 
@@ -57,7 +57,7 @@ Organization can use (a) an internal Identity Provider (b) an exclusive external
 
 In the BDI users are typically acting as a representative for a legal entity and not as an individual person. Therefore, the OpenID Connect userinfo endpoint must contain a organizational identifier of the legal entity.
 
-#### eIDAS
+#### 4.2. eIDAS
 
 eIDAS is short for ‘Electronic Identification, Authentication and Trust Services’. eIDAS was launched to help remove digital borders between countries in the EEA, while ensuring the security of digital systems and protecting people’s privacy.
 
@@ -67,19 +67,17 @@ There are strict regulations on the use of eDIAS. DigiD can't be used for most p
 
 Once a national electronic identification scheme has been recognised at European level, it can be used in other EEA countries. This is set out in the EU’s eIDAS Regulation.&#x20;
 
-
-
-**Smart Cards / Pyhisical Access Passes**
+**4.3. Smart Cards / Pyhisical Access Passes**
 
 These can be used for access to a location and/or transferring assets.&#x20;
 
-### Future Work
+### 5. Future Work
 
 eIDAS2 introduces new trust services and EU Digital Identity Wallets (EDIW) for the use by citizens in both public and private domains. eIDAS2 also includes Organisational Digital Identity Wallets (ODIWs).
 
 Source: [https://coe-dsc.nl/wp-content/uploads/2024/01/CoE-DSC-eIDAS-impact-on-data-spaces.pdf](https://coe-dsc.nl/wp-content/uploads/2024/01/CoE-DSC-eIDAS-impact-on-data-spaces.pdf)
 
-### Interlinkages with other building blocks&#x20;
+### 6. Interlinkages with other building blocks&#x20;
 
 This building block interlinks with:
 
