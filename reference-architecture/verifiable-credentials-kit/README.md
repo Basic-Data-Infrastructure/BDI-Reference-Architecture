@@ -6,3 +6,11 @@
 
 ### Building blocks
 
+
+
+### Further reading
+
+
+
+{% file src="../../.gitbook/assets/Eindrapport IAA - TNO 2024 R12443 Applying VCs in BDI.pdf" %}
+
