@@ -1,6 +1,6 @@
 # Notification pub/sub service
 
-### Summary
+### 1. Summary
 
 Notifications of events are the digital representation of the result of events in the physical world: for example, ‘expected arrival time issued’, ‘container has been unloaded’. So, a notification of an event is the result of an event, not the event itself, events occur in the physical world, notifications of events occur in the digital world.
 
@@ -10,17 +10,19 @@ Take the event that a full container has been loaded onto a container ship in Ch
 
 An important concept of the BDI is that involved parties can subscribe to channels and their ‘daughters’: they receive all notifications of events that are published to that channel. If required (and permitted) a party can request more data from the source. The concept of notifications of events and subscribing to them is broadly applicable: take the schedule for a building site for example. It is highly effective for all the suppliers and subcontractors if new things or changes to the schedule are automatically identified.
 
-### Purpose of the building block
+### 2. Purpose of the building block
 
+{% hint style="info" %}
 ‘Event-driven’ communication is a way of restructuring the logistics of the information exchange between the IT systems of companies. Instead of a data owner sending messages when something of importance needs to be communicated (‘fire and forget’, ‘messaging’), all parties involved receive a signal (‘notification’) from the data owner that something relevant has happened (‘publish event to subscribers’).
 
 That event contains metadata and a link to the source of the data. The receiving party evaluates the metadata and decides whether to follow the link to the source and access the data.
 
-<figure><img src="../../.gitbook/assets/Afbeelding1.png" alt=""><figcaption></figcaption></figure>
+<img src="../../.gitbook/assets/Afbeelding1.png" alt="" data-size="original">
 
 The Event Pub-Sub Service handles the centralized parts of this event-based communication. The actual data exchange happens directly between the parties in a federated manner.
+{% endhint %}
 
-### Concepts
+### 3. Concepts
 
 _Notifications_ trigger communication between decoupled services and are common in modern applications built with microservices. In the BDI, a notification corresponds to an event in the physical world.
 
@@ -51,13 +53,13 @@ This approach has many advantages:
   * Authorization rules define what data can be accessed by what role/party.
   * All access to the data can be logged.
 
-### Choreography
+### 4. Choreography
 
 In supply chains the chain of business activities starts when a Seller and Buyer agree upon the transaction. This agreement typically includes terms related to transport, insurance, customs, the handover of responsibilities, and payments. The successful execution of this agreement often requires coordination among a large set of actors, including authorities and their subcontractors. This coordination is managed through a "choreography" of actions, where each action is triggered by planned or executed events.
 
 The choreography describes which channels there are and which parties can subscribe to them. As the design of an appropriate choreography can be challenging and has major impact on the efficiency of the pub/sub service, this subject is discussed in detail in a separate [page](event-choreography.md).
 
-### Implementation Considerations
+### 5. Implementation Considerations
 
 According to EPCIS (ISO/IEC 19987), a notification contains at least the following four aspects: what, where, when, and why and an optionally fifth: how.
 
@@ -69,17 +71,17 @@ According to EPCIS (ISO/IEC 19987), a notification contains at least the followi
 
 However, in line with BDI federation rules, data on these aspects is not always added directly to the notification. In instead, only a link to the source may be included, and interested parties can get the necessary data at the source.
 
-### Interlinkages with other building blocks
+### 6. Interlinkages with other building blocks
 
 There are links with the following building blocks:
 
-* Semantics
+* [Semantics](../semantics-kit/)
 * Data model
 * Data format
 * Data protocol
 * Zero Trust Check
 
-### Elements and their key functions
+### 7. Elements and their key functions
 
 The following pattern describes the typical interaction with the Pub-Sub service. First, we enter a configuration phase:
 
@@ -98,7 +100,7 @@ All is now setup for the actual event-based communication:
 * The data consumer decides to request the data at the owner’s location using the link sent along as part of the trigger.
 * The owner can now do several checks to see if the data consumer is (still) allowed to access his data. In this case the owner agrees, and the data is sent as response to the query from the consumer.
 
-### Core design decisions
+### 8. Core design decisions
 
 _Granularity of event channels_
 
@@ -108,7 +110,7 @@ _Multiple event brokers in a network_
 
 * It is yet unclear how multiple event brokers, from different suppliers, would work together in a decentralized network. Most available open and commercial solutions do support multiple brokers but typically only the ones from the same supplier.
 
-### Further reading
+### 9. Further reading
 
 * EPCIS (ISO/IEC 19987:2024) [https://www.iso.org/standard/85557.html](https://www.iso.org/standard/85557.html)
 * DCSA: [https://www.dcsa.org/standards/track-and-trace](https://www.dcsa.org/standards/track-and-trace)
