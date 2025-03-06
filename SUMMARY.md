@@ -27,6 +27,7 @@
     * [Trusted Goods Release - Event Demo](reference-architecture/logistics-event-kit/trusted-goods-release-event-demo.md)
   * [Semantics KIT](reference-architecture/semantics-kit/README.md)
     * [Overview](reference-architecture/semantics-kit/overview.md)
+    * [Logistics event Ontology](reference-architecture/semantics-kit/logistics-event-ontology.md)
     * [Demos](reference-architecture/semantics-kit/demos.md)
   * [Representation KIT](reference-architecture/representation-kit/README.md)
     * [Representation Chain](reference-architecture/federation-kit/representation-register.md)
