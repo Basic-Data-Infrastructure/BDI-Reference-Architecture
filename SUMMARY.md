@@ -63,3 +63,4 @@
     * [Demos](reference-architecture/boundary-management/demos.md)
   * [GLOSSARY](reference-architecture/glossary/README.md)
     * [BDI Terms](reference-architecture/glossary/bdi-terms.md)
+* [How to contribute to the BDI](how-to-contribute-to-the-bdi.md)
