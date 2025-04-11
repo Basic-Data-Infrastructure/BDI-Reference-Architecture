@@ -5,6 +5,7 @@
     * [Core Principles](reference-architecture/introduction/core-principles.md)
     * [Stack and KITs](reference-architecture/introduction/stack-and-kits.md)
     * [BDI Technical Roles](reference-architecture/introduction/bdi-technical-roles.md)
+  * [BDI Maintenance and Community Contributions](reference-architecture/bdi-maintenance-and-community-contributions.md)
   * [Trust KIT](reference-architecture/trust-kit/README.md)
     * [Digital Identity](reference-architecture/trust-kit/digital-identity/README.md)
       * [Digital Identity M2M](reference-architecture/trust-kit/digital-identity/digital-identity.md)
@@ -63,4 +64,3 @@
     * [Demos](reference-architecture/boundary-management/demos.md)
   * [GLOSSARY](reference-architecture/glossary/README.md)
     * [BDI Terms](reference-architecture/glossary/bdi-terms.md)
-* [How to contribute to the BDI](how-to-contribute-to-the-bdi.md)
