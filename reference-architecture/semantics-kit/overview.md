@@ -68,7 +68,6 @@ We see them as excellent starting points for the format we are trying to define.
 
 The choices made for this building block are based on the following research:
 
-* [Developing Semantics for Supply Chain Transport Logistics](https://bdinetwork.org/wp-content/uploads/2024/01/2024-BDI-Developing-Semantics-for-Supply-Chain-Transport-Logistics.pdf)
 * [Federated Semantic Interoperability](https://www.federatedplatforms.eu/index.php/federated-semantic-interoperability)
 * LEO: THE LOGISTICS EVENT ONTOLOGY. A generic “minilanguage” for sharing information across domains, BDI Architecture Board
 * Selection of a base model for LEO, BDI Architecture Board
