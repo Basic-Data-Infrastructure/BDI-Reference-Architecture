@@ -157,9 +157,13 @@ The warehouse employee scans a **QR code**, verifies the JWT chain, checks her I
 
 ***
 
-### Fallback and Hybrid Mechanisms
+### DigiDrop
 
-BDI’s method accounts for **non-ideal environments** — e.g., no internet, broken devices, or limited IT skills. Key fallback mechanisms include:
+BDI’s method accounts for **non-ideal environments** — e.g., no internet, broken devices, or limited IT skills. For this, the DigiDrop way of working can give viable alternatives.
+
+{% embed url="https://github.com/Topsector-Logistiek/Digidrop" %}
+
+#### High leven overview of DigiDrop fallback:
 
 #### QR Code + PIN Workflow
 
