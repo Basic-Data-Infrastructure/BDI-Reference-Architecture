@@ -2,13 +2,23 @@
 
 #### Summary
 
-The **Representation Chain** is a foundational architectural building block in the BDI framework. It enables third parties to **verify representation mandates** — confirming whether a person, legal entity, or automated process is genuinely acting on behalf of another.
+The **Representation Chain** is a  building block in the BDI framework. It enables third parties to **verify representation mandates** — confirming whether a person, legal entity, or automated process is genuinely acting on behalf of another.
 
 A **mandate** is a formal, authoritative assignment of responsibility from a **mandator** (the assigning party) to a **mandatee** (the acting party). It transfers **accountability and liability** for actions from the mandatee back to the mandator.
 
 To function securely and flexibly across different contexts, the Representation Chain uses **Representation Evidence** — typically implemented using **nested JSON Web Tokens (JWTs)**. These can be verified both **online** (e.g., via issuer services) and **offline** (e.g., on a warehouse floor via a QR scan).
 
-#### Purpose
+#### Introduction
+
+In today’s increasingly interconnected and regulated economy, businesses and authorities are facing a growing need for robust digital proof in everyday interactions. Whether it’s verifying that a subcontractor is authorized to collect a shipment, confirming a driver’s professional qualification, or demonstrating compliance with regulations during an inspection, organizations must often rely on people or systems that act on their behalf. In most cases, liability for these actions lies with the organization, not the individual. This creates a pressing demand for a mechanism that can reliably prove — both legally and practically — that the person or machine performing a task has been officially mandated to do so.
+
+Traditional methods such as paper documents or verbal confirmations are no longer sufficient. A modern solution must be secure, flexible, scalable, and usable in low-tech environments by people with little IT training. It must also support dynamic staffing models and allow independent IT providers to build competitive solutions without vendor lock-in. The JSON Web Token (JWT) standard, originally designed for secure information exchange between systems, offers a strong foundation for such a solution. Its format allows for verifiable digital claims, time-bound validity, cryptographic integrity, and issuer authentication — all critical features for establishing trust in operational contexts.
+
+What makes JWT particularly valuable in this setting is its ability to be embedded within other tokens. This “nesting” allows multiple layers of representation to be encapsulated in a single digital envelope — from a principal organization, through subcontractors, down to the individual or system actually performing the task. Combined with high-trust digital certificates like eIDAS, JWT-based evidence can meet the highest legal standards for electronic signatures while still being compact enough for mobile use.
+
+The approach supports both high-security and user-friendly versions. For example, a delivery driver might receive a QR code and PIN via text, which they present at a loading dock. The system verifies their credentials — offline if necessary — with minimal friction. This combination of simplicity and cryptographic strength makes JWT-based representation not only viable but ideal for logistics, compliance, and other sectors where verifiable delegation and operational practicality must coexist.
+
+**Purpose**
 
 The Representation Chain supports both:
 
