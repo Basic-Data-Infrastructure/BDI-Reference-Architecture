@@ -70,7 +70,7 @@ The verifier checks the signature chain, timestamps, and optionally contacts the
 
 ### Business Need for Digital Representation
 
-There is an increasing demand in business transactions for **digital proof of authority**, particularly in interactions between:
+Supporting business itneractions digitally, requires **digital proof of authority**, particularly in interactions between:
 
 * Individual companies
 * Companies and supervisory/government bodies
@@ -121,39 +121,52 @@ The complexity is handled behind the scenes by IT systems.
 
 ***
 
-### Real-World Example: Chemical Pickup Using JWTs
+### Example: Transporting Hazardous Materials Using JWT Representation Evidence
 
-This practical case illustrates the Representation Chain mechanism in logistics.
+This example illustrates how a chain of representation is securely and digitally established using embedded JWTs in a real-world logistics setting.
 
-#### Scenario
+#### Scenario: Chemical Pickup by a Subcontracted Driver
 
-1. **Acne Inc.** sells hydrofluoric acid and arranges pickup at Lets-B-Chemical.
-2. **Van Gend & Loos** is contracted to transport the goods.
-3. Van Gend subcontracts **De Snelle Visser**.
-4. **Dolly Driver**, an employee of De Snelle Visser, arrives to collect the cargo.
+A large industrial buyer has purchased hydrofluoric acid and the supplier — **Acne Inc.** — arranges for the pickup to occur at **Lets-B-Chemical**. However, Acne does not have its own transport capacity and therefore contracts the trusted logistics firm **Van Gend & Loos** to execute the pickup and delivery.
 
-Dolly must prove:
+Van Gend & Loos does not have a truck available on the required date. Instead, it chooses to subcontract the pickup task to **De Snelle Visser**, a regional carrier already scheduled to pass by Lets-B-Chemical. **Dolly Driver**, an employee of De Snelle Visser, is tasked with executing the collection.
 
-* Her authority (representation chain: Acne → Van Gend → Snelle Visser → Dolly)
-* Her identity
-* Her qualifications (e.g., ADR certification)
+Now Dolly must be able to prove the following:
 
-She presents a **JWT** on her phone, embedded with:
+* That she has a valid, authorized assignment from her employer De Snelle Visser.
+* That De Snelle Visser was subcontracted by Van Gend & Loos.
+* That Van Gend & Loos was originally contracted by Acne Inc.
+* That she holds the correct qualifications to handle hazardous goods.
 
-* Her employer’s signature
-* Her personal info
-* The upstream delegation tokens
-* Her qualifications
+At the pickup location, Lets-B-Chemical needs to verify her mandate and qualifications **before releasing the acid**. This must be done quickly, securely, and ideally without needing complex systems or manual calls. To enable this, a **chain of JWTs** is created and passed down from Acne Inc. to Dolly Driver.
 
-The warehouse employee scans a **QR code**, verifies the JWT chain, checks her ID, and confirms the transfer.
+#### JWT Chain Construction
 
-#### Key Elements Verified
+1. **Acne Inc.** issues a signed JWT that authorizes **Van Gend & Loos** to collect the hydrofluoric acid.
+2. **Van Gend & Loos** issues a JWT to **De Snelle Visser**, embedding Acne's original JWT inside. This proves that Van Gend had authority to subcontract and passes the responsibility trace.
+3. **De Snelle Visser** creates a JWT embedding both upstream tokens and includes Dolly's:
+   * Identity details
+   * Employment role
+   * ADR (dangerous goods) certification
+   * Device-specific metadata (e.g. IP address, vehicle license)
 
-* Signature validity and token freshness (`nbf`, `exp`)
-* Embedded delegation from all upstream parties
-* Dolly’s ID matches the `sub` claim
-* ADR qualifications included or linked
-* Revocation status (optional online check)
+#### Field Presentation and Validation
+
+Dolly arrives at Lets-B-Chemical and presents a **QR code** on her mobile phone. This QR code contains the fully nested JWT. The security officer scans it using a standard or BDI-enabled app.
+
+The system:
+
+* Verifies the cryptographic signature chain
+* Checks timestamps (validity, expiry, issuance)
+* Confirms Dolly’s identity and employer
+* Detects ADR certification
+* Optionally contacts the issuer (e.g., Acne or Van Gend) to verify token revocation status
+
+If all criteria are met, the acid is released.
+
+This chain-of-proof allows the liability and mandate to be **fully tracked and provable**, including post-facto audits. The information can be viewed via a link (e.g., "bdidrop.link/124V") or through integration with back-office systems.
+
+The structure is robust enough for secure transport of sensitive cargo and simple enough to be used by temporary staff with minimal digital training.
 
 ***
 
