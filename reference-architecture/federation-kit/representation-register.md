@@ -1,9 +1,5 @@
 # Representation Chain
 
-## Representation Chain and JSON Web Tokens in the BDI Framework
-
-### Representation Chain
-
 #### Summary
 
 The **Representation Chain** is a foundational architectural building block in the BDI framework. It enables third parties to **verify representation mandates** — confirming whether a person, legal entity, or automated process is genuinely acting on behalf of another.
