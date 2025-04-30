@@ -111,13 +111,53 @@ There’s no formal limit to the number of layers. For legal-grade use (e.g., cr
 
 
 
-For many real-world situations, **usability** is more critical than military-grade security. Inspired by DigiD and “Tikkie”, a lightweight version of the solution has been developed using just:
+***
 
-* A smartphone
-* A QR code
-* A PIN code
+### Example: Machine-to-Machine Access to Sensitive Operational Data
 
-The complexity is handled behind the scenes by IT systems.
+This example demonstrates how a chain of representation and delegation is managed digitally when data,  is the asset being accessed — and when systems, not people, are the ones performing the action.
+
+#### Scenario: Delegated Data Access via a Subcontractor System
+
+A company called **SmartWater Solutions** manages water quality sensors across industrial facilities. A major client, **ChemCo Industries**, contracts SmartWater to monitor chemical runoff levels at their facilities. However, SmartWater does not have a data analysis platform robust enough for ChemCo's specific requirements. To meet the SLA, SmartWater subcontracts **DeepSignal Analytics**, a specialized AI firm, to process and analyze the raw data streams.
+
+Now, DeepSignal’s automated system (an API client) must retrieve sensitive sensor data from **ChemCo’s secure telemetry endpoint**. However, ChemCo’s API is configured to only accept requests from authorized systems — specifically those acting on behalf of contractual parties.
+
+To make this delegation verifiable and non-repudiable, SmartWater issues a **Representation JWT** to DeepSignal. This token proves that DeepSignal has been delegated the right to act on SmartWater’s behalf. It includes an embedded JWT from ChemCo to SmartWater, establishing the upstream mandate.
+
+#### JWT Chain Construction (M2M)
+
+1. **ChemCo Industries** issues a JWT authorizing **SmartWater Solutions** to retrieve and process sensor data on its behalf. The token includes:
+   * Scope (sensor IDs, data types)
+   * Validity window (`nbf`, `exp`)
+   * A `jti` (token ID) for revocation checks
+2. **SmartWater Solutions** issues a second JWT to **DeepSignal Analytics**, embedding the ChemCo JWT. It contains:
+   * DeepSignal’s system identifier (API client ID or server public key reference)
+   * Constraints on data types, endpoints, or frequency
+   * A clear mandate scope (e.g. "read-only access to zone A sensor logs")
+
+The JWT is cryptographically signed by SmartWater and includes ChemCo’s original JWT inside its payload.
+
+#### Machine Request and Verification
+
+When DeepSignal’s system sends a request to ChemCo’s API, it attaches the nested JWT as its **digital proof of mandate**. ChemCo’s API performs the following checks:
+
+* Validates both signatures (SmartWater and ChemCo)
+* Verifies token expiry and start time
+* Confirms that DeepSignal's system is the intended subject
+* Parses the embedded JWT from ChemCo to SmartWater to confirm original authority
+* Optionally, looks up the token's `jti` in ChemCo’s revocation list or representation register
+
+If all checks succeed, the API grants access and returns the requested sensor data.
+
+This JWT-based method ensures that:
+
+* **SmartWater retains liability** for DeepSignal’s actions
+* **DeepSignal cannot misuse or forward the token**, as the claims are specific and signed
+* ChemCo has an **audit trail** of who requested what data and on whose authority
+* Delegation can be revoked or changed with minimal friction
+
+
 
 ***
 
