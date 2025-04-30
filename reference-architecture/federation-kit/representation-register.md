@@ -238,7 +238,6 @@ Combined with **fallback workflows** and **hybrid adoption pathways**, this meth
 ### Learn More
 
 * [RFC 7519 – JSON Web Token (JWT)](https://datatracker.ietf.org/doc/html/rfc7519)
-* [BDI Representation Register](https://bdinetwork.org/framework/representation/)
 * [VC Data Model 2.0](https://www.w3.org/TR/vc-data-model-2.0/)
 * BDI Edge Agreements
 * [IANA JWT Claim Registry](https://www.iana.org/assignments/jwt/jwt.xhtml)
@@ -253,7 +252,7 @@ Combined with **fallback workflows** and **hybrid adoption pathways**, this meth
 
 {% file src="../../.gitbook/assets/2024-BDI-Embedded-JWT-as-Representation-Evidence.pdf" %}
 
+{% file src="../../.gitbook/assets/BDI DigiDrop Transport documents.pdf" %}
 
-
-
+{% file src="../../.gitbook/assets/20241119 - Proof of Concept Implementatie DigiDrop UltraLite.pages.pdf" %}
 
