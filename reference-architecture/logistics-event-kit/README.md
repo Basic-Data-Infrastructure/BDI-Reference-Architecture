@@ -1,10 +1,21 @@
 # Logistics Event KIT
 
-The Logistics Events KIT is an essential component of the Basic Data Infrastructure (BDI), specifically designed to enable the exchange of logistics events and associated data across the BDI ecosystem. This KIT is vital for organizations that require real-time visibility and coordination within their logistics operations. Building on the secure foundation provided by the TRUST KIT, it utilizes the BDI control plane and Identity, Authentication, and Authorization (IAA) functions to ensure that event data is exchanged securely and efficiently.
+In fast-moving, operational environments—whether in logistics, infrastructure, mobility, or beyond—effective coordination depends on timely and reliable information sharing between autonomous organizations. The **Basic Data Infrastructure (BDI)** supports this through **event-driven coordination**: a way for distributed parties to align their actions based on real-world events.
 
-The core building block of the Logistics Events KIT is the Pub/Sub service, which allows for the publication and subscription of logistics events. This service facilitates the timely and reliable distribution of event-related information, ensuring that all relevant parties receive critical updates as they happen. By integrating with the BDI control plane, the Logistics Events KIT ensures that all data exchanges comply with established security protocols and governance frameworks set by the TRUST KIT.
+The **Logistics Event Kit** offers a reference pattern for applying this event-based approach in practice. It enables operational visibility, dynamic collaboration, and faster responses to change—without requiring tight system integration or centralized control.
 
-Implementing the Logistics Events KIT enables organizations to streamline their logistics processes, improve real-time decision-making, and enhance overall supply chain efficiency. It is a crucial addition for any BDI deployment that involves dynamic and event-driven logistics operations, ensuring that data flows seamlessly and securely throughout the system.
+At its core, the approach treats **events**—such as a delay, a delivery, or a status update—as signals that drive coordination. These events capture the operational reality as it unfolds. When shared with the right parties at the right moment, they enable each actor to make informed decisions, fulfill their role, and stay aligned with the broader process.
+
+#### Why use event-driven coordination?
+
+* **It reflects real-world dynamics**: Plans often change; coordination must follow what’s actually happening.
+* **It supports flexibility**: Events help autonomous systems work together without direct coupling.
+* **It improves responsiveness**: Early signals allow actors to adjust quickly and avoid bottlenecks.
+* **It fosters accountability**: Shared events form a transparent timeline of what occurred.
+
+While event-driven models are well known, the **BDI framework makes them usable within a federative network**. It provides the trust, structure, and agreements needed for sharing event information across organizational boundaries—while preserving data ownership and system independence.
+
+The pages that follow introduce the main components of this approach.
 
 
 
