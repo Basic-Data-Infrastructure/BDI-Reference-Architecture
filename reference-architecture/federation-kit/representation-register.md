@@ -251,30 +251,6 @@ If a warehouse does not use DigiDrop:
 
 ***
 
-### Common Claims in BDI JWTs
-
-#### Registered Claims
-
-| Claim         | Description                           |
-| ------------- | ------------------------------------- |
-| `iss`         | Issuer (e.g., `_bdi.acme.com`)        |
-| `sub`         | Subject of the JWT                    |
-| `aud`         | Intended audience                     |
-| `nbf` / `exp` | Validity timeframe                    |
-| `iat`         | Issued-at timestamp                   |
-| `jti`         | Unique identifier for revocation      |
-| `vc` / `vp`   | Verifiable Credential or Presentation |
-
-#### BDI-Specific Claims
-
-| Claim  | Purpose                      |
-| ------ | ---------------------------- |
-| `fl`   | Freightbill reference        |
-| `efti` | eFTI/eCMR integration link   |
-| `ipa`  | Originating IP (IT security) |
-
-***
-
 ### Summary
 
 The **Representation Chain** provides a flexible, secure, and verifiable method for proving authority in business interactions — whether digital or physical. Its implementation via **JWTs** is:
