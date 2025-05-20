@@ -210,11 +210,21 @@ The structure is robust enough for secure transport of sensitive cargo and simpl
 
 ***
 
-### DigiDrop
+### Representation for transactions by IT-applications : DigiDrop
 
-BDI’s method accounts for **non-ideal environments** — e.g., no internet, broken devices, or limited IT skills. For this, the DigiDrop way of working can give viable alternatives.
+The most common transaction in logistics is the handover of goods (cargo on its way through the supply chain) between entities. Part of the handover is associated with trade (buyer-seller), part of the handover is about liability (transporter taking cargo on board of a vessel, plane, railcarriage or truck).&#x20;
+
+The "Digidrop" approach to executing transactions (such as transfer of goods) shifts the legal "signing" of a transaction to IT-systems on behalf of the companies involved. The human involvement is supportive and indirect, instead of acting as a representative of the entity. The  IT-systems involved act as the representatives of the legal entities involved.
+
+This approach circumvents the issues and obstacles that rise if humans need digitally "sign" a transaction. The Digidrop document outlines the approach.
 
 {% embed url="https://github.com/Topsector-Logistiek/Digidrop" %}
+
+#### Fallback
+
+BDI’s method accounts for **non-ideal environments** — e.g., no internet, broken devices, or limited IT skills.  Many (SME) actors in logistics are not yet able to integrate themselves in a more advanced IT-interaction framework such as the BDI.
+
+In such a case the most valuable piece of information that needs to be digitally available is the visbility of a handover event. A fallback methode has been designed for such use cases, minimizing the requirements. Such a method is not a replacement of the traditional "paper-based" processes: it only creates more visbility in the supply chain.
 
 #### High leven overview of DigiDrop fallback:
 
