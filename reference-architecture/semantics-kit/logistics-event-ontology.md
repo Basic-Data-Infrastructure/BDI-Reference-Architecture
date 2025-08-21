@@ -1,17 +1,3 @@
----
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
----
-
 # Logistics event Ontology
 
 There is a growing demand from Beneficial Cargo Owners (BCO) to create more visibility in the supply chain: visibility of the operational planning and execution of all the steps between ordering goods and receiving the consignments in the distribution centre or warehouse of the BCO.
@@ -28,9 +14,8 @@ The concept of an event envelope is introduced, named Logistics Event Ontology (
 
 The Logistics Event Ontology (LEO) is derived from existing standards, especially the GS1 EPCIS standard. OpenEPCIS is an open-sourced fully compliant implementation of the EPCIS standard, allowing for extensions on the standard to support future events.
 
-&#x20;LEO supports the use of standard operational trip data by operators (such as carriers) to generate notifications of events to cargo owners or authorities, leading to efficiency and productivity increases.
+LEO supports the use of standard operational trip data by operators (such as carriers) to generate notifications of events to cargo owners or authorities, leading to efficiency and productivity increases.
 
 ### Documents
 
 {% file src="../../.gitbook/assets/20250120_BDI-Logistic-Event-Ontology.pdf" %}
-

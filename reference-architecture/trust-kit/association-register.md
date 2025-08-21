@@ -1,17 +1,3 @@
----
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
----
-
 # Association Register
 
 ### 1. Summary
@@ -64,7 +50,7 @@ _Member -_ Legal entity as member of the BDI Association of its choice
 
 _Federation of Associations -_ A series of collaborating BDI associations
 
-_Outsider -_ Member of a different BDI Association than the "home"  .  Note: this a relative perspective, from the position of a Member of a given instance (BDI Association). Members of the same instance are “insiders”, anybody else is an Outsider and vice versa.
+_Outsider -_ Member of a different BDI Association than the "home" . Note: this a relative perspective, from the position of a Member of a given instance (BDI Association). Members of the same instance are “insiders”, anybody else is an Outsider and vice versa.
 
 _Preferred Business Partners -_ Outsiders who have agreed to specific terms and conditions of a local BDI Association that maintains its own Business Partner Reputation Model
 
@@ -101,19 +87,15 @@ In its most simple form a data service provider has its own private Association 
 
 <figure><img src="../../.gitbook/assets/20240911 Private  or common AR.png" alt=""><figcaption></figcaption></figure>
 
-
-
 A shared Association Register adds the benefit of cost reduction, and trust/reputation sharing.
 
 An Autorization Register may be shared as well.
 
 <figure><img src="../../.gitbook/assets/20240911 Shared AR.png" alt=""><figcaption></figcaption></figure>
 
-
-
 A federated Association Register allows in principle an unlimited universe of parties that can check each other credentials as Member of their particular BDI Association, vice versa.
 
-The principles of by discovery through a standard \_bdi subdomain to facilitate federation are depicted below.&#x20;
+The principles of by discovery through a standard \_bdi subdomain to facilitate federation are depicted below.
 
 <figure><img src="../../.gitbook/assets/20240911 Federation Discovery.png" alt=""><figcaption></figcaption></figure>
 
@@ -127,7 +109,7 @@ An Association Register can have the following functions
 
 * An Association Administrator can register Members after executing the onboarding process as defined by the particular Association
 * An Association Administrator can deregister a Member, for instance when the Member requires it to do so, when a membership expires, or when a Member is to be excluded from membership due to a breach of terms and conditions.
-* An Association Administrator can delete or deprecate the registration of a Member, to be superseded by an improved registration.  Deprecation is preferred as the historical information may be useful in autopsies of security incidents.
+* An Association Administrator can delete or deprecate the registration of a Member, to be superseded by an improved registration. Deprecation is preferred as the historical information may be useful in autopsies of security incidents.
 * Members can use the Association Register to assess the trust level of another Member and to retrieve information about Members (in for instance what roles they fulfill).
 * Members can use the Association Register to asses the trust level and reputation of Visitors and Preferred Business Partners
 * Members can add to the Reputation score of registered entities.
@@ -161,4 +143,3 @@ This building block has been derived but modified from the following sources, th
 * ​[DSSC Blueprint building block “Participation Management”](https://dssc.eu/space/BVE/357074624/Participation+Management)​
 * ​[iSHARE Framework documentation](https://framework.ishare.eu/)​
 * ​[iSHARE Developer Portal documentation](https://dev.ishare.eu/)
-

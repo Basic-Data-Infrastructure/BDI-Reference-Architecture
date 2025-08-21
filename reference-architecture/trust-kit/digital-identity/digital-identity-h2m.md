@@ -1,17 +1,3 @@
----
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
----
-
 # Digital Identity H2M
 
 ### 1. Summary
@@ -23,7 +9,7 @@ Digital identifiers for IT-processes acting on behalf of an organization/legal e
 ### 2. Purpose of the building block
 
 {% hint style="info" %}
-The purpose of this building block is to support the framework for trust in Boundary Management, where humans are acting as a representative of a legal entity by means of  (digital) devices and telecommunication.
+The purpose of this building block is to support the framework for trust in Boundary Management, where humans are acting as a representative of a legal entity by means of (digital) devices and telecommunication.
 {% endhint %}
 
 ### 3. Concepts
@@ -51,7 +37,7 @@ The core concept is that identity is dynamically related to (potentially multipl
 
 Identity is a legal concept defined by a nation state and assigned to a human by that nation state. Nation States issue Passports and ID-cards to humans which they can use to "prove" their identity. Driving licenses are also used in some states (e.g. the Netherlands) to "prove" their identity.
 
-Digital identities are related to that core identity by Identity Providers which are used in B2B processes.  &#x20;
+Digital identities are related to that core identity by Identity Providers which are used in B2B processes.
 
 Identity Providers can choose to increase the assurance level of an identity; for instance by live verification of an identity paper. This can be done face-to-face or remote. Typically, this is executed once at the initiation of a new identity.
 
@@ -63,13 +49,13 @@ Biometric identification can also be used for accessing a physical location; e.g
 
 #### 3.3. Identifiers
 
-Identity Providers typically use an internal numbering scheme for identifying users which are enriched with more public identifiers like email addresses and telephone numbers. State issued identifiers (like the Dutch BSN) are often not allowed to be used outside the Government.&#x20;
+Identity Providers typically use an internal numbering scheme for identifying users which are enriched with more public identifiers like email addresses and telephone numbers. State issued identifiers (like the Dutch BSN) are often not allowed to be used outside the Government.
 
 In B2B processes, business email addresses are preferred. These should be using an organizational domain name (e.g. @myorganization.com) and a personal prefix (e.g. piet.jansen@ or s.jones@). The use of shared email accounts must be avoided. Also the use of general domains (e.g. @gmail.com) should be avoided. Typically, the user must demonstrate during the setup of the account that she has access to the business email address. This provides additional trust that the user has a business relation with the organization which owns the domain name.
 
 (Mobile) telephone numbers can also be used to identify / verify the user. During the setup the user demonstrates that she has access to the number. At a later moment, the user can demonstrate again that she still has access to this number.
 
-The push for electronic Wallets provides a new means to store and show a digital identity that can be authenticated.&#x20;
+The push for electronic Wallets provides a new means to store and show a digital identity that can be authenticated.
 
 #### 3.4. Representation
 
@@ -119,5 +105,3 @@ The BDI adds the link to representation and professional qualifications.
 In Europe the eIDAS regulation is a solid foundation for the identity ecosystem.
 
 Self-signed certificates for digital identities are a low-barrier entry level solution, with serious limitations on trust, federation and scaling.
-
-&#x20;

@@ -1,24 +1,10 @@
----
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
----
-
 # BDI Maintenance and Community Contributions
 
 **To file a change request, submit an issue here**: [https://github.com/Basic-Data-Infrastructure/BDI-change-requests](https://github.com/Basic-Data-Infrastructure/BDI-change-requests)
 
 ## Introduction
 
-This page describes the BDI Change and Release Management Process for maintaining the BDI Architecture Documentation. As BDI transitions into a maintenance phase, a thorough process for change and release management is becoming increasingly important.&#x20;
+This page describes the BDI Change and Release Management Process for maintaining the BDI Architecture Documentation. As BDI transitions into a maintenance phase, a thorough process for change and release management is becoming increasingly important.
 
 Both the associations that follow the BDI and the BDI itself exist in an environment that is subject to continuous change:
 
@@ -49,11 +35,11 @@ The Change and Release Management Process must be transparent, predictable and f
 | Rationale              | By using a transparent process, stakeholders are expected to have a better trust in the outcome of the process and the involvement of the community & stakeholders throughout the process. This should lead to wider adoption of the BDI. |
 | Example implementation | Maintaining all RFCs and MCs in a public Github repository ensures that all stakeholders are able to track progress.                                                                                                                      |
 
-| Principle              | The Change and Release Management Process must be _predictable_                                                                                                                                                                                                                           |
-| ---------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Statement              | Careful planning and execution of releases and version deprecation should lead to a predictable situation for stakeholders.                                                                                                                                                               |
-| Rationale              | Adoption of the BDI means implementation in technical products, contracts and possibly other assets. Maintaining these assets is costly for stakeholders. A predictable version, release and version deprecation process should lead to a manageable impact of changes for stakeholders.  |
-| Example implementation | Designing and holding to a release schedule of a certain amount of major releases per year ensures that stakeholders are able to plan required capacity ahead.                                                                                                                            |
+| Principle              | The Change and Release Management Process must be _predictable_                                                                                                                                                                                                                          |
+| ---------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Statement              | Careful planning and execution of releases and version deprecation should lead to a predictable situation for stakeholders.                                                                                                                                                              |
+| Rationale              | Adoption of the BDI means implementation in technical products, contracts and possibly other assets. Maintaining these assets is costly for stakeholders. A predictable version, release and version deprecation process should lead to a manageable impact of changes for stakeholders. |
+| Example implementation | Designing and holding to a release schedule of a certain amount of major releases per year ensures that stakeholders are able to plan required capacity ahead.                                                                                                                           |
 
 | Principle              | The Change and Release Management Process must be _fair_                                                                                                                                                                                                                   |
 | ---------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -108,8 +94,6 @@ Minor Changes (MCs) are defined as changes in the managed assets that do not imp
 ### Process for Minor Changes
 
 The following diagram describes the process for Minor Changes (MCs).
-
-
 
 <figure><img src="../.gitbook/assets/Minor Change Process.png" alt=""><figcaption></figcaption></figure>
 

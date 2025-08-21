@@ -1,17 +1,3 @@
----
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
----
-
 # Boundary Management
 
 Usually, many parties are involved in a logistic process. Each of these parties maintains a set of valuable assets that they needs to protect. In abstract terms, this protection is realized by creating an perimeter, a boundary around the assets that is controlled by the party. Other parties can not cross the boundary without permission of the owner, hence the value is protected. However it is often required that parties do cross the boundary to facilitate cooperation.

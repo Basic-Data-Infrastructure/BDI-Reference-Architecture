@@ -1,17 +1,3 @@
----
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
----
-
 # INTRODUCTION
 
 ### Introduction to the BDI Reference Architecture
@@ -22,10 +8,10 @@ This introduction provides a short overview of some issues which play a role in 
 
 See [bdinetwork.org](https://bdinetwork.org) for a full account of these concepts.
 
-### Observations&#x20;
+### Observations
 
 * The data exchange patterns in typical operational networks are a result of “doing business” have specific characteristics:
-  * The network of involved parties is driven by the fulfillment of an assignment - these networks are temporary and fluid, that is, members are added whenever necessary and the network is dissolved when the job is done.&#x20;
+  * The network of involved parties is driven by the fulfillment of an assignment - these networks are temporary and fluid, that is, members are added whenever necessary and the network is dissolved when the job is done.
   * Data exchanges are between members of a closed group, i.e. the members are vetted in advance.
   * There can be time constraints on the exchange of data.
 * A common data exchange infrastructure for operational networks should support:
@@ -34,8 +20,8 @@ See [bdinetwork.org](https://bdinetwork.org) for a full account of these concept
   * Controlled event-driven exchange
 * Event-driven exchange of operational data within an instance must be:
   * Efficient: no polling, no unnecessary retrieval
-  * Effective: easy distribution to multiple parties simultaneously&#x20;
-  * Controlled:&#x20;
+  * Effective: easy distribution to multiple parties simultaneously
+  * Controlled:
     * Limited exposure to malicious actors.
     * Only authorized parties can retrieve information.
     * Role based data access.
