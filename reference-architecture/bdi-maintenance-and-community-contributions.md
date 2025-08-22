@@ -55,7 +55,7 @@ A change can be either a Request for Change (RFC) or a Minor Change, the differe
 
 The following diagram describes the process for managing RFCs.
 
-<figure><img src="../.gitbook/assets/RFC Change Process.png" alt=""><figcaption><p>RFC Change Process</p></figcaption></figure>
+
 
 Roughly the RFC transitions through the following phases:
 
