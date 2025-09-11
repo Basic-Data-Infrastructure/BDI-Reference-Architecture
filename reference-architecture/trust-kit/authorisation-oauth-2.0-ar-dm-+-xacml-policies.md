@@ -29,7 +29,7 @@ Insufficient authorization may cause data leaks to parties that are not trusted.
 This building block has links to:
 
 * [Representation Chain](../federation-kit/representation-register.md)
-* [Association Register](association-register.md)
+* [Association Register](../../readme/trust-kit/association-register-1.md)
 * [Data Licenses](../data-set-kit/data-licenses.md)
 * [Authentication M2M](authentication.md)
 
