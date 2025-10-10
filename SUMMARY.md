@@ -3,7 +3,7 @@
 * [Reference Architecture](README.md)
   * [INTRODUCTION](reference-architecture/introduction/README.md)
     * [Core Principles](reference-architecture/introduction/core-principles.md)
-    * [Stack and KITs](reference-architecture/introduction/stack-and-kits.md)
+    * [Stack and KITs en testen maar](reference-architecture/introduction/stack-and-kits.md)
     * [BDI Technical Roles](reference-architecture/introduction/bdi-technical-roles.md)
   * [BDI Maintenance and Community Contributions](reference-architecture/bdi-maintenance-and-community-contributions.md)
   * [Trust KIT](reference-architecture/trust-kit/README.md)
