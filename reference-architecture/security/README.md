@@ -1,22 +1,8 @@
----
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
----
-
 # Security
 
 ### Summary
 
-The BDI provides security measures based o ISO 27001. This is an internationally recognized standard for establishing, implementing, maintaining, and continually improving an Information Security Management System (ISMS).
+The BDI provides security measures based on ISO 27001. This is an internationally recognized standard for establishing, implementing, maintaining, and continually improving an Information Security Management System (ISMS).
 
 In essence, ISO 27001 provides a framework for organizations to establish a robust and comprehensive information security management system that helps them protect their valuable assets and infrastructure. This page contains a breakdown of the key measures it encompasses.
 
