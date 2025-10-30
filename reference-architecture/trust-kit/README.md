@@ -16,7 +16,9 @@ The BDI is mainly concerned with trust at the business level, i.e. trust between
 The Trust  KIT is inspired by the iSHARE Trust Framework, and uses some of the concepts and components in iSHARE. However, the BDI is not identical to iSHARE.
 {% endhint %}
 
+{% hint style="info" %}
 At its core, the Trust KIT encompasses vital building blocks, including IAA functions that provide the necessary identity and access management capabilities. The Association Register and Authorization Registers enable the secure recording of membership and authorization rights. Discovery and Onboarding processes ensure that members can be seamlessly integrated into the BDI, guided by clearly defined Terms & Conditions and structured process flows. Furthermore, Policy Agreements and Edge Agreements provide the necessary governance framework to ensure that all data interactions comply with agreed-upon standards and regulations.
+{% endhint %}
 
 The Trust KIT comprises the following building blocks:
 
