@@ -19,19 +19,19 @@ The BDI Framework is optimized to support value creation in the physical economy
 * need to coordinate and report their activities to fulfill their commitments to their principal(s)
 * need to perform a public task, like verifying compliance to regulations of activities of others
 
-In the physical economy legal entities are represented by both IT-systems/processes and natural persons. To be able validate the mandate and if necessary the professional qualifications of the representatives is imperative, as the legal entities assume the liability and accountability for actions of the representatives.
+In the physical economy legal entities are represented by both IT-systems/processes and natural persons. To be able to validate the mandate and - if necessary - the professional qualifications of the representatives is imperative, as the legal entities assume the liability and accountability for actions of the representatives.
 
 ### Principle 2: Time-sensitive event-driven coordination between entities
 
-Coordination of operational activities is time-sensitive and drives a large part of data exchanges between entities, even if these entities have no direct contractual relationship. Data exchanges therefore cross organizational boundaries, between multiple entities, each with its own security policy and protective measures such as firewalls.
+Coordination of operational activities is time-sensitive and drives a large part of data exchanges between entities, even if these entities have no direct contractual relationship. Data exchanges therefore cross organizational boundaries between multiple entities, each with its own security policy and protective measures such as firewalls.
 
-Data exchanges are triggered by _events_ in the physical economy.  Events may be relating to planning agreements and updates, payments, compliance, physical activities and the like.
+Data exchanges are triggered by _events_ in the physical economy. Events may be related to planning agreements and updates, payments, compliance, physical activities and the like.
 
-Whenever an event occurs, a _notification_ about this event can be generated. A notification is a digital message containing meta data about the event. This notification is distributed to a selective group of entities using a publication/subscription  based technology.
+Whenever an event occurs, a _notification_ about this event can be generated. A notification is a digital message containing meta data about the event. This notification is distributed to a selective group of entities using a publication/subscription based technology.
 
-Notifications are published on a _channel_ and parties may choose to receive notifications on a channel (subscription). The set of channels and the rules on allowed subscriptions (defining who is able to subscribe on a channel) must be defined before hand.
+Notifications are published on a _channel_ and parties may choose to receive notifications on a channel (subscription). The set of channels and the rules on allowed subscriptions (such as who is able to subscribe on a channel) must be defined before hand.
 
-Note that data associated with an event is not included in the notification. Authorised parties can retrieve data at the source.
+Note that data associated with an event is not included in the notification. Authorized parties can retrieve data at the source.
 
 ### Principle 3: Zero Trust
 
@@ -40,16 +40,16 @@ Trust is an important issue in doing business. However, trust is not easily esta
 #### Zero Trust:
 
 * doing business in a global economy requires flexibility in choosing business partners.
-* entities have to be able to deal with previously unknown sub-subcontractors that pop-up when they are subcontracted by another entity in the same virtual instance.
+* entities have to be able to deal with previously unknown sub-subcontractors that pop up when they are subcontracted by another entity in the same virtual instance.
 * each entity is autonomous in deciding what an acceptable risk/reward trade-off is, per transaction.
 
 #### Perimeter-less Trust:
 
-* trust is not delegated to a Trust Anchor or an Authority
-* authentication does not equal trust
-* trust is contextual and situational: for instance on how sensitive the data-element is
-* reputation is an important aspect of assessing trust
-* federation of trust information exchanges between entities or groups of entities
+* trust is not delegated to a Trust Anchor or an Authority.
+* authentication does not equal trust.
+* trust is contextual and situational: for instance on how sensitive the data-element is.
+* reputation is an important aspect of assessing trust.
+* federation of trust information exchanges between entities or groups of entities.
 
 ### Principle 4: Dynamic Data Life Cycle
 

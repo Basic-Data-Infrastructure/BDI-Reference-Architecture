@@ -6,7 +6,7 @@
 
 This page describes the BDI Change and Release Management Process for maintaining the BDI Architecture Documentation. As BDI transitions into a maintenance phase, a thorough process for change and release management is becoming increasingly important.
 
-Both the associations that follow the BDI and the BDI itself exist in an environment that is subject to continuous change:
+Both the associations that follow the BDI and the BDI itself exist in an environment that is subject to continuous change due to:
 
 * Legislative and regulatory changes
 * Technological advances
@@ -14,7 +14,7 @@ Both the associations that follow the BDI and the BDI itself exist in an environ
 * Previous experience and lessons learned from previous projects
 * Changes in business processes
 
-Such environmental changes may call for changes in the BDI Reference Architecture but as these changes may impact many stakeholders, they have to be managed carefully. The BDI Change Management and Release Management Processes are introduced for this purpose.
+Such environmental changes may call for changes in the BDI Reference Architecture but as these changes could impact many stakeholders, they have to be managed carefully. The BDI Change Management and Release Management Processes are introduced for this purpose.
 
 ### Scope
 
@@ -33,13 +33,13 @@ The Change and Release Management Process must be transparent, predictable and f
 | ---------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Statement              | Everything that happens regarding (potential) changes, decisions and releases is well documented and publicly visible.                                                                                                                    |
 | Rationale              | By using a transparent process, stakeholders are expected to have a better trust in the outcome of the process and the involvement of the community & stakeholders throughout the process. This should lead to wider adoption of the BDI. |
-| Example implementation | Maintaining all RFCs and MCs in a public Github repository ensures that all stakeholders are able to track progress.                                                                                                                      |
+| Example implementation | Maintaining all RFCs and MCs in a public GitHub repository ensures that all stakeholders are able to track progress.                                                                                                                      |
 
 | Principle              | The Change and Release Management Process must be _predictable_                                                                                                                                                                                                                          |
 | ---------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Statement              | Careful planning and execution of releases and version deprecation should lead to a predictable situation for stakeholders.                                                                                                                                                              |
 | Rationale              | Adoption of the BDI means implementation in technical products, contracts and possibly other assets. Maintaining these assets is costly for stakeholders. A predictable version, release and version deprecation process should lead to a manageable impact of changes for stakeholders. |
-| Example implementation | Designing and holding to a release schedule of a certain amount of major releases per year ensures that stakeholders are able to plan required capacity ahead.                                                                                                                           |
+| Example implementation | Designing and adhering to a release schedule of a certain amount of major releases per year ensures that stakeholders are able to plan the required capacity in advance.                                                                                                                 |
 
 | Principle              | The Change and Release Management Process must be _fair_                                                                                                                                                                                                                   |
 | ---------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -49,7 +49,7 @@ The Change and Release Management Process must be transparent, predictable and f
 
 ### The Change Management Process
 
-A change can be either a Request for Change (RFC) or a Minor Change, the difference being the impact of the change to the community. An accepted RFC requires BDI based associations to take action to remain compliant with the new BDI version, whereas Minor Changes do not (note, however, that associations, at their discretion, can decide not to comply with the new version but rather follow the old one).
+A change can be either a Request for Change (RFC) or a Minor Change, the difference being the impact of the change to the community. An accepted RFC requires BDI-based associations to take action to remain compliant with the new BDI version, whereas Minor Changes do not (note, however, that associations, at their discretion, can decide not to comply with the new version but rather follow the old one).
 
 ### Process for RFCs
 

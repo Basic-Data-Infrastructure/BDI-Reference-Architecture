@@ -6,7 +6,7 @@ This building block supports trust among participants by defining how digital id
 
 Digital identifiers for natural persons are described in Digital Identity (H2M).
 
-In it's implementation, BDI aligns with iSHARE's implementation of digital identities, preferring PKI certificates issued by a reputable identity provider as digital identity of parties like Service Providers. In Europe the eIDAS regulation is a solid foundation for the identity ecosystem.
+In its implementation, BDI aligns with iSHARE's implementation of digital identities, preferring PKI (public key infrastructure) certificates issued by a reputable identity provider as digital identity of parties like Service Providers. In Europe the eIDAS regulation is a solid foundation for the identity ecosystem.
 
 ### 2. Purpose of the building block
 
@@ -31,7 +31,7 @@ The following concepts (from the BDI Glossary), all regarding legal entities, ar
 
 ### 4. Risks
 
-An insufficient framework for digital identity, might lead to a lower level of trust among parties and will harm the overall trust in BDI.
+An insufficient framework for digital identity might lead to a lower level of trust among parties and will harm the overall trust in BDI.
 
 ### 5. Interlinkages with other building blocks
 

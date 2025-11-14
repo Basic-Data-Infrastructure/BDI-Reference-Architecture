@@ -21,5 +21,11 @@ See [Digital Identity M2M](digital-identity.md) and [Digital Identity H2M](digit
 
 #### Definition of terms
 
-In the paper "Identity Words" ... explains that term sin the context of identity are often ambiguous.
+In the paper "Identity Words" ... explains that terms in the context of identity are often ambiguous.
+
+
+
+\#gedachtegoed achter triple identity; daarin zijn 2 flows; M2M en H2M
+
+
 

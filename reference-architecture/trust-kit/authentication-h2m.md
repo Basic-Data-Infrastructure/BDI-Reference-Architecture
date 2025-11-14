@@ -1,22 +1,22 @@
 # Authentication H2M
 
-### 1. Summary&#x20;
+### 1. Summary
 
 Authentication is the process of proving that the user (human or IT process) with a digital identity is the rightful owner of that identity (definition from IDpro).
 
-Authentication is required in both H2M (Human to Machine) and M2M (Machine to Machine) use cases. In this page  we focus on H2M use cases: the human interacts with a machine by means of an IT-process under its direct control (device, IT-process, wallet etc.), or by digital data (e.g. QR code). Authentication precedes verification of Representation and subsequent Authorization.
+Authentication is required in both H2M (Human to Machine) and M2M (Machine to Machine) use cases. In this page we focus on H2M use cases: the human interacts with a machine by means of an IT-process under its direct control (device, IT-process, wallet etc.), or by digital data (e.g. QR code). Authentication precedes verification of Representation and subsequent Authorization.
 
 The complexity of H2M authentication is increased by privacy regulations: authenticating a human reveals his/hers identity.
 
-### 2. Purpose of the building block&#x20;
+### 2. Purpose of the building block
 
 {% hint style="info" %}
-Ensure that BDI users (H2M) are recognized,  identified  as a person and in a specific role on behalf of a legal entity: to prevent misuse, fraud, theft of data, services and physical goods. Enable smooth,  efficient and secure Boundary Management.
+Ensure that BDI users (H2M) are recognized, identified as a person and in a specific role on behalf of a legal entity: to prevent misuse, fraud, theft of data, services and physical goods. Enable smooth, efficient and secure Boundary Management.
 
 Ensure that privacy leaks as a result of authentication are limited.
 {% endhint %}
 
-### 3. Concepts&#x20;
+### 3. Concepts
 
 The use cases relate to Boundary Management:
 
@@ -27,19 +27,19 @@ The use cases relate to Boundary Management:
 * A human, acting as representative for a legal entity involved in transferring as asset (cargo) and/or liabilities for the asset between the two legal entities
   * For example: picking up cargo by a transporter
 
-The building block ensures that the digital identity of the human involved in (digital) interactions can be  authenticated: authentication precedes verification of Representation. In the context of the BDI, the human is a representative of a legal entity  (organization): the legal entity assumes accountability and liability for the actions of the representative, limited to the mandate of the representative. A human can have multiple roles for multiple legal entities simultaneously.
+The building block ensures that the digital identity of the human involved in (digital) interactions can be authenticated: authentication precedes verification of Representation. In the context of the BDI, the human is a representative of a legal entity (organization): the legal entity assumes accountability and liability for the actions of the representative, limited to the mandate of the representative. A human can have multiple roles for multiple legal entities simultaneously.
 
 The Identity Provider chosen by the parties/Association provides authentication. A local cache of trusted identities may be operated by an Association as a register.
 
 Representation evidence may be stored in a register by an Association, or transmitted between parties in a nested Jason Web Token or a Verifiable Presentation of Credentials.
 
-### 4. Core design decisions&#x20;
+### 4. Core design decisions
 
 #### 4.1. OAuth2 & OpenID Connect
 
-The BDI uses the OAuth2 protocol and OpenID Connect protocol for H2M interactions. Identities are managed by an Identity Provider (also called an OpenID Provider).&#x20;
+The BDI uses the OAuth2 protocol and OpenID Connect protocol for H2M interactions. Identities are managed by an Identity Provider (also called an OpenID Provider).
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 The OpenID Connect protocol, in abstract, follows these steps:
 
@@ -65,11 +65,11 @@ There are various national eID schemes. In the Netherlands the national eID for 
 
 There are strict regulations on the use of eDIAS. DigiD can't be used for most private use cases. There are less limitations for eHerkenning however a very limited set of European countries have a similar B2B eID scheme.
 
-Once a national electronic identification scheme has been recognised at European level, it can be used in other EEA countries. This is set out in the EU’s eIDAS Regulation.&#x20;
+Once a national electronic identification scheme has been recognised at European level, it can be used in other EEA countries. This is set out in the EU’s eIDAS Regulation.
 
 **4.3. Smart Cards / Pyhisical Access Passes**
 
-These can be used for access to a location and/or transferring assets.&#x20;
+These can be used for access to a location and/or transferring assets.
 
 ### 5. Future Work
 
@@ -77,7 +77,7 @@ eIDAS2 introduces new trust services and EU Digital Identity Wallets (EDIW) for 
 
 Source: [https://coe-dsc.nl/wp-content/uploads/2024/01/CoE-DSC-eIDAS-impact-on-data-spaces.pdf](https://coe-dsc.nl/wp-content/uploads/2024/01/CoE-DSC-eIDAS-impact-on-data-spaces.pdf)
 
-### 6. Interlinkages with other building blocks&#x20;
+### 6. Interlinkages with other building blocks
 
 This building block interlinks with:
 
@@ -85,6 +85,3 @@ This building block interlinks with:
 * Authorizations
 * Discovery
 * Federation
-
-
-
