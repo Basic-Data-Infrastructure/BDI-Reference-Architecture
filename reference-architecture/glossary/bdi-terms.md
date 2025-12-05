@@ -152,7 +152,20 @@ The best-known example of credentials is a password, but other forms include ele
 
 <details>
 
-<summary>Data Exchange, Data Sharing </summary>
+<summary>Data Custodian </summary>
+
+Similar to [DCCS's _Data Provider_](https://dssc.eu/space/Glossary/176554052/2.+Core+Concepts)_._ A data custodian...&#x20;
+
+* Regulates the data access
+* Provides the data to recipients that should have access&#x20;
+
+Optionally, the data custodian is a **Data Service Provider.**&#x20;
+
+</details>
+
+<details>
+
+<summary>Data Exchange, Data Sharing</summary>
 
 Controlled data exchange according to BDI principles in operational business networks
 
@@ -263,7 +276,7 @@ Standards on interacting with entities and/or persons that have IT-systems that 
 
 <summary>Event Pub/Sub Service</summary>
 
-· Accepts subscription to Event Pub/Sub Service  managed by  or on behalf of the Data Owner
+· Accepts subscription to Event Pub/Sub Service managed by or on behalf of the Data Owner
 
 · Sends pulses that the Data Owner sends to topics to subscribers of topics
 
@@ -305,7 +318,7 @@ In order to support multiple Identity Providers (with possible multiple rules) a
 
 <details>
 
-<summary>Identity Provider </summary>
+<summary>Identity Provider</summary>
 
 The Identity Provider:
 
