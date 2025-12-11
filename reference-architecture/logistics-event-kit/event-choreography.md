@@ -1,17 +1,3 @@
----
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
----
-
 # Event Choreography
 
 Choreography of Principals and subcontractors: balancing effectivity with security.
@@ -28,19 +14,19 @@ The key challenge here is distributing notifications within this dynamic and tem
 
 ### 3. Provisioning an instance
 
-The BDI framework assumes that commercial relationships between Principals and Subcontractors are established before any actual orders are placed. In this setup, URLs are known, and through the DNS  discovery mechanism, the URIs of endpoints for each party are also known. Digital identity and trust are established within the respective associations of each party.
+The BDI framework assumes that commercial relationships between Principals and Subcontractors are established before any actual orders are placed. In this setup, URLs are known, and through the DNS discovery mechanism, the URIs of endpoints for each party are also known. Digital identity and trust are established within the respective associations of each party.
 
 Each Principal is responsible for provisioning a temporary network of subcontractors associated with a specific order.
 
-### 4. Channels {#channels}
+### 4. Channels <a href="#channels" id="channels"></a>
 
 Principals and their subcontractors communicate through channels (a.k.a. topics in a pub/sub setting). There are three kinds of channels:
 
 * Subcontractor specific - often a principal works for different orders with a limited set of partners (preferred suppliers). There is a private channel between the principal and each partner. These channels are bidirectional (both the principal and the subcontractor can post notifications). A subcontractor specific channel exists as long as the relation between principal and subcontractor exists and hence may exceed the lifetime of a specific order.
 * Order specific - a principal creates a channel specific to the execution of a particular order. Such a channel is unidirectional: the principal is the only party who is allowed to post notifications, all involved subcontractors subscribe to this channel and are therefore notified of each message sent by the principal. Order specific channels exist for the duration of the order only.
-* Subject specific - often orders get bundled and unbundled during transport, for instance, being added to a container or ship. In these cases, the subject of the events shift from order to container to ship and, eventually, back to container and order. These are unidirectional channels: the origin (transporter, terminal etc.) of the events is the only producer on these channels.  It's up to the consumer of the events to switch channels when the subject shifts, for instance, when a container is loaded on a ship.  The duration of the channel depends on the lifetime of the subject.
+* Subject specific - often orders get bundled and unbundled during transport, for instance, being added to a container or ship. In these cases, the subject of the events shift from order to container to ship and, eventually, back to container and order. These are unidirectional channels: the origin (transporter, terminal etc.) of the events is the only producer on these channels. It's up to the consumer of the events to switch channels when the subject shifts, for instance, when a container is loaded on a ship. The duration of the channel depends on the lifetime of the subject.
 
-The latter subject specific channel may be considered a low-level channel.  The events on these channels need more advanced tracking, due to the shifting subject, and may end up repackaged on the subcontractor / order specific channels.
+The latter subject specific channel may be considered a low-level channel. The events on these channels need more advanced tracking, due to the shifting subject, and may end up repackaged on the subcontractor / order specific channels.
 
 ### 5. Semantics and Lifecycle
 
@@ -51,9 +37,9 @@ In order to allow a consuming party to correctly interpret events, the publishin
 * What it means when they are published;
 * What sequences of events can be expected;
 * What to do when an event seems to be missing or out of order;
-* When a consumer should no longer expect events (see also [Closing the Order and Dissolving the Network](#closing-and-dissolving)).
+* When a consumer should no longer expect events (see also [Closing the Order and Dissolving the Network](event-choreography.md#closing-and-dissolving)).
 
-Translating, repackaging, and/or combining events for consumption by other systems will rely heavily on the above documentation and need documentation of their own.  In addition these processes also need to document:
+Translating, repackaging, and/or combining events for consumption by other systems will rely heavily on the above documentation and need documentation of their own. In addition these processes also need to document:
 
 * What information is lost and what is the consequence of that loss;
 * What information is added, for example, to fulfil a constraint to the target system.
@@ -116,7 +102,7 @@ Common roles have known authorization rules. The results of data selection for t
 
 #### 10.4. Subject versus Order / Subcontractor specific channels
 
-The use of subject specific channels (see also [Channels](#channels)) can drastically reduce the amount of events triggered because, for instance, an event about transport equipment relates to multiple orders and (in some cases) subcontractors.
+The use of subject specific channels (see also [Channels](event-choreography.md#channels)) can drastically reduce the amount of events triggered because, for instance, an event about transport equipment relates to multiple orders and (in some cases) subcontractors.
 
 ### 11. Creating an auditable log
 
@@ -127,7 +113,7 @@ Once all tasks related to the order have been completed, the Principal generates
 
 This structured audit trail ensures transparency, accountability, and the ability to review and verify all actions taken during the course of the order, providing a solid foundation for trust and compliance in the BDI framework.
 
-### 12. Closing the Order and Dissolving the Network {#closing-and-dissolving}
+### 12. Closing the Order and Dissolving the Network <a href="#closing-and-dissolving" id="closing-and-dissolving"></a>
 
 Once all tasks related to the order have been executed, the Principal initiates the closure of the order by:
 
@@ -143,8 +129,6 @@ Parties may be late subscribing to channels for different reasons or need to rec
 
 ### 14. Audit trail
 
-Event driven coordination requires a means to “go back in time”, inspect earlier events and have an audit trail.  One obvious reason is when a subcontractor is changed: the new subcontractor has to be able to quickly come up to speed on the history of events. The second is to have a common reference for either compliance or settling of disputes.
-
-
+Event driven coordination requires a means to “go back in time”, inspect earlier events and have an audit trail. One obvious reason is when a subcontractor is changed: the new subcontractor has to be able to quickly come up to speed on the history of events. The second is to have a common reference for either compliance or settling of disputes.
 
 {% file src="../../.gitbook/assets/2023-BDI-Event-Distributie-PoC.pdf" %}

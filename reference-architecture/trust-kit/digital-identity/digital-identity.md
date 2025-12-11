@@ -1,17 +1,3 @@
----
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
----
-
 # Digital Identity M2M
 
 ### 1. Summary
@@ -20,34 +6,32 @@ This building block supports trust among participants by defining how digital id
 
 Digital identifiers for natural persons are described in Digital Identity (H2M).
 
-In it's implementation, BDI aligns with iSHARE's implementation of digital identities, preferring PKI certificates issued by a reputable identity provider as digital identity of parties like Service Providers. In Europe the eIDAS regulation is a solid foundation for the identity ecosystem.
+In its implementation, BDI aligns with iSHARE's implementation of digital identities, preferring PKI (public key infrastructure) certificates issued by a reputable identity provider as digital identity of parties like Service Providers. In Europe the eIDAS regulation is a solid foundation for the identity ecosystem.
 
 ### 2. Purpose of the building block
 
 {% hint style="success" %}
-The purpose of this building block is to support the framework for trust among parties, by ensuring that parties can provide and receive a verified digital identity.  An authenticated digital identity is the prerequisite for determining trust and subsequent authorization.
+The purpose of this building block is to support the framework for trust among parties, by ensuring that parties can provide and receive a verified digital identity. An authenticated digital identity is the prerequisite for determining trust and subsequent authorization.
 
-The building block ensures that interactions within BDI (onboarding, offboarding, data exchange, service consumption, etc.) will take place between identified and authenticated  parties.
+The building block ensures that interactions within BDI (onboarding, offboarding, data exchange, service consumption, etc.) will take place between identified and authenticated parties.
 {% endhint %}
 
 ### 3. Concepts
 
 The following concepts (from the BDI Glossary), all regarding legal entities, are particularly relevant in this building block:
 
-
-
-| Member                      | Legal entity as member of its “home”  BDI Association                                                                                                   |
-| --------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Business Partners           | Members of other BDI Associations than the “home” BDI Association                                                                                       |
-| Preferred Business Partners | Outsiders  who have agreed to the specific terms and conditions of the local BDI Association, which maintains its own Business Partner Reputation Model |
-| Outsider                    | Anyone who is not a member of a BDI Association                                                                                                         |
-| Visitor                     | Outsider with a better reputation score than a set minimum                                                                                              |
+| Member                      | Legal entity as member of its “home” BDI Association                                                                                                   |
+| --------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Business Partners           | Members of other BDI Associations than the “home” BDI Association                                                                                      |
+| Preferred Business Partners | Outsiders who have agreed to the specific terms and conditions of the local BDI Association, which maintains its own Business Partner Reputation Model |
+| Outsider                    | Anyone who is not a member of a BDI Association                                                                                                        |
+| Visitor                     | Outsider with a better reputation score than a set minimum                                                                                             |
 
 <figure><img src="../../../.gitbook/assets/Other association.png" alt=""><figcaption><p>How a Business Partner from another BDI Association can become a preferred Business partner of a BDI Association.</p></figcaption></figure>
 
 ### 4. Risks
 
-An insufficient framework for digital identity, might lead to a lower level of trust among parties and will harm the overall trust in BDI.
+An insufficient framework for digital identity might lead to a lower level of trust among parties and will harm the overall trust in BDI.
 
 ### 5. Interlinkages with other building blocks
 
@@ -75,11 +59,11 @@ A digital identity has to be linked with the legal identifier of the legal entit
 * controls
 * takes responsibility and accountability for the IT-process that uses the digital identity in interactions with other IT processes.
 
-The EORI-identifier is the standard defined by the EC Customs for European entities. EORI stands for “Economic Operators Registration and Identification”. Not all European entities are required to register an EORI. Therefore, only a subset have registered an EORI.&#x20;
+The EORI-identifier is the standard defined by the EC Customs for European entities. EORI stands for “Economic Operators Registration and Identification”. Not all European entities are required to register an EORI. Therefore, only a subset have registered an EORI.
 
-Europe also introduced an EUID which is based on the local European Business Registries. This EUID will be used for the eIDAS 2 European Wallet.&#x20;
+Europe also introduced an EUID which is based on the local European Business Registries. This EUID will be used for the eIDAS 2 European Wallet.
 
-VAT-numbers can also be used to identify organizations. European VAT-numbers can validated on a central site.&#x20;
+VAT-numbers can also be used to identify organizations. European VAT-numbers can validated on a central site.
 
 Other identifier standards that are in use worldwide are:
 

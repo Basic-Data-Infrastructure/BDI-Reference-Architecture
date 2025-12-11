@@ -1,42 +1,28 @@
----
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
----
-
 # Authentication M2M
 
-### 1. Summary&#x20;
+### 1. Summary
 
-Authentication is the process of proving that the user (human or IT process) with a digital identity who is requesting access is the rightful owner of that identity (definition from IDpro). In the context of the BDI, the user is a representative of a legal entity  (organization).
+Authentication is the process of proving that the user (human or IT process) with a digital identity who is requesting access is the rightful owner of that identity (definition from IDpro). In the context of the BDI, the user is a representative of a legal entity (organization).
 
 Authentication is required in both H2M (Human to Machine) and M2M (Machine to Machine) use cases.
 
-In this page  we will focus on M2M use cases where data is requested by a Data Consumer (e.g. another organization) via an API.
+In this page we will focus on M2M use cases where data is requested by a Data Consumer (e.g. another organization) via an API.
 
-### 2. Purpose of the building block&#x20;
+### 2. Purpose of the building block
 
 {% hint style="info" %}
 Ensure that BDI users (M2M) are recognized and identified to prevent misuse of services and data. The automatic authentication of a BDI user in a federated perimeter-less architecture (see DNS-based Discovery as option) relies on a (delegated) Trust Anchor for Identity.
 {% endhint %}
 
-### 3. Concepts&#x20;
+### 3. Concepts
 
 The Data Service Provider is responsible for authenticating the user; this is prerequisite for authorization, which will determine if the user can access the requested data.
 
-### 4. Risks&#x20;
+### 4. Risks
 
 Incorrect authentication could result in data breaches and / or the unavailability to data for legitimate data consumers.
 
-### 5. Interlinkages with other building blocks&#x20;
+### 5. Interlinkages with other building blocks
 
 This building block interlinks with:
 
@@ -45,7 +31,7 @@ This building block interlinks with:
 * Discovery
 * Federation
 
-### 6. Core design decisions&#x20;
+### 6. Core design decisions
 
 #### 6.1. OAuth2.
 
@@ -67,7 +53,7 @@ The European eIDAS regulation is a trust framework which (also) governs the issu
 
 QWAC and QSEAL are different types of eIDAS certificates.The sealing provides the legal binding of the exchanged data.
 
-The use of  eIDAS digital certificates as private keys is recommended. The recommendation is to use eIDAS QWACs as well.
+The use of eIDAS digital certificates as private keys is recommended. The recommendation is to use eIDAS QWACs as well.
 
 #### 6.3. Non-European trust anchors.
 
@@ -76,7 +62,7 @@ The eIDAS regulation and infrastructure is EU-specific. Outside of Europe other 
 #### 6.4. Drawbacks of certificates
 
 * Certificates are quite expensive
-* Certificates need frequently to be rotated&#x20;
+* Certificates need frequently to be rotated
 * The procurement, setup, testing and acceptance of certificates is not trivial.
 
 #### 6.5. Certificate based authentication
@@ -90,7 +76,7 @@ Guidance on (to be done):
 ### 7. Future topics
 
 1. Non-EU trust anchors (outside of eIDAS).
-2. &#x20;The use of association issued certificates instead of eIDAS certificates
+2. The use of association issued certificates instead of eIDAS certificates
 3. Alignment with DSSC. The DSSC Blueprint v1.0 is referring to “Identity and Attestation Management” which is based of verifiable credentials, DID’s and OpenID for verifiable credentials. These has been defined out of scope for the current release of DIL / BDI.
 4. Alignment with IDSA. To be defined.
 5. The use of (other) PKI schemes.
@@ -105,7 +91,7 @@ When a requests from a member of association A is directed to access data of a m
 
 The concept for the [association ](../federation-kit/federation-of-associations.md)is to adopt the framework standards with it's members to achieve a goal (benefits outweigh the costs). Add local specifics, ratify common standards across associations, evolve and so on.
 
-Above options could be combined; e.g. [https://dhs-svip.github.io/requirements-for-decentralized-identity/TrustArchitecture/](https://dhs-svip.github.io/requirements-for-decentralized-identity/TrustArchitecture/).&#x20;
+Above options could be combined; e.g. [https://dhs-svip.github.io/requirements-for-decentralized-identity/TrustArchitecture/](https://dhs-svip.github.io/requirements-for-decentralized-identity/TrustArchitecture/).
 
 ### 8. Further reading
 

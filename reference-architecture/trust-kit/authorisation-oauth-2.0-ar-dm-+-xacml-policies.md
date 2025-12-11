@@ -1,17 +1,3 @@
----
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
----
-
 # Authorization
 
 ### Summary
@@ -26,7 +12,7 @@ This building block describes how to assess trustworthiness of parties involved 
 
 #### Authentication, Trust and Authorization
 
-The concepts Authentication, Trust and Authorization are closely related but not identical. To describe their relations, we assume that a party A wants to gain access to data owned by party B. During authentication, party A provides its identification and evidence of that identification. Such evidence could be passwords, two-factor id's, PKI-based certificates, or bio-metric data such as iris scans and finger prints. Party B evaluates the evidence and assigns a trust level to A. Based on this trust level, B assigns  permissions to certain parts of the data. It will be clear that higher trust levels result in more permissions.
+The concepts Authentication, Trust and Authorization are closely related but not identical. To describe their relations, we assume that a party A wants to gain access to data owned by party B. During authentication, party A provides its identification and evidence of that identification. Such evidence could be passwords, two-factor id's, PKI-based certificates, or bio-metric data such as iris scans and finger prints. Party B evaluates the evidence and assigns a trust level to A. Based on this trust level, B assigns permissions to certain parts of the data. It will be clear that higher trust levels result in more permissions.
 
 To assign a trust level, party B gathers data about party A. This data includes, but is not limited to, nature of the evidence (PKI certificates are trusted more than simple passwords). It can also include a reputation score built by A during previous interactions.
 
@@ -43,7 +29,7 @@ Insufficient authorization may cause data leaks to parties that are not trusted.
 This building block has links to:
 
 * [Representation Chain](../federation-kit/representation-register.md)
-* [Association Register](association-register.md)
+* [Association Register](../../readme/trust-kit/association-register-1.md)
 * [Data Licenses](../data-set-kit/data-licenses.md)
 * [Authentication M2M](authentication.md)
 
@@ -111,7 +97,7 @@ Authorizations provide a way for a Data Owner to specify in great detail which D
 
 #### Information gathering
 
-In terms of the technical specifications for Authorizations, the BDI Framework is inspired  on the iSHARE Trust Framework. The iSHARE Trust Framework uses the term “delegations” for the concept that in BDI is called Authorizations.
+In terms of the technical specifications for Authorizations, the BDI Framework is inspired on the iSHARE Trust Framework. The iSHARE Trust Framework uses the term “delegations” for the concept that in BDI is called Authorizations.
 
 * The framework defines [the role of an Authorization Registry](https://framework.ishare.eu/is/framework-and-roles)
 * Entitled Parties are enabled in exercising data sovereignty by providing delegations (as described in the [generic use cases](https://framework.ishare.eu/is/use-cases)) to parties to use their data
@@ -165,11 +151,9 @@ Data Service Providers could use external information in an external Authorizati
 
 ### Advantages and drawbacks
 
-&#x20;
-
 |                       | Advantage                                                                                                                           | Drawback                                                                                                                                                        |
 | --------------------- | ----------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Synchronization       | <p>No performance loss at data request.</p><p>No additional delay for polling data.</p><p> </p>                                     | Setup of synchronization process (polling or event processing)                                                                                                  |
+| Synchronization       | <p>No performance loss at data request.</p><p>No additional delay for polling data.</p>                                             | Setup of synchronization process (polling or event processing)                                                                                                  |
 | Embed in Data Request | <p>No performance loss at data request.</p><p>No additional delay for polling data.</p><p>No setup of synchronization required.</p> | <p>Data Consumer must retrieve authorization evidence.</p><p>Authorizations needs to be signed / sealed so it can be verified by the Data Service Provider.</p> |
 | Polling at Request    | Most up to date information is always used.                                                                                         | Data Service Provider is dependent on (a) the performance (b) the additional delay (c) the availability of the external Authorization Register.                 |
 

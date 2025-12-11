@@ -1,17 +1,3 @@
----
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
----
-
 # Edge agreements
 
 ### 1. Summary
@@ -19,8 +5,6 @@ layout:
 Edges are the boundaries of an association. Edge Agreements define how members of the association can interact with non-members of the association
 
 ### 2. Purpose of the building block
-
-
 
 {% hint style="info" %}
 One can identify three types of “edges” or boundaries:
@@ -121,7 +105,5 @@ When starting an association, it is advisable to establish a set of "edge agreem
 
 * [https://digitalshipmentdata.org/](https://digitalshipmentdata.org/)
 * [https://www.evofenedex.nl/kennis/internationaal-ondernemen/incoterms/de-11-incoterms-2020](https://www.evofenedex.nl/kennis/internationaal-ondernemen/incoterms/de-11-incoterms-2020)
-
-
 
 {% file src="../../.gitbook/assets/Waybill complete.pdf" %}
