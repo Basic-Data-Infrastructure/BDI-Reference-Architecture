@@ -1,6 +1,13 @@
+---
+cover: >-
+  https://images.unsplash.com/photo-1522071820081-009f0129c71c?crop=entropy&cs=srgb&fm=jpg&ixid=M3wxOTcwMjR8MHwxfHNlYXJjaHw2fHx0ZWFtd29ya3xlbnwwfHx8fDE3NjU4MDg1MzF8MA&ixlib=rb-4.1.0&q=85
+coverY: 0
+coverHeight: 251
+---
+
 # Association Register
 
-### 1. Summary
+## 1. Summary
 
 The building block Association Register has the basic function of registering:
 
@@ -20,9 +27,8 @@ Optional functions that are expected when a BDI Association administers their ow
 * perform federated verification checks of unknown legal identities that are Member of another BDI Association
 * registering preferred business partners in a federated environment
 
-### 2. Purpose of the building block
+## 2. Purpose of the building block
 
-{% hint style="info" %}
 The purpose of the Association Register is to automate and facilitate trust assessments of entities in the sequence of Authentication – Trust Assessment – Authorization as performed by a Zero Trust endpoint.
 
 A shared Association Register reduces costs and combines experiences in shared dynamic reputation scores.
@@ -34,35 +40,18 @@ A federated Association Register automates the basic trust checks of entities th
 A federated Association Register automates the registering of preferred Business Partners: members of other BDI Associations that have a special status.
 
 An Association Register is considered a technological solution to facilitate the role of the Association Administrator.
-{% endhint %}
 
-### 3. Concepts
+## 3. Concepts
 
 The following concepts (from the BDI Glossary) are particularly relevant in this building block:
 
-_Association -_ Legal entity that serves as trust anchor for both federated trust/authentication and local onboarding. A BDI Association is the “home Association” for its Members.
+<table data-view="cards"><thead><tr><th></th><th></th><th data-hidden data-card-cover data-type="image">Cover image</th></tr></thead><tbody><tr><td><strong>Association</strong> </td><td>Legal entity that serves as a trust anchor for both federated trust/authentication and local onboarding. A BDI Association is the “home Association” for its Members.</td><td></td></tr><tr><td><strong>Association Administrator</strong></td><td>Functionary responsible for operating the services of a BDI Association.</td><td></td></tr><tr><td><strong>Association Register</strong></td><td>Technological solution for the register of recognized legal entities, realtime accessible by associated data provider(s): the members. </td><td></td></tr><tr><td><strong>Member</strong></td><td>Legal entity as member of the BDI Association of its choice</td><td></td></tr><tr><td><strong>Federation of Associations</strong></td><td>A series of collaborating BDI associations</td><td></td></tr><tr><td><strong>Outsider</strong></td><td>Member of a different BDI Association than the "home"  association. Note: this a relative perspective, from the position of a Member of a given instance (BDI Association). Members of the same instance are “insiders”, anybody else is an Outsider and vice versa.</td><td></td></tr><tr><td><strong>Preferred Business Partners</strong></td><td>Outsiders who have agreed to specific terms and conditions of a local BDI Association that maintains its own Business Partner Reputation Model</td><td></td></tr><tr><td><strong>Home Association</strong></td><td>The association that the member is a part of.</td><td></td></tr><tr><td><strong>Visitor</strong></td><td>Outsider with a better reputation score than a defined minimum.</td><td></td></tr></tbody></table>
 
-_Association Administrator -_ Functionary responsible for operating the services of a BDI Association.
-
-_Association Register -_ Technological solution for the register of recognized legal entities, real time accessible by associated data provider(s) (Members)
-
-_Member -_ Legal entity as member of the BDI Association of its choice
-
-_Federation of Associations -_ A series of collaborating BDI associations
-
-_Outsider -_ Member of a different BDI Association than the "home" . Note: this a relative perspective, from the position of a Member of a given instance (BDI Association). Members of the same instance are “insiders”, anybody else is an Outsider and vice versa.
-
-_Preferred Business Partners -_ Outsiders who have agreed to specific terms and conditions of a local BDI Association that maintains its own Business Partner Reputation Model
-
-_Home Association -_ The association a member is part of.
-
-_Visitor -_ Outsider with a better reputation score than a defined minimum.
-
-### 4. Risks
+## 4. Risks
 
 An Association Register is a core part of automated trust assessment. This requires both:
 
-* Rigorous design and testing for IT-security weaknesses (cryptographic libraries, protocols, pentesting, supply chain attacks etc.)
+* Rigorous design and testing for IT-security weaknesses (cryptographic libraries, protocols, penetration testing, supply chain attacks etc.)
 * An operational security process that minimizes the risk of humans as attack vector (social engineering, pressure) to compromise the integrity of the register
 
 The human attack vector is considered to be the most risky: onboarding should therefore be a one-way automated process in three separate steps (see also onboarding T\&Cs Association articles):
@@ -73,7 +62,7 @@ The human attack vector is considered to be the most risky: onboarding should th
 
 Modification of information should only be possible by deleting or deprecating information, followed by a new onboarding process.
 
-### 5. Interlinkages with other building blocks
+## 5. Interlinkages with other building blocks
 
 This building block provides the technical implementation supporting the building block “Onboarding Terms and Conditions”, in which the operational processes and requirements regarding the onboarding of a BDI Association are described.
 
@@ -103,7 +92,7 @@ The principles of by discovery through a standard \_bdi subdomain to facilitate 
 
 The benefits of shared services, shared standards, shared Terms and Conditions and increasing the negotiation power by coordinating as a group are known in the "analog" world. A large number of trade associations already exist, specific to a sector/region. These trade associations are natural hosts for Association Register functions. The assumption is that in most cases existing trade associations will upgrade their service offerings to include support for the BDI, instead of creating a new legal entity specifically for support of the BDI.
 
-### 6. Elements and their key functions
+## 6. Elements and their key functions
 
 An Association Register can have the following functions
 
@@ -115,7 +104,7 @@ An Association Register can have the following functions
 * Members can add to the Reputation score of registered entities.
 * Members can use the Association Register to asses the reputation of a previously unknown Outsider: the Association Register queries the Association Register of the Outsider.
 
-### 7. Core design decisions
+## 7. Core design decisions
 
 The following design decisions form the basis for this building block:
 
@@ -126,7 +115,7 @@ The following design decisions form the basis for this building block:
 * An entity can choose to be Member of multiple Associations.
   * An example is an e-commerce retailer: one side of the company is dealing with shipping purchased goods by maritime transport (containers) to its local warehouses, the other side of the company is deeply involved in e-commerce retail and distribution. The large difference in semantics, terms and conditions, roles, and parties (including authorities) involved is visible in the different trade organizations (maritime container transport versus e-commerce retail). The difference may lead to the choice to be Member of two different Associations.
 
-### 8. Future topics
+## 8. Future topics
 
 To be discovered is how the Association Register can technically support the building block “Business Partner Reputation model”.
 
@@ -136,7 +125,7 @@ The identification of Outsiders and its Root Association needs to be detailed.
 
 Implications on trust when a member is a member of multiple associations.
 
-### 9. Further reading
+## 9. Further reading
 
 This building block has been derived but modified from the following sources, that provide opportunity for further reading:
 

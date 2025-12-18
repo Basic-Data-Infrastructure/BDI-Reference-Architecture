@@ -5,11 +5,7 @@ coverY: 0
 coverHeight: 570
 ---
 
-# 🛣️ Logistics Event Ontology (Suus)&#x20;
-
-{% hint style="danger" %}
-The Logistics Event Ontology is still under development
-{% endhint %}
+# 🛣️ Logistics Event Ontology
 
 ## 1. Introduction&#x20;
 
@@ -35,9 +31,7 @@ The Logistics Event Ontology (LEO) was developed to resolve this issue. LEO func
 
 The purpose of this building block is to describe the creation and usage of a light-weight common BDI format, called LEO (Logistics Event Ontology). The purpose of this format is to bridge the existing standards in the realm of logistics data sharing, like [OTM](https://opentripmodel.org/), [FEDeRATED](https://www.federatedplatforms.eu/), [OneRecord](https://onerecord.com/), [DCSA](https://dcsa.org/), [GS1](https://www.gs1.org/), [UN/CEFACT](https://unece.org/trade/uncefact), [EDIFACT ](https://unece.org/trade/uncefact/introducing-unedifact)and many others. It is not the intention to fully map all details of all standards onto a single model. Instead, the LEO-format distils the minimal data needed to follow goods through the supply chain based on the perspective of the BCO.
 
-
-
-### 1.3 Functional details
+### 1.2 Functional details
 
 The BDI framework separates the envelope from the payload, thereby separating event data from other operational data. The BDI envelope is a notification of an event with additional data and metadata, combined with a link to the endpoint of the data owner where more (sensitive) data about the event may be requested. The data owner evaluates the request and provides data to the requesting party on a 'need-to-know' basis.
 
@@ -58,9 +52,7 @@ This building block is closely linked with the [Event Publish-Subscribe Service]
 
 IT defines templates for frequently-used common logistic events and their linkage to domain standards.
 
-
-
-## Attached documents
+## 3. Attached documents
 
 {% file src="../../.gitbook/assets/20250120_BDI-Logistic-Event-Ontology.pdf" %}
 

@@ -1,4 +1,10 @@
-# Security
+---
+cover: >-
+  https://images.unsplash.com/photo-1485230405346-71acb9518d9c?crop=entropy&cs=srgb&fm=jpg&ixid=M3wxOTcwMjR8MHwxfHNlYXJjaHw0fHxzZWN1cml0eXxlbnwwfHx8fDE3NjU4MTQ4MjR8MA&ixlib=rb-4.1.0&q=85
+coverY: 0
+---
+
+# 🔐 Coherent Security
 
 ### Summary
 

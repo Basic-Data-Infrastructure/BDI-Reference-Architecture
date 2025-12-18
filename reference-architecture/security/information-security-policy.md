@@ -24,7 +24,7 @@ layout:
     visible: true
 ---
 
-# 🔐 BDI Security Framework
+# BDI Security Framework
 
 ### 1. Introduction
 

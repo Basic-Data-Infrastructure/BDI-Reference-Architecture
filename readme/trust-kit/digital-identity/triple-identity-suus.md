@@ -1,4 +1,5 @@
 ---
+hidden: true
 cover:
   light: ../../../.gitbook/assets/a8d30c33-527b-425f-bd0f-41ed90561b77.png
   dark: ../../../.gitbook/assets/istockphoto-1054396134-612x612.jpg
@@ -23,7 +24,7 @@ layout:
     visible: true
 ---
 
-# 🪪 Triple Identity (Suus)
+# Triple Identity (Suus)
 
 <div data-full-width="true"><figure><img src="../../../.gitbook/assets/251110 BDI RfC Triple Identity.drawio (2) (1).png" alt=""><figcaption></figcaption></figure></div>
 

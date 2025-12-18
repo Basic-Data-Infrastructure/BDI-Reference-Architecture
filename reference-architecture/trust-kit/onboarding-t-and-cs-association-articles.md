@@ -1,3 +1,7 @@
+---
+hidden: true
+---
+
 # Onboarding Terms and Conditions
 
 ### 1. Summary

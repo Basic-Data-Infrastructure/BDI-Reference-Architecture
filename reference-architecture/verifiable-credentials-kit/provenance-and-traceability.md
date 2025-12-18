@@ -2,11 +2,14 @@
 description: >-
   As adopted from
   https://dssc.eu/space/BVE/357075283/Provenance+%26+Traceability
+cover: >-
+  https://images.unsplash.com/photo-1735307596456-773b61511ec8?crop=entropy&cs=srgb&fm=jpg&ixid=M3wxOTcwMjR8MHwxfHNlYXJjaHwzfHx0cmFjZXxlbnwwfHx8fDE3NjU4MTQwOTB8MA&ixlib=rb-4.1.0&q=85
+coverY: 0
 ---
 
 # Provenance & Traceability
 
-**Summary**&#x20;
+## 1. **Summary**
 
 This building block provides guidance support provenance, traceability, logging, audits, etcetera, in a standardized way for the use cases it supports.
 
@@ -22,17 +25,15 @@ A solution needs to fulfil the requirements of the governance, legal and contrac
 
 The requirement for observability, traceability and provenance tracking is usually found in highly regulated industries or in cases dealing with high-value data. Data being used for artificial intelligence is an example of a situation where such mechanisms can be required by law (in this case, the AI Act).
 
-**Purpose**&#x20;
+## **2. Purpose**
 
 The purpose of this building block is to provide approach for the provenance and traceability.
 
 The forward-looking direction of a data value chain is referred to as traceability, i.e., a data provider can receive evidence of what was done with the data. The backwards-looking direction of a data value chain is referred to as provenance tracking, i.e., a data consumer can receive evidence on the origin of the data and the treatment of the data during its processing in the value chain. Both traceability and provenance are important functional requirements for each participant in such a data value chain, which can consist of multiple data transactions.
 
-**Implementation Considerations**
+## **3. Implementation Considerations**
 
 This building block addresses the following capabilities:
-
-
 
 |                                                                           |                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 | ------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -41,15 +42,11 @@ This building block addresses the following capabilities:
 | Mechanisms to provide and use evidence of the activities of a transaction | This is particularly relevant when multiple parties are involved in the value creation, so called value chains, as such parties have a different interest. Depending on the use case and requirements, the participants (themselves or with 3rd parties) must keep logs of the transactions, which can be used for non-repudiation in case of disputes.                                                                                                              |
 | Mechanisms to verify the origins:                                         | The provenance of data can be relevant in many use cases and could be a potential driver for added value in data sharing. The requirements for proper verification of the origins of the data can be stated by law, governance framework, contracts between parties or other policies. Provenance could refer to either the traceability of the data in the value chain, as explained above, or the origin of the data itself from a trusted and/or verified source. |
 
-**Interlinkages with other building blocks**&#x20;
+## **4. Interlinkages with other building blocks**
 
-&#x20;Federation of assoiciation
+<a href="../federation-kit/federation-of-associations.md" class="button secondary">Federation of Associations</a>  <a href="../logistics-event-kit/event-pub-sub-service.md" class="button secondary">Notification pub/sub service</a>
 
-Events pub/sub
-
-
-
-**Elements and their Key Functions**
+## **5. Elements and their Key Functions**
 
 Nonrepudiation provides proof of the origin (provenance) , authenticity and integrity. It provides assurance to the sender that its message was delivered, as well as proof of the sender's identity to the recipient. This way, neither party can deny that a message was sent, received and processed.​
 
@@ -57,16 +54,16 @@ Example usage: The proverbial use case: man at the gate and the security guard h
 
 In the BDI stack, we refer to Registers with claim (Association-, Representation, Professional Qualification- and Business Reputation registers), however this does not mean ‘central’. Practical deployment is explored: The ‘Secure Issuance of Goods demo’ works, however many calls / interactions to federated infrastructure is needed not benefitting non-functionals and robustness of the solution in complex scenarios.​
 
-Direction that is being explored now is by combining ‘Embedded JWTs’ with VC’s (Verfiable Credentials) for a powerful mechanism for secure, flexible, and privacy-preserving information exchange whilst providing a Chain of Trust (tracebility):​
+Direction that is being explored now is by combining ‘Embedded JWTs’ with VC’s (Verfiable Credentials) for a powerful mechanism for secure, flexible, and privacy-preserving information exchange whilst providing a Chain of Trust (traceability):​
 
 * Enables multi party trust (Chain of Trust)​
 * Captures needed delegation and mandates​
-* Seperation of concerns – you only need to know what you need to know​
+* Separation of concerns – you only need to know what you need to know​
 * Privacy preserving - Holder can choose which claims to reveal to a verifier​
 * Nonrepudiation​
 * Known and in use technology, well defined and accepted protocols for token creation and embedding​
 
-**Core Design Decissions**
+## **6. Core Design Decisions**
 
 The following design decisions should be considered:
 
@@ -78,7 +75,7 @@ The following design decisions should be considered:
 * Will I be able to use traceability data?
 * How can you ascertain who acted on the data and at which point?
 
-**Future topics**&#x20;
+## **7. Future topics**
 
 Future work: Claims need to be stored for usage in a transactions. Ideally the subject should ‘hold’ the claim (like EU Digital Wallets). This is the defined EU direction. Not immidiate needed to work within the BDI scheme.
 
@@ -89,5 +86,3 @@ To be potentially covered in future versions.
 
 * Examples of provenance data products
 * Examples of traceability data products
-
-&#x20;

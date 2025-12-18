@@ -1,66 +1,68 @@
-# Policy agreements
+---
+cover: >-
+  https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?crop=entropy&cs=srgb&fm=jpg&ixid=M3wxOTcwMjR8MHwxfHNlYXJjaHwxfHxwb2xpY3l8ZW58MHx8fHwxNzY0NzY4MDkyfDA&ixlib=rb-4.1.0&q=85
+coverY: 0
+coverHeight: 505
+---
 
-### 1. Summary
+# Policy Agreements
 
-### 2. Purpose of the building block
+## 1. Purpose of the building block
 
-{% hint style="info" %}
-Policies in the BDI are common agreements about authorization of access to data elements. Standardization of:
+Policies in the BDI are common agreements about authorization of access to data elements. Friction, management costs, delays and (legal) uncertainty can be reduced by a standardization of the following elements:&#x20;
 
 * Common roles
-* Access policies for a given role to data elements
-* “need to know” limitations
+* Data access policies&#x20;
+* “Need-to-know” limitations
 * Rights and obligations on how the data may be used
 
-reduces friction costs, management costs, delays and (legal) uncertainty.
-{% endhint %}
+## 2. Concepts
 
-### 3. Concepts
+### 2.1. Common Roles
 
-#### 3.1. Common Roles
+Common roles define operational responsibilities within supply chains, helping to create standardized policies — particularly **Data Access Policies**. Each specific sector (type of cargo, modality) has common roles that are well understood and recognized. The same applies to the data elements that a role needs to have access to in order to be able to perform a task.
 
-Common roles define operational responsibilities within supply chains, helping to create standardized policies, particularly Data Access Policies.
+Defining these common roles — e.g. truck driver, customs agents, inspection agent, forwarder, terminal planner, etc. — reduces the cost of interactions between entities. An undefined role needs custom definitions for the combination role-data access policy, which may be a labor-intensive action. Managing access rights is simplified by standardization.
 
-Each specific sector (type of cargo, modality) has common roles that are well understood and recognized. The same applies to data elements that a role needs to have access to, in order to be able to perform a task.
+### 2.2 Data Access policies
 
-Defining these common roles (like truck driver, customs agents, inspection agent, forwarder, terminal planner, etc. etc.) reduces the cost of interactions between entities. An undefined role needs custom definitions for the combination role-data access policy: a labour-intensive action.
+Data access policies define who or which role can access specific data elements  under what conditions. Common roles are linked to common data access policies, and a data access policy can be linked to a person: this is a specific authorization.
 
-Managing access rights is simplified by standardization.
+### 2.3 Data Licenses
 
-#### 3.2. Data Access policies
+Data licenses define the rights and responsibilities of a party that gains access to data. These licenses address whether the data can be retained, reused, or shared with third parties. For example, in the e-commerce sector a data license might stipulate that a transporter delivering packages cannot store, reuse, or resell the recipient’s personal information, including their name, address, email, phone number, or the type of goods delivered. Data licenses regulate the permissible actions and behaviors related to the use of the accessed data to ensure that control over the data is maintained even after it has left the trust boundaries of the data owner.
 
-Data access policies define who or what role can access specific data elements and under what conditions.
+For a specific sector or geography one can either develop specific data licenses, or reuse common global data ones.&#x20;
 
-Common roles are linked to common data access policies.
+## 3. Interlinkages with other building blocks
 
-A data access policy can be linked to a person: this is a specific authorization.
+<a href="digital-identity/" class="button secondary">Digital Identity</a>  <a href="authorisation-oauth-2.0-ar-dm-+-xacml-policies.md" class="button secondary">Authorization</a>  <a href="authentication/" class="button secondary">Authentication</a>  <a href="onboarding-t-and-cs-association-articles.md" class="button secondary">Onboarding Terms and Conditions</a>
 
-#### 3.3. Data Licenses
-
-Data licenses define the rights and responsibilities of a party that gains access to data.
-
-These licenses address questions, such as whether the data can be retained, reused, or shared with third parties. For example, in the e-commerce sector, a data license might stipulate that a transporter delivering packages cannot store, reuse, or resell the recipient’s personal information, including their name, address, email, phone number, or the type of goods delivered. Data licenses, including regulate the permissible actions and behaviours related to the use of the accessed data, ensuring that control over the data is maintained even after it has left the trust boundaries of the data owner.
-
-Common global data licenses may be re-used, or local specific data licenses may be developed that are specific for a sector or geography.
-
-### 4. Interlinkages with other building blocks
-
-* Digital Identity
-* Authorization
-* Authentication
-* Onboarding, Terms and conditions
-
-### 5. Core design decisions
+## 4. Core design decisions
 
 When starting an association, it is advisable to establish a set of policies beforehand. These policies should be developed across three layers, all of which need to be considered:
 
-* _Association-Specific_: These agreements are tailored to meet the unique needs of the association, which may vary by sector, geographical location, or specific theme.
-* _Common_: Utilize a standardized set of edge agreements available in the BDI repository. For instance, the set of data licenses which are described by iShare.
-* _Global_: Seek to align these policies with those used in other sectors and standards whenever possible, promoting convergence and consistency.
+{% stepper %}
+{% step %}
+### Association-specific
 
-### 6. Further reading
+These agreements are tailored to meet the unique needs of the association, which may vary by sector, geographical location, or specific theme.
+{% endstep %}
+
+{% step %}
+### Common
+
+One can utilize the standardized set of edge agreements available in the BDI repository. For instance, the set of data licenses which are described by iShare.
+{% endstep %}
+
+{% step %}
+### Global
+
+It is advised to align policies with those used in other sectors and standards whenever possible, promoting convergence and consistency.
+{% endstep %}
+{% endstepper %}
+
+## 5. Further reading
 
 * [https://dev.ishare.eu/reference/delegation-mask/policy-sets](https://dev.ishare.eu/reference/delegation-mask/policy-sets)
 * [https://framework.ishare.eu/detailed-descriptions/functional/licenses](https://framework.ishare.eu/detailed-descriptions/functional/licenses)
-
-\\

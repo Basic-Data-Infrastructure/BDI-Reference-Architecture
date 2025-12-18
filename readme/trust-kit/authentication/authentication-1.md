@@ -1,4 +1,5 @@
 ---
+hidden: true
 cover: >-
   https://images.unsplash.com/photo-1618044619888-009e412ff12a?crop=entropy&cs=srgb&fm=jpg&ixid=M3wxOTcwMjR8MHwxfHNlYXJjaHwzfHxhdXRoZW50aWNhdGlvbnxlbnwwfHx8fDE3NjM1NjUzNjF8MA&ixlib=rb-4.1.0&q=85
 coverY: 0
@@ -33,7 +34,7 @@ The example is based on hinterland transport of containers to and from the port 
 Assume there exists one BDI association for the port, one for the hinterland and one for the shippers.&#x20;
 {% endhint %}
 
-<table><thead><tr><th width="265"></th><th></th></tr></thead><tbody><tr><td>BDI-H</td><td>Association Port </td></tr><tr><td>BDI-V1</td><td>Association Hinterland</td></tr><tr><td></td><td></td></tr></tbody></table>
+<table><thead><tr><th width="265"></th><th></th></tr></thead><tbody><tr><td>BDI-H</td><td>Association Port </td></tr><tr><td>BDI-V1</td><td>Association Hinterland</td></tr></tbody></table>
 
 
 
@@ -59,6 +60,6 @@ Level 2 contains an asymmetrical key-pair generated in the BDI connector, in com
 
 <figure><img src="../../../.gitbook/assets/251117 drawio - security rfc-Key-pair eIDAS.drawio.png" alt=""><figcaption></figcaption></figure>
 
-## Sources
+## 3. Sources
 
-_Authentication and Authorization (v2)_ (2022). IDPro. Retrieved November 24, 2025, from https://bok.idpro.org/article/78/galley/161/view/&#x20;
+_Authentication and Authorization (v2)_ (2022). IDPro. Retrieved November 24, 2025, from [https://bok.idpro.org/article/78/galley/161/view/ ](https://bok.idpro.org/article/78/galley/161/view/)&#x20;

@@ -1,24 +1,31 @@
+---
+cover: >-
+  https://images.unsplash.com/photo-1589460562162-847ebc689d7a?crop=entropy&cs=srgb&fm=jpg&ixid=M3wxOTcwMjR8MHwxfHNlYXJjaHwyfHxjaG9yZW9ncmFwaHl8ZW58MHx8fHwxNzY1NDYzMTU4fDA&ixlib=rb-4.1.0&q=85
+coverY: 0
+coverHeight: 282
+---
+
 # Event Choreography
 
 Choreography of Principals and subcontractors: balancing effectivity with security.
 
-### 1. Choreography of event distribution
+## 1. Choreography of event distribution
 
 In supply chains the chain of business activities starts when a Seller and Buyer agree upon the transaction. This agreement typically includes terms related to transport, insurance, customs, the handover of responsibilities, and payments. The successful execution of this agreement often requires coordination among a large set of actors, including authorities and their subcontractors. This coordination is managed through a "choreography" of actions, where each action is triggered by planned or executed events.
 
-### 2. Subcontractors and principals
+## 2. Subcontractors and principals
 
 In this context, the Seller and Buyer serve as the Principals, each responsible for their part of the agreement. Typically, each Principal selects preferred contractors to fulfil their portion of the agreement. These main contractors, in turn, become Principals to their own subcontractors, and this chain continues down the line.
 
 The key challenge here is distributing notifications within this dynamic and temporary data exchange network, to ensure effective and efficient coordination of activities, without overburdening the network with traffic.
 
-### 3. Provisioning an instance
+## 3. Provisioning an instance
 
 The BDI framework assumes that commercial relationships between Principals and Subcontractors are established before any actual orders are placed. In this setup, URLs are known, and through the DNS discovery mechanism, the URIs of endpoints for each party are also known. Digital identity and trust are established within the respective associations of each party.
 
 Each Principal is responsible for provisioning a temporary network of subcontractors associated with a specific order.
 
-### 4. Channels <a href="#channels" id="channels"></a>
+## 4. Channels <a href="#channels" id="channels"></a>
 
 Principals and their subcontractors communicate through channels (a.k.a. topics in a pub/sub setting). There are three kinds of channels:
 
@@ -28,7 +35,7 @@ Principals and their subcontractors communicate through channels (a.k.a. topics 
 
 The latter subject specific channel may be considered a low-level channel. The events on these channels need more advanced tracking, due to the shifting subject, and may end up repackaged on the subcontractor / order specific channels.
 
-### 5. Semantics and Lifecycle
+## 5. Semantics and Lifecycle
 
 In order to allow a consuming party to correctly interpret events, the publishing party must clearly document:
 
@@ -44,15 +51,15 @@ Translating, repackaging, and/or combining events for consumption by other syste
 * What information is lost and what is the consequence of that loss;
 * What information is added, for example, to fulfil a constraint to the target system.
 
-### 6. Bootstrapping
+## 6. Bootstrapping
 
 The Principal publishes a specific notification to a subcontractor, with metadata on “Request order”. The data accessed by the subcontractor includes the details of the order request. The subcontractor responds with a notification containing metadata on order acceptance. The Principal then accesses the data to confirm the subcontractor's acceptance and any additional details provided.
 
-### 7. Common Order Log
+## 7. Common Order Log
 
 Upon confirmation, the Principal adds the subcontractor as a subscriber to the common Order Log and posts this event in the Common Order Log. The Common Order Log creates notifications to all relevant parties when an event is posted by (or on behalf of) the Principal.
 
-### 8. Provisioning of Closed Network
+## 8. Provisioning of Closed Network
 
 To secure and streamline interactions within the temporary network, the Principal sends a JWT (JSON Web Token) to the subcontractor. This "Subco" JWT contains:
 
@@ -67,7 +74,7 @@ The subcontractor uses this JWT token when interacting with other subcontractors
 
 The Principal repeats this process with all subcontractors until the provisioning of the network is complete.
 
-### 9. Dynamic modification
+## 9. Dynamic modification
 
 In real-world operations, it may become necessary to change subcontractors dynamically; removing one subcontractor from the network and replacing them with another.
 
@@ -78,33 +85,33 @@ To facilitate this, the Principal posts a notification of the change to the Orde
 * Add the new subcontractor: The new subcontractor is added to the network, receiving the necessary notifications and access rights.
 * Create a JWT for the new subcontractor.
 
-### 10. Managing the number of interactions
+## 10. Managing the number of interactions
 
 One potential pitfall of distributing notifications of events is the exponential increase in the number of interactions (API-calls, identity checks, authorization checks) with the number of participants/subcontractors in the temporary network.
 
 There are three strategies to manage the number and costs of interactions.
 
-#### 10.1. Star-like interactions with Principal
+### 10.1. Star-like interactions with Principal
 
 A subcontractor communicates most of the notifications to the Principal, one-on-one. The Principal filters notifications and posts only relevant events or notifications from all parties to the Common Order Log.
 
 This limits the information overload while ensuring that all relevant parties are informed of relevant events.
 
-#### 10.2. Low-risk data in notification
+### 10.2. Low-risk data in notification
 
 Notifications are sent to a closed network of parties. Some data of an event may be low-risk and can be embedded in the notification within the closed network: for example "ETA delayed by 12 hrs". The straightforward embedding reduces the need to collect the information at the source.
 
 In this strategy, the value of the data is used to simplify the process, increasing efficiency and reducing costs. It is a business decision to balance the loss of value of the data and the gains of increased efficiency.
 
-#### 10.3. Caching authorization results for common roles
+### 10.3. Caching authorization results for common roles
 
 Common roles have known authorization rules. The results of data selection for these roles may be cached near the BDI-API, reducing the need to evaluate policies in the Authorization Register.
 
-#### 10.4. Subject versus Order / Subcontractor specific channels
+### 10.4. Subject versus Order / Subcontractor specific channels
 
 The use of subject specific channels (see also [Channels](event-choreography.md#channels)) can drastically reduce the amount of events triggered because, for instance, an event about transport equipment relates to multiple orders and (in some cases) subcontractors.
 
-### 11. Creating an auditable log
+## 11. Creating an auditable log
 
 Once all tasks related to the order have been completed, the Principal generates a signed log. This log serves as an official record of all events and actions that took place during the order's execution.
 
@@ -113,7 +120,7 @@ Once all tasks related to the order have been completed, the Principal generates
 
 This structured audit trail ensures transparency, accountability, and the ability to review and verify all actions taken during the course of the order, providing a solid foundation for trust and compliance in the BDI framework.
 
-### 12. Closing the Order and Dissolving the Network <a href="#closing-and-dissolving" id="closing-and-dissolving"></a>
+## 12. Closing the Order and Dissolving the Network <a href="#closing-and-dissolving" id="closing-and-dissolving"></a>
 
 Once all tasks related to the order have been executed, the Principal initiates the closure of the order by:
 
@@ -123,11 +130,11 @@ Once all tasks related to the order have been executed, the Principal initiates 
 
 This process ensures the temporary network is securely dismantled, preserving the integrity and confidentiality of the data exchanged during the order's execution.
 
-### 13. Querying for missed events
+## 13. Querying for missed events
 
 Parties may be late subscribing to channels for different reasons or need to recover from system failures, in those cases these systems need to have access to earlier events they have missed to (re)build their state.
 
-### 14. Audit trail
+## 14. Audit trail
 
 Event driven coordination requires a means to “go back in time”, inspect earlier events and have an audit trail. One obvious reason is when a subcontractor is changed: the new subcontractor has to be able to quickly come up to speed on the history of events. The second is to have a common reference for either compliance or settling of disputes.
 

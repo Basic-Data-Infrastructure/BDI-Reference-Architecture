@@ -1,107 +1,109 @@
+---
+cover: >-
+  https://images.unsplash.com/photo-1608499337372-2fea1e07da37?crop=entropy&cs=srgb&fm=jpg&ixid=M3wxOTcwMjR8MHwxfHNlYXJjaHwxfHxodW1hbiUyMG1hY2hpbmUlMjBpbnRlcmFjdGlvbnxlbnwwfHx8fDE3NjQ3NDkwODN8MA&ixlib=rb-4.1.0&q=85
+coverY: 0
+coverHeight: 374
+---
+
 # Digital Identity H2M
 
-### 1. Summary
+## 1. Summary
 
 This building block supports trust among participants by defining how digital identities play a role in BDI in human-to-machine (H2M) interactions.
 
 Digital identifiers for IT-processes acting on behalf of an organization/legal entity are described in Digital Identity (M2M).
 
-### 2. Purpose of the building block
+## 2. Purpose of the building block
 
-{% hint style="info" %}
 The purpose of this building block is to support the framework for trust in Boundary Management, where humans are acting as a representative of a legal entity by means of (digital) devices and telecommunication.
-{% endhint %}
 
-### 3. Concepts
+## 3. Concepts
 
 Boundary Management for humans relates to:
 
-* A human, acting as representative for a legal entity desiring access to data or an application owned/controlled by another legal entity
-  * _For example: login to an application_
-* A human, acting as representative for a legal entity desiring access to a location owned/controlled by another legal entity
-  * _For example: entering a protected zone_
-* A human, acting as representative for a legal entity involved in transferring as asset (cargo) and/or liabilities for the asset between the two legal entities
-  * _For example: picking up cargo by a transporter_
+<table data-view="cards"><thead><tr><th></th><th></th><th data-hidden data-card-cover data-type="image">Cover image</th></tr></thead><tbody><tr><td>A <strong>human</strong>, acting as <strong>representative</strong> for a <strong>legal entity</strong> desiring access to <strong>data</strong> or an <strong>application</strong> owned/controlled by another legal entity</td><td><em>For example: login to an application</em></td><td><a href="https://images.unsplash.com/photo-1535451801241-b5395e1d4a1b?crop=entropy&#x26;cs=srgb&#x26;fm=jpg&#x26;ixid=M3wxOTcwMjR8MHwxfHNlYXJjaHwyfHxsb2clMjBpbnxlbnwwfHx8fDE3NjQ3NDkyNjF8MA&#x26;ixlib=rb-4.1.0&#x26;q=85">https://images.unsplash.com/photo-1535451801241-b5395e1d4a1b?crop=entropy&#x26;cs=srgb&#x26;fm=jpg&#x26;ixid=M3wxOTcwMjR8MHwxfHNlYXJjaHwyfHxsb2clMjBpbnxlbnwwfHx8fDE3NjQ3NDkyNjF8MA&#x26;ixlib=rb-4.1.0&#x26;q=85</a></td></tr><tr><td>A <strong>human</strong>, acting as <strong>representative</strong> for a <strong>legal entity</strong> desiring access to a <strong>location</strong> owned/controlled by another legal entity</td><td><em>For example: entering a protected zone</em></td><td><a href="https://images.unsplash.com/photo-1535556572967-276cd0ad5cba?crop=entropy&#x26;cs=srgb&#x26;fm=jpg&#x26;ixid=M3wxOTcwMjR8MHwxfHNlYXJjaHw4fHxlbnRyYW5jZXxlbnwwfHx8fDE3NjQ3NDkyOTB8MA&#x26;ixlib=rb-4.1.0&#x26;q=85">https://images.unsplash.com/photo-1535556572967-276cd0ad5cba?crop=entropy&#x26;cs=srgb&#x26;fm=jpg&#x26;ixid=M3wxOTcwMjR8MHwxfHNlYXJjaHw4fHxlbnRyYW5jZXxlbnwwfHx8fDE3NjQ3NDkyOTB8MA&#x26;ixlib=rb-4.1.0&#x26;q=85</a></td></tr><tr><td>A <strong>human</strong>, acting as <strong>representative</strong> for a <strong>legal entity</strong> involved in <strong>transferring</strong> an asset (cargo) and/or liabilities for the asset between the two legal entities</td><td><em>For example: picking up cargo by a transporter</em></td><td><a href="https://images.unsplash.com/photo-1559297434-fae8a1916a79?crop=entropy&#x26;cs=srgb&#x26;fm=jpg&#x26;ixid=M3wxOTcwMjR8MHwxfHNlYXJjaHwyfHx0cmFuc3BvcnR8ZW58MHx8fHwxNzY0NzQ5NDE0fDA&#x26;ixlib=rb-4.1.0&#x26;q=85">https://images.unsplash.com/photo-1559297434-fae8a1916a79?crop=entropy&#x26;cs=srgb&#x26;fm=jpg&#x26;ixid=M3wxOTcwMjR8MHwxfHNlYXJjaHwyfHx0cmFuc3BvcnR8ZW58MHx8fHwxNzY0NzQ5NDE0fDA&#x26;ixlib=rb-4.1.0&#x26;q=85</a></td></tr></tbody></table>
 
-The building block ensures that the digital identity of the human involved in (digital) interactions can be :
+This building block ensures that the digital identity of the human involved in (digital) interactions can be authenticated. In addition, it ensures a relation between the digital identity and
 
-* Authenticated
-* Related to Representation evidence
-  * _In what role and capacity, on behalf of which legal entity, with a specific mandate_
-* Related to Professional Qualification evidence
-  * _Evidence of professional qualifications_
+* the **Representation evidence**, i.e. _in what role and capacity, on behalf of which legal entity, with a specific mandate_
+* the **Professional Qualification** evidence, i.e. _evidence of professional qualifications_
 
-The core concept is that identity is dynamically related to (potentially multiple concurrent) representations for (potentially multiple concurrent) legal entities: the legal entity assumes liability and accountability for actions of the human.
+{% hint style="info" %}
+The core concept is that **identity** is dynamically related to (potentially multiple concurrent) **representations** for (potentially multiple concurrent) **legal entities**. The legal entity assumes **liability** and **accountability** for actions of the human.
+{% endhint %}
 
-#### 3.1. Identity
+### 3.1 Identity
 
-Identity is a legal concept defined by a nation state and assigned to a human by that nation state. Nation States issue Passports and ID-cards to humans which they can use to "prove" their identity. Driving licenses are also used in some states (e.g. the Netherlands) to "prove" their identity.
+Identity is a legal concept defined by a nation state and assigned to a human by that nation state. Nation States issue Passports and ID-cards to humans which they can use to "prove" their identity. Driving licenses are also used in some states (e.g. the Netherlands) as a proof of identity.
 
 Digital identities are related to that core identity by Identity Providers which are used in B2B processes.
 
-Identity Providers can choose to increase the assurance level of an identity; for instance by live verification of an identity paper. This can be done face-to-face or remote. Typically, this is executed once at the initiation of a new identity.
+Identity Providers can choose to increase the assurance level of an identity, for example by requesting live verification of an identity paper. This can be done face-to-face or remote. Typically, this is executed once at the initiation of a new identity.
 
-#### 3.2. Authentication
+### 3.2 Authentication
 
-Identity Providers can also provide additional assurance at the (continuous) use of the identity; e.g. when a managed boundary must be crossed. The human user can be authenticated by a username, password and an additional 2FA / MFA. More advanced devices can also use biometric identification parameters.
+Identity Providers can also provide additional assurance at the (continuous) use of the identity, e.g. when a managed boundary must be crossed. The human user can be authenticated by a username, password and an additional 2FA / MFA. More advanced devices can also use biometric identification parameters. Biometric identification can also be used for accessing a physical location. One such example is using the Secure Logistics smart card to access a Terminal.
 
-Biometric identification can also be used for accessing a physical location; e.g. using the Secure Logistics smart card to access a Terminal.
+### 3.3 Identifiers
 
-#### 3.3. Identifiers
+Identity Providers typically use an internal numbering scheme for identifying users which are enriched with more public identifiers like email addresses and telephone numbers. Some details regarding different identifiers are given below.&#x20;
 
-Identity Providers typically use an internal numbering scheme for identifying users which are enriched with more public identifiers like email addresses and telephone numbers. State issued identifiers (like the Dutch BSN) are often not allowed to be used outside the Government.
+{% tabs %}
+{% tab title="State-issued identifiers" %}
+As mentioned, identity is a legal concept defined by a nation state and assigned to a human by that nation state. State issued identifiers (e.g. the Dutch BSN) are often not allowed to be used outside the Government.
+{% endtab %}
 
+{% tab title="Email " %}
 In B2B processes, business email addresses are preferred. These should be using an organizational domain name (e.g. @myorganization.com) and a personal prefix (e.g. piet.jansen@ or s.jones@). The use of shared email accounts must be avoided. Also the use of general domains (e.g. @gmail.com) should be avoided. Typically, the user must demonstrate during the setup of the account that she has access to the business email address. This provides additional trust that the user has a business relation with the organization which owns the domain name.
+{% endtab %}
 
-(Mobile) telephone numbers can also be used to identify / verify the user. During the setup the user demonstrates that she has access to the number. At a later moment, the user can demonstrate again that she still has access to this number.
+{% tab title="Phone numbers" %}
+(Mobile) telephone numbers can also be used to identify / verify the user. During the setup the user demonstrates that they have access to the number. At a later moment, the user can once again demonstrate the access to this number.&#x20;
+{% endtab %}
 
+{% tab title="Electronic Wallets" %}
 The push for electronic Wallets provides a new means to store and show a digital identity that can be authenticated.
+{% endtab %}
+{% endtabs %}
 
-#### 3.4. Representation
+### 3.4 Representation
 
-B2B Identity Providers identifies a human user in the context of an organization. Additionally, the role / mandate of the user can be defined at the Identity Provider so this can be used in all connected services. An alternative is that the service itself has local authorizations which must be managed by an administrator of the organization.
+B2B Identity Providers identifies a human user in the context of an organization. Additionally, the role/mandate of the user can be defined at the Identity Provider so it can be used in all connected services. An alternative is that the service itself has local authorizations which must be managed by an administrator of the organization.
 
-Users could represent more than one organization. Identity Providers differ how the deal with this situation. They could assign different identities for each of the represented organizations (e.g. applying different business email addresses or issuing separate secure cards per organization). Al alternative is that the human user can select the organization she represents in a specific use case.
+Users could represent more than one organization, and there are several approaches Identity Providers can take to manage this scenario. They could for example assign different identities for each of the represented organizations (e.g. applying different business email addresses or issuing separate secure cards per organization). An alternative is that the human user selects the represented organization in each specific use case.
 
-#### 3.5. Professional Qualifications
+### 3.5 Professional Qualifications
 
-In many cases the human needs to have adequate professional qualifications for the task at hand: professional drivers license, safety training, dangerous goods handling, etc.
+In many cases the human needs to have adequate professional qualifications for the task at hand, such as a professional drivers license, safety training or dangerous goods handling. The B2B Identity Provider could store and share these professional qualifications of the user, for example in an electronic wallet. The qualifications are typically represented as verifiable credentials.
 
-The B2B Identity Provider could also store and share professional qualifications of the user. In a wallet this is typically stored as a verifiable credential.
+## 4. Risks
 
-### 4. Risks
+Some possible risks that are important to consider for this building block, are the following:&#x20;
 
-An insufficient framework for digital identity, might lead to a lower level of trust among parties and will harm the overall trust in BDI.
+* An insufficient framework for digital identity might lead to a lower level of trust among parties and will harm the overall trust in BDI.
+* Non-compliance to applicable privacy laws (e.g. GDPR, AVG) can hamper the implementation or adoption of services and can cause reputation risks or fines.
 
-Non compliance to applicable privacy laws (e.g. GDPR, AVG) can hamper the implementation of services, the adoption of services, cause reputation risks or fines.
-
-### 5. Interlinkages with other building blocks
-
-This building block describes the BDI principles for digital identity for H2M interactions.
+## 5. Interlinkages with other building blocks
 
 The related building blocks are:
 
-* Digital Identity H2M
-* Authentication M2M
-* Authentication H2M
-* Authorization
-* Association register
-* Zero Trust Check
-* Representation Register
-* Professional Qualification Register
+<a href="digital-identity.md" class="button secondary">Digital Identity M2M</a>  <a href="../authentication.md" class="button secondary">Authentication M2M</a>  <a href="../authentication-h2m.md" class="button secondary">Authentication H2M</a>
 
-The most important related Kits and concepts are
+<a href="../authorisation-oauth-2.0-ar-dm-+-xacml-policies.md" class="button secondary">Authorization</a> <a href="../../../readme/trust-kit/association-register.md" class="button secondary">Association Register</a>  <a href="../../federation-kit/professional-qualification-register.md" class="button secondary">Professional Qualification Register</a>
 
-* Trust Kit
-* Federation Kit
-* Boundary Management
+<a href="../../federation-kit/representation-register.md" class="button secondary">Representation Chain</a>  <a href="../../../readme/trust-kit/association-register.md" class="button secondary">Association Register</a>
 
-### 6. Core design decisions
 
-Parties choose their Identity Providers fitting to the requirements.
 
-The BDI adds the link to representation and professional qualifications.
+The most important related Kits and concepts are:&#x20;
 
-In Europe the eIDAS regulation is a solid foundation for the identity ecosystem.
+<a href="../" class="button secondary">Trust KIT</a>  <a href="../../federation-kit/" class="button secondary">Federation KIT</a>  <a href="../../boundary-management-kit/" class="button secondary">Boundary Management</a>
 
-Self-signed certificates for digital identities are a low-barrier entry level solution, with serious limitations on trust, federation and scaling.
+## 6. Core design decisions
+
+Please note the following design decisions:&#x20;
+
+* Parties choose their Identity Providers fitting to the requirements.
+* The BDI adds the link to representation and professional qualifications.
+* In Europe the eIDAS regulation is a solid foundation for the identity ecosystem.
+* Self-signed certificates for digital identities are a low-barrier entry level solution, with serious limitations on trust, federation and scaling.

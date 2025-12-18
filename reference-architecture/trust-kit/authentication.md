@@ -1,6 +1,13 @@
+---
+cover: >-
+  https://images.unsplash.com/photo-1618044619888-009e412ff12a?crop=entropy&cs=srgb&fm=jpg&ixid=M3wxOTcwMjR8MHwxfHNlYXJjaHwzfHxhdXRoZW50aWNhdGlvbnxlbnwwfHx8fDE3NjU4OTg1NDl8MA&ixlib=rb-4.1.0&q=85
+coverY: 0
+coverHeight: 286
+---
+
 # Authentication M2M
 
-### 1. Summary
+## 1. Summary
 
 Authentication is the process of proving that the user (human or IT process) with a digital identity who is requesting access is the rightful owner of that identity (definition from IDpro). In the context of the BDI, the user is a representative of a legal entity (organization).
 
@@ -8,32 +15,27 @@ Authentication is required in both H2M (Human to Machine) and M2M (Machine to Ma
 
 In this page we will focus on M2M use cases where data is requested by a Data Consumer (e.g. another organization) via an API.
 
-### 2. Purpose of the building block
+## 2. Purpose of the building block
 
 {% hint style="info" %}
 Ensure that BDI users (M2M) are recognized and identified to prevent misuse of services and data. The automatic authentication of a BDI user in a federated perimeter-less architecture (see DNS-based Discovery as option) relies on a (delegated) Trust Anchor for Identity.
 {% endhint %}
 
-### 3. Concepts
+## 3. Concepts
 
 The Data Service Provider is responsible for authenticating the user; this is prerequisite for authorization, which will determine if the user can access the requested data.
 
-### 4. Risks
+## 4. Risks
 
 Incorrect authentication could result in data breaches and / or the unavailability to data for legitimate data consumers.
 
-### 5. Interlinkages with other building blocks
+## 5. Interlinkages with other building blocks
 
-This building block interlinks with:
+<a href="digital-identity/" class="button secondary">Digital Identity</a>  <a href="authorisation-oauth-2.0-ar-dm-+-xacml-policies.md" class="button secondary">Authorization</a>  <a href="discovery.md" class="button secondary">Discovery</a>  <a href="../federation-kit/" class="button secondary">Federation KIT</a>
 
-* Digital Identity & Identifiers
-* Authorizations
-* Discovery
-* Federation
+## 6. Core design decisions
 
-### 6. Core design decisions
-
-#### 6.1. OAuth2.
+### 6.1. OAuth2
 
 The BDI uses the OAuth2 protocol. OAuth2 supports two types of client credentials for authentication:
 
@@ -44,7 +46,7 @@ The use of private keys is preferred within the BDI.
 
 A BDI association could decide to issue certificates itself as an association, or as a group of associations. The consequence is that the Association is its own Trust Anchor, making federation with other Associations harder or less trustworthy.
 
-#### 6.2. eIDAS.
+### 6.2. eIDAS
 
 The European eIDAS regulation is a trust framework which (also) governs the issuance of certificates within Europe. Certificates can be used for:
 
@@ -55,17 +57,17 @@ QWAC and QSEAL are different types of eIDAS certificates.The sealing provides th
 
 The use of eIDAS digital certificates as private keys is recommended. The recommendation is to use eIDAS QWACs as well.
 
-#### 6.3. Non-European trust anchors.
+### 6.3. Non-European trust anchors
 
 The eIDAS regulation and infrastructure is EU-specific. Outside of Europe other trust anchors could be used (to be investigated).
 
-#### 6.4. Drawbacks of certificates
+### 6.4. Drawbacks of certificates
 
 * Certificates are quite expensive
 * Certificates need frequently to be rotated
 * The procurement, setup, testing and acceptance of certificates is not trivial.
 
-#### 6.5. Certificate based authentication
+### 6.5. Certificate based authentication
 
 Guidance on (to be done):
 
@@ -73,7 +75,7 @@ Guidance on (to be done):
 * Mapping to a well known identifier within the Data Service Provider
 * Note on Mutual Authentication; also relevant for the Data Consumer
 
-### 7. Future topics
+## 7. Future topics
 
 1. Non-EU trust anchors (outside of eIDAS).
 2. The use of association issued certificates instead of eIDAS certificates
@@ -93,7 +95,7 @@ The concept for the [association ](../federation-kit/federation-of-associations.
 
 Above options could be combined; e.g. [https://dhs-svip.github.io/requirements-for-decentralized-identity/TrustArchitecture/](https://dhs-svip.github.io/requirements-for-decentralized-identity/TrustArchitecture/).
 
-### 8. Further reading
+## 8. Further reading
 
 OAuth2: [IETF RFC 6749](https://datatracker.ietf.org/doc/html/rfc6749)
 

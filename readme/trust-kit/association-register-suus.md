@@ -1,4 +1,5 @@
 ---
+hidden: true
 cover: >-
   https://images.unsplash.com/photo-1629904869392-ae2a682d4d01?crop=entropy&cs=srgb&fm=jpg&ixid=M3wxOTcwMjR8MHwxfHNlYXJjaHwzfHxhc3NvY2lhdGlvbnxlbnwwfHx8fDE3NjQxNjA2MjN8MA&ixlib=rb-4.1.0&q=85
 coverY: 0
@@ -22,7 +23,7 @@ layout:
     visible: true
 ---
 
-# 🖇️ Association Register (Suus)
+# Association Register (Suus)
 
 ## 1. Introduction
 
@@ -128,16 +129,6 @@ The ASR provides optional service integration, helpdesk, backoffice services and
 ### 1.4 Members & users
 
 <table data-view="cards"><thead><tr><th></th><th></th><th></th><th></th><th></th><th></th><th data-hidden data-card-cover data-type="image">Cover image</th></tr></thead><tbody><tr><td><h4><strong>Members</strong></h4></td><td><strong>Definition</strong></td><td>Members are the voting participants who govern the association. In most cases, the members are also users.    </td><td></td><td><p></p><p></p><p><strong>Onboarding</strong></p></td><td>New members are admitted by vote of existing members.</td><td><a href="https://images.unsplash.com/photo-1522071820081-009f0129c71c?crop=entropy&#x26;cs=srgb&#x26;fm=jpg&#x26;ixid=M3wxOTcwMjR8MHwxfHNlYXJjaHwzfHxtZW1iZXJzfGVufDB8fHx8MTc2NDE2OTY0N3ww&#x26;ixlib=rb-4.1.0&#x26;q=85">https://images.unsplash.com/photo-1522071820081-009f0129c71c?crop=entropy&#x26;cs=srgb&#x26;fm=jpg&#x26;ixid=M3wxOTcwMjR8MHwxfHNlYXJjaHwzfHxtZW1iZXJzfGVufDB8fHx8MTc2NDE2OTY0N3ww&#x26;ixlib=rb-4.1.0&#x26;q=85</a></td></tr><tr><td><h4><strong>Users</strong></h4></td><td><strong>Definition</strong></td><td>Users are organizations that only use the services — by consuming or providing data — but do not set policies. Users <strong>can</strong> also be members. </td><td></td><td><strong>Onboarding &#x26; Revalidation</strong></td><td>User onboarding and revalidation involve verifying the user's identity (e.g. via KvK, LEI or EORI) and checking relevant registers such as fraud and insolvency. In addition, new users must accept the usage terms, and are subject to periodic revalidation. Access may be revoked if conditions are no longer met (revocation). </td><td><a href="https://images.unsplash.com/photo-1549732565-d673b928da7f?crop=entropy&#x26;cs=srgb&#x26;fm=jpg&#x26;ixid=M3wxOTcwMjR8MHwxfHNlYXJjaHwyfHx1c2Vyc3xlbnwwfHx8fDE3NjQxNzAyMDV8MA&#x26;ixlib=rb-4.1.0&#x26;q=85">https://images.unsplash.com/photo-1549732565-d673b928da7f?crop=entropy&#x26;cs=srgb&#x26;fm=jpg&#x26;ixid=M3wxOTcwMjR8MHwxfHNlYXJjaHwyfHx1c2Vyc3xlbnwwfHx8fDE3NjQxNzAyMDV8MA&#x26;ixlib=rb-4.1.0&#x26;q=85</a></td></tr></tbody></table>
-
-
-
-## 2. Interactions with other building blocks
-
-### 2.1. Onboarding
-
-### 2.2. Operational process
-
-## 3. Examples
 
 
 

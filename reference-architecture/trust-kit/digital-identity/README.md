@@ -1,6 +1,13 @@
 ---
+cover: >-
+  https://images.unsplash.com/photo-1483478550801-ceba5fe50e8e?crop=entropy&cs=srgb&fm=jpg&ixid=M3wxOTcwMjR8MHwxfHNlYXJjaHw2fHxkaWdpdGFsJTIwaWRlbnRpdHl8ZW58MHx8fHwxNzY1MzYwODc0fDA&ixlib=rb-4.1.0&q=85
+coverY: 0
+coverHeight: 328
 layout:
   width: default
+  cover:
+    visible: true
+    size: full
   title:
     visible: true
   description:
@@ -18,14 +25,3 @@ layout:
 # Digital Identity
 
 See [Digital Identity M2M](digital-identity.md) and [Digital Identity H2M](digital-identity-h2m.md)
-
-#### Definition of terms
-
-In the paper "Identity Words" ... explains that terms in the context of identity are often ambiguous.
-
-
-
-\#gedachtegoed achter triple identity; daarin zijn 2 flows; M2M en H2M
-
-
-

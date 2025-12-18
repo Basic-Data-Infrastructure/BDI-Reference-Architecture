@@ -1,6 +1,12 @@
 ---
+cover: >-
+  https://images.unsplash.com/photo-1457369804613-52c61a468e7d?crop=entropy&cs=srgb&fm=jpg&ixid=M3wxOTcwMjR8MHwxfHNlYXJjaHwyfHxib29rfGVufDB8fHx8MTc2NTQ2MzM5NHww&ixlib=rb-4.1.0&q=85
+coverY: 0
 layout:
   width: default
+  cover:
+    visible: true
+    size: full
   title:
     visible: true
   description:
@@ -15,7 +21,9 @@ layout:
     visible: true
 ---
 
-# Semantics KIT
+# 📖 Semantics KIT
+
+
 
 {% hint style="info" %}
 The main, if not the only, purpose of the BDI is to facilitate the exchange of data between parties in a logistic chain. However, this is only possible if all involved parties share the same interpretation of the data. This requires a common format and structure (syntax) of the data  as well as a common semantics.&#x20;
