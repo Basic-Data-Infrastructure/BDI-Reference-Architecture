@@ -1,17 +1,22 @@
+---
+cover: >-
+  https://images.unsplash.com/photo-1644088379091-d574269d422f?crop=entropy&cs=srgb&fm=jpg&ixid=M3wxOTcwMjR8MHwxfHNlYXJjaHwxfHxkaWdpdGFsfGVufDB8fHx8MTc2NTkwMDAwN3ww&ixlib=rb-4.1.0&q=85
+coverY: 0
+---
+
 # Digital Asset Boundaries
 
-Digital assets are:
+## 1. Introduction
 
-\-          Applications and processes
+The following can be considered as Digital Assets:&#x20;
 
-\-          Data
+* Applications and processes
+* Data
 
-Allowing humans to login to your  IT systems (applications, processes),  or allowing an process owned by another party to  access (read and maybe modify) your data is the subject of Digital Asset Boundary Management.
+Allowing humans to login to your IT systems (applications, processes), or allowing a process owned by another party to access (read and maybe modify) your data is the subject of Digital Asset Boundary Management.
 
-This subject is well understood by most organizations and covered by the main parts of the Trust Kit:
 
-\-          Digital Identification
 
-\-          Authentication
+## 2. Interlinkages with other building blocks
 
-\-          Authorization
+<a href="../trust-kit/digital-identity/" class="button secondary">Digital Identity</a>  <a href="../trust-kit/authentication/" class="button secondary">Authentication</a>  <a class="button secondary">Authorization</a>

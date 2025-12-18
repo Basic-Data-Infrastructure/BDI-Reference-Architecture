@@ -1,14 +1,21 @@
+---
+cover: >-
+  https://images.unsplash.com/photo-1498050108023-c5249f4df085?crop=entropy&cs=srgb&fm=jpg&ixid=M3wxOTcwMjR8MHwxfHNlYXJjaHwzfHxsYXB0b3AlMjBjb2RlfGVufDB8fHx8MTc2NTQ2Mzk5MXww&ixlib=rb-4.1.0&q=85
+coverY: 0
+coverHeight: 345
+---
+
 # Representation Chain
 
-#### Summary
+## 1. Summary
 
-The **Representation Chain** is a  building block in the BDI framework. It enables third parties to **verify representation mandates** — confirming whether a person, legal entity, or automated process is genuinely acting on behalf of another.
+The **Representation Chain** is a building block in the BDI framework. It enables third parties to **verify representation mandates** — confirming whether a person, legal entity, or automated process is genuinely acting on behalf of another.
 
 A **mandate** is a formal, authoritative assignment of responsibility from a **mandator** (the assigning party) to a **mandatee** (the acting party). It transfers **accountability and liability** for actions from the mandatee back to the mandator.
 
 To function securely and flexibly across different contexts, the Representation Chain uses **Representation Evidence** — typically implemented using **nested JSON Web Tokens (JWTs)**. These can be verified both **online** (e.g., via issuer services) and **offline** (e.g., on a warehouse floor via a QR scan).
 
-#### Introduction
+## 2. Introduction
 
 In today’s increasingly interconnected and regulated economy, businesses and authorities are facing a growing need for robust digital proof in everyday interactions. Whether it’s verifying that a subcontractor is authorized to collect a shipment, confirming a driver’s professional qualification, or demonstrating compliance with regulations during an inspection, organizations must often rely on people or systems that act on their behalf. In most cases, liability for these actions lies with the organization, not the individual. This creates a pressing demand for a mechanism that can reliably prove — both legally and practically — that the person or machine performing a task has been officially mandated to do so.
 
@@ -18,7 +25,7 @@ What makes JWT particularly valuable in this setting is its ability to be embedd
 
 The approach supports both high-security and user-friendly versions. For example, a delivery driver might receive a QR code and PIN via text, which they present at a loading dock. The system verifies their credentials — offline if necessary — with minimal friction. This combination of simplicity and cryptographic strength makes JWT-based representation not only viable but ideal for logistics, compliance, and other sectors where verifiable delegation and operational practicality must coexist.
 
-**Purpose**
+## **3. Purpose of the building block**
 
 The Representation Chain supports both:
 
@@ -38,18 +45,15 @@ It provides a **verifiable, decentralised mechanism** for confirming:
 * For what duration
 * With what professional qualifications (if applicable)
 
-#### Relationship to Other Building Blocks
+## 4. Interactions with other building blocks
 
 The Representation Chain is conceptually and operationally connected to:
 
-* **Authentication**
-* **Authorisation**
-* **Digital Identity**
-* **Common Roles**
-* **Professional Qualification Chain**
-* **Verifiable Credentials** (future support via `vc` and `vp` claims)
+<a href="../trust-kit/authentication/" class="button secondary">Authentication</a>  <a href="../trust-kit/authorisation-oauth-2.0-ar-dm-+-xacml-policies.md" class="button secondary">Authorization</a>  <a href="../trust-kit/digital-identity/" class="button secondary">Digital Identity</a>
 
-#### Elements & Core Functions
+<a href="professional-qualification-register.md" class="button secondary">Professional Qualification Chain</a>  <a href="../verifiable-credentials-kit/verifiable-credentials.md" class="button secondary">Verifiable Credentials</a>
+
+## 5. Elements & Core Functions
 
 A Representation Chain maintains:
 
@@ -66,11 +70,9 @@ The verifier checks the signature chain, timestamps, and optionally contacts the
 
 **The third party verifier does not need to be a member of a BDI Association**, which lowers the barrier for wide-scale adoption and integration.
 
-***
+## 6. Business Need for Digital Representation
 
-### Business Need for Digital Representation
-
-Supporting business itneractions digitally, requires **digital proof of authority**, particularly in interactions between:
+Supporting business interactions digitally, requires **digital proof of authority**, particularly in interactions between:
 
 * Individual companies
 * Companies and supervisory/government bodies
@@ -91,9 +93,7 @@ To meet modern requirements, we need a solution that is:
 * Broadly applicable across sectors
 * Open for implementation by multiple IT providers
 
-***
-
-### JWT as a Representation Mechanism
+## 7. JWT as a Representation Mechanism
 
 After 2010, JSON Web Tokens ([RFC 7519](https://datatracker.ietf.org/doc/html/rfc7519)) became a widely adopted standard for representing verifiable claims digitally.
 
@@ -109,13 +109,11 @@ JWTs support **wrapping (embedding)**, meaning one JWT can include another insid
 
 There’s no formal limit to the number of layers. For legal-grade use (e.g., cross-border logistics or compliance), JWTs can be signed with **high-quality certificates** such as **eIDAS** seals.
 
-
-
 ***
 
 ### Example: Machine-to-Machine Access to Sensitive Operational Data
 
-This example demonstrates how a chain of representation and delegation is managed digitally when data,  is the asset being accessed — and when systems, not people, are the ones performing the action.
+This example demonstrates how a chain of representation and delegation is managed digitally when data, is the asset being accessed — and when systems, not people, are the ones performing the action.
 
 #### Scenario: Delegated Data Access via a Subcontractor System
 
@@ -156,8 +154,6 @@ This JWT-based method ensures that:
 * **DeepSignal cannot misuse or forward the token**, as the claims are specific and signed
 * ChemCo has an **audit trail** of who requested what data and on whose authority
 * Delegation can be revoked or changed with minimal friction
-
-
 
 ***
 
@@ -261,7 +257,7 @@ If a warehouse does not use DigiDrop:
 
 ***
 
-### Summary
+## Summary
 
 The **Representation Chain** provides a flexible, secure, and verifiable method for proving authority in business interactions — whether digital or physical. Its implementation via **JWTs** is:
 
@@ -281,11 +277,7 @@ Combined with **fallback workflows** and **hybrid adoption pathways**, this meth
 * BDI Edge Agreements
 * [IANA JWT Claim Registry](https://www.iana.org/assignments/jwt/jwt.xhtml)
 
-
-
 **Documents**
-
-
 
 {% file src="../../.gitbook/assets/20241128_BDI-JSON-Web-Token-as-generic-proof.pdf" %}
 
@@ -294,4 +286,3 @@ Combined with **fallback workflows** and **hybrid adoption pathways**, this meth
 {% file src="../../.gitbook/assets/BDI DigiDrop Transport documents.pdf" %}
 
 {% file src="../../.gitbook/assets/20241119 - Proof of Concept Implementatie DigiDrop UltraLite.pages.pdf" %}
-

@@ -1,3 +1,10 @@
+---
+cover: >-
+  https://images.unsplash.com/photo-1623610590744-fce60d8dd48c?crop=entropy&cs=srgb&fm=jpg&ixid=M3wxOTcwMjR8MHwxfHNlYXJjaHw4fHxnb29kc3xlbnwwfHx8fDE3NjU0NjMzMTJ8MA&ixlib=rb-4.1.0&q=85
+coverY: 0
+coverHeight: 278
+---
+
 # Trusted Goods Release - Event Demo
 
 The "Event Demo" (Demo Phase 3) further advanced the "Trusted Goods Release" process by integrating real-time event notifications. This phase demonstrated how event-driven updates, particularly gate-out events, could be leveraged to improve logistics transparency and coordination. Utilizing an event broker (Apache Pulsar) and building on the iSHARE framework, this demo highlighted the importance of timely, secure data sharing in logistics processes.

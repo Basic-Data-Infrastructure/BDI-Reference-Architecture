@@ -1,4 +1,10 @@
 # Security
+=======
+---
+cover: >-
+  https://images.unsplash.com/photo-1485230405346-71acb9518d9c?crop=entropy&cs=srgb&fm=jpg&ixid=M3wxOTcwMjR8MHwxfHNlYXJjaHw0fHxzZWN1cml0eXxlbnwwfHx8fDE3NjU4MTQ4MjR8MA&ixlib=rb-4.1.0&q=85
+coverY: 0
+---
 
 ### Summary
 
@@ -29,7 +35,7 @@ This building block provides guidelines to implement security measures to preven
 * Treatment: Implementing controls to mitigate identified risks. This can involve:
   * Risk Avoidance: Eliminating the risk altogether.
   * Risk Mitigation: Reducing the likelihood or impact of the risk.
-  * Risk Transfer: Shifting the risk to another party (e.g., insurance). &#x20;
+  * Risk Transfer: Shifting the risk to another party (e.g., insurance).
   * Risk Acceptance: Accepting the risk based on a cost-benefit analysis.
 
 ### 3. Control Implementation:
