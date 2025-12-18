@@ -22,9 +22,9 @@ The BDI has a focus on a wide generic technical interoperability between entitie
 * organizational interoperability
 * legal interoperability
 
-The world model is that market forces, geo politics, regulation, culture and innovation will create a dynamic universe of sectors/groups that have an interest in driving specilalized/differentiated interoperability **within** their group, at the expense of interoperability with other sectors.
+The world model is that market forces, geo politics, regulation, culture and innovation will create a dynamic universe of sectors/groups that have an interest in driving specialized/differentiated interoperability **within** their group, at the expense of interoperability with other sectors.
 
-## **2. Technical Interoperability**
+## 2. Technical Interoperability
 
 The design philosophy to enhance generic technical interoperability is based upon:
 

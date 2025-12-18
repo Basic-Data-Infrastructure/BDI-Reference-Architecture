@@ -32,11 +32,9 @@ The following concepts (from the BDI Glossary), all regarding legal entities, ar
 
 The figure below shows how a business partner from another BDI association can become a preferred Business partner of a BDI association.
 
-<figure><picture><source srcset="../../../.gitbook/assets/251126 Maintenance_community_minor_changes_darkmode-digital identity m2m.drawio (2).png" media="(prefers-color-scheme: dark)"><img src="../../../.gitbook/assets/251126 Maintenance_community_minor_changes_darkmode-digital identity m2m.drawio (3).png" alt="" width="563"></picture><figcaption></figcaption></figure>
+<figure><picture><source srcset="../../../.gitbook/assets/251126 Maintenance_community_minor_changes_darkmode-digital identity m2m.drawio (2).png" media="(prefers-color-scheme: dark)"><img src="../../../.gitbook/assets/251126 Maintenance_community_minor_changes_darkmode-digital identity m2m.drawio (3).png" alt="" width="563"></picture><figcaption><p>Figure 1: BDI's trust framework</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/Other association.png" alt=""><figcaption><p>How a Business Partner from another BDI Association can become a preferred Business partner of a BDI Association.</p></figcaption></figure>
-
-\======= ## 4. Risks
+## 4. Risks
 
 An insufficient framework for digital identity might lead to a lower level of trust among parties and will harm the overall trust in BDI.
 

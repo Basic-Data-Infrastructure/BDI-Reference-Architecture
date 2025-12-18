@@ -62,61 +62,7 @@ There are currently no specific BDI licenses defined.
 
 ### 6.2 Combined list of available licenses
 
-{% stepper %}
-{% step %}
-#### 0000
-
-No limitations
-{% endstep %}
-
-{% step %}
-#### 0001
-
-Re-sharing with Adhering Parties only
-{% endstep %}
-
-{% step %}
-#### 0002
-
-Internal use only
-{% endstep %}
-
-{% step %}
-#### 0003
-
-Non-commercial use only: licensee may not use the data to generate revenue
-{% endstep %}
-
-{% step %}
-#### 0004
-
-Licensee may enrich received data with own data before re-sharing
-{% endstep %}
-
-{% step %}
-#### 0005
-
-Licensee may enrich received data with data of others before re-sharing
-{% endstep %}
-
-{% step %}
-#### 0006
-
-Licensee may enrich received data with own data before re-sharing on a non-commercial basis
-{% endstep %}
-
-{% step %}
-#### 0007
-
-Licensee may enrich received data with data of others before re-sharing on a non-commercial basis
-{% endstep %}
-
-{% step %}
-#### 9999
-
-As determined between Parties
-{% endstep %}
-{% endstepper %}
+<table><thead><tr><th width="161.272705078125"></th><th></th></tr></thead><tbody><tr><td><strong>0000</strong></td><td>No limitations</td></tr><tr><td><strong>0001</strong></td><td>Re-sharing with Adhering Parties only</td></tr><tr><td><strong>0002</strong></td><td>Internal use only</td></tr><tr><td><strong>0003</strong></td><td>Non-commercial use only: licensee may not use the data to generate revenue</td></tr><tr><td><strong>0004</strong></td><td>Licensee may enrich received data with own data before re-sharing</td></tr><tr><td><strong>0005</strong></td><td>Licensee may enrich received data with data of others before re-sharing</td></tr><tr><td><strong>0006</strong></td><td>Licensee may enrich received data with own data before re-sharing on a non-commercial basis</td></tr><tr><td><strong>0007</strong></td><td>Licensee may enrich received data with data of others before re-sharing on a non-commercial basis</td></tr><tr><td><strong>9999</strong></td><td>As determined between Parties</td></tr></tbody></table>
 
 ## 7. Future topics
 

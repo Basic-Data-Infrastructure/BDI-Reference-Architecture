@@ -5,7 +5,7 @@ coverY: 0
 coverHeight: 418
 ---
 
-# 📖 Overview
+# Overview
 
 ## 1. Introduction
 

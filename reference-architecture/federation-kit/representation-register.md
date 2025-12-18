@@ -49,9 +49,9 @@ It provides a **verifiable, decentralised mechanism** for confirming:
 
 The Representation Chain is conceptually and operationally connected to:
 
-<a href="../trust-kit/authentication/" class="button secondary">Authentication</a>  <a href="../trust-kit/authorisation-oauth-2.0-ar-dm-+-xacml-policies.md" class="button secondary">Authorization</a>  <a href="../trust-kit/digital-identity/" class="button secondary">Digital Identity</a>
+<a href="../trust-kit/authentication/" class="button secondary">Authentication</a> <a href="../trust-kit/authorisation-oauth-2.0-ar-dm-+-xacml-policies.md" class="button secondary">Authorization</a> <a href="../trust-kit/digital-identity/" class="button secondary">Digital Identity</a>
 
-<a href="professional-qualification-register.md" class="button secondary">Professional Qualification Chain</a>  <a href="../verifiable-credentials-kit/verifiable-credentials.md" class="button secondary">Verifiable Credentials</a>
+<a href="professional-qualification-register.md" class="button secondary">Professional Qualification Chain</a> <a href="../verifiable-credentials-kit/verifiable-credentials.md" class="button secondary">Verifiable Credentials</a>
 
 ## 5. Elements & Core Functions
 
@@ -208,9 +208,9 @@ The structure is robust enough for secure transport of sensitive cargo and simpl
 
 ### Representation for transactions by IT-applications : DigiDrop
 
-The most common transaction in logistics is the handover of goods (cargo on its way through the supply chain) between entities. Part of the handover is associated with trade (buyer-seller), part of the handover is about liability (transporter taking cargo on board of a vessel, plane, railcarriage or truck).&#x20;
+The most common transaction in logistics is the handover of goods (cargo on its way through the supply chain) between entities. Part of the handover is associated with trade (buyer-seller), part of the handover is about liability (transporter taking cargo on board of a vessel, plane, railcarriage or truck).
 
-The "Digidrop" approach to executing transactions (such as transfer of goods) shifts the legal "signing" of a transaction to IT-systems on behalf of the companies involved. The human involvement is supportive and indirect, instead of acting as a representative of the entity. The  IT-systems involved act as the representatives of the legal entities involved.
+The "Digidrop" approach to executing transactions (such as transfer of goods) shifts the legal "signing" of a transaction to IT-systems on behalf of the companies involved. The human involvement is supportive and indirect, instead of acting as a representative of the entity. The IT-systems involved act as the representatives of the legal entities involved.
 
 This approach circumvents the issues and obstacles that rise if humans need digitally "sign" a transaction. The Digidrop document outlines the approach.
 
@@ -218,7 +218,7 @@ This approach circumvents the issues and obstacles that rise if humans need digi
 
 #### Fallback
 
-BDI’s method accounts for **non-ideal environments** — e.g., no internet, broken devices, or limited IT skills.  Many (SME) actors in logistics are not yet able to integrate themselves in a more advanced IT-interaction framework such as the BDI.
+BDI’s method accounts for **non-ideal environments** — e.g., no internet, broken devices, or limited IT skills. Many (SME) actors in logistics are not yet able to integrate themselves in a more advanced IT-interaction framework such as the BDI.
 
 In such a case the most valuable piece of information that needs to be digitally available is the visbility of a handover event. A fallback methode has been designed for such use cases, minimizing the requirements. Such a method is not a replacement of the traditional "paper-based" processes: it only creates more visbility in the supply chain.
 
@@ -257,7 +257,7 @@ If a warehouse does not use DigiDrop:
 
 ***
 
-## Summary
+## 8. Summary
 
 The **Representation Chain** provides a flexible, secure, and verifiable method for proving authority in business interactions — whether digital or physical. Its implementation via **JWTs** is:
 
@@ -270,7 +270,7 @@ Combined with **fallback workflows** and **hybrid adoption pathways**, this meth
 
 ***
 
-### Learn More
+## 9. Further Reading
 
 * [RFC 7519 – JSON Web Token (JWT)](https://datatracker.ietf.org/doc/html/rfc7519)
 * [VC Data Model 2.0](https://www.w3.org/TR/vc-data-model-2.0/)

@@ -22,7 +22,7 @@ layout:
     visible: true
 ---
 
-# 📑 Alternative Semantics Frameworks (Suus)
+# Alternative Semantics Frameworks
 
 ## 1. Introduction
 
@@ -36,11 +36,8 @@ For example, consider a multi-model trip from a manufacturer to the BCO that par
 
 The DCSA ([**Digital Container Shipping Association**](https://dcsa.org/)**)** maintains a set of standards for data exchange between stakeholders in the maritime world. These standards are widely adopted and can be considered for support in data exchange within BDI implementations. However, when using these standards, one must consider whether the BDI principles — e.g. security, zero trust, data sovereignty and data at the source — can still be maintained, as very few of these are required by the DCSA standards.
 
-
-
 {% hint style="warning" %}
-#### Other frameworks
+**Other frameworks**
 
 The DCSA described above is only one example of an an alternative semantic framework that can be used in the context of the BDI. Other frameworks, such as the IATA standard used for air freight, will be added later when necessary.
 {% endhint %}
-

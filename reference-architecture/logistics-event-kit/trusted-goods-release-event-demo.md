@@ -1,8 +1,8 @@
 ---
 cover: >-
-  https://images.unsplash.com/photo-1623610590744-fce60d8dd48c?crop=entropy&cs=srgb&fm=jpg&ixid=M3wxOTcwMjR8MHwxfHNlYXJjaHw4fHxnb29kc3xlbnwwfHx8fDE3NjU0NjMzMTJ8MA&ixlib=rb-4.1.0&q=85
+  https://images.unsplash.com/photo-1635851801927-44c4d1c555af?crop=entropy&cs=srgb&fm=jpg&ixid=M3wxOTcwMjR8MHwxfHNlYXJjaHw0fHxnb29kc3xlbnwwfHx8fDE3NjYwNjYzODR8MA&ixlib=rb-4.1.0&q=85
 coverY: 0
-coverHeight: 278
+coverHeight: 398
 ---
 
 # Trusted Goods Release - Event Demo
@@ -32,4 +32,4 @@ You can find the document with lessons learnt attached to this article (in Dutch
 
 Documentation in GitHub [https://github.com/Basic-Data-Infrastructure/demo-vertrouwde-goederenafgifte/tree/fase-3](https://github.com/Basic-Data-Infrastructure/demo-vertrouwde-goederenafgifte/tree/fase-3)
 
-{% file src="../../.gitbook/assets/20241002_DIL-VGU-bevindingen-fase-3.pdf" %}
+{% file src="../../.gitbook/assets/20241002_DIL-VGU-bevindingen-fase-3 (2).pdf" %}
