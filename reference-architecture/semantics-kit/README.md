@@ -26,7 +26,7 @@ layout:
 
 
 {% hint style="info" %}
-The main, if not the only, purpose of the BDI is to facilitate the exchange of data between parties in a logistic chain. However, this is only possible if all involved parties share the same interpretation of the data. This requires a common format and structure (syntax) of the data  as well as a common semantics.&#x20;
+The main, if not the only, purpose of the BDI is to facilitate the exchange of data between parties in a logistic chain. However, this is only possible if all involved parties share the same interpretation of the data. This requires a common format and structure (syntax) of the data as well as a common semantics.
 
 Over time, many transport modalities have developed their own ‘language’ to communicate about their activities. This is illustrated by the number of semantics standards. It is expected that data spaces should align with sectors and their standards, creating the need for tools for organizations that participate in multiple data spaces to switch between standards.
 
@@ -42,7 +42,7 @@ This KIT requires the Trust and Event KITs. This building block is closely linke
 {% endhint %}
 
 {% hint style="info" %}
-### Concepts
+#### Concepts
 
 Three distinct levels or perspectives exists from which one can consider the logistics domain, based on the three layers of the DCSA model:
 

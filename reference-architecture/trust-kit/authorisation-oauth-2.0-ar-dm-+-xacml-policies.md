@@ -30,7 +30,7 @@ Insufficient authorization may cause data leaks to parties that are not trusted.
 
 This building block has links to:
 
-<a href="../federation-kit/representation-register.md" class="button secondary">Representation Chain</a>  <a href="../../readme/trust-kit/association-register.md" class="button secondary">Association Register</a>  <a href="../data-set-kit/data-licenses.md" class="button secondary">Data Licenses</a>  <a href="authentication.md" class="button secondary">Authentication M2M</a>
+<a href="../federation-kit/representation-register.md" class="button secondary">Representation Chain</a> <a href="/broken/pages/IMYqSzcqlmzv577PfsCD" class="button secondary">Association Register</a> <a href="../data-set-kit/data-licenses.md" class="button secondary">Data Licenses</a> <a href="authentication.md" class="button secondary">Authentication M2M</a>
 
 The Authorization building block uses information from these related building blocks to make a decision whether or not to trust a partner in a transaction.
 
@@ -53,7 +53,7 @@ The four inputs for decision making are supported by the BDI trust input element
 
 {% stepper %}
 {% step %}
-#### Trust based on association membership
+**Trust based on association membership**
 
 **Information gathering**
 
@@ -68,7 +68,7 @@ To facilitate easier processing of the acquired information, a party can:
 {% endstep %}
 
 {% step %}
-#### **Trust based on the level of assurance of the digital identity of the party**
+**Trust based on the level of assurance of the digital identity of the party**
 
 **Information gathering**
 
@@ -83,7 +83,7 @@ To facilitate easier processing of the acquired information, a party can:
 {% endstep %}
 
 {% step %}
-#### Trust based on reputations
+**Trust based on reputations**
 
 **Information gathering**
 
@@ -98,7 +98,7 @@ Assuming that information on the reputation of a party is available, a party can
 {% endstep %}
 
 {% step %}
-#### Trust based on (granular) authorizations
+**Trust based on (granular) authorizations**
 
 Authorizations provide a way for a Data Owner to specify in great detail which Data Consumer is allowed to consume data on its behalf at a Data Service Provider. From a data sovereignty perspective, Authorizations provide the highest level of 'trust' and best basis to enter into a transaction up, when transactions are happening between Service Consumers and Data Service Providers.
 
@@ -197,8 +197,6 @@ Business rules could also consist of a combination of the various trust aspects.
 
 * For improved discoverability of the parents of a BDI Association, the BDI Association Register could be improved by returning this information for every party lookup directly as part of the party information.
 * To improve interoperability between associations, BDI might consider to define standardized rules for service/data classification and a best-practice approach for trust processing.
-
-
 
 **Case Study**
 

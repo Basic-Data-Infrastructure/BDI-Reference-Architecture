@@ -26,9 +26,9 @@ The association is the core neutral organization that supports the members of th
 
 ## 3. Interlinkages with other building blocks
 
-<a href="../trust-kit/authentication/" class="button secondary">Authentication</a> <a href="../trust-kit/digital-identity/" class="button secondary">Digital Identity</a> <a href="../../readme/trust-kit/association-register.md" class="button secondary">Association Register</a> &#x20;
+<a href="../trust-kit/authentication/" class="button secondary">Authentication</a> <a href="../trust-kit/digital-identity/" class="button secondary">Digital Identity</a> <a href="/broken/pages/IMYqSzcqlmzv577PfsCD" class="button secondary">Association Register</a>
 
-<a href="../introduction/bdi-technical-roles.md" class="button secondary">BDI Technical Roles</a> <a href="federation-of-associations.md" class="button secondary">Federation of Associations</a> <a href="../verifiable-credentials-kit/verifiable-credentials.md" class="button secondary">Verifiable Credentials</a> &#x20;
+<a href="../introduction/bdi-technical-roles.md" class="button secondary">BDI Technical Roles</a> <a href="federation-of-associations.md" class="button secondary">Federation of Associations</a> <a href="../verifiable-credentials-kit/verifiable-credentials.md" class="button secondary">Verifiable Credentials</a>
 
 ## 5. Elements and their key functions
 

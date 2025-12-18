@@ -30,7 +30,7 @@ The Event Pub-Sub Service handles the centralized parts of this event-based comm
 
 ## 3. Concepts
 
-Consider the following concepts that play a role in the notification pub/sub service:&#x20;
+Consider the following concepts that play a role in the notification pub/sub service:
 
 <details>
 
@@ -68,18 +68,18 @@ The part of the infrastructure that is responsible for managing channels and not
 
 </details>
 
-A **producer** publishes an **event** to the **router**, which filters and pushes the events to consumers. Producer services and **consumer** services are decoupled, which allows them to be scaled, updated, and deployed independently. This approach has many advantages, such as:&#x20;
+A **producer** publishes an **event** to the **router**, which filters and pushes the events to consumers. Producer services and **consumer** services are decoupled, which allows them to be scaled, updated, and deployed independently. This approach has many advantages, such as:
 
 {% stepper %}
 {% step %}
-#### Efficiency
+**Efficiency**
 
 * No polling needed.
 * Low load on resources.
 {% endstep %}
 
 {% step %}
-#### Effectiveness
+**Effectiveness**
 
 * Easy to distribute notifications to many involved parties.
 * ‘Single truth’ data at the source.
@@ -87,7 +87,7 @@ A **producer** publishes an **event** to the **router**, which filters and pushe
 {% endstep %}
 
 {% step %}
-#### Control
+**Control**
 
 * Distributing notifications with metadata only reveals relatively little information that can be abused.
 * Data access requires authentication. This increases the control over valuable data.
@@ -100,7 +100,7 @@ A **producer** publishes an **event** to the **router**, which filters and pushe
 
 In supply chains the chain of business activities starts when a Seller and Buyer agree upon the transaction. This agreement typically includes terms related to transport, insurance, customs, the handover of responsibilities, and payments. The successful execution of this agreement often requires coordination among a large set of actors, including authorities and their subcontractors. This coordination is managed through a "choreography" of actions, where each action is triggered by planned or executed events.
 
-The choreography describes which channels there are and which parties can subscribe to them. As the design of an appropriate choreography can be challenging and has major impact on the efficiency of the pub/sub service, this subject is discussed in detail in a separate [page](broken-reference).
+The choreography describes which channels there are and which parties can subscribe to them. As the design of an appropriate choreography can be challenging and has major impact on the efficiency of the pub/sub service, this subject is discussed in detail in a separate [page](broken-reference/).
 
 ## 5. Implementation Considerations
 
@@ -118,7 +118,7 @@ However, in line with BDI federation rules, data on these aspects is not always 
 
 There are links with the following building blocks:
 
-<a href="../semantics-kit/" class="button secondary">Semantics KIT</a>  <a href="../../readme/trust-kit/association-register-suus.md" class="button secondary">Association Register</a>
+<a href="../semantics-kit/" class="button secondary">Semantics KIT</a> <a href="/broken/pages/leyov4D72bEGPqA4kfPE" class="button secondary">Association Register</a>
 
 ## 7. Elements and their key functions
 

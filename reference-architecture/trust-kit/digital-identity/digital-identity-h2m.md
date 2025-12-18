@@ -46,7 +46,7 @@ Identity Providers can also provide additional assurance at the (continuous) use
 
 ### 3.3 Identifiers
 
-Identity Providers typically use an internal numbering scheme for identifying users which are enriched with more public identifiers like email addresses and telephone numbers. Some details regarding different identifiers are given below.&#x20;
+Identity Providers typically use an internal numbering scheme for identifying users which are enriched with more public identifiers like email addresses and telephone numbers. Some details regarding different identifiers are given below.
 
 {% tabs %}
 {% tab title="State-issued identifiers" %}
@@ -58,7 +58,7 @@ In B2B processes, business email addresses are preferred. These should be using 
 {% endtab %}
 
 {% tab title="Phone numbers" %}
-(Mobile) telephone numbers can also be used to identify / verify the user. During the setup the user demonstrates that they have access to the number. At a later moment, the user can once again demonstrate the access to this number.&#x20;
+(Mobile) telephone numbers can also be used to identify / verify the user. During the setup the user demonstrates that they have access to the number. At a later moment, the user can once again demonstrate the access to this number.
 {% endtab %}
 
 {% tab title="Electronic Wallets" %}
@@ -78,7 +78,7 @@ In many cases the human needs to have adequate professional qualifications for t
 
 ## 4. Risks
 
-Some possible risks that are important to consider for this building block, are the following:&#x20;
+Some possible risks that are important to consider for this building block, are the following:
 
 * An insufficient framework for digital identity might lead to a lower level of trust among parties and will harm the overall trust in BDI.
 * Non-compliance to applicable privacy laws (e.g. GDPR, AVG) can hamper the implementation or adoption of services and can cause reputation risks or fines.
@@ -87,21 +87,19 @@ Some possible risks that are important to consider for this building block, are 
 
 The related building blocks are:
 
-<a href="digital-identity.md" class="button secondary">Digital Identity M2M</a>  <a href="../authentication.md" class="button secondary">Authentication M2M</a>  <a href="../authentication-h2m.md" class="button secondary">Authentication H2M</a>
+<a href="digital-identity.md" class="button secondary">Digital Identity M2M</a> <a href="../authentication.md" class="button secondary">Authentication M2M</a> <a href="../authentication-h2m.md" class="button secondary">Authentication H2M</a>
 
-<a href="../authorisation-oauth-2.0-ar-dm-+-xacml-policies.md" class="button secondary">Authorization</a> <a href="../../../readme/trust-kit/association-register.md" class="button secondary">Association Register</a>  <a href="../../federation-kit/professional-qualification-register.md" class="button secondary">Professional Qualification Register</a>
+<a href="../authorisation-oauth-2.0-ar-dm-+-xacml-policies.md" class="button secondary">Authorization</a> <a href="/broken/pages/IMYqSzcqlmzv577PfsCD" class="button secondary">Association Register</a> <a href="../../federation-kit/professional-qualification-register.md" class="button secondary">Professional Qualification Register</a>
 
-<a href="../../federation-kit/representation-register.md" class="button secondary">Representation Chain</a>  <a href="../../../readme/trust-kit/association-register.md" class="button secondary">Association Register</a>
+<a href="../../federation-kit/representation-register.md" class="button secondary">Representation Chain</a> <a href="/broken/pages/IMYqSzcqlmzv577PfsCD" class="button secondary">Association Register</a>
 
+The most important related Kits and concepts are:
 
-
-The most important related Kits and concepts are:&#x20;
-
-<a href="../" class="button secondary">Trust KIT</a>  <a href="../../federation-kit/" class="button secondary">Federation KIT</a>  <a href="../../boundary-management-kit/" class="button secondary">Boundary Management</a>
+<a href="../" class="button secondary">Trust KIT</a> <a href="../../federation-kit/" class="button secondary">Federation KIT</a> <a href="../../boundary-management-kit/" class="button secondary">Boundary Management</a>
 
 ## 6. Core design decisions
 
-Please note the following design decisions:&#x20;
+Please note the following design decisions:
 
 * Parties choose their Identity Providers fitting to the requirements.
 * The BDI adds the link to representation and professional qualifications.

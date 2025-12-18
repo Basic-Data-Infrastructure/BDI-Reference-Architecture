@@ -30,15 +30,13 @@ The following concepts (from the BDI Glossary), all regarding legal entities, ar
 | **Outsider**                    | Anyone who is not a member of a BDI Association                                                                                                        |
 | **Visitor**                     | Outsider with a better reputation score than a set minimum                                                                                             |
 
-The figure below shows how a business partner from another BDI association can become a preferred Business partner of a BDI association.&#x20;
+The figure below shows how a business partner from another BDI association can become a preferred Business partner of a BDI association.
 
 <figure><picture><source srcset="../../../.gitbook/assets/251126 Maintenance_community_minor_changes_darkmode-digital identity m2m.drawio (2).png" media="(prefers-color-scheme: dark)"><img src="../../../.gitbook/assets/251126 Maintenance_community_minor_changes_darkmode-digital identity m2m.drawio (3).png" alt="" width="563"></picture><figcaption></figcaption></figure>
 
-
-
 <figure><img src="../../../.gitbook/assets/Other association.png" alt=""><figcaption><p>How a Business Partner from another BDI Association can become a preferred Business partner of a BDI Association.</p></figcaption></figure>
-=======
-## 4. Risks
+
+\======= ## 4. Risks
 
 An insufficient framework for digital identity might lead to a lower level of trust among parties and will harm the overall trust in BDI.
 
@@ -48,13 +46,13 @@ This building block describes the BDI principles for digital identity for M2M in
 
 The related building blocks are:
 
-<a href="digital-identity-h2m.md" class="button secondary">Digital Identity H2M</a>  <a href="../authentication.md" class="button secondary">Authentication M2M</a>  <a href="../authentication-h2m.md" class="button secondary">Authentication H2M</a>
+<a href="digital-identity-h2m.md" class="button secondary">Digital Identity H2M</a> <a href="../authentication.md" class="button secondary">Authentication M2M</a> <a href="../authentication-h2m.md" class="button secondary">Authentication H2M</a>
 
-<a href="../authorisation-oauth-2.0-ar-dm-+-xacml-policies.md" class="button secondary">Authorization</a> <a href="../../../readme/trust-kit/association-register.md" class="button secondary">Association Register</a> &#x20;
+<a href="../authorisation-oauth-2.0-ar-dm-+-xacml-policies.md" class="button secondary">Authorization</a> <a href="/broken/pages/IMYqSzcqlmzv577PfsCD" class="button secondary">Association Register</a>
 
-The most important related Kits and concepts are:&#x20;
+The most important related Kits and concepts are:
 
-<a href="../" class="button secondary">Trust KIT</a>  <a href="../../federation-kit/" class="button secondary">Federation KIT</a>  <a href="../../boundary-management-kit/" class="button secondary">Boundary Management</a>
+<a href="../" class="button secondary">Trust KIT</a> <a href="../../federation-kit/" class="button secondary">Federation KIT</a> <a href="../../boundary-management-kit/" class="button secondary">Boundary Management</a>
 
 ## 6. Core design decisions
 
@@ -62,7 +60,7 @@ The most important related Kits and concepts are:&#x20;
 A digital identity has to be linked with the legal identifier of the legal entity that controls and takes responsibility and accountability for the IT-process that uses the digital identity in interactions with other IT processes.
 {% endhint %}
 
-A digital identity has to be linked with the legal identifier of the legal entity that controls and takes responsibility and accountability for the IT-process that uses the digital identity in interactions with other IT processes. For more details about possible identifiers, view the information below.&#x20;
+A digital identity has to be linked with the legal identifier of the legal entity that controls and takes responsibility and accountability for the IT-process that uses the digital identity in interactions with other IT processes. For more details about possible identifiers, view the information below.
 
 <details>
 
@@ -103,9 +101,9 @@ Other identifier standards that are in use worldwide are:
 In practice it may be necessary for a party or an association to create a cross-reference register that relates an internal (unique) identifier with multiple external identifiers of a legal entity. One legal entity may have an EORI, LEI and DUNS identifier, or more.
 {% endhint %}
 
-The following should be noted regarding identifiers in the BDI:&#x20;
+The following should be noted regarding identifiers in the BDI:
 
-* The BDI prefers PKI certificates issued by a reputable identity provider as digital identity of parties like Service Providers.&#x20;
+* The BDI prefers PKI certificates issued by a reputable identity provider as digital identity of parties like Service Providers.
 * In Europe the eIDAS regulation is a solid foundation for the identity ecosystem.
 * Self-signed certificates for digital identities are a low-barrier entry level solution, with serious limitations on trust, federation and scaling
 

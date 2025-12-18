@@ -13,42 +13,42 @@ The BDI framework includes support for the authentication of a representative (h
 
 In the physical operation of our economy many activities are outsourced. Supplying services on-premise requires access to a guarded location. For example: a maintenance sub-contractor for a vendor of video security systems is commissioned to perform maintenance at a customer's site. The subcontractor is contracted to perform regular maintenance . At regular intervals a maintenance engineer shows up at the gate of the premises and claims access to the premises, to perform preventive maintenance on a security video system on behalf of the vendor that delivered the security system.
 
-The security guard of the company where the security system is installed needs to verify the following:&#x20;
+The security guard of the company where the security system is installed needs to verify the following:
 
-1. Has this person indeed been sent by the OEM (original equipment manufacturer)?&#x20;
+1. Has this person indeed been sent by the OEM (original equipment manufacturer)?
 2. Can this person be authenticated and verified as being mandated by the sub-contractor>
-3. Does this person have the required professional qualifications?&#x20;
+3. Does this person have the required professional qualifications?
 4. Can the mandate be verified in a non-repudiable manner?
 
 ## **2. User Journey**
 
-In the example of the engineer of the maintenance sub-contractor, the user journey starts when the engineer shows up to the gate. The security guard needs to be able to authenticate the person and verify the representation claim. The approach for this check is as follows:&#x20;
+In the example of the engineer of the maintenance sub-contractor, the user journey starts when the engineer shows up to the gate. The security guard needs to be able to authenticate the person and verify the representation claim. The approach for this check is as follows:
 
 {% stepper %}
 {% step %}
-### Authentication
+#### Authentication
 
 The engineer presents a form of ID (proof for authentication). The ID can be standard, fitted with additional safeguards such as biometrics, or digital (Wallet).
 {% endstep %}
 
 {% step %}
-### Representation Evidence
+#### Representation Evidence
 
 The engineer presents a Representation Evidence. This evidence should show:<br>
 
 * the chain of subcontracting, up to a level that is suitable for security reasons. Note that it may be necessary to stop at an intermediate level, to protect the identity of the main principal on top of the chain from leaking
 * the confirmation of the identity of the engineer, as a representative.
 * time limitations on the validity of the representation (not before, not after).
-* links to issuers of subcontracting orders, to validate in real-time whether the representation is still valid and not revoked.&#x20;
+* links to issuers of subcontracting orders, to validate in real-time whether the representation is still valid and not revoked.
 * the non-repudiable evidence of the representation
 {% endstep %}
 {% endstepper %}
 
-For real-life applications it is necessary to be able to operate (temporarily) offline. It should be possible to verify the Representation Evidence, even when validation by the issuer is delayed. Whether a delayed verification is acceptable, depends on the involved parties. This could for example be acceptable when the party checking the Representation Evidence has already received a prior notification. The data in this pre-notification can then be matched with the data in the actual evidence.&#x20;
+For real-life applications it is necessary to be able to operate (temporarily) offline. It should be possible to verify the Representation Evidence, even when validation by the issuer is delayed. Whether a delayed verification is acceptable, depends on the involved parties. This could for example be acceptable when the party checking the Representation Evidence has already received a prior notification. The data in this pre-notification can then be matched with the data in the actual evidence.
 
 ## **3. Nested JWT as carrier of claims**
 
-The use of JSON Web Tokens (JWT, RFC 7519) is ubiquitous: the support in tools and knowhow is well developed. Expand the following elements to learn more about the different uses of JWTs.&#x20;
+The use of JSON Web Tokens (JWT, RFC 7519) is ubiquitous: the support in tools and knowhow is well developed. Expand the following elements to learn more about the different uses of JWTs.
 
 <details>
 
@@ -89,7 +89,7 @@ A [draft JWT specification](https://datatracker.ietf.org/doc/draft-ietf-oauth-se
 There are two types of JWT claims:
 
 1. **Registered**: standard claims registered with the [Internet Assigned Numbers Authority (IANA)](https://www.iana.org/assignments/jwt/jwt.xhtml) and defined by the [JWT specification](https://tools.ietf.org/html/rfc7519) to ensure interoperability with third-party, or external, applications.
-2. **Custom**: non-registered public or private claims. Public claims are collision-resistant while private claims are subject to possible collisions.&#x20;
+2. **Custom**: non-registered public or private claims. Public claims are collision-resistant while private claims are subject to possible collisions.
 
 The [IANA "JSON Web Token Claims" registry](https://www.iana.org/assignments/jwt/jwt.xhtml#claims) lists the registered claims. [Verifiable Credentials](https://www.w3.org/TR/vc-data-model-2.0/) (Claim Name “vc”) and Verifiable Presentations (Claim Name “vp”) are registered claims. The use of nested JWTs supports the future use of VC’s and VP’s. The JWT structure makes it therefore possible to include claims of Professional Qualifications.
 

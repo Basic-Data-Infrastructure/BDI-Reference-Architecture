@@ -127,7 +127,7 @@ The following two types of versions are defined:
 
 The following diagram describes the process for scoping and producing a major version.
 
-<figure><img src="../.gitbook/assets/RFC Release Process (1).jpg" alt=""><figcaption><p>RFC Released Process</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/RFC Release Process (1) (1).jpg" alt=""><figcaption><p>RFC Released Process</p></figcaption></figure>
 
 The release process for major versions is as follows:
 
