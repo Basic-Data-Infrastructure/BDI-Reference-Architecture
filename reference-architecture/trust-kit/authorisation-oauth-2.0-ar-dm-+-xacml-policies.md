@@ -30,7 +30,7 @@ Insufficient authorization may cause data leaks to parties that are not trusted.
 
 This building block has links to:
 
-<a href="../federation-kit/representation-register.md" class="button secondary">Representation Chain</a> <a href="/broken/pages/IMYqSzcqlmzv577PfsCD" class="button secondary">Association Register</a> <a href="../data-set-kit/data-licenses.md" class="button secondary">Data Licenses</a> <a href="authentication.md" class="button secondary">Authentication M2M</a>
+<a href="../federation-kit/representation-register.md" class="button secondary">Representation Chain</a> <a href="../../readme/trust-kit/association-register-1.md" class="button secondary">Association Register</a> <a href="../data-set-kit/data-licenses.md" class="button secondary">Data Licenses</a> <a href="authentication.md" class="button secondary">Authentication M2M</a>
 
 The Authorization building block uses information from these related building blocks to make a decision whether or not to trust a partner in a transaction.
 

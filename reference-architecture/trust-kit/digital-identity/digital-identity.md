@@ -46,7 +46,7 @@ The related building blocks are:
 
 <a href="digital-identity-h2m.md" class="button secondary">Digital Identity H2M</a> <a href="../authentication.md" class="button secondary">Authentication M2M</a> <a href="../authentication-h2m.md" class="button secondary">Authentication H2M</a>
 
-<a href="../authorisation-oauth-2.0-ar-dm-+-xacml-policies.md" class="button secondary">Authorization</a> <a href="/broken/pages/IMYqSzcqlmzv577PfsCD" class="button secondary">Association Register</a>
+<a href="../authorisation-oauth-2.0-ar-dm-+-xacml-policies.md" class="button secondary">Authorization</a> <a href="../../../readme/trust-kit/association-register-1.md" class="button secondary">Association Register</a>
 
 The most important related Kits and concepts are:
 

@@ -118,7 +118,7 @@ However, in line with BDI federation rules, data on these aspects is not always 
 
 There are links with the following building blocks:
 
-<a href="../semantics-kit/" class="button secondary">Semantics KIT</a> <a href="/broken/pages/leyov4D72bEGPqA4kfPE" class="button secondary">Association Register</a>
+<a href="../semantics-kit/" class="button secondary">Semantics KIT</a> <a href="../../readme/trust-kit/association-register-1.md" class="button secondary">Association Register</a>
 
 ## 7. Elements and their key functions
 

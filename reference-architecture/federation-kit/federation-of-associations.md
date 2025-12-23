@@ -32,7 +32,7 @@ In practice it is expected that BDI Associations will form federations and volun
 
 This building block complements the following building blocks:
 
-<a href="/broken/pages/leyov4D72bEGPqA4kfPE" class="button secondary">Association Register</a> <a href="../verifiable-credentials-kit/verifiable-credentials.md" class="button secondary">Verifiable Credentials</a> <a href="business-partner-reputation-model.md" class="button secondary">Business Partner Reputation Model</a>
+<a href="../../readme/trust-kit/association-register-1.md" class="button secondary">Association Register</a> <a href="../verifiable-credentials-kit/verifiable-credentials.md" class="button secondary">Verifiable Credentials</a> <a href="business-partner-reputation-model.md" class="button secondary">Business Partner Reputation Model</a>
 
 and is related to these building blocks:
 
