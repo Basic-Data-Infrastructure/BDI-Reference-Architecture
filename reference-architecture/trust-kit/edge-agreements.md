@@ -8,19 +8,19 @@ coverY: 0
 
 ## 1. Summary
 
-Edges are the boundaries of an association. **Edge Agreements** define how members of the association can interact with non-members of the association.&#x20;
+Edges are the boundaries of an association. **Edge Agreements** define how members of the association can interact with non-members of the association.
 
 ## 2. Purpose of the building block
 
-One can identify three types of “edges” or boundaries. Consider the three types below.&#x20;
+One can identify three types of “edges” or boundaries. Consider the three types below.
 
 <details>
 
 <summary>Boundaries between different BDI groups</summary>
 
-These boundaries arise from specific agreements in groups that all use the BDI framework but have different agreements per group.&#x20;
+These boundaries arise from specific agreements in groups that all use the BDI framework but have different agreements per group.
 
-The principle of subsidiarity of governance will lead to many “soft” boundaries: specific rules, roles and regulations that are common within a sector but differ from the equivalent agreements in other sectors.&#x20;
+The principle of subsidiarity of governance will lead to many “soft” boundaries: specific rules, roles and regulations that are common within a sector but differ from the equivalent agreements in other sectors.
 
 </details>
 
@@ -32,19 +32,15 @@ These boundaries are the boundaries that are to be crossed when “non-BDI” ac
 
 An example is the delivery of a shipment to a car manufacturing company. While the Shipper and transporter might be part of the BDI-network, the car manufacturer could be part of a different network, such as an industry data-sharing one. Both networks have different rules of participation but still need to be able to cooperate with each other in the operational process.
 
-
-
 </details>
 
 <details>
 
-<summary>Boundaries with “non-BDI” or “data-sharing network” actors </summary>
+<summary>Boundaries with “non-BDI” or “data-sharing network” actors</summary>
 
 The clearest example is the delivery of a shipment to a receiving party. The receiving party may very well not be a member of a BDI association, unaware of the BDI framework and may have less Logistics IT maturity. The shipper and transporter would like to maintain the benefits of the automated controlled digital data exchange in such a case, without reverting to the default paper-based process.
 
 This boundary has both technological and legal aspects that interact with each other. The shipper, receiver and transporter execute two commercial transactions at the same time. The shipper executes the delivery of the goods sold to the receiver by means of a transport order which is another commercial transaction between the transporter and the shipper.
-
-
 
 </details>
 
@@ -52,7 +48,7 @@ Edge agreements are standards for interactions on a boundary. This standard may 
 
 ## 3. Example for digital shipment data
 
-Transport is a consequence of trade. A purchase agreement between buyer and seller contains, among other things, who should take care of the transport of the shipment. In international trade, sellers and buyers can use the Incoterms 2020: standardized agreements covering who arranges what (e.g. transport, but also insurance and customs formalities), payment and payment securities, at what point the responsibility is transferred (e.g. when a container is lifted over the railing of a ship).&#x20;
+Transport is a consequence of trade. A purchase agreement between buyer and seller contains, among other things, who should take care of the transport of the shipment. In international trade, sellers and buyers can use the Incoterms 2020: standardized agreements covering who arranges what (e.g. transport, but also insurance and customs formalities), payment and payment securities, at what point the responsibility is transferred (e.g. when a container is lifted over the railing of a ship).
 
 Standardized terms and conditions have been developed to codify roles, responsibilities and liabilities between the seller, a carrier and the buyer. International treaties harmonize these conditions between countries. The aim is clear: this standardization and harmonization facilitates trade.
 
@@ -101,17 +97,17 @@ Edge interaction protocols are vital for a functioning supply chain. The definit
 6. The driver working for De Snelle Visser delivers the goods to Acme Inc. and takes a picture of the delivered hydrofluoric acid.
 7. The confirmation of delivery with the provided evidence will trigger a status update on the shipment from “in transit” to “delivered”.
 
-<figure><img src="../../.gitbook/assets/Edge Agreements.png" alt=""><figcaption><p>Overview of interactions between parties</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/251126 Draw io figures authentication, change requests-Page-11.drawio.png" alt="" width="502"><figcaption><p>Overview of interactions between parties</p></figcaption></figure>
 
 In this scenario, the BDI supports both the shipper (Lets-B-Chemical) and the transportation company (De Snelle Visser). However, the buyer (Acme Inc.) is not part of the BDI or any other network due to its low IT maturity level. As a result, the BDI cannot directly assist the buyer, which reduces its effectiveness for both the shipper and the transportation company. Establishing a set of defined agreements to address situations like this would enhance overall digitization and provide clear legal backing for these handover moments. This case is not unique; many supply chains still rely on paper for such handovers.
 
 ## 6. Interlinkages with other building blocks
 
-<a href="../../readme/trust-kit/onboarding-t-and-cs-association-articles-1.md" class="button secondary">Onboarding Terms and Conditions</a>  <a href="policy-agreements.md" class="button secondary">Policies</a>
+<a href="../../readme/trust-kit/onboarding-t-and-cs-association-articles-1.md" class="button secondary">Onboarding Terms and Conditions</a> <a href="policy-agreements.md" class="button secondary">Policies</a>
 
 ## 7. Elements and their key functions
 
-* Agree on a set of accepted edge interactions such as:&#x20;
+* Agree on a set of accepted edge interactions such as:
   * A picture of the freight taken by the driver,
   * SMS confirmation between the buyer and seller,
   * Signature on tablet by the driver and buyer
@@ -126,15 +122,16 @@ When starting an association, it is advisable to establish a set of "edge agreem
 
 ## 9. Future topics & Future reading
 
-Future topics:&#x20;
+Future topics:
 
 * Proving inclusion of the protocol in the proving grounds
 * Further describe data exchange with non-BDI actors
 * Further describe edges with BDI actors.
 
-Further reading:&#x20;
+Further reading:
 
 * [https://digitalshipmentdata.org/](https://digitalshipmentdata.org/)
 * [https://www.evofenedex.nl/kennis/internationaal-ondernemen/incoterms/de-11-incoterms-2020](https://www.evofenedex.nl/kennis/internationaal-ondernemen/incoterms/de-11-incoterms-2020)
 
 {% file src="../../.gitbook/assets/Waybill complete.pdf" %}
+

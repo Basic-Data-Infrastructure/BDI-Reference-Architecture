@@ -30,7 +30,7 @@ Insufficient authorization may cause data leaks to parties that are not trusted.
 
 This building block has links to:
 
-<a href="../federation-kit/representation-register.md" class="button secondary">Representation Chain</a> <a href="/broken/pages/IMYqSzcqlmzv577PfsCD" class="button secondary">Association Register</a> <a href="../data-set-kit/data-licenses.md" class="button secondary">Data Licenses</a> <a href="authentication.md" class="button secondary">Authentication M2M</a>
+<a href="../../../reference-architecture/federation-kit/representation-register.md" class="button secondary">Representation Chain</a> <a href="/broken/pages/IMYqSzcqlmzv577PfsCD" class="button secondary">Association Register</a> <a href="../../../reference-architecture/data-set-kit/data-licenses.md" class="button secondary">Data Licenses</a> <a href="../../../reference-architecture/trust-kit/authentication.md" class="button secondary">Authentication M2M</a>
 
 The Authorization building block uses information from these related building blocks to make a decision whether or not to trust a partner in a transaction.
 
@@ -38,14 +38,14 @@ The Authorization building block uses information from these related building bl
 
 While entering into a transaction, each participant involved in the transaction will decide if it trusts the other party.
 
-<figure><img src="../../.gitbook/assets/Untitled Diagram.drawio (6).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Untitled Diagram.drawio (6).png" alt="" width="563"><figcaption></figcaption></figure>
 
 To make a decision on trust, the party will use relevant and available information. The BDI provides a framework for four input elements for this decision:
 
-1. [Trust based on the membership of an Association](authorisation-oauth-2.0-ar-dm-+-xacml-policies.md#id-1.-trust-based-on-association-membership), one of it’s parent Associations or the root BDI Network.
-2. [Trust based on the level of assurance](authorisation-oauth-2.0-ar-dm-+-xacml-policies.md#id-2.-trust-based-on-the-level-of-assurance-of-the-digital-identity-of-the-party) of the digital identity of the party.
-3. [Trust based on the reputation of the Member](authorisation-oauth-2.0-ar-dm-+-xacml-policies.md#id-2.-trust-based-on-reputations) as provided by the Reputation Model.
-4. [Trust based on (granular) Authorizations](authorisation-oauth-2.0-ar-dm-+-xacml-policies.md#id-3.-trust-based-on-authorisations) provided by a Data Owner.
+1. [Trust based on the membership of an Association](./#id-1.-trust-based-on-association-membership), one of it’s parent Associations or the root BDI Network.
+2. [Trust based on the level of assurance](./#id-2.-trust-based-on-the-level-of-assurance-of-the-digital-identity-of-the-party) of the digital identity of the party.
+3. [Trust based on the reputation of the Member](./#id-2.-trust-based-on-reputations) as provided by the Reputation Model.
+4. [Trust based on (granular) Authorizations](./#id-3.-trust-based-on-authorisations) provided by a Data Owner.
 
 ## 6. Core design decisions
 
@@ -57,7 +57,7 @@ The four inputs for decision making are supported by the BDI trust input element
 
 **Information gathering**
 
-This input element uses input from the building block [Authentication M2M](authentication.md). This building block provides insight into what association and (optionally) what parent associations a participant is a member of.
+This input element uses input from the building block [Authentication M2M](../../../reference-architecture/trust-kit/authentication.md). This building block provides insight into what association and (optionally) what parent associations a participant is a member of.
 
 **Information processing**
 
@@ -72,7 +72,7 @@ To facilitate easier processing of the acquired information, a party can:
 
 **Information gathering**
 
-This input element uses input from the/ building block [Authentication M2M](authentication.md). This building block provides insight into the level of assurance of the party.
+This input element uses input from the/ building block [Authentication M2M](../../../reference-architecture/trust-kit/authentication.md). This building block provides insight into the level of assurance of the party.
 
 **Information processing**
 
@@ -87,7 +87,7 @@ To facilitate easier processing of the acquired information, a party can:
 
 **Information gathering**
 
-The [Business Partner Reputation Model](../federation-kit/business-partner-reputation-model.md) forms the basis for acquiring reputation information. It is not yet defined how information on reputation of a party can be acquired.
+The [Business Partner Reputation Model](../../../reference-architecture/federation-kit/business-partner-reputation-model.md) forms the basis for acquiring reputation information. It is not yet defined how information on reputation of a party can be acquired.
 
 **Information processing**
 
@@ -191,6 +191,14 @@ Example of a trust decision matrix:
 
 Business rules could also consist of a combination of the various trust aspects. For instance that either medium association trust OR medium reputation trust is required.
 
+## 13. Authorization Models
+
+The BDI Trust Framework distinguishes two complementary authorization models. Each model addresses a different category of use cases and operational requirements. The distinction reflects how authorization decisions are made.
+
+<table data-view="cards"><thead><tr><th></th><th></th><th data-hidden data-card-cover data-type="image">Cover image</th></tr></thead><tbody><tr><td>Predefined Access</td><td>Access rights are established before usage and enforced through tokens and registries</td><td><a href="https://images.unsplash.com/photo-1672380135241-c024f7fbfa13?crop=entropy&#x26;cs=srgb&#x26;fm=jpg&#x26;ixid=M3wxOTcwMjR8MHwxfHNlYXJjaHw5fHxhZ3JlZW1lbnR8ZW58MHx8fHwxNzc0NTI3NDk4fDA&#x26;ixlib=rb-4.1.0&#x26;q=85">https://images.unsplash.com/photo-1672380135241-c024f7fbfa13?crop=entropy&#x26;cs=srgb&#x26;fm=jpg&#x26;ixid=M3wxOTcwMjR8MHwxfHNlYXJjaHw5fHxhZ3JlZW1lbnR8ZW58MHx8fHwxNzc0NTI3NDk4fDA&#x26;ixlib=rb-4.1.0&#x26;q=85</a></td></tr><tr><td>Real-time decisions</td><td>Access is evaluated at the moment of the request using contextual policies</td><td><a href="https://images.unsplash.com/photo-1504607798333-52a30db54a5d?crop=entropy&#x26;cs=srgb&#x26;fm=jpg&#x26;ixid=M3wxOTcwMjR8MHwxfHNlYXJjaHw4fHxkZWNpc2lvbnxlbnwwfHx8fDE3NzQ1Mjc1NDZ8MA&#x26;ixlib=rb-4.1.0&#x26;q=85">https://images.unsplash.com/photo-1504607798333-52a30db54a5d?crop=entropy&#x26;cs=srgb&#x26;fm=jpg&#x26;ixid=M3wxOTcwMjR8MHwxfHNlYXJjaHw4fHxkZWNpc2lvbnxlbnwwfHx8fDE3NzQ1Mjc1NDZ8MA&#x26;ixlib=rb-4.1.0&#x26;q=85</a></td></tr></tbody></table>
+
+These patterns operate at different layers and are typically combined within a single interaction. OAuth-based mechanisms do not replace policy-based authorization, and policy-based authorization does not replace token-based access. Each solves a different problem. For a more in depth explanation about the two different models, see [Authorization Models](authorization-models.md)
+
 ## 12. Future topics & Case study
 
 **Future topics**
@@ -200,7 +208,7 @@ Business rules could also consist of a combination of the various trust aspects.
 
 **Case Study**
 
-{% file src="../../.gitbook/assets/20241001_DIL_BDI_Case Study Portbase on Data Service Providers and Authorisations.pdf" %}
+{% file src="../../../.gitbook/assets/20241001_DIL_BDI_Case Study Portbase on Data Service Providers and Authorisations.pdf" %}
 
 ## 13. Further reading
 

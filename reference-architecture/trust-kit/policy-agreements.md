@@ -36,7 +36,7 @@ For a specific sector or geography one can either develop specific data licenses
 
 ## 3. Interlinkages with other building blocks
 
-<a href="digital-identity/" class="button secondary">Digital Identity</a> <a href="authorisation-oauth-2.0-ar-dm-+-xacml-policies.md" class="button secondary">Authorization</a> <a href="authentication/" class="button secondary">Authentication</a> <a href="/broken/pages/gGhQcCvuq4Ryh38glEsL" class="button secondary">Onboarding Terms and Conditions</a>
+<a href="digital-identity/" class="button secondary">Digital Identity</a> <a href="../../readme/trust-kit/authorisation-oauth-2.0-ar-dm-+-xacml-policies/" class="button secondary">Authorization</a> <a href="authentication/" class="button secondary">Authentication</a> <a href="../../readme/trust-kit/onboarding-t-and-cs-association-articles-1.md" class="button secondary">Onboarding Terms and Conditions</a>
 
 ## 4. Core design decisions
 
@@ -44,19 +44,19 @@ When starting an association, it is advisable to establish a set of policies bef
 
 {% stepper %}
 {% step %}
-#### Association-specific
+**Association-specific**
 
 These agreements are tailored to meet the unique needs of the association, which may vary by sector, geographical location, or specific theme.
 {% endstep %}
 
 {% step %}
-#### Common
+**Common**
 
 One can utilize the standardized set of edge agreements available in the BDI repository. For instance, the set of data licenses which are described by iShare.
 {% endstep %}
 
 {% step %}
-#### Global
+**Global**
 
 It is advised to align policies with those used in other sectors and standards whenever possible, promoting convergence and consistency.
 {% endstep %}

@@ -28,4 +28,4 @@ Boundary Management is about managing boundaries in practice.
 
 ## 2. Interlinkages with other building blocks
 
-<a href="../trust-kit/digital-identity/digital-identity.md" class="button secondary">Digital Identity M2M</a>  <a href="../trust-kit/digital-identity/digital-identity-h2m.md" class="button secondary">Digital Identity H2M</a>  <a href="../trust-kit/authorisation-oauth-2.0-ar-dm-+-xacml-policies.md" class="button secondary">Authorization</a>  <a href="../federation-kit/" class="button secondary">Federation KIT</a>
+<a href="../trust-kit/digital-identity/digital-identity.md" class="button secondary">Digital Identity M2M</a> <a href="../trust-kit/digital-identity/digital-identity-h2m.md" class="button secondary">Digital Identity H2M</a> <a href="../../readme/trust-kit/authorisation-oauth-2.0-ar-dm-+-xacml-policies/" class="button secondary">Authorization</a> <a href="../federation-kit/" class="button secondary">Federation KIT</a>
