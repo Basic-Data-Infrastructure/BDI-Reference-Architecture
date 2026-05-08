@@ -62,9 +62,9 @@ The following is to be considered:
 
 ## 5. Interlinkages with other building blocks
 
-<a href="../trust-kit/digital-identity/" class="button secondary">Digital Identity</a>  <a href="../trust-kit/authentication/" class="button secondary">Authentication</a>  <a href="../trust-kit/authorisation-oauth-2.0-ar-dm-+-xacml-policies.md" class="button secondary">Authorization</a> &#x20;
+<a href="../trust-kit/digital-identity/" class="button secondary">Digital Identity</a> <a href="../trust-kit/authentication/" class="button secondary">Authentication</a> <a href="../../readme/trust-kit/authorisation-oauth-2.0-ar-dm-+-xacml-policies/" class="button secondary">Authorization</a>
 
-<a href="representation-register.md" class="button secondary">Representation Chain</a>  <a href="../boundary-management-kit/" class="button secondary">Boundary Management</a>
+<a href="representation-register.md" class="button secondary">Representation Chain</a> <a href="../boundary-management-kit/" class="button secondary">Boundary Management</a>
 
 ## 6. Core design decisions
 

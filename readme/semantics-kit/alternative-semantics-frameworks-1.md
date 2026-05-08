@@ -3,23 +3,6 @@ cover: >-
   https://images.unsplash.com/photo-1664526937033-fe2c11f1be25?crop=entropy&cs=srgb&fm=jpg&ixid=M3wxOTcwMjR8MHwxfHNlYXJjaHwxfHxzZW1hbnRpYyUyMGZyYW1ld29ya3xlbnwwfHx8fDE3NjM1NjE0NTN8MA&ixlib=rb-4.1.0&q=85
 coverY: 0
 coverHeight: 415
-layout:
-  width: default
-  cover:
-    visible: true
-    size: full
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
-  metadata:
-    visible: true
 ---
 
 # Alternative Semantics Frameworks

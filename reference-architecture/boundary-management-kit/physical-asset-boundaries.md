@@ -26,13 +26,13 @@ In the example of the engineer of the maintenance sub-contractor, the user journ
 
 {% stepper %}
 {% step %}
-#### Authentication
+**Authentication**
 
 The engineer presents a form of ID (proof for authentication). The ID can be standard, fitted with additional safeguards such as biometrics, or digital (Wallet).
 {% endstep %}
 
 {% step %}
-#### Representation Evidence
+**Representation Evidence**
 
 The engineer presents a Representation Evidence. This evidence should show:<br>
 
@@ -117,7 +117,3 @@ When the Principal commissions a subcontractor, the identity of the human is rep
 An embedded JWT claim can be created recursively by each layer of the (subcontracting) chain, starting with a Principal. This show the Representation chain.
 
 The human requesting access can carry the JWT (for instance in a Wallet), or carry a link to an online API that can transfer the JWT to an evaluation service/application. The security guards use the service or application to evaluate the JWT, verify the signing of its claims and show the content to the guard. The guard can authenticate the human and verify the representation chain.
-
-## **5. Further reading**
-
-[https://bdinetwork.org/wp-content/uploads/2024/05/2024-BDI-Embedded-JWT-as-Representation-Evidence.pdf](https://bdinetwork.org/wp-content/uploads/2024/05/2024-BDI-Embedded-JWT-as-Representation-Evidence.pdf)

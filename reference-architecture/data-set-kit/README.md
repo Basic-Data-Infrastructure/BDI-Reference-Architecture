@@ -7,6 +7,4 @@ coverHeight: 272
 
 # 📄 Data Set KIT
 
-## 1. Purpose
-
-The purpose of this KIT is to use standard dataspace components and technology to exchange data sets using the BDI control plane functions and IAA solutions. The KIT depends on the Trust and Event KITs, and was used to build Catena-X style Data Spaces based on IDSA standards.​
+The purpose of this KIT is to use standard dataspace components and technology to exchange data sets using the BDI control plane functions and IAA solutions. The KIT depends on the [trust-kit](../trust-kit/ "mention") and [logistics-event-kit](../logistics-event-kit/ "mention"), and was used to build Catena-X style Data Spaces based on IDSA standards.​

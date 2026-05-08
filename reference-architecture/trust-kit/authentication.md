@@ -17,9 +17,7 @@ In this page we will focus on M2M use cases where data is requested by a Data Co
 
 ## 2. Purpose of the building block
 
-{% hint style="info" %}
 Ensure that BDI users (M2M) are recognized and identified to prevent misuse of services and data. The automatic authentication of a BDI user in a federated perimeter-less architecture (see DNS-based Discovery as option) relies on a (delegated) Trust Anchor for Identity.
-{% endhint %}
 
 ## 3. Concepts
 
@@ -31,7 +29,7 @@ Incorrect authentication could result in data breaches and / or the unavailabili
 
 ## 5. Interlinkages with other building blocks
 
-<a href="digital-identity/" class="button secondary">Digital Identity</a>  <a href="authorisation-oauth-2.0-ar-dm-+-xacml-policies.md" class="button secondary">Authorization</a>  <a href="discovery.md" class="button secondary">Discovery</a>  <a href="../federation-kit/" class="button secondary">Federation KIT</a>
+<a href="digital-identity/" class="button secondary">Digital Identity</a> <a href="../../readme/trust-kit/authorisation-oauth-2.0-ar-dm-+-xacml-policies/" class="button secondary">Authorization</a> <a href="discovery.md" class="button secondary">Discovery</a> <a href="../federation-kit/" class="button secondary">Federation KIT</a>
 
 ## 6. Core design decisions
 

@@ -6,8 +6,6 @@ coverY: 0
 
 # 🔑 Verifiable Credentials KIT​
 
-Verifiable credentials can be used in conjunction with BDI functions for IAA purposes. This KIT needs the Trust and Event KITs.​
-
-## 2. Further reading
+Verifiable credentials can be used in conjunction with BDI functions for IAA purposes. This KIT needs the [trust-kit](../trust-kit/ "mention") and [logistics-event-kit](../logistics-event-kit/ "mention").​
 
 {% file src="../../.gitbook/assets/Eindrapport IAA - TNO 2024 R12443 Applying VCs in BDI.pdf" %}

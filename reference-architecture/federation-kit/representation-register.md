@@ -49,7 +49,7 @@ It provides a **verifiable, decentralised mechanism** for confirming:
 
 The Representation Chain is conceptually and operationally connected to:
 
-<a href="../trust-kit/authentication/" class="button secondary">Authentication</a> <a href="../trust-kit/authorisation-oauth-2.0-ar-dm-+-xacml-policies.md" class="button secondary">Authorization</a> <a href="../trust-kit/digital-identity/" class="button secondary">Digital Identity</a>
+<a href="../trust-kit/authentication/" class="button secondary">Authentication</a> <a href="../../readme/trust-kit/authorisation-oauth-2.0-ar-dm-+-xacml-policies/" class="button secondary">Authorization</a> <a href="../trust-kit/digital-identity/" class="button secondary">Digital Identity</a>
 
 <a href="professional-qualification-register.md" class="button secondary">Professional Qualification Chain</a> <a href="../verifiable-credentials-kit/verifiable-credentials.md" class="button secondary">Verifiable Credentials</a>
 

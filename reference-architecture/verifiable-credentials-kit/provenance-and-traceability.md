@@ -19,7 +19,7 @@ It must be defined which information about this transaction is stored and how th
 
 The evidence itself is again data, which is shared among different participants. Therefore, many concepts applied to data can also apply to this evidence, e.g., syntax and semantics of the evidence, access & usage policies on multiple levels.
 
-The amount and granularity of evidence should be reasonable and appropriate to balance between the requirements of the availability of evidence and the scalability of the solution. The advantages and disadvantages of different approaches like a centralised, a decentralised, or a distributed solution must be assessed and understood.
+The amount and granularity of evidence should be reasonable and appropriate to balance between the requirements of the availability of evidence and the scalability of the solution. The advantages and disadvantages of different approaches like a centralized, a decentralized, or a distributed solution must be assessed and understood.
 
 A solution needs to fulfil the requirements of the governance, legal and contractual requirements, as well as other policies requiring such evidence, and balance this with the technical requirements like resource management, scalability, consistency, availability, and others.
 
@@ -44,7 +44,7 @@ This building block addresses the following capabilities:
 
 ## **4. Interlinkages with other building blocks**
 
-<a href="../federation-kit/federation-of-associations.md" class="button secondary">Federation of Associations</a>  <a href="../logistics-event-kit/event-pub-sub-service.md" class="button secondary">Notification pub/sub service</a>
+<a href="../federation-kit/federation-of-associations.md" class="button secondary">Federation of Associations</a> <a href="../logistics-event-kit/event-pub-sub-service.md" class="button secondary">Notification pub/sub service</a>
 
 ## **5. Elements and their Key Functions**
 
@@ -65,7 +65,7 @@ Direction that is being explored now is by combining ‘Embedded JWTs’ with VC
 
 ## **6. Core Design Decisions**
 
-The following design decisions should be considered:
+The following questions regarding design decisions should be considered:&#x20;
 
 * How can the origin of the data be established?
 * How can you find out how data has travelled through the chain?
@@ -77,7 +77,7 @@ The following design decisions should be considered:
 
 ## **7. Future topics**
 
-Future work: Claims need to be stored for usage in a transactions. Ideally the subject should ‘hold’ the claim (like EU Digital Wallets). This is the defined EU direction. Not immidiate needed to work within the BDI scheme.
+Claims need to be stored for usage in transactions. Ideally the subject should ‘hold’ the claim (like EU Digital Wallets). This is the defined EU direction. Not immediate needed to work within the BDI scheme.
 
 * The BDI provides nonrepudiation across the supply chain through a Chain of Trust based on Embedded JWT’s combined with VC’s to create a powerful mechanism for secure, flexible, and privacy-preserving information exchange based on known technology. Reference to be developed​
 * (EU) Wallet’s to be researched on readiness (ecosystem) and easy of implementation​

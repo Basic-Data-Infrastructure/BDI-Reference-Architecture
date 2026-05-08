@@ -3,20 +3,37 @@ cover: >-
   https://images.unsplash.com/photo-1587737397677-fb1abeeb46b1?crop=entropy&cs=srgb&fm=jpg&ixid=M3wxOTcwMjR8MHwxfHNlYXJjaHwxMHx8ZGlnaXRhbCUyMHN5c3RlbSUyMGFyY2hpdGVjdHVyZXxlbnwwfHx8fDE3NjQzMjUxNDB8MA&ixlib=rb-4.1.0&q=85
 coverY: 0
 coverHeight: 405
+layout:
+  width: default
+  cover:
+    visible: true
+    size: full
+  title:
+    visible: true
+  description:
+    visible: false
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+  metadata:
+    visible: true
+  tags:
+    visible: true
 ---
 
 # ✏️ Reference Architecture
 
-Introduction BDI Reference Architecture
-
 ## BDI: An Infrastructure Framework for Operations and Supply Chain Data Spaces
 
-Operations and Supply Chain Management (OSCM) represents the science and expertise of value creation in the production and distribution networks of goods and services. Effective information sharing is an operational necessity within and across these networks for:&#x20;
+Operations and Supply Chain Management (OSCM) represents the science and expertise of value creation in the production and distribution networks of goods and services. Effective information sharing is an operational necessity within and across these networks for:
 
-* establishing agreements,&#x20;
-* coordinating actions and handovers,&#x20;
-* controlling access to resources and data,&#x20;
-* ensuring compliance with authorities.&#x20;
+* establishing agreements,
+* coordinating actions and handovers,
+* controlling access to resources and data,
+* ensuring compliance with authorities.
 
 The challenge is to increase effectiveness by automating these exchanges and increase operational visibility and transparency.
 

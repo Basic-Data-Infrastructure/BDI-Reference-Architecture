@@ -9,7 +9,7 @@ coverHeight: 456
 
 ## 1. Summary
 
-This building block defines how BDI supports organizations (Data Providers and Data Consumers) in discovering other organizations, services and endpoints by either&#x20;
+This building block defines how BDI supports organizations (Data Providers and Data Consumers) in discovering other organizations, services and endpoints by either
 
 * utilizing discovery-aspects of the iSHARE Trust Framework, or
 * defining a standard for discovery using the DNS Protocol.
@@ -40,7 +40,7 @@ iSHARE and thereby the BDI provide a framework for the discovery of:
 
 ## 3. Concepts
 
-<table data-view="cards"><thead><tr><th></th><th></th></tr></thead><tbody><tr><td><strong>DNS Overview</strong></td><td>DNS is a hierarchical and decentralized naming system that translates domain names into IP addresses, enabling users to access websites and other resources on the internet. DNS is organized into zones, each managed by an organization that controls its own part of the DNS namespace.</td></tr><tr><td><strong>DNS Subdomain</strong></td><td><p>A standardized subdomain </p><p>("<em>_bd1.[ url]</em> ") improves discoverability, reduces the risk of interference with existing DNS records for the domain name already in possession of an organization.</p></td></tr><tr><td><strong>Service Discovery</strong></td><td>In the context of BDI, service discovery involves using DNS to locate the endpoints of parties involved. This is achieved by creating specific DNS records in a subdomain "_bdi" that describe the services and where they can be accessed.</td></tr><tr><td><strong>DNS Records</strong></td><td>Different types of DNS records serve various purposes. For service discovery in BDI, TXT and SRV records are particularly important. TXT records can store arbitrary text and are used to describe the services offered, while SRV records specify the hostname, port, and protocol for accessing a service.</td></tr><tr><td><strong>Federation</strong></td><td>The URL of the Association of a party (the "Home" of a party) can be used to discover the service endpoints of their Association. These services can be used to verify onboarding and membership of that previously unknown party. The DNS namespace is used as a shared register, suitable for perimeterless global interactions. For a visual explantion, see Figure 1. </td></tr></tbody></table>
+<table data-view="cards"><thead><tr><th></th><th></th></tr></thead><tbody><tr><td><strong>DNS Overview</strong></td><td>DNS is a hierarchical and decentralized naming system that translates domain names into IP addresses, enabling users to access websites and other resources on the internet. DNS is organized into zones, each managed by an organization that controls its own part of the DNS namespace.</td></tr><tr><td><strong>DNS Subdomain</strong></td><td><p>A standardized subdomain</p><p>("<em>_bd1.[ url]</em> ") improves discoverability, reduces the risk of interference with existing DNS records for the domain name already in possession of an organization.</p></td></tr><tr><td><strong>Service Discovery</strong></td><td>In the context of BDI, service discovery involves using DNS to locate the endpoints of parties involved. This is achieved by creating specific DNS records in a subdomain "_bdi" that describe the services and where they can be accessed.</td></tr><tr><td><strong>DNS Records</strong></td><td>Different types of DNS records serve various purposes. For service discovery in BDI, TXT and SRV records are particularly important. TXT records can store arbitrary text and are used to describe the services offered, while SRV records specify the hostname, port, and protocol for accessing a service.</td></tr><tr><td><strong>Federation</strong></td><td>The URL of the Association of a party (the "Home" of a party) can be used to discover the service endpoints of their Association. These services can be used to verify onboarding and membership of that previously unknown party. The DNS namespace is used as a shared register, suitable for perimeterless global interactions. For a visual explantion, see Figure 1.</td></tr></tbody></table>
 
 <figure><img src="../../.gitbook/assets/20240911 Federation Discovery.png" alt=""><figcaption><p>Figure 1: Federation: Discovery by DNS</p></figcaption></figure>
 
@@ -50,25 +50,25 @@ When implementing DNS for service discovery in BDI, several factors need to be c
 
 {% stepper %}
 {% step %}
-#### Zone management
+**Zone management**
 
 Organizations must manage their DNS zones effectively to ensure accurate and up-to-date information is available for discovery. This involves maintaining the appropriate DNS records and ensuring that the DNS infrastructure is reliable and secure.
 {% endstep %}
 
 {% step %}
-#### Security
+**Security**
 
 To secure the discovery process, DNSSEC (DNS Security Extensions) should be implemented. DNSSEC adds a layer of security to DNS by enabling the authentication of DNS data, preventing tampering, and ensuring the integrity of the information provided in DNS records.
 {% endstep %}
 
 {% step %}
-#### Scalability
+**Scalability**
 
 DNS is inherently scalable, making it suitable for large, federated networks like BDI. However, organizations must ensure that their DNS infrastructure can handle the expected load, particularly as the network grows.
 {% endstep %}
 
 {% step %}
-#### Standardization
+**Standardization**
 
 To ensure interoperability within the BDI network, it is crucial to follow standardized naming conventions and DNS record formats. This includes using well-known subdomains { "\_bdi.\[url]"} and consistent formatting for TXT and SRV records.
 {% endstep %}
@@ -84,7 +84,7 @@ A predictable subdomain, such as _\_bdi.acme-corp.com,_ serves as a central poin
 {% tab title="SRV Records" %}
 SRV records are used to locate the actual endpoints where services are hosted. These records specify the hostname or IP address, port number, protocol, and other parameters necessary to connect to the service.
 
-**Key Fields**:&#x20;
+**Key Fields**:
 
 * target (hostname/IP)
 * port (service port number)
@@ -100,6 +100,8 @@ TXT records provide descriptive information about the services offered by a data
 DNSSEC provides security for DNS by enabling the validation of DNS responses. This is crucial for preventing attacks — e.g. cache poisoning — ensuring that data consumers receive accurate and trustworthy information during the discovery process.
 {% endtab %}
 {% endtabs %}
+
+## 6. Attachments
 
 {% file src="../../.gitbook/assets/2024_DIL_BDI-DNS-Service-Discovery-Proposal.pdf" %}
 

@@ -12,15 +12,13 @@ This building block encompasses key points for effective interoperability and fe
 
 ## 2. Purpose of the building block
 
-This block is vital in trust implementation within the Association and widening this scope to other associations. This helps create a network effect and federate the BDI Framework.
+This block is vital in trust implementation within the Association and widening this scope to other associations. This helps create a network effect and federate the BDI Framework. The table below shows an overview of important roles and the corresponding descriptions.&#x20;
 
-**Concepts**
-
-| Role                 | Description                                                                                                  |
-| -------------------- | ------------------------------------------------------------------------------------------------------------ |
-| Association          | Legal entity that serves as operational anchor for both federated trust/authentication and local onboarding. |
-| Association Admin    | Functionary responsible for operating the services of a BDI Association                                      |
-| Association Register | Register of onboarded Members and Preferred Business Partners                                                |
+| Role                     | Description                                                                                                  |
+| ------------------------ | ------------------------------------------------------------------------------------------------------------ |
+| **Association**          | Legal entity that serves as operational anchor for both federated trust/authentication and local onboarding. |
+| **Association Admin**    | Functionary responsible for operating the services of a BDI Association                                      |
+| **Association Register** | Register of onboarded Members and Preferred Business Partners                                                |
 
 ## 3. Implementation Considerations
 
