@@ -170,20 +170,21 @@ Access can be regulated automatically via an authorized employee or system. The 
 
 ## Principle 5: Data at the Source
 
-The principle is about _“how responsibility, control, and value creation are maintained across distributed and coordinated environments.” and lesser “where data is stored”_.
+The principle is about _“how responsibility, control, and value creation are maintained across distributed and coordinated environments.”_ and less about _“where data is stored”_.
 
-In traditional models, data sharing is often treated as the transfer of information from one party to another, leading to duplication, fragmentation, and loss of context. In contrast, modern data ecosystems combine federated data ownership with coordinated processing: parties contribute data, context, and interpretation, while shared mechanisms support synchronization, validation, and operational continuity.
+In traditional models, data sharing is often treated as the transfer of information from one party to another, leading to duplication, fragmentation, and loss of context. In contrast, modern data ecosystems allow the original owner to maintain control of their data, while allowing other parties to access and process it without the requirement for duplication or the risk of losing context:\
+parties contribute data, context, and interpretation, while shared mechanisms support processing, (optional) synchronization, validation, and operational continuity.
 
-Within this context, “Data at the Source” ensures that collaboration remains grounded in traceability, clear responsibility, and controlled use, regardless of where data is processed or temporarily stored. This principle emphasizes:
+Within this context, “Data at the Source” ensures that collaboration remains is grounded in traceability, clear responsibilities, and controlled use, regardless of where data is processed or (temporarily) stored. This principle emphasizes:
 
 * **Data remains anchored to its origin**\
   Data stays traceable to the providing party, including its origin, responsibility, and usage context, even when processed or temporarily stored.
 * **Participation enables control**\
-  Parties control how their data is used and shared, allowing contribution to joint processes without unnecessary exposure, within applicable legal and economic frameworks.
+  Parties control how their data is used and shared, allowing data to be used without unnecessary exposure, within applicable legal and economic frameworks.
 * **Data is shared to enable coordinated value creation**\
   Data gains meaning through shared processes, standards, and agreements. Value emerges through coordinated use across participants, supported by traceable and controlled data handling, including necessary replication.
-* **Not all data is equal** \
-  Within BDI, the party determining access and usage rights for a dataset — either the source party or a service provider — is considered the _data holder_ (conform the EU Data Act). Some data must be broadly accessible to enable coordination, while other data requires more specific, context-dependent access conditions due to its value or sensitivity. Without actively governing this distinction, data sharing collapses into two extremes: uncontrolled exposure, undermining trust, or excessive restriction, blocking collaboration. Managing this balance enables safe, reliable, and scalable data sharing
+* **Not all data is equal**\
+  Within BDI, the party determining access and usage rights for a dataset — either the source party or a service provider — is considered the _data holder_ (conform the EU Data Act). Some data must be broadly accessible to enable coordination, while other data requires more specific, context-dependent access conditions due to its value or sensitivity. Without actively governing this distinction, data sharing collapses into two extremes: uncontrolled exposure, undermining trust, or excessive restriction, blocking collaboration. Managing this balance enables safe, reliable, and scalable data sharing.
 
 ### Policies and data product composition
 
@@ -191,7 +192,7 @@ Policies govern access to data products and define the conditions under which th
 
 In practice, this includes the processing, enrichment, and orchestration of data, as well as mechanisms required for operational continuity. These activities are permissible within the principle, if they do not break the connection to origin, meaning, and usage conditions. In particular:
 
-* the scope of authorization of a composed data product must not exceed the scope of the underlying data;
+* the scope of authorization of a composed data product must not exceed the scope of the underlying data,
 * usage conditions and access restrictions must be preserved and propagated;
 * processing and enrichment must not lead to unintended access or loss of control.
 
