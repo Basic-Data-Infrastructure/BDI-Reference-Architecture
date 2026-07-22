@@ -30,7 +30,7 @@ Insufficient authorization may cause data leaks to parties that are not trusted.
 
 This building block has links to:
 
-<a href="../../../reference-architecture/federation-kit/representation-register.md" class="button secondary">Representation Chain</a> <a href="../association-register-1.md" class="button secondary">Association Register</a> <a href="../../../reference-architecture/data-set-kit/data-licenses.md" class="button secondary">Data Licenses</a> <a href="../../../reference-architecture/trust-kit/authentication.md" class="button secondary">Authentication M2M</a>
+<a href="../../representation-kit/representation-register.md" class="button secondary">Representation Chain</a> <a href="../association-register-1.md" class="button secondary">Association Register</a> <a href="../../data-set-kit/data-licenses.md" class="button secondary">Data Licenses</a> <a href="../authentication/authentication.md" class="button secondary">Authentication M2M</a>
 
 The Authorization building block uses information from these related building blocks to make a decision whether or not to trust a partner in a transaction.
 
@@ -57,7 +57,7 @@ The four inputs for decision making are supported by the BDI trust input element
 
 **Information gathering**
 
-This input element uses input from the building block [Authentication M2M](../../../reference-architecture/trust-kit/authentication.md). This building block provides insight into what association and (optionally) what parent associations a participant is a member of.
+This input element uses input from the building block [Authentication M2M](../authentication/authentication.md). This building block provides insight into what association and (optionally) what parent associations a participant is a member of.
 
 **Information processing**
 
@@ -72,7 +72,7 @@ To facilitate easier processing of the acquired information, a party can:
 
 **Information gathering**
 
-This input element uses input from the/ building block [Authentication M2M](../../../reference-architecture/trust-kit/authentication.md). This building block provides insight into the level of assurance of the party.
+This input element uses input from the/ building block [Authentication M2M](../authentication/authentication.md). This building block provides insight into the level of assurance of the party.
 
 **Information processing**
 
@@ -87,7 +87,7 @@ To facilitate easier processing of the acquired information, a party can:
 
 **Information gathering**
 
-The [Business Partner Reputation Model](../../../reference-architecture/federation-kit/business-partner-reputation-model.md) forms the basis for acquiring reputation information. It is not yet defined how information on reputation of a party can be acquired.
+The [Business Partner Reputation Model](../../federation-kit/business-partner-reputation-model.md) forms the basis for acquiring reputation information. It is not yet defined how information on reputation of a party can be acquired.
 
 **Information processing**
 

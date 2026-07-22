@@ -10,6 +10,7 @@ layout:
   cover:
     visible: true
     size: full
+    mask: none
   title:
     visible: true
   description:
@@ -23,6 +24,8 @@ layout:
   metadata:
     visible: true
   tags:
+    visible: true
+  actions:
     visible: true
 ---
 
@@ -38,19 +41,19 @@ The three core components; the Association Registry, the Orchestration Registry,
 
 {% stepper %}
 {% step %}
-### Association Registry
+#### Association Registry
 
 **BVAD Token:** Verifies whether an organization is a member of the association and issues a BDI Verifiable Association Data (BVAD) token that confirms the organization’s membership and status.
 {% endstep %}
 
 {% step %}
-### Orchestration Registry
+#### Orchestration Registry
 
 **BVOD Token:** Verifies which parties are involved in a specific supply chain context (for example, an order or transport), including their role and level of involvement and it issues a BDI Verifiable Orchestration Data (BVOD) token. This information is used not only for predefined collaboration but also as active context to determine who should be operationally informed when events occur.
 {% endstep %}
 
 {% step %}
-### BDI Connector (Server/Proxy)
+#### BDI Connector (Server/Proxy)
 
 **Local authorization decision and enforcement:** Validates the received BVAD and BVOD tokens and translates them into enforceable authorization inputs in accordance with BDI agreements. The Connector ensures that data exchange and the sending or receiving of events only take place within the established supply chain context and trust agreements, regardless of whether the interaction is request/response-based or event-driven. In the case of event-driven collaboration, the BDI Connector also handles the technical processing of notifications (for example, via technology-agnostic webhooks) toward local systems.
 {% endstep %}
@@ -70,9 +73,7 @@ If the Orchestration Registry contains incomplete or incorrect information about
 
 This building block has links to:
 
-<a href="https://app.gitbook.com/s/EsnYrgeqsPPZtbALTQAj/readme/trust-kit/association-register-1" class="button secondary">Association Register</a><a href="https://app.gitbook.com/s/EsnYrgeqsPPZtbALTQAj/readme/data-set-kit/data-licenses" class="button secondary">Data Licenses</a><a href="https://app.gitbook.com/s/EsnYrgeqsPPZtbALTQAj/readme/trust-kit/policy-agreements" class="button secondary">Policy Agreements</a>
-
-
+<a href="association-register-1.md" class="button secondary">Association Register</a><a href="../data-set-kit/data-licenses.md" class="button secondary">Data Licenses</a><a href="policy-agreements.md" class="button secondary">Policy Agreements</a>
 
 ## 5. Elements and their key functions
 
@@ -103,7 +104,7 @@ This decentralized model eliminates single points of failure and respects the da
 
 This dual-token model guarantees that access to operational data is only possible when both:
 
-* the membership and status of an organization (BVAD),&#x20;
+* the membership and status of an organization (BVAD),
 * the involvement in a specific supply chain context (BVOD)
 
 has been established in a machine-verifiable manner.
@@ -141,8 +142,6 @@ In addition, the registry must generate automatic notifications for relevant eve
 To support this, the Orchestration Registry must provide a subscription mechanism based on webhook-based event calls, allowing supply chain partners to subscribe to events relevant to them. Only authorized parties may receive notifications related to their role or position within the supply chain.
 
 ## 7. Future topics
-
-
 
 ## 8. Further reading
 

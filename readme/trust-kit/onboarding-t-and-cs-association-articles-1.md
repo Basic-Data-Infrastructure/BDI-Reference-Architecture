@@ -12,8 +12,8 @@ coverHeight: 488
 
 ## 1. Introduction
 
-The goal of an Association is to enable efficient data sharing between independent companies by\
-providing a neutral member-governed entity that serves as a trust anchor. This trust anchor is based on identity, authorization and compliance. Without the use of Associations, trust is negotiated bilaterally. Associations allow for standardized trust, which reduces costs and risks. This enables faster collaboration, less integration effort, and better compliance.&#x20;
+The goal of an Association is to enable efficient data sharing between independent companies by\
+providing a neutral member-governed entity that serves as a trust anchor. This trust anchor is based on identity, authorization and compliance. Without the use of Associations, trust is negotiated bilaterally. Associations allow for standardized trust, which reduces costs and risks. This enables faster collaboration, less integration effort, and better compliance.
 
 ## 2. Concepts
 
@@ -23,7 +23,7 @@ Some relevant concepts for the BDI onboarding are given below.
 
 <summary><strong>Association</strong></summary>
 
-A legal entity created and governed by its members that provides the neutral rules and\
+A legal entity created and governed by its members that provides the neutral rules and\
 structures needed to enable trusted data sharing between companies.
 
 </details>
@@ -32,7 +32,7 @@ structures needed to enable trusted data sharing between companies.
 
 <summary><strong>Association Administrator / Authority</strong></summary>
 
-The independent role or organization that runs the daily operations of the Association (such as maintaining registers and supporting onboarding), while remaining accountable to the\
+The independent role or organization that runs the daily operations of the Association (such as maintaining registers and supporting onboarding), while remaining accountable to the\
 members who set the rules.
 
 </details>
@@ -41,8 +41,8 @@ members who set the rules.
 
 <summary><strong>Association Register</strong></summary>
 
-The official list maintained by the Association that contains all participating members, users,\
-and their declared relationships, so every participant can see who is part of the network and\
+The official list maintained by the Association that contains all participating members, users,\
+and their declared relationships, so every participant can see who is part of the network and\
 under what conditions.
 
 </details>
@@ -51,7 +51,7 @@ under what conditions.
 
 <summary><strong>Members</strong></summary>
 
-The voting participants who govern the Association. In most cases they will also be the user.&#x20;
+The voting participants who govern the Association. In most cases they will also be the user.
 
 </details>
 
@@ -59,7 +59,7 @@ The voting participants who govern the Association. In most cases they will also
 
 <summary><strong>Users</strong></summary>
 
-Organizations that only _use_ the services (consume or provide data), but that do not determine the policies. Users can also be members.&#x20;
+Organizations that only _use_ the services (consume or provide data), but that do not determine the policies. Users can also be members.
 
 </details>
 
@@ -69,33 +69,33 @@ A BDI Association is a local entity formed by a group of participants within the
 
 #### 2.1.1 Core functions of an association
 
-The core functions of an Association can be summarized by the following:&#x20;
+The core functions of an Association can be summarized by the following:
 
 1. Serves as a trust anchor (identity, authorization, compliance)
 2. Defines and enforces common rules (onboarding, periodic check/assessments, dispute resolution)
 3. Provides neutral member-driven governance
-4. Operates an Association register of members, systems, credentials, and   \
+4. Operates an Association register of members, systems, credentials, and\
    endpoints
 5. Records system-organization relationships
-6. Offers onboarding support and operational monitoring of the Association   \
+6. Offers onboarding support and operational monitoring of the Association\
    components
 7. Facilitates dispute handling and arbitration between participants
 8. Allows scalable collaboration/interoperability with other Associations
-9. Provides optional service integration, helpdesk, back-office services and usage   \
+9. Provides optional service integration, helpdesk, back-office services and usage\
    accounting and settlement services
 
 ### 2.2 Onboarding
 
-It is recommended that an onboarding mechanism is introduced for new members, if the Association desires to raise the standards for its members. New members are admitted by vote of the existing members. Their identity is verified (e.g. via KvK/LEI/EORI) and fraud register and insolvency checks are performed. The new member should accept the terms of usage, periodic revalidation and revocation.&#x20;
+It is recommended that an onboarding mechanism is introduced for new members, if the Association desires to raise the standards for its members. New members are admitted by vote of the existing members. Their identity is verified (e.g. via KvK/LEI/EORI) and fraud register and insolvency checks are performed. The new member should accept the terms of usage, periodic revalidation and revocation.
 
 {% hint style="info" %}
-Consider the different definitions of "member" and "user" given in [#id-2.-concepts](onboarding-t-and-cs-association-articles-1.md#id-2.-concepts "mention").&#x20;
+Consider the different definitions of "member" and "user" given in [#id-2.-concepts](onboarding-t-and-cs-association-articles-1.md#id-2.-concepts "mention").
 {% endhint %}
 
 The following aspects can be taken into consideration:
 
 * vetting the member
-* checking roles the member wants to fulfill&#x20;
+* checking roles the member wants to fulfill
 * verifying credentials and certificates (trust chain)
 * verifying that legal contracts are signed by functionaries with a mandate
 * verifying the compliance and security of the IT applications they use (conformity tests)
@@ -146,9 +146,9 @@ Shared terms and conditions, data access policies, and data licenses are essenti
 
 ### 2.3 Governance principles and legal
 
-An Association is a legal entity, which can for example be a foundation, an association or a cooperative. Its members, as voting members, define the onboarding rules, assurance levels (agreed levels of trust), dispute handling, funding model and sanctions.&#x20;
+An Association is a legal entity, which can for example be a foundation, an association or a cooperative. Its members, as voting members, define the onboarding rules, assurance levels (agreed levels of trust), dispute handling, funding model and sanctions.
 
-An important concept within an association is the concept of **neutrality**: no single party within the association dominates.&#x20;
+An important concept within an association is the concept of **neutrality**: no single party within the association dominates.
 
 ### 2.4 Onboarding Process
 
@@ -168,12 +168,11 @@ The implementation of the BDI Framework should consider existing sector-specific
 
 ## 4. Interactions with other building blocks
 
-<a href="../../reference-architecture/trust-kit/policy-agreements.md" class="button secondary">Policy Agreements</a> <a href="../../reference-architecture/trust-kit/edge-agreements.md" class="button secondary">Edge Agreements</a> <a href="../../reference-architecture/data-set-kit/data-licenses.md" class="button secondary">Data Licenses</a>
+<a href="policy-agreements.md" class="button secondary">Policy Agreements</a> <a href="edge-agreements.md" class="button secondary">Edge Agreements</a> <a href="../data-set-kit/data-licenses.md" class="button secondary">Data Licenses</a>
 
 ## 5. Future readings
 
-\[To be added:&#x20;
+\[To be added:
 
 * Documenten voor onboarding
 * Documenten voor opzetten legal entity]
-
