@@ -5,7 +5,7 @@ coverY: 0
 coverHeight: 517
 ---
 
-# 🔧 BDI Maintenance and Community Contributions (Suus)
+# 🔧 BDI Maintenance and Community Contributions
 
 {% hint style="info" %}
 **To file a change request, submit an issue** **here**: [https://github.com/Basic-Data-Infrastructure/BDI-change-requests](https://github.com/Basic-Data-Infrastructure/BDI-change-requests)
@@ -36,7 +36,7 @@ Explicitly out of scope are any third party IT components mentioned in the BDI F
 
 ## 1.3 Core principles
 
-The Change and Release Management Process must be **transparent**, **predictable** and **fair**. Each of these principles is discussed below.&#x20;
+The Change and Release Management Process must be **transparent**, **predictable** and **fair**. Each of these principles is discussed below.
 
 ### Transparency
 
@@ -58,7 +58,7 @@ The Change and Release Management Process must be **transparent**, **predictable
 
 ## 1.4 Change management process
 
-A change can be either a **Request for Change (RfC)** or a **Minor Change**, the difference being the impact of the change to the community. An accepted RfC requires BDI-based associations to take action to remain compliant with the new BDI version, whereas Minor Changes do not. However, associations, at their discretion, can decide not to comply with the new BDI version but rather follow the old one.&#x20;
+A change can be either a **Request for Change (RfC)** or a **Minor Change**, the difference being the impact of the change to the community. An accepted RfC requires BDI-based associations to take action to remain compliant with the new BDI version, whereas Minor Changes do not. However, associations, at their discretion, can decide not to comply with the new BDI version but rather follow the old one.
 
 ### 1.4.1 RfCs
 
@@ -80,7 +80,7 @@ A stakeholder — such as the BDI Product Owner — identifies a required change
 {% step %}
 **Registration**
 
-The stakeholder  — possibly supported by the Product Owner — describes the RfC and registers it.
+The stakeholder — possibly supported by the Product Owner — describes the RfC and registers it.
 {% endstep %}
 
 {% step %}
@@ -90,7 +90,7 @@ The Product Owner discusses the RfC with the Expert Group. The Expert Group and 
 {% endstep %}
 
 {% step %}
-**Decision**&#x20;
+**Decision**
 
 The Architecture Board decides whether or not to start impact analysis, taking into account the advice from the Expert Group and Product Owner.
 {% endstep %}
@@ -114,7 +114,7 @@ The RfC and the impact analysis are discussed with the Expert Group. The Expert 
 {% endstep %}
 
 {% step %}
-**Decision**&#x20;
+**Decision**
 
 The Architecture Board decides whether or not to accept the RfC and schedule it for implementation.
 {% endstep %}
@@ -128,7 +128,7 @@ The Product Owner schedules the RfC for implementation.
 
 The result of this process is an accepted RfC, with a clearly described impact on the reference architecture.
 
-#### 1.4.1.2 Templates&#x20;
+#### 1.4.1.2 Templates
 
 The RfC process is supported by the following templates:
 
@@ -172,7 +172,7 @@ The stakeholder registers and describes the required MC.
 {% step %}
 **Decision**
 
-The Product Owner decides whether to accept or reject the MC. An MC can be rejected if it does not meet the required criteria and is more appropriately handled as an RfC.&#x20;
+The Product Owner decides whether to accept or reject the MC. An MC can be rejected if it does not meet the required criteria and is more appropriately handled as an RfC.
 {% endstep %}
 
 {% step %}
@@ -182,7 +182,7 @@ The Product Owner schedules the MC for implementation.
 {% endstep %}
 {% endstepper %}
 
-#### 1.4.1.2 Templates&#x20;
+#### 1.4.1.2 Templates
 
 The MC process is supported by the following templates:
 
@@ -193,9 +193,9 @@ The MC process is supported by the following templates:
 The Change Management Process results in a backlog of RfCs and MCs that require implementation. To process this this backlog efficiently, the Release Management Process was created. This process defines the procedures for selecting changes to be implemented and for consolidating those changes into releases (versions).
 
 {% hint style="info" %}
-**Version types**&#x20;
+**Version types**
 
-The Release Management Process results in two types of version:&#x20;
+The Release Management Process results in two types of version:
 
 * **Major new version**: a version that contains changes with potential impact on stakeholders.
 * **Minor new version**: a version that contains changes with no or very minimum impact on stakeholders.
@@ -237,7 +237,7 @@ The selected RfCs and MCs are implemented in the assets, leading to a staging ve
 {% step %}
 **Decision**
 
-The staging version is scheduled for discussion in the Architecture Board. The Architecture Board either decides whether the new major needs more work or whether it can be released. &#x20;
+The staging version is scheduled for discussion in the Architecture Board. The Architecture Board either decides whether the new major needs more work or whether it can be released.
 {% endstep %}
 
 {% step %}
@@ -264,25 +264,25 @@ The release process for minor versions is as follows:
 
 {% stepper %}
 {% step %}
-#### Scoping
+**Scoping**
 
 The Product Owner selects the initial scope for the minor version, by selecting MCs from the backlog.
 {% endstep %}
 
 {% step %}
-#### Implementation
+**Implementation**
 
 The selected RfCs and MCs are implemented in the assets.
 {% endstep %}
 
 {% step %}
-#### Releasing
+**Releasing**
 
 The major version is released.
 {% endstep %}
 
 {% step %}
-#### Informing
+**Informing**
 
 The Product Owner informs stakeholders about the release.
 {% endstep %}
@@ -312,7 +312,7 @@ Versions are numbered as follows: x.y.z.
 {% endtab %}
 
 {% tab title="Version Deprecation Process" %}
-The version deprecation process can be described as follows:&#x20;
+The version deprecation process can be described as follows:
 
 * Each major version is marked as _deprecated_ upon the release of a new major version.
 * During the 6-month deprecation period, the deprecated version remains available but is no longer actively maintained, except for critical security fixes if necessary.
@@ -326,5 +326,4 @@ The version deprecation process can be described as follows:&#x20;
 
 The following roles are recognized in the Change and Release Management processes:
 
-<table data-view="cards" data-full-width="true"><thead><tr><th></th><th></th><th></th><th data-hidden data-card-cover data-type="image">Cover image</th></tr></thead><tbody><tr><td><h4>Stakeholder</h4></td><td><p><strong>Description</strong></p><p>Any party involved in BDI as a member, user, IT service provider, or in any other role. </p></td><td><p></p><p><strong>Responsibilities</strong></p><ul><li>Raise RfCs and MCs</li><li>Provide input on RfCs and MCs</li><li>Support in impact analysis</li><li>Implement new versions of the BDI</li></ul></td><td><a href="https://images.unsplash.com/photo-1739298061740-5ed03045b280?crop=entropy&#x26;cs=srgb&#x26;fm=jpg&#x26;ixid=M3wxOTcwMjR8MHwxfHNlYXJjaHwyfHxzdGFrZWhvbGRlcnxlbnwwfHx8fDE3NjQxNDM5ODZ8MA&#x26;ixlib=rb-4.1.0&#x26;q=85">https://images.unsplash.com/photo-1739298061740-5ed03045b280?crop=entropy&#x26;cs=srgb&#x26;fm=jpg&#x26;ixid=M3wxOTcwMjR8MHwxfHNlYXJjaHwyfHxzdGFrZWhvbGRlcnxlbnwwfHx8fDE3NjQxNDM5ODZ8MA&#x26;ixlib=rb-4.1.0&#x26;q=85</a></td></tr><tr><td><h4>Expert Group</h4></td><td><p><strong>Description</strong></p><p>A group of experts, appointed by the Product Owner.</p></td><td><p></p><p><strong>Responsibilities</strong></p><ul><li>Provide input on RfCs and MCs</li><li>Support the Product Owner in preparing advice for the Architecture Board about RfCs and impact analysis</li><li>Provide feedback on selected major version scope</li></ul></td><td><a href="https://images.unsplash.com/photo-1507679799987-c73779587ccf?crop=entropy&#x26;cs=srgb&#x26;fm=jpg&#x26;ixid=M3wxOTcwMjR8MHwxfHNlYXJjaHwxfHxleHBlcnR8ZW58MHx8fHwxNzY0MTQ0MDk0fDA&#x26;ixlib=rb-4.1.0&#x26;q=85">https://images.unsplash.com/photo-1507679799987-c73779587ccf?crop=entropy&#x26;cs=srgb&#x26;fm=jpg&#x26;ixid=M3wxOTcwMjR8MHwxfHNlYXJjaHwxfHxleHBlcnR8ZW58MHx8fHwxNzY0MTQ0MDk0fDA&#x26;ixlib=rb-4.1.0&#x26;q=85</a></td></tr><tr><td><h4>Architecture Board</h4></td><td><p><strong>Description</strong></p><p>A group of experts responsible for the BDI assets maintained with this Change and Release Management Processes.</p></td><td><p></p><p><strong>Responsibilities</strong></p><ul><li>Decide on incoming RfC requests</li><li>Decide on prepared RfC impact analysis</li><li>Provide feedback on selected major version scope</li><li>Decide on implementation of a prepared major version</li></ul></td><td><a href="https://images.unsplash.com/photo-1431576901776-e539bd916ba2?crop=entropy&#x26;cs=srgb&#x26;fm=jpg&#x26;ixid=M3wxOTcwMjR8MHwxfHNlYXJjaHw3fHxhcmNoaXRlY3R1cmV8ZW58MHx8fHwxNzY0MTQ0MTgxfDA&#x26;ixlib=rb-4.1.0&#x26;q=85">https://images.unsplash.com/photo-1431576901776-e539bd916ba2?crop=entropy&#x26;cs=srgb&#x26;fm=jpg&#x26;ixid=M3wxOTcwMjR8MHwxfHNlYXJjaHw3fHxhcmNoaXRlY3R1cmV8ZW58MHx8fHwxNzY0MTQ0MTgxfDA&#x26;ixlib=rb-4.1.0&#x26;q=85</a></td></tr><tr><td><h4>Product Owner</h4></td><td><p><strong>Description</strong></p><p>Person responsible for the management of the BDI and the execution of the Change and Release Management Processes.</p></td><td><p></p><p><strong>Responsibilities</strong></p><ul><li>Raise RfCs and MCs</li><li>Support stakeholders in registering and describing RfCs and MCs</li><li>Register RfCs and MCs</li><li>Organize and prepare Expert Group meetings</li><li>Organize and prepare Architecture Board meetings</li><li>Organize RfC impact analysis</li><li>Organize implementation of RfCs and MCs</li><li>Scope major and minor versions</li><li>Inform stakeholders about version scoping and process feedback</li><li>Decide on scoping and timing of minor releases</li><li>Organize version release process</li><li>Organize version deprecation process</li></ul></td><td><a href="https://images.unsplash.com/flagged/photo-1550946107-8842ae9426db?crop=entropy&#x26;cs=srgb&#x26;fm=jpg&#x26;ixid=M3wxOTcwMjR8MHwxfHNlYXJjaHwxfHxwcm9kdWN0JTIwb3duZXJ8ZW58MHx8fHwxNzY0MTQ0MzI5fDA&#x26;ixlib=rb-4.1.0&#x26;q=85">https://images.unsplash.com/flagged/photo-1550946107-8842ae9426db?crop=entropy&#x26;cs=srgb&#x26;fm=jpg&#x26;ixid=M3wxOTcwMjR8MHwxfHNlYXJjaHwxfHxwcm9kdWN0JTIwb3duZXJ8ZW58MHx8fHwxNzY0MTQ0MzI5fDA&#x26;ixlib=rb-4.1.0&#x26;q=85</a></td></tr></tbody></table>
-
+<table data-view="cards" data-full-width="true"><thead><tr><th></th><th></th><th></th><th data-hidden data-card-cover data-type="image">Cover image</th></tr></thead><tbody><tr><td><strong>Stakeholder</strong></td><td><p><strong>Description</strong></p><p>Any party involved in BDI as a member, user, IT service provider, or in any other role.</p></td><td><p><strong>Responsibilities</strong></p><ul><li>Raise RfCs and MCs</li><li>Provide input on RfCs and MCs</li><li>Support in impact analysis</li><li>Implement new versions of the BDI</li></ul></td><td><a href="https://images.unsplash.com/photo-1739298061740-5ed03045b280?crop=entropy&#x26;cs=srgb&#x26;fm=jpg&#x26;ixid=M3wxOTcwMjR8MHwxfHNlYXJjaHwyfHxzdGFrZWhvbGRlcnxlbnwwfHx8fDE3NjQxNDM5ODZ8MA&#x26;ixlib=rb-4.1.0&#x26;q=85">https://images.unsplash.com/photo-1739298061740-5ed03045b280?crop=entropy&#x26;cs=srgb&#x26;fm=jpg&#x26;ixid=M3wxOTcwMjR8MHwxfHNlYXJjaHwyfHxzdGFrZWhvbGRlcnxlbnwwfHx8fDE3NjQxNDM5ODZ8MA&#x26;ixlib=rb-4.1.0&#x26;q=85</a></td></tr><tr><td><strong>Expert Group</strong></td><td><p><strong>Description</strong></p><p>A group of experts, appointed by the Product Owner.</p></td><td><p><strong>Responsibilities</strong></p><ul><li>Provide input on RfCs and MCs</li><li>Support the Product Owner in preparing advice for the Architecture Board about RfCs and impact analysis</li><li>Provide feedback on selected major version scope</li></ul></td><td><a href="https://images.unsplash.com/photo-1507679799987-c73779587ccf?crop=entropy&#x26;cs=srgb&#x26;fm=jpg&#x26;ixid=M3wxOTcwMjR8MHwxfHNlYXJjaHwxfHxleHBlcnR8ZW58MHx8fHwxNzY0MTQ0MDk0fDA&#x26;ixlib=rb-4.1.0&#x26;q=85">https://images.unsplash.com/photo-1507679799987-c73779587ccf?crop=entropy&#x26;cs=srgb&#x26;fm=jpg&#x26;ixid=M3wxOTcwMjR8MHwxfHNlYXJjaHwxfHxleHBlcnR8ZW58MHx8fHwxNzY0MTQ0MDk0fDA&#x26;ixlib=rb-4.1.0&#x26;q=85</a></td></tr><tr><td><strong>Architecture Board</strong></td><td><p><strong>Description</strong></p><p>A group of experts responsible for the BDI assets maintained with this Change and Release Management Processes.</p></td><td><p><strong>Responsibilities</strong></p><ul><li>Decide on incoming RfC requests</li><li>Decide on prepared RfC impact analysis</li><li>Provide feedback on selected major version scope</li><li>Decide on implementation of a prepared major version</li></ul></td><td><a href="https://images.unsplash.com/photo-1431576901776-e539bd916ba2?crop=entropy&#x26;cs=srgb&#x26;fm=jpg&#x26;ixid=M3wxOTcwMjR8MHwxfHNlYXJjaHw3fHxhcmNoaXRlY3R1cmV8ZW58MHx8fHwxNzY0MTQ0MTgxfDA&#x26;ixlib=rb-4.1.0&#x26;q=85">https://images.unsplash.com/photo-1431576901776-e539bd916ba2?crop=entropy&#x26;cs=srgb&#x26;fm=jpg&#x26;ixid=M3wxOTcwMjR8MHwxfHNlYXJjaHw3fHxhcmNoaXRlY3R1cmV8ZW58MHx8fHwxNzY0MTQ0MTgxfDA&#x26;ixlib=rb-4.1.0&#x26;q=85</a></td></tr><tr><td><strong>Product Owner</strong></td><td><p><strong>Description</strong></p><p>Person responsible for the management of the BDI and the execution of the Change and Release Management Processes.</p></td><td><p><strong>Responsibilities</strong></p><ul><li>Raise RfCs and MCs</li><li>Support stakeholders in registering and describing RfCs and MCs</li><li>Register RfCs and MCs</li><li>Organize and prepare Expert Group meetings</li><li>Organize and prepare Architecture Board meetings</li><li>Organize RfC impact analysis</li><li>Organize implementation of RfCs and MCs</li><li>Scope major and minor versions</li><li>Inform stakeholders about version scoping and process feedback</li><li>Decide on scoping and timing of minor releases</li><li>Organize version release process</li><li>Organize version deprecation process</li></ul></td><td><a href="https://images.unsplash.com/flagged/photo-1550946107-8842ae9426db?crop=entropy&#x26;cs=srgb&#x26;fm=jpg&#x26;ixid=M3wxOTcwMjR8MHwxfHNlYXJjaHwxfHxwcm9kdWN0JTIwb3duZXJ8ZW58MHx8fHwxNzY0MTQ0MzI5fDA&#x26;ixlib=rb-4.1.0&#x26;q=85">https://images.unsplash.com/flagged/photo-1550946107-8842ae9426db?crop=entropy&#x26;cs=srgb&#x26;fm=jpg&#x26;ixid=M3wxOTcwMjR8MHwxfHNlYXJjaHwxfHxwcm9kdWN0JTIwb3duZXJ8ZW58MHx8fHwxNzY0MTQ0MzI5fDA&#x26;ixlib=rb-4.1.0&#x26;q=85</a></td></tr></tbody></table>

@@ -17,6 +17,7 @@
       * [Authentication H2M](reference-architecture/trust-kit/authentication-h2m.md)
     * [Authorization](readme/trust-kit/authorisation-oauth-2.0-ar-dm-+-xacml-policies/README.md)
       * [Authorization Models](readme/trust-kit/authorisation-oauth-2.0-ar-dm-+-xacml-policies/authorization-models.md)
+    * [Token Exchange for Federated Association-to-Association Communication](readme/trust-kit/token-exchange-for-federated-association-to-association-communication.md)
     * [Orchestration Register](readme/trust-kit/orchestration-register.md)
     * [Discovery](reference-architecture/trust-kit/discovery.md)
     * [Policy Agreements](reference-architecture/trust-kit/policy-agreements.md)
@@ -50,4 +51,3 @@
     * [Legal Asset Boundaries](reference-architecture/boundary-management-kit/legal-asset-boundaries.md)
   * [GLOSSARY](reference-architecture/glossary/README.md)
     * [BDI Terms](reference-architecture/glossary/bdi-terms.md)
-* [Token Exchange for Federated Association-to-Association Communication](token-exchange-for-federated-association-to-association-communication.md)

@@ -79,4 +79,4 @@ eIDAS2 introduces new trust services and EU Digital Identity Wallets (EDIW) for 
 
 This building block interlinks with:
 
-<a href="digital-identity/" class="button secondary">Digital Identity</a> <a href="../../readme/trust-kit/authorisation-oauth-2.0-ar-dm-+-xacml-policies/" class="button secondary">Authorization</a> <a href="discovery.md" class="button secondary">Discovery</a> <a href="../federation-kit/" class="button secondary">Federation KIT</a>
+<a href="digital-identity/" class="button secondary">Digital Identity</a> <a href="https://github.com/Basic-Data-Infrastructure/BDI-Reference-Architecture/blob/Next_release_2026_Q3/readme/trust-kit/authorisation-oauth-2.0-ar-dm-+-xacml-policies" class="button secondary">Authorization</a> <a href="discovery.md" class="button secondary">Discovery</a> <a href="../federation-kit/" class="button secondary">Federation KIT</a>

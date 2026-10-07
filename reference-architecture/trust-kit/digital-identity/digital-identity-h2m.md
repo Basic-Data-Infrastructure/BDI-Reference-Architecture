@@ -89,9 +89,9 @@ The related building blocks are:
 
 <a href="digital-identity.md" class="button secondary">Digital Identity M2M</a> <a href="../authentication.md" class="button secondary">Authentication M2M</a> <a href="../authentication-h2m.md" class="button secondary">Authentication H2M</a>
 
-<a href="../../../readme/trust-kit/authorisation-oauth-2.0-ar-dm-+-xacml-policies/" class="button secondary">Authorization</a> <a href="/broken/pages/IMYqSzcqlmzv577PfsCD" class="button secondary">Association Register</a> <a href="../../federation-kit/professional-qualification-register.md" class="button secondary">Professional Qualification Register</a>
+<a href="https://github.com/Basic-Data-Infrastructure/BDI-Reference-Architecture/blob/Next_release_2026_Q3/readme/trust-kit/authorisation-oauth-2.0-ar-dm-+-xacml-policies" class="button secondary">Authorization</a> <a href="/broken/pages/IMYqSzcqlmzv577PfsCD" class="button secondary">Association Register</a> <a href="../../federation-kit/professional-qualification-register.md" class="button secondary">Professional Qualification Register</a>
 
-<a href="../../federation-kit/representation-register.md" class="button secondary">Representation Chain</a>&#x20;
+<a href="../../federation-kit/representation-register.md" class="button secondary">Representation Chain</a>
 
 The most important related Kits and concepts are:
 

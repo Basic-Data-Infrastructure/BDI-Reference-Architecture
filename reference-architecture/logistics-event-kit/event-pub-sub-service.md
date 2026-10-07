@@ -100,7 +100,7 @@ A **producer** publishes an **event** to the **router**, which filters and pushe
 
 In supply chains the chain of business activities starts when a Seller and Buyer agree upon the transaction. This agreement typically includes terms related to transport, insurance, customs, the handover of responsibilities, and payments. The successful execution of this agreement often requires coordination among a large set of actors, including authorities and their subcontractors. This coordination is managed through a "choreography" of actions, where each action is triggered by planned or executed events.
 
-The choreography describes which channels there are and which parties can subscribe to them. As the design of an appropriate choreography can be challenging and has major impact on the efficiency of the pub/sub service, this subject is discussed in detail in a separate [page](broken-reference/).
+The choreography describes which channels there are and which parties can subscribe to them. As the design of an appropriate choreography can be challenging and has major impact on the efficiency of the pub/sub service, this subject is discussed in detail in a separate [page](https://github.com/Basic-Data-Infrastructure/BDI-Reference-Architecture/blob/Next_release_2026_Q3/reference-architecture/logistics-event-kit/broken-reference/README.md).
 
 ## 5. Implementation Considerations
 

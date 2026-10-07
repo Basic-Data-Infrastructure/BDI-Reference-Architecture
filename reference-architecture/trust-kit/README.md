@@ -31,6 +31,6 @@ The Trust KIT comprises the following building blocks:
 
 <a href="../../readme/trust-kit/association-register-1.md" class="button secondary">Association Register</a> <a href="../../readme/trust-kit/onboarding-t-and-cs-association-articles-1.md" class="button secondary">Onboarding terms and conditions</a> <a href="digital-identity/" class="button secondary">Digital identity</a>
 
-<a href="authentication/" class="button secondary">Authentication</a> <a href="../../readme/trust-kit/authorisation-oauth-2.0-ar-dm-+-xacml-policies/" class="button secondary">Authorization</a> <a href="discovery.md" class="button secondary">Discovery</a> <a href="policy-agreements.md" class="button secondary">Policy Agreements</a>
+<a href="authentication/" class="button secondary">Authentication</a> <a href="https://github.com/Basic-Data-Infrastructure/BDI-Reference-Architecture/blob/Next_release_2026_Q3/readme/trust-kit/authorisation-oauth-2.0-ar-dm-+-xacml-policies" class="button secondary">Authorization</a> <a href="discovery.md" class="button secondary">Discovery</a> <a href="policy-agreements.md" class="button secondary">Policy Agreements</a>
 
 <a href="edge-agreements.md" class="button secondary">Edge Agreements</a>

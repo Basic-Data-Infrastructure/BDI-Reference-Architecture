@@ -11,11 +11,11 @@ See [Digital Identity M2M](digital-identity.md) and [Digital Identity H2M](digit
 
 ## 1. Introduction
 
-The Triple Identity model is a key concept in the Digital Identity building block. As can be seen in the triangle in the figure bellow, this model consists of 3 elements. Each one of these elements is required in order to verify a digital identity.&#x20;
+The Triple Identity model is a key concept in the Digital Identity building block. As can be seen in the triangle in the figure bellow, this model consists of 3 elements. Each one of these elements is required in order to verify a digital identity.
 
 <figure><img src="../../../.gitbook/assets/Gitbook files - Triple Identity.drawio.png" alt=""><figcaption></figcaption></figure>
 
-BDI does not introduce a strict “triple identity model” as a universal rule. Instead, it describes three types of entities that appear in real-world interactions and clarifies how their relationships can be authenticated using established trust frameworks.\
+BDI does not introduce a strict “triple identity model” as a universal rule. Instead, it describes three types of entities that appear in real-world interactions and clarifies how their relationships can be authenticated using established trust frameworks.\
 The goal is to emulate real-world business practice in a digital ecosystem: legal entities transact, individuals and systems carry out the actions, and trust derives from verifiable relationships anchored in authoritative sources.
 
 ## 2. Purpose
@@ -33,11 +33,11 @@ BDI identifies three entities that appear in most real-world interactions:
 
 {% stepper %}
 {% step %}
-#### Legal Entity
+**Legal Entity**
 
 <details>
 
-<summary><strong>A legal entity is defined as an organization recognized in law.</strong> </summary>
+<summary><strong>A legal entity is defined as an organization recognized in law.</strong></summary>
 
 Digital trust depends on verifying the existence of the legal entity and linking it to the digital credentials it controls.
 
@@ -47,7 +47,7 @@ Registries such as KvK, vLEI, DUNS, or DNS provide existence and attribute data.
 {% endstep %}
 
 {% step %}
-#### Natural Person
+**Natural Person**
 
 <details>
 
@@ -55,7 +55,7 @@ Registries such as KvK, vLEI, DUNS, or DNS provide existence and attribute data.
 
 This category includes employees, representatives, and other individuals acting on behalf of an organization. The digital ecosystem must be able to authenticate such individuals when their involvement forms part of a transaction’s trust requirements.
 
-BDI relies on digital authentication mechanisms tied to authoritative sources (eIDAS identity providers, verifiable credentials for personhood or role, national identity instruments where applicable).
+BDI relies on digital authentication mechanisms tied to authoritative sources (eIDAS identity providers, verifiable credentials for personhood or role, national identity instruments where applicable).
 
 {% hint style="warning" %}
 E-mail addresses or phone numbers are not identity instruments; they can only serve as contact aliases unless validated by an authoritative registry.
@@ -65,7 +65,7 @@ E-mail addresses or phone numbers are not identity instruments; they can only se
 {% endstep %}
 
 {% step %}
-#### Applications
+**Applications**
 
 <details>
 
@@ -73,7 +73,7 @@ E-mail addresses or phone numbers are not identity instruments; they can only se
 
 A system is defined as a digital agent, software application, API client, automated workflow, scheduled process or machine, that performs actions in a transaction. A system can act autonomously once configured by a human. A system may be exclusive to one organization or used by many organizations (e.g., SaaS platforms, port community systems).
 
-\
+\
 BDI concerns itself with the system’s link to the legal entity: which organization controls the system, and under what authorization regime. Digital authentication is achieved using cryptographic credentials, signed software statements, or verifiable credentials representing system attributes.
 
 </details>
@@ -141,4 +141,3 @@ This linkage is required only where the transaction demands attribution to a par
 For future work, the nuance in the relationship between a natural person and a legal entity will be considered. In some cases, the natural person acts as a representative of the legal entity. In other cases, the natural person is only granted access to its resources.
 
 The European Business Wallet proposal (COM(2025) 838 final) already distinguishes between these situations. It defines technical mandates, where a natural person acts as an authorized representative of the legal entity and uses systems on its behalf. It also defines administrative mandates, where a user is assigned roles and responsibilities that enable access to the legal entity’s resources.
-

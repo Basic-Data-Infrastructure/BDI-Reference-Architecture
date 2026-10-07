@@ -6,21 +6,21 @@ coverY: 0
 
 # 🔐 Coherent Security
 
-## 1. Introduction&#x20;
+## 1. Introduction
 
 The BDI provides security measures based on ISO 27001: an internationally recognized standard for establishing, implementing, maintaining, and continually improving an Information Security Management System (ISMS). In essence, ISO 27001 provides a framework for organizations to establish a robust and comprehensive information security management system that helps them protect their valuable assets and infrastructure. This page contains a breakdown of the key measures it encompasses.
 
 ## 2. Purpose of this building block
 
-This building block provides guidelines to implement security measures to prevent unauthorized access to data.&#x20;
+This building block provides guidelines to implement security measures to prevent unauthorized access to data.
 
 ## 3. ISO 27001
 
-The following provides an overview of 4 relevant elements of the ISO 27001 standard.&#x20;
+The following provides an overview of 4 relevant elements of the ISO 27001 standard.
 
 {% stepper %}
 {% step %}
-### Information Security Policy
+#### Information Security Policy
 
 * Foundation: The cornerstone of the ISMS.
 * Scope: Defines the organization's commitment to information security, outlining its scope, objectives, and responsibilities.
@@ -32,7 +32,7 @@ The following provides an overview of 4 relevant elements of the ISO 27001 stand
 {% endstep %}
 
 {% step %}
-### Risk Assessment and Treatment
+#### Risk Assessment and Treatment
 
 * Identification: Identifying potential threats to information assets (e.g., cyberattacks, natural disasters, human error).
 * Analysis: Evaluating the likelihood and impact of these threats.
@@ -44,7 +44,7 @@ The following provides an overview of 4 relevant elements of the ISO 27001 stand
 {% endstep %}
 
 {% step %}
-### Control Implementation
+#### Control Implementation
 
 * Selecting Controls: Choosing appropriate security controls from Annex A of ISO 27001. These controls address a wide range of security areas, including:
   * Access Control: Restricting access to information based on need-to-know principles.
@@ -57,7 +57,7 @@ The following provides an overview of 4 relevant elements of the ISO 27001 stand
 {% endstep %}
 
 {% step %}
-### Monitoring, Measurement, Analysis, and Improvement
+#### Monitoring, Measurement, Analysis, and Improvement
 
 * Internal Audits: Conducting regular internal audits to assess the effectiveness of the ISMS.
 * Management Reviews: Conducting periodic reviews by management to evaluate the overall performance of the ISMS and identify areas for improvement.

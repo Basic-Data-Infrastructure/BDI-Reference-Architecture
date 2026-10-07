@@ -29,7 +29,7 @@ Incorrect authentication could result in data breaches and / or the unavailabili
 
 ## 5. Interlinkages with other building blocks
 
-<a href="digital-identity/" class="button secondary">Digital Identity</a> <a href="../../readme/trust-kit/authorisation-oauth-2.0-ar-dm-+-xacml-policies/" class="button secondary">Authorization</a> <a href="discovery.md" class="button secondary">Discovery</a> <a href="../federation-kit/" class="button secondary">Federation KIT</a>
+<a href="digital-identity/" class="button secondary">Digital Identity</a> <a href="https://github.com/Basic-Data-Infrastructure/BDI-Reference-Architecture/blob/Next_release_2026_Q3/readme/trust-kit/authorisation-oauth-2.0-ar-dm-+-xacml-policies" class="button secondary">Authorization</a> <a href="discovery.md" class="button secondary">Discovery</a> <a href="../federation-kit/" class="button secondary">Federation KIT</a>
 
 ## 6. Core design decisions
 
@@ -85,7 +85,7 @@ Guidance on (to be done):
 
 In the BDI network, a [reputation system](../federation-kit/business-partner-reputation-model.md) within a BDI Association is integral for assessing the trustworthiness of visitors or outsiders: members of another BDI Association. While the BDI facilitates digital communication among a network of BDI Associations, establishing trust within a BDI Association through mutual agreements is relatively straightforward. However, evaluating the trustworthiness of participants in other BDI Associations can pose a challenge.
 
-A federation trust is designed to enable efficient and secure online transactions between business partners. Trust to engage between parties is most often based on more attestations agreed between parties and/or assocation they are member of. The service provider can then make [authorization ](../../readme/technology/broken-reference/)decisions based on te information on behalf of the data owner.
+A federation trust is designed to enable efficient and secure online transactions between business partners. Trust to engage between parties is most often based on more attestations agreed between parties and/or assocation they are member of. The service provider can then make [authorization ](https://github.com/Basic-Data-Infrastructure/BDI-Reference-Architecture/blob/Next_release_2026_Q3/readme/technology/broken-reference/README.md)decisions based on te information on behalf of the data owner.
 
 When a requests from a member of association A is directed to access data of a member of association B the request is redirected to the association's B attestation service to validate the federated trust artifacts available with the requestor association. These attestations help decide the authentication response of the data provider and authorization conditions applied on behalf the data owner. Note: Emphasizing '_helps decide_' as the Trust Sovereignty principle is kept by allowing the assessment against the policies of the data owner to determine authorization. The owner might want to provide the data service as requested even if the Identity does not provide all the required attestations or limit the authorization provided by the assessment policies of the presented attestations.
 

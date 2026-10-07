@@ -34,8 +34,8 @@ The Representation Chain supports both:
 
 It is crucial in:
 
-* [Physical Asset Boundary Management](https://app.gitbook.com/o/6jFQJqnMRyd4T2pZ1IBi/s/EsnYrgeqsPPZtbALTQAj/~/changes/224/reference-architecture/boundary-management/physical-asset-boundaries)
-* [Legal Asset Boundary Management](https://app.gitbook.com/o/6jFQJqnMRyd4T2pZ1IBi/s/EsnYrgeqsPPZtbALTQAj/~/changes/224/reference-architecture/boundary-management/legal-asset-boundaries)
+* [Physical Asset Boundary Management](https://app.gitbook.com/s/EsnYrgeqsPPZtbALTQAj/readme/boundary-management-kit/physical-asset-boundaries)
+* [Legal Asset Boundary Management](https://app.gitbook.com/s/EsnYrgeqsPPZtbALTQAj/readme/boundary-management-kit/legal-asset-boundaries)
 
 It provides a **verifiable, decentralised mechanism** for confirming:
 
@@ -49,7 +49,7 @@ It provides a **verifiable, decentralised mechanism** for confirming:
 
 The Representation Chain is conceptually and operationally connected to:
 
-<a href="../trust-kit/authentication/" class="button secondary">Authentication</a> <a href="../../readme/trust-kit/authorisation-oauth-2.0-ar-dm-+-xacml-policies/" class="button secondary">Authorization</a> <a href="../trust-kit/digital-identity/" class="button secondary">Digital Identity</a>
+<a href="../trust-kit/authentication/" class="button secondary">Authentication</a> <a href="https://github.com/Basic-Data-Infrastructure/BDI-Reference-Architecture/blob/Next_release_2026_Q3/readme/trust-kit/authorisation-oauth-2.0-ar-dm-+-xacml-policies" class="button secondary">Authorization</a> <a href="../trust-kit/digital-identity/" class="button secondary">Digital Identity</a>
 
 <a href="professional-qualification-register.md" class="button secondary">Professional Qualification Chain</a> <a href="../verifiable-credentials-kit/verifiable-credentials.md" class="button secondary">Verifiable Credentials</a>
 

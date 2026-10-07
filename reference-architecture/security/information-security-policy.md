@@ -1,6 +1,6 @@
 ---
 cover:
-  light: ../../.gitbook/assets/shutterstock_2139978403-scaled.webp
+  light: ../../.gitbook/assets/bdi website images.webp
   dark: >-
     https://images.unsplash.com/photo-1548092372-0d1bd40894a3?crop=entropy&cs=srgb&fm=jpg&ixid=M3wxOTcwMjR8MHwxfHNlYXJjaHwzfHxzZWN1cml0eXxlbnwwfHx8fDE3NjI5NTIyMzN8MA&ixlib=rb-4.1.0&q=85
 coverY: 0

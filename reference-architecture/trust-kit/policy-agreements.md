@@ -36,7 +36,7 @@ For a specific sector or geography one can either develop specific data licenses
 
 ## 3. Interlinkages with other building blocks
 
-<a href="digital-identity/" class="button secondary">Digital Identity</a> <a href="../../readme/trust-kit/authorisation-oauth-2.0-ar-dm-+-xacml-policies/" class="button secondary">Authorization</a> <a href="authentication/" class="button secondary">Authentication</a> <a href="../../readme/trust-kit/onboarding-t-and-cs-association-articles-1.md" class="button secondary">Onboarding Terms and Conditions</a>
+<a href="digital-identity/" class="button secondary">Digital Identity</a> <a href="https://github.com/Basic-Data-Infrastructure/BDI-Reference-Architecture/blob/Next_release_2026_Q3/readme/trust-kit/authorisation-oauth-2.0-ar-dm-+-xacml-policies" class="button secondary">Authorization</a> <a href="authentication/" class="button secondary">Authentication</a> <a href="../../readme/trust-kit/onboarding-t-and-cs-association-articles-1.md" class="button secondary">Onboarding Terms and Conditions</a>
 
 ## 4. Core design decisions
 
