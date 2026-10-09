@@ -50,4 +50,3 @@
     * [Legal Asset Boundaries](readme/boundary-management-kit/legal-asset-boundaries.md)
   * [GLOSSARY](readme/glossary/README.md)
     * [BDI Terms](readme/glossary/bdi-terms.md)
-* [Token Exchange for Federated Association-to-Association Communication](token-exchange-for-federated-association-to-association-communication.md)
