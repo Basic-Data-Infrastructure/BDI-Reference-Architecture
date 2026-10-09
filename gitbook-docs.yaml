@@ -1,0 +1,11 @@
+$schema: https://api.gitbook.com/gitbook-docs.yaml
+site:
+  title: BDI Public Documentation
+  structure:
+    - type: space
+      key: space-1
+      title: BDI Reference Architecture
+      path: bdi-reference-architecture
+      default: true
+      content:
+        directory: ./bdi-reference-architecture
